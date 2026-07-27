@@ -4,3 +4,5 @@ public/data.bak.json
 .vercel
 .DS_Store
 *.log
+
+.vercel
