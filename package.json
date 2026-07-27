@@ -1,0 +1,15 @@
+{
+  "name": "nedrug-gmp-dashboard",
+  "version": "1.0.0",
+  "description": "의약품등 GMP 실사 결과공개 대시보드 (식약처 의약품안전나라 공개데이터 정리)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "fetch": "node scripts/fetch-new.mjs",
+    "merge": "node scripts/merge.mjs",
+    "serve": "node scripts/serve.mjs public 8787"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3"
+  }
+}

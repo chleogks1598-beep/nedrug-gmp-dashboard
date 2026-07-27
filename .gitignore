@@ -1,0 +1,6 @@
+node_modules/
+newdocs/
+public/data.bak.json
+.vercel
+.DS_Store
+*.log

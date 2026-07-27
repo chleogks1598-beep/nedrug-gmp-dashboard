@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>의약품등 GMP 실사 결과공개 대시보드</title>
+<style>
+  :root{
+    --bg:#f6f8fa; --surface:#ffffff; --surface-2:#f0f3f6; --border:#e2e8f0;
+    --ink:#1a2733; --ink-2:#4a5966; --ink-3:#78889a;
+    --accent:#1367d6; --accent-soft:#e7f0fc;
+    --bar:#1c6fd0; --bar-soft:#dbe7f5;
+    --ok:#0f8a5f; --ok-soft:#e2f4ec; --warn:#c2410c; --warn-soft:#fdece2;
+    --shadow:0 1px 2px rgba(16,32,48,.06),0 2px 8px rgba(16,32,48,.05);
+    --radius:12px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e141b; --surface:#161e27; --surface-2:#1c2733; --border:#2a3846;
+      --ink:#e6edf3; --ink-2:#a9b8c6; --ink-3:#748291;
+      --accent:#4c9aff; --accent-soft:#16273c;
+      --bar:#4c9aff; --bar-soft:#22384f;
+      --ok:#3fce97; --ok-soft:#12291f; --warn:#f0894f; --warn-soft:#2c1a10;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 2px 10px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"]{
+      --bg:#0e141b; --surface:#161e27; --surface-2:#1c2733; --border:#2a3846;
+      --ink:#e6edf3; --ink-2:#a9b8c6; --ink-3:#748291;
+      --accent:#4c9aff; --accent-soft:#16273c; --bar:#4c9aff; --bar-soft:#22384f;
+      --ok:#3fce97; --ok-soft:#12291f; --warn:#f0894f; --warn-soft:#2c1a10;
+  }
+  :root[data-theme="light"]{
+      --bg:#f6f8fa; --surface:#ffffff; --surface-2:#f0f3f6; --border:#e2e8f0;
+      --ink:#1a2733; --ink-2:#4a5966; --ink-3:#78889a;
+      --accent:#1367d6; --accent-soft:#e7f0fc; --bar:#3b82c4; --bar-soft:#cfe0f2;
+      --ok:#0f8a5f; --ok-soft:#e2f4ec; --warn:#c2410c; --warn-soft:#fdece2;
+      --bar:#1c6fd0; --bar-soft:#dbe7f5;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Malgun Gothic","맑은 고딕",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:20px 18px 64px}
+  header.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 20px;margin:8px 0 22px}
+  header.top h1{font-size:22px;margin:0;letter-spacing:-.3px;font-weight:800}
+  header.top .sub{color:var(--ink-2);font-size:13px;margin-top:4px}
+  header.top .sub a{color:var(--accent);text-decoration:none}
+  header.top .sub a:hover{text-decoration:underline}
+  .spacer{flex:1}
+  .theme-btn{background:var(--surface);border:1px solid var(--border);color:var(--ink-2);
+    border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer}
+  .theme-btn:hover{border-color:var(--accent)}
+
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  .tile{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 18px;box-shadow:var(--shadow)}
+  .tile .k{font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.2px}
+  .tile .v{font-size:30px;font-weight:800;letter-spacing:-1px;margin-top:6px;font-variant-numeric:tabular-nums}
+  .tile .v.warn{color:var(--warn)} .tile .v.ok{color:var(--ok)}
+  .tile .u{font-size:12px;color:var(--ink-3);margin-left:4px;font-weight:600}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 18px;box-shadow:var(--shadow)}
+  .card h2{font-size:14px;margin:0 0 14px;font-weight:700;color:var(--ink)}
+  .card h2 .muted{color:var(--ink-3);font-weight:500;font-size:12px}
+
+  .bars{display:flex;flex-direction:column;gap:9px}
+  .barrow{display:grid;grid-template-columns:96px 1fr 46px;align-items:center;gap:10px;font-size:12.5px}
+  .barrow .lbl{color:var(--ink-2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .barrow .track{background:var(--surface-2);border-radius:5px;height:16px;position:relative;overflow:hidden}
+  .barrow .fill{display:block;background:var(--bar);height:100%;border-radius:5px;min-width:2px;transition:width .3s}
+  .barrow .val{color:var(--ink-2);text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  .barrow:hover .fill{filter:brightness(1.08)}
+
+  .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+  .filters input,.filters select{
+    background:var(--surface);border:1px solid var(--border);color:var(--ink);
+    border-radius:8px;padding:9px 11px;font-size:13px;font-family:inherit}
+  .filters input{flex:1;min-width:200px}
+  .filters input:focus,.filters select:focus{outline:none;border-color:var(--accent)}
+  .filters .count{color:var(--ink-3);font-size:12.5px;margin-left:auto;font-weight:600}
+
+  .tablewrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{background:var(--surface-2);color:var(--ink-2);text-align:left;font-weight:700;
+    padding:11px 12px;font-size:12px;position:sticky;top:0;cursor:pointer;white-space:nowrap;border-bottom:1px solid var(--border)}
+  thead th:hover{color:var(--accent)}
+  thead th .arw{opacity:.5;font-size:10px}
+  tbody tr.main{border-bottom:1px solid var(--border);cursor:pointer}
+  tbody tr.main:hover{background:var(--surface-2)}
+  tbody td{padding:10px 12px;vertical-align:top}
+  td.num{font-variant-numeric:tabular-nums;color:var(--ink-3);white-space:nowrap}
+  td.site{font-weight:600;max-width:320px}
+  td.site .addr{font-weight:400;color:var(--ink-3);font-size:11.5px;margin-top:2px;
+    display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+  .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:700;white-space:nowrap}
+  .badge.ok{background:var(--ok-soft);color:var(--ok)}
+  .badge.warn{background:var(--warn-soft);color:var(--warn)}
+  .chev{color:var(--ink-3);transition:transform .15s;display:inline-block}
+  tr.main.open .chev{transform:rotate(90deg)}
+  tr.detail td{background:var(--surface-2);padding:0}
+  tr.detail .inner{padding:6px 14px 14px}
+  .deftable{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+  .deftable th{background:transparent;color:var(--ink-3);text-align:left;font-weight:700;padding:7px 8px;
+    border-bottom:1px solid var(--border);position:static;cursor:default;font-size:11.5px}
+  .deftable td{padding:7px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+  .deftable .fld{white-space:nowrap;color:var(--ink-2);font-weight:600}
+  .deftable .law{white-space:nowrap;color:var(--ink-3);font-size:11.5px}
+  .deftable .rmk{white-space:nowrap;color:var(--ok);font-size:11.5px;font-weight:600}
+  .dl{display:inline-flex;align-items:center;gap:5px;color:var(--accent);text-decoration:none;
+    font-size:12px;font-weight:600;margin-top:10px;border:1px solid var(--border);border-radius:7px;padding:5px 10px}
+  .dl:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .none{color:var(--ink-3);font-style:italic;padding:8px 8px}
+
+  .tt{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);
+    padding:6px 9px;border-radius:6px;font-size:12px;font-weight:600;z-index:50;opacity:0;transition:opacity .1s;white-space:nowrap}
+  footer{margin-top:26px;color:var(--ink-3);font-size:12px;text-align:center;line-height:1.7}
+  .pager{display:flex;justify-content:center;gap:6px;margin-top:16px}
+  .pager button{background:var(--surface);border:1px solid var(--border);color:var(--ink-2);
+    border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;min-width:38px}
+  .pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+  .pager button:disabled{opacity:.4;cursor:default}
+  .pager button.cur{background:var(--accent);color:#fff;border-color:var(--accent)}
+  @media (max-width:900px){ .tiles{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr} }
+  @media (max-width:560px){ td.site .addr{display:none} .barrow{grid-template-columns:80px 1fr 40px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>의약품등 GMP 실사 결과공개 대시보드</h1>
+      <div class="sub">
+        출처: <a href="https://nedrug.mfds.go.kr/pbp/CCBBD03" target="_blank" rel="noopener">의약품안전나라 · 의약품등 GMP 실사 결과공개</a>
+        · 최종 갱신 <b id="updated">—</b>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button class="theme-btn" id="themeBtn">◐ 테마</button>
+  </header>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="grid2">
+    <div class="card">
+      <h2>분야별 지적(보완)사항 건수 <span class="muted">(항목 기준)</span></h2>
+      <div class="bars" id="chartField"></div>
+    </div>
+    <div class="card">
+      <h2>국가별 실사 건수 <span class="muted">(상위 12)</span></h2>
+      <div class="bars" id="chartCountry"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="filters">
+      <input id="q" type="search" placeholder="제조소명·소재지·지적사항 내용 검색…">
+      <select id="fCountry"><option value="">전체 국가</option></select>
+      <select id="fField"><option value="">전체 분야</option></select>
+      <select id="fResult">
+        <option value="">전체 결과</option>
+        <option value="지적사항 있음">지적사항 있음</option>
+        <option value="적합">적합</option>
+      </select>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr>
+          <th data-sort="seq">순번<span class="arw"></span></th>
+          <th data-sort="regDate">등록일<span class="arw"></span></th>
+          <th data-sort="country">국가<span class="arw"></span></th>
+          <th data-sort="site">제조소명<span class="arw"></span></th>
+          <th data-sort="result">결과<span class="arw"></span></th>
+          <th data-sort="defCount">지적<span class="arw"></span></th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="pager" id="pager"></div>
+  </section>
+
+  <footer>
+    본 페이지는 식품의약품안전처 의약품안전나라의 공개 데이터를 정리·시각화한 참고용 자료입니다.<br>
+    지적(보완)사항 요약은 원본 PDF에서 자동 추출한 것으로, 정확한 내용은 각 행의 원본 문서를 확인하세요.
+  </footer>
+</div>
+
+<div class="tt" id="tt"></div>
+
+<script>
+const DOWN_BASE="https://nedrug.mfds.go.kr/cmn/edms/down/";
+let DATA=[], view=[], page=1, per=25, sortKey="regDate", sortDir=-1;
+const $=s=>document.querySelector(s);
+const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// theme toggle
+const themeBtn=$("#themeBtn");
+themeBtn.onclick=()=>{
+  const cur=document.documentElement.getAttribute("data-theme");
+  const next=cur==="dark"?"light":(cur==="light"?"dark":(matchMedia("(prefers-color-scheme: dark)").matches?"light":"dark"));
+  document.documentElement.setAttribute("data-theme",next);
+};
+
+fetch("data.json").then(r=>r.json()).then(d=>{ DATA=d; init(); }).catch(e=>{
+  $("#tbody").innerHTML='<tr><td colspan="6" class="none">데이터를 불러오지 못했습니다: '+esc(e.message)+'</td></tr>';
+});
+
+function init(){
+  // updated date = max regDate
+  const maxD=DATA.map(x=>x.regDate).filter(Boolean).sort().pop()||"—";
+  $("#updated").textContent=maxD;
+  renderTiles(); renderCharts(); fillSelects(); bindFilters();
+  apply();
+}
+
+function renderTiles(){
+  const total=DATA.length;
+  const withDef=DATA.filter(x=>x.defCount>0).length;
+  const ok=total-withDef;
+  const items=DATA.reduce((a,x)=>a+(x.defCount||0),0);
+  const t=[
+    {k:"공개 실사 건수",v:total,u:"건"},
+    {k:"지적사항 있음",v:withDef,u:"건",cls:"warn"},
+    {k:"적합 (지적없음)",v:ok,u:"건",cls:"ok"},
+    {k:"총 지적(보완)항목",v:items,u:"항목"},
+  ];
+  $("#tiles").innerHTML=t.map(x=>`<div class="tile"><div class="k">${x.k}</div>
+    <div class="v ${x.cls||''}">${x.v.toLocaleString()}<span class="u">${x.u}</span></div></div>`).join("");
+}
+
+function barChart(el,rows,fmt){
+  const max=Math.max(1,...rows.map(r=>r.v));
+  el.innerHTML=rows.map(r=>`<div class="barrow" data-tip="${esc(r.label)}: ${r.v}${fmt||''}">
+    <span class="lbl" title="${esc(r.label)}">${esc(r.label)}</span>
+    <span class="track"><span class="fill" style="width:${(r.v/max*100).toFixed(1)}%"></span></span>
+    <span class="val">${r.v.toLocaleString()}</span></div>`).join("");
+}
+function renderCharts(){
+  const fc={}; for(const x of DATA) for(const d of (x.deficiencies||[])){const f=(d.field||"미분류").trim()||"미분류"; fc[f]=(fc[f]||0)+1;}
+  const fieldRows=Object.entries(fc).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([label,v])=>({label,v}));
+  barChart($("#chartField"),fieldRows,"항목");
+  const cc={}; for(const x of DATA){cc[x.country]=(cc[x.country]||0)+1;}
+  const ctryRows=Object.entries(cc).sort((a,b)=>b[1]-a[1]).slice(0,12).map(([label,v])=>({label,v}));
+  barChart($("#chartCountry"),ctryRows,"건");
+}
+
+function fillSelects(){
+  const cs=[...new Set(DATA.map(x=>x.country))].sort((a,b)=>a.localeCompare(b,"ko"));
+  $("#fCountry").insertAdjacentHTML("beforeend",cs.map(c=>`<option>${esc(c)}</option>`).join(""));
+  const fs=new Set(); for(const x of DATA) for(const d of (x.deficiencies||[])){if(d.field)fs.add(d.field.trim());}
+  $("#fField").insertAdjacentHTML("beforeend",[...fs].sort((a,b)=>a.localeCompare(b,"ko")).map(c=>`<option>${esc(c)}</option>`).join(""));
+}
+
+function bindFilters(){
+  ["#q","#fCountry","#fField","#fResult"].forEach(s=>$(s).addEventListener("input",()=>{page=1;apply();}));
+  document.querySelectorAll("thead th[data-sort]").forEach(th=>th.onclick=()=>{
+    const k=th.dataset.sort;
+    if(sortKey===k) sortDir*=-1; else {sortKey=k;sortDir=(k==="site"||k==="country")?1:-1;}
+    apply();
+  });
+}
+
+function apply(){
+  const q=$("#q").value.trim().toLowerCase();
+  const fc=$("#fCountry").value, ff=$("#fField").value, fr=$("#fResult").value;
+  view=DATA.filter(x=>{
+    if(fc&&x.country!==fc) return false;
+    if(fr&&x.result!==fr) return false;
+    if(ff && !(x.deficiencies||[]).some(d=>(d.field||"").trim()===ff)) return false;
+    if(q){
+      const hay=(x.site+" "+x.address+" "+x.country+" "+(x.deficiencies||[]).map(d=>d.summary+" "+d.law).join(" ")).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  view.sort((a,b)=>{
+    let av=a[sortKey], bv=b[sortKey];
+    if(sortKey==="seq"||sortKey==="defCount"){av=+av;bv=+bv; return (av-bv)*sortDir;}
+    av=(av==null?"":String(av)); bv=(bv==null?"":String(bv));
+    return av.localeCompare(bv,"ko")*sortDir;
+  });
+  document.querySelectorAll("thead th[data-sort] .arw").forEach(a=>a.textContent="");
+  const th=document.querySelector(`thead th[data-sort="${sortKey}"] .arw`); if(th)th.textContent=sortDir>0?" ▲":" ▼";
+  $("#count").textContent=`${view.length.toLocaleString()}건 표시 / 전체 ${DATA.length.toLocaleString()}건`;
+  renderTable();
+}
+
+function renderTable(){
+  const pages=Math.max(1,Math.ceil(view.length/per));
+  if(page>pages)page=pages;
+  const rows=view.slice((page-1)*per,page*per);
+  const tb=$("#tbody");
+  if(!rows.length){tb.innerHTML='<tr><td colspan="6" class="none">조건에 맞는 결과가 없습니다.</td></tr>';$("#pager").innerHTML="";return;}
+  tb.innerHTML=rows.map(x=>{
+    const badge=x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`;
+    return `<tr class="main" data-id="${esc(x.docId)}">
+      <td class="num"><span class="chev">▸</span> ${x.seq}</td>
+      <td class="num">${esc(x.regDate)}</td>
+      <td>${esc(x.country)}</td>
+      <td class="site">${esc(x.site)}<div class="addr">${esc(x.address)}</div></td>
+      <td>${badge}</td>
+      <td class="num">${x.defCount||0}</td>
+    </tr>
+    <tr class="detail" data-for="${esc(x.docId)}" style="display:none"><td colspan="6"><div class="inner">${detailHtml(x)}</div></td></tr>`;
+  }).join("");
+  tb.querySelectorAll("tr.main").forEach(tr=>tr.onclick=()=>{
+    const d=tb.querySelector(`tr.detail[data-for="${CSS.escape(tr.dataset.id)}"]`);
+    const open=d.style.display!=="none"; d.style.display=open?"none":"table-row"; tr.classList.toggle("open",!open);
+  });
+  renderPager(pages);
+}
+
+function detailHtml(x){
+  let h="";
+  if((x.deficiencies||[]).length){
+    h+=`<table class="deftable"><thead><tr><th>분야</th><th>구분</th><th>근거법령</th><th>지적(보완)사항 요약</th><th>비고</th></tr></thead><tbody>`;
+    h+=x.deficiencies.map(d=>`<tr>
+      <td class="fld">${esc(d.field)}</td><td class="fld">${esc(d.gubun)}</td>
+      <td class="law">${esc(d.law)}</td><td>${esc(d.summary)}</td>
+      <td class="rmk">${esc(d.remark)}</td></tr>`).join("");
+    h+=`</tbody></table>`;
+  } else {
+    h+=`<div class="none">지적(보완)사항 없음 — 적합 판정.</div>`;
+  }
+  const period=(x.inspStart||"")+(x.inspEnd&&x.inspEnd!==x.inspStart?" ~ "+x.inspEnd:"");
+  h+=`<a class="dl" href="${DOWN_BASE}${esc(x.docId)}" target="_blank" rel="noopener">⬇ 원본 실사결과서 (PDF)</a>`;
+  if(period) h+=`<span style="color:var(--ink-3);font-size:12px;margin-left:12px">실사기간: ${esc(period)} · 구분: ${esc(x.prePost)} · ${esc(x.type)}</span>`;
+  return h;
+}
+
+function renderPager(pages){
+  if(pages<=1){$("#pager").innerHTML="";return;}
+  const btn=(p,l,cur,dis)=>`<button ${dis?"disabled":""} class="${cur?'cur':''}" data-p="${p}">${l}</button>`;
+  let h=btn(page-1,"‹",false,page===1);
+  const win=2; const set=new Set([1,pages,page]);
+  for(let i=page-win;i<=page+win;i++) if(i>=1&&i<=pages)set.add(i);
+  const arr=[...set].sort((a,b)=>a-b); let prev=0;
+  for(const p of arr){ if(p-prev>1)h+=`<button disabled>…</button>`; h+=btn(p,p,p===page,false); prev=p; }
+  h+=btn(page+1,"›",false,page===pages);
+  $("#pager").innerHTML=h;
+  $("#pager").querySelectorAll("button[data-p]").forEach(b=>b.onclick=()=>{page=+b.dataset.p;renderTable();scrollTo({top:$(".filters").offsetTop-10,behavior:"smooth"});});
+}
+
+// tooltip for bars
+const tt=$("#tt");
+document.addEventListener("mousemove",e=>{
+  const el=e.target.closest("[data-tip]");
+  if(el){tt.textContent=el.dataset.tip;tt.style.opacity="1";tt.style.left=(e.clientX+12)+"px";tt.style.top=(e.clientY+12)+"px";}
+  else tt.style.opacity="0";
+});
+</script>
+</body>
+</html>
