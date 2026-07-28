@@ -23,7 +23,13 @@ const cur = JSON.parse(fs.readFileSync(CUR, "utf8"));
 let prev = [];
 try { if (prevPath && fs.existsSync(prevPath)) prev = JSON.parse(fs.readFileSync(prevPath, "utf8")); } catch {}
 const prevIds = new Set(prev.map(r => r.docId));
-const fresh = cur.filter(r => !prevIds.has(r.docId));
+let fresh = cur.filter(r => !prevIds.has(r.docId));
+
+// Test mode: SAMPLE=<n> forces a sample email from the first n records
+// (used for manual end-to-end delivery tests; never triggered by real updates).
+const SAMPLE = parseInt(process.env.SAMPLE || "0", 10);
+let isSample = false;
+if (SAMPLE > 0) { fresh = cur.slice(0, SAMPLE); isSample = true; }
 
 if (fresh.length === 0) {
   fs.writeFileSync(path.join(ROOT, "email-payload.json"), "{}");
@@ -53,7 +59,7 @@ const rowsHtml = fresh.map(r => {
   </tr>`;
 }).join("");
 
-const subject = `[GMP 실사결과] 신규 ${fresh.length}건 등록 (지적 ${withDef}곳 · ${items}항목)`;
+const subject = `${isSample ? "[테스트] " : ""}[GMP 실사결과] 신규 ${fresh.length}건 등록 (지적 ${withDef}곳 · ${items}항목)`;
 const html = `<div style="font-family:'Malgun Gothic',Apple SD Gothic Neo,sans-serif;max-width:760px;margin:0 auto;color:#1a2733">
   <h2 style="font-size:18px;margin:0 0 4px">의약품등 GMP 실사 결과공개 — 신규 갱신 알림</h2>
   <p style="color:#666;font-size:13px;margin:0 0 16px">최신 등록일 ${esc(today)} 기준 · 새로 추가된 <b>${fresh.length}건</b> (지적사항 있는 곳 ${withDef}, 총 지적항목 ${items})</p>

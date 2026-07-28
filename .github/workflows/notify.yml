@@ -4,7 +4,12 @@ on:
   push:
     branches: [main]
     paths: ['public/data.json']
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 diff)'
+        required: false
+        default: '0'
 
 jobs:
   email:
@@ -21,6 +26,7 @@ jobs:
       - name: Build email payload (diff vs previous)
         env:
           RECIPIENT: ${{ vars.RECIPIENT }}
+          SAMPLE: ${{ github.event.inputs.sample }}
         run: node scripts/build-email.mjs prev-data.json | tee build.out
       - name: Send email via Resend (only if new records)
         env:
