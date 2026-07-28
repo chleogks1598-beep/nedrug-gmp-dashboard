@@ -1,51 +1,15 @@
 [
   {
-    "key": "20260135/2",
-    "infoNo": "20260135",
-    "infoClassCode": "2",
-    "title": "세프카펜피복실 및 세프디토렌피복실 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-07-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260135&infoClassCode=2"
-  },
-  {
-    "key": "20260113/3",
-    "infoNo": "20260113",
+    "key": "20260138/3",
+    "infoNo": "20260138",
     "infoClassCode": "3",
-    "title": "트라넥삼산 성분 제제",
-    "type": "안전성 정보",
+    "title": "두타스테리드(연질캡슐(액상)_필름코팅정_0.5밀리그램) 허가사항 변경명령(통일조정) 사전통지",
+    "type": "통일조정(안전성·유효성 심사)",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-07-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260113&infoClassCode=3"
-  },
-  {
-    "key": "20260159/2",
-    "infoNo": "20260159",
-    "infoClassCode": "2",
-    "title": "디곡신 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-07-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260159&infoClassCode=2"
-  },
-  {
-    "key": "20260107/3",
-    "infoNo": "20260107",
-    "infoClassCode": "3",
-    "title": "페티딘 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-07-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260107&infoClassCode=3"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260138&infoClassCode=3"
   },
   {
     "key": "20260112/3",
@@ -60,6 +24,42 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260112&infoClassCode=3"
   },
   {
+    "key": "20260113/3",
+    "infoNo": "20260113",
+    "infoClassCode": "3",
+    "title": "트라넥삼산 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-07-28",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260113&infoClassCode=3"
+  },
+  {
+    "key": "20260107/3",
+    "infoNo": "20260107",
+    "infoClassCode": "3",
+    "title": "페티딘 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-07-28",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260107&infoClassCode=3"
+  },
+  {
+    "key": "20260135/2",
+    "infoNo": "20260135",
+    "infoClassCode": "2",
+    "title": "세프카펜피복실 및 세프디토렌피복실 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-07-28",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260135&infoClassCode=2"
+  },
+  {
     "key": "20260109/3",
     "infoNo": "20260109",
     "infoClassCode": "3",
@@ -70,6 +70,18 @@
     "stage": "사전예고",
     "regDate": "2026-07-28",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260109&infoClassCode=3"
+  },
+  {
+    "key": "20260159/2",
+    "infoNo": "20260159",
+    "infoClassCode": "2",
+    "title": "디곡신 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-07-28",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260159&infoClassCode=2"
   },
   {
     "key": "20260134/3",
@@ -168,28 +180,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260156&infoClassCode=2"
   },
   {
-    "key": "20260080/4",
-    "infoNo": "20260080",
-    "infoClassCode": "4",
-    "title": "발프로산 성분 제제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-10-16",
-    "stage": "변경명령",
-    "regDate": "2026-07-16",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260080&infoClassCode=4"
-  },
-  {
-    "key": "20260111/3",
-    "infoNo": "20260111",
+    "key": "20260126/3",
+    "infoNo": "20260126",
     "infoClassCode": "3",
-    "title": "트라메티닙 성분 제제",
+    "title": "로메플록사신 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-07-16",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260111&infoClassCode=3"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260126&infoClassCode=3"
   },
   {
     "key": "20260102/3",
@@ -228,6 +228,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260125&infoClassCode=3"
   },
   {
+    "key": "20260080/4",
+    "infoNo": "20260080",
+    "infoClassCode": "4",
+    "title": "발프로산 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-10-16",
+    "stage": "변경명령",
+    "regDate": "2026-07-16",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260080&infoClassCode=4"
+  },
+  {
     "key": "20260119/4",
     "infoNo": "20260119",
     "infoClassCode": "4",
@@ -252,16 +264,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260087&infoClassCode=3"
   },
   {
-    "key": "20260126/3",
-    "infoNo": "20260126",
+    "key": "20260111/3",
+    "infoNo": "20260111",
     "infoClassCode": "3",
-    "title": "로메플록사신 성분 제제",
+    "title": "트라메티닙 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-07-16",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260126&infoClassCode=3"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260111&infoClassCode=3"
   },
   {
     "key": "20260143/2",
@@ -286,18 +298,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-07-14",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260142&infoClassCode=2"
-  },
-  {
-    "key": "20260138/2",
-    "infoNo": "20260138",
-    "infoClassCode": "2",
-    "title": "두타스테리드(연질캡슐(액상)_필름코팅정_0.5밀리그램) 허가사항 변경명령(통일조정)을 위한 의견조회",
-    "type": "통일조정(안전성·유효성 심사)",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-07-14",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260138&infoClassCode=2"
   },
   {
     "key": "20260141/2",
@@ -372,18 +372,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260088&infoClassCode=4"
   },
   {
-    "key": "20260097/4",
-    "infoNo": "20260097",
-    "infoClassCode": "4",
-    "title": "타크로리무스 성분 제제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-09-28",
-    "stage": "변경명령",
-    "regDate": "2026-06-24",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260097&infoClassCode=4"
-  },
-  {
     "key": "20260106/4",
     "infoNo": "20260106",
     "infoClassCode": "4",
@@ -394,6 +382,18 @@
     "stage": "변경명령",
     "regDate": "2026-06-24",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260106&infoClassCode=4"
+  },
+  {
+    "key": "20260097/4",
+    "infoNo": "20260097",
+    "infoClassCode": "4",
+    "title": "타크로리무스 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-09-28",
+    "stage": "변경명령",
+    "regDate": "2026-06-24",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260097&infoClassCode=4"
   },
   {
     "key": "20260095/4",
