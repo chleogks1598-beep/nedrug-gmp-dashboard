@@ -1,0 +1,27 @@
+name: Keep-alive (예약 워크플로우 자동중지 방지)
+
+# GitHub은 '예약(cron) 워크플로우'를 저장소에 60일간 커밋이 없으면 자동 비활성화한다.
+# 이 워크플로우가 2주마다 사소한 커밋(.keepalive)을 남겨 그 타이머를 리셋한다.
+# 커밋 메시지의 [skip ci]로 pages/notify 등 push 트리거 워크플로우는 실행되지 않는다.
+
+on:
+  schedule:
+    - cron: '23 5 3,18 * *'   # 매월 3일·18일 05:23 UTC (약 2주 간격, <60일)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Touch keepalive & commit
+        run: |
+          date -u +"keep-alive: %Y-%m-%dT%H:%M:%SZ" > .keepalive
+          git config user.name "nedrug-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add .keepalive
+          git commit -m "chore: keep-alive [skip ci]" || { echo "변경 없음"; exit 0; }
+          git push
