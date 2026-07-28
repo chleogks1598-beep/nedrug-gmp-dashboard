@@ -3,7 +3,12 @@ name: Monitor 변경명령 (CCBAR01F012)
 on:
   schedule:
     - cron: '0 * * * *'   # 매시간 정각 (UTC) — 사실상 매시간
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 감시)'
+        required: false
+        default: '0'
 
 permissions:
   contents: write
@@ -22,6 +27,8 @@ jobs:
           node-version: 20
       - name: Fetch & diff 변경명령
         id: mon
+        env:
+          SAMPLE: ${{ github.event.inputs.sample }}
         run: node scripts/change-orders.mjs
       - name: Send email via Gmail SMTP
         if: steps.mon.outputs.send == 'true'

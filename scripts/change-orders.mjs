@@ -69,6 +69,34 @@ async function main() {
   if (cur.length < 50) throw new Error("suspiciously few rows: " + cur.length);
   fs.writeFileSync(CURFILE, JSON.stringify(cur, null, 2));
 
+  // 테스트 발송 모드: SAMPLE=N → 최근 N건으로 샘플 메일 (기준선 미변경)
+  const SAMPLE = parseInt(process.env.SAMPLE || "0", 10);
+  if (SAMPLE > 0) {
+    let rcpt = [];
+    try { rcpt = JSON.parse(fs.readFileSync(RECIP, "utf8")).filter(x => typeof x === "string" && x.includes("@")); } catch {}
+    if (rcpt.length === 0) { emit({ send: "false", promote: "false" }); console.log("SAMPLE: 수신자 없음"); return; }
+    const items = cur.slice(0, SAMPLE);
+    const rows = items.map(r => `<tr>
+      <td style="padding:9px 12px;border-bottom:1px solid #eee;vertical-align:top">
+        <a href="${esc(r.url)}" style="font-weight:700;color:#1367d6;text-decoration:none">${esc(r.title)}</a>
+        <div style="color:#888;font-size:12px;margin-top:2px">${esc(r.type)} · 최초등록 ${esc(r.regDate)}</div>
+      </td>
+      <td style="padding:9px 12px;border-bottom:1px solid #eee;white-space:nowrap;color:#c2410c;font-weight:700">${esc(r.stage)}</td>
+    </tr>`).join("");
+    const subject = `[테스트] [의약품 변경명령] 발송 확인 (최근 ${items.length}건)`;
+    const html = `<div style="font-family:'Malgun Gothic',Apple SD Gothic Neo,sans-serif;max-width:760px;margin:0 auto;color:#1a2733">
+      <h2 style="font-size:18px;margin:0 0 4px">✅ 변경명령 알림 — 테스트 메일</h2>
+      <p style="color:#666;font-size:13px;margin:0 0 16px">이 메일은 <b>발송 동작 확인용 테스트</b>입니다. 앞으로 실제로 신규 변경명령이 등록되거나 진행단계가 바뀌면 이런 형식으로 자동 발송됩니다. (아래는 현재 목록의 최근 ${items.length}건 예시)</p>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;border-top:2px solid #1a2733">${rows}</table>
+      <p style="margin:18px 0 0;font-size:13px"><a href="${LIST_URL}" style="background:#1367d6;color:#fff;padding:9px 16px;border-radius:8px;text-decoration:none;font-weight:700">변경명령 목록 열기 →</a></p>
+      <p style="color:#aaa;font-size:11px;margin-top:20px">식약처 의약품안전나라 공개데이터 자동 모니터링 알림입니다.</p>
+    </div>`;
+    fs.writeFileSync(path.join(ROOT, "co-email-body.html"), html);
+    emit({ send: "true", subject, to: rcpt.join(","), promote: "false" });
+    console.log(`SAMPLE SEND=true ${items.length}건 → ${rcpt.join(",")}`);
+    return;
+  }
+
   if (!fs.existsSync(SNAP)) {
     emit({ send: "false", promote: "true" });
     console.log(`SEED: 기준선 없음 → 이번 실행에서 baseline 설정 (${cur.length}건). 메일 없음.`);
