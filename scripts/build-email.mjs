@@ -1,9 +1,11 @@
-// Compare current public/data.json against a previous snapshot and build a
-// Resend email payload summarizing NEWLY ADDED records.
+// Compare current public/data.json against a previous snapshot and build the
+// email (subject + HTML body + recipient list) summarizing NEWLY ADDED records.
 //
 // Usage: node scripts/build-email.mjs <prevJsonPath>
-// Env:   RECIPIENT (to address). FROM defaults to onboarding@resend.dev.
-// Output: writes ./email-payload.json (Resend body) and prints "SEND=true|false N=<n>".
+// Env:   SAMPLE=<n>  -> test mode: force a sample email from the first n records
+//        GITHUB_OUTPUT -> when set (in Actions), writes send/subject/to outputs
+// Files: recipients.json (repo root) = ["a@x.com", ...]
+// Output: writes ./email-body.html ; prints "SEND=true|false N=<n>"
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -11,13 +13,17 @@ import { fileURLToPath } from "url";
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
 const CUR = path.join(ROOT, "public", "data.json");
+const RECIP = path.join(ROOT, "recipients.json");
 const prevPath = process.argv[2];
 const SITE = "https://chleogks1598-beep.github.io/nedrug-gmp-dashboard/";
 const DOWN = "https://nedrug.mfds.go.kr/cmn/edms/down/";
-const TO = process.env.RECIPIENT || "han1598@gccorp.com";
-const FROM = process.env.MAIL_FROM || "GMP 실사알림 <onboarding@resend.dev>";
 
 const esc = s => (s == null ? "" : String(s)).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+// recipients
+let recipients = [];
+try { recipients = JSON.parse(fs.readFileSync(RECIP, "utf8")).filter(x => typeof x === "string" && x.includes("@")); } catch {}
+if (recipients.length === 0 && process.env.RECIPIENT) recipients = [process.env.RECIPIENT];
 
 const cur = JSON.parse(fs.readFileSync(CUR, "utf8"));
 let prev = [];
@@ -25,15 +31,25 @@ try { if (prevPath && fs.existsSync(prevPath)) prev = JSON.parse(fs.readFileSync
 const prevIds = new Set(prev.map(r => r.docId));
 let fresh = cur.filter(r => !prevIds.has(r.docId));
 
-// Test mode: SAMPLE=<n> forces a sample email from the first n records
-// (used for manual end-to-end delivery tests; never triggered by real updates).
+// test mode
 const SAMPLE = parseInt(process.env.SAMPLE || "0", 10);
 let isSample = false;
 if (SAMPLE > 0) { fresh = cur.slice(0, SAMPLE); isSample = true; }
 
+function emitOutput(obj) {
+  if (!process.env.GITHUB_OUTPUT) return;
+  const lines = Object.entries(obj).map(([k, v]) => `${k}=${v}`).join("\n") + "\n";
+  fs.appendFileSync(process.env.GITHUB_OUTPUT, lines);
+}
+
 if (fresh.length === 0) {
-  fs.writeFileSync(path.join(ROOT, "email-payload.json"), "{}");
+  emitOutput({ send: "false" });
   console.log("SEND=false N=0");
+  process.exit(0);
+}
+if (recipients.length === 0) {
+  emitOutput({ send: "false" });
+  console.log("SEND=false N=" + fresh.length + " (수신자 없음: recipients.json 확인)");
   process.exit(0);
 }
 
@@ -68,6 +84,6 @@ const html = `<div style="font-family:'Malgun Gothic',Apple SD Gothic Neo,sans-s
   <p style="color:#aaa;font-size:11px;margin-top:20px">식약처 의약품안전나라 공개데이터를 자동 정리한 참고용 알림입니다. 정확한 내용은 원본 문서를 확인하세요.</p>
 </div>`;
 
-const payload = { from: FROM, to: [TO], subject, html };
-fs.writeFileSync(path.join(ROOT, "email-payload.json"), JSON.stringify(payload, null, 2));
-console.log(`SEND=true N=${fresh.length}`);
+fs.writeFileSync(path.join(ROOT, "email-body.html"), html);
+emitOutput({ send: "true", subject, to: recipients.join(",") });
+console.log(`SEND=true N=${fresh.length} TO=${recipients.join(",")}`);

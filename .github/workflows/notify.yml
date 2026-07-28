@@ -23,23 +23,24 @@ jobs:
           node-version: 20
       - name: Snapshot previous data.json
         run: git show HEAD~1:public/data.json > prev-data.json || echo "[]" > prev-data.json
-      - name: Build email payload (diff vs previous)
+      - name: Build email (diff vs previous)
+        id: build
         env:
-          RECIPIENT: ${{ vars.RECIPIENT }}
           SAMPLE: ${{ github.event.inputs.sample }}
         run: node scripts/build-email.mjs prev-data.json | tee build.out
-      - name: Send email via Resend (only if new records)
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: |
-          if grep -q "SEND=true" build.out; then
-            echo "Sending update email…"
-            code=$(curl -sS -o resp.json -w "%{http_code}" -X POST https://api.resend.com/emails \
-              -H "Authorization: Bearer $RESEND_API_KEY" \
-              -H "Content-Type: application/json" \
-              -d @email-payload.json)
-            echo "Resend HTTP $code"; cat resp.json
-            test "$code" = "200"
-          else
-            echo "No new records — skipping email."
-          fi
+      - name: Send email via Gmail SMTP
+        if: steps.build.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: GMP 실사알림 <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.build.outputs.to }}
+          subject: ${{ steps.build.outputs.subject }}
+          html_body: file://email-body.html
+      - name: No email needed
+        if: steps.build.outputs.send != 'true'
+        run: echo "신규 레코드 없음 — 메일 발송 생략."
