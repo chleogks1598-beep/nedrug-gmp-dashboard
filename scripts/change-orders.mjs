@@ -53,8 +53,25 @@ function emit(obj) {
   fs.appendFileSync(process.env.GITHUB_OUTPUT, Object.entries(obj).map(([k, v]) => `${k}=${v}`).join("\n") + "\n");
 }
 
+async function fetchRetry(url, opts, tries = 6) {
+  let last;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const r = await fetch(url, { ...opts, signal: AbortSignal.timeout(30000) });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r;
+    } catch (e) {
+      last = e;
+      const c = e && e.cause ? (e.cause.code || e.cause.message) : e.message;
+      console.log(`  fetch 시도 ${i + 1}/${tries} 실패(${c}) — 재시도`);
+      await new Promise(s => setTimeout(s, 3000 * (i + 1)));
+    }
+  }
+  throw last;
+}
+
 async function main() {
-  const res = await fetch(LIST_URL, {
+  const res = await fetchRetry(LIST_URL, {
     method: "POST",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
@@ -64,7 +81,6 @@ async function main() {
     },
     body: "keyword=&page=1&limit=100000&title=&registDateStart=&registDateEnd=&searchYn=&sort=&sortOrder=",
   });
-  if (!res.ok) throw new Error("getList HTTP " + res.status);
   const cur = parseList(await res.text());
   if (cur.length < 50) throw new Error("suspiciously few rows: " + cur.length);
   fs.writeFileSync(CURFILE, JSON.stringify(cur, null, 2));

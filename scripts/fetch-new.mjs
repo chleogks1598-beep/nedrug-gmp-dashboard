@@ -66,18 +66,29 @@ function pdfToText(file) {
   }
 }
 
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
+async function fetchRetry(url, opts, tries = 6) {
+  let last;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const r = await fetch(url, { ...opts, headers: { "user-agent": UA, ...(opts.headers || {}) }, signal: AbortSignal.timeout(30000) });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r;
+    } catch (e) { last = e; await new Promise(s => setTimeout(s, 3000 * (i + 1))); }
+  }
+  throw last;
+}
+
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
-  const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
-  const res = await fetch(LIST_URL, {
+  const res = await fetchRetry(LIST_URL, {
     method: "POST",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
-      "user-agent": UA, "accept": "text/html,application/xhtml+xml", "accept-language": "ko-KR,ko;q=0.9",
+      "accept": "text/html,application/xhtml+xml", "accept-language": "ko-KR,ko;q=0.9",
     },
     body: "keyword=&page=1&limit=100000&sort=&sortOrder=&searchYn=&mnfctrName=&countryName=&startDate=&endDate=",
   });
-  if (!res.ok) throw new Error("getList HTTP " + res.status);
   const html = await res.text();
   const list = parseList(html);
   if (list.length < 100) throw new Error("suspiciously few records: " + list.length);
@@ -89,8 +100,9 @@ async function main() {
 
   const manifest = [];
   for (const r of fresh) {
-    const dres = await fetch(DOWN + r.docId, { headers: { "user-agent": UA } });
-    const buf = Buffer.from(await dres.arrayBuffer());
+    let buf;
+    try { const dres = await fetchRetry(DOWN + r.docId, {}); buf = Buffer.from(await dres.arrayBuffer()); }
+    catch (e) { console.log("다운로드 실패 skip:", r.docId, e.message); continue; }
     const isZip = buf.slice(0, 2).toString() === "PK";
     const ext = isZip ? "hwpx" : "pdf";
     const file = path.join(OUT, r.docId + "." + ext);
