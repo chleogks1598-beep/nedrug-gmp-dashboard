@@ -1,0 +1,51 @@
+name: Monitor 변경명령 (CCBAR01F012)
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # 매시간 정각 (UTC) — 사실상 매시간
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: change-orders
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch & diff 변경명령
+        id: mon
+        run: node scripts/change-orders.mjs
+      - name: Send email via Gmail SMTP
+        if: steps.mon.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: 변경명령 알림 <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.mon.outputs.to }}
+          subject: ${{ steps.mon.outputs.subject }}
+          html_body: file://co-email-body.html
+      - name: Promote baseline & commit
+        if: success() && steps.mon.outputs.promote == 'true'
+        run: |
+          cp change-orders.current.json change-orders.json
+          if ! git diff --quiet change-orders.json; then
+            git config user.name "nedrug-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add change-orders.json
+            git commit -m "monitor: 변경명령 스냅샷 갱신"
+            git push
+          else
+            echo "기준선 변화 없음 — 커밋 생략."
+          fi

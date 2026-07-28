@@ -4,5 +4,11 @@ public/data.bak.json
 .vercel
 .DS_Store
 *.log
+# ephemeral working files (generated in CI, not committed)
+change-orders.current.json
+co-email-body.html
+email-body.html
+email-payload.json
+prev-data.json
 
 .vercel
