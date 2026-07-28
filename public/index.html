@@ -127,8 +127,24 @@
   .pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
   .pager button:disabled{opacity:.4;cursor:default}
   .pager button.cur{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  .ghead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+  .ghead h2{font-size:14px;margin:0;font-weight:700}
+  .gtabs{display:flex;gap:3px;background:var(--surface-2);border-radius:8px;padding:3px}
+  .gtab{border:0;background:transparent;color:var(--ink-2);padding:6px 13px;border-radius:6px;font-size:12.5px;cursor:pointer;font-family:inherit}
+  .gtab.active{background:var(--surface);color:var(--accent);font-weight:700;box-shadow:var(--shadow)}
+  .bars.wide .barrow{grid-template-columns:150px 1fr 52px}
+  .barrow.clk{cursor:pointer;border-radius:5px}
+  .barrow.clk:hover{background:var(--surface-2)}
+  .barrow.clk:hover .lbl{color:var(--accent)}
+  .barrow.sel .fill{background:var(--warn)}
+  .barrow.sel .lbl{color:var(--warn);font-weight:700}
+  .gchip{display:inline-flex;align-items:center;gap:7px;background:var(--warn-soft);color:var(--warn);
+    border-radius:20px;padding:5px 12px;font-size:12.5px;font-weight:700;cursor:pointer;border:0}
+  .gchip .x{font-weight:900}
+  .deftable tr.hit td{background:var(--accent-soft)}
   @media (max-width:900px){ .tiles{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr} }
-  @media (max-width:560px){ td.site .addr{display:none} .barrow{grid-template-columns:80px 1fr 40px} }
+  @media (max-width:560px){ td.site .addr{display:none} .barrow{grid-template-columns:80px 1fr 40px} .bars.wide .barrow{grid-template-columns:110px 1fr 44px} }
 </style>
 </head>
 <body>
@@ -158,6 +174,17 @@
     </div>
   </section>
 
+  <section class="card" id="groupCard">
+    <div class="ghead">
+      <h2>유사 지적사항 빈도 <span class="muted" style="font-weight:500;color:var(--ink-3)">— 막대를 클릭하면 해당 지적사항만 아래 표에 필터됩니다</span></h2>
+      <div class="gtabs">
+        <button class="gtab active" data-view="topic">주제별</button>
+        <button class="gtab" data-view="law">근거법령별</button>
+      </div>
+    </div>
+    <div class="bars wide" id="groupBars"></div>
+  </section>
+
   <section>
     <div class="filters">
       <input id="q" type="search" placeholder="제조소명·소재지·지적사항 내용 검색…">
@@ -168,6 +195,7 @@
         <option value="지적사항 있음">지적사항 있음</option>
         <option value="적합">적합</option>
       </select>
+      <button class="gchip" id="gchip" style="display:none"></button>
       <span class="count" id="count"></span>
     </div>
     <div class="tablewrap">
@@ -200,6 +228,42 @@ let DATA=[], view=[], page=1, per=25, sortKey="regDate", sortDir=-1;
 const $=s=>document.querySelector(s);
 const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
+// ── 유사 지적사항 그룹핑 ──
+let activeGroup=null, groupView="topic";
+const TAXONOMY=[
+  {label:"밸리데이션·적격성",kw:["밸리데이션","적격성","검증"]},
+  {label:"세척관리",kw:["세척"]},
+  {label:"데이터 완전성",kw:["데이터","완전성"]},
+  {label:"시험·검체 관리",kw:["시험","검체","시험법","역가","함량","순도","시액","표준품"]},
+  {label:"교정·계측",kw:["교정","계측","눈금"]},
+  {label:"문서·기록 관리",kw:["문서","기록","기준서","절차서","대장","일지","성적서"]},
+  {label:"공급업체·원자재",kw:["공급업체","공급자","원자재","주성분","원료","공급","입고"]},
+  {label:"환경·청정관리",kw:["환경","청정","차압","온습도","방충","방서","모니터링","무균","공조"]},
+  {label:"교육·훈련",kw:["교육","훈련"]},
+  {label:"안정성시험",kw:["안정성"]},
+  {label:"제조공정·칭량",kw:["공정","칭량","혼합","건조"]},
+  {label:"시설·설비·기기",kw:["시설","설비","기기","장비","용수","제조용수"]},
+  {label:"변경·일탈·CAPA",kw:["변경관리","변경","일탈","시정","예방조치","capa","재발"]},
+  {label:"자율점검·품질평가",kw:["자율점검","품질평가","연간품질","품질경영","품질검토","경영검토"]},
+  {label:"포장·표시·라벨",kw:["포장","표시","라벨"]},
+  {label:"보관·창고",kw:["보관","창고","저장"]},
+  {label:"컴퓨터시스템",kw:["컴퓨터","전산","시스템"]},
+  {label:"위생·복장",kw:["위생","복장","가운","갱의","손소독","마스크"]},
+];
+const normLaw=s=>(s||"").replace(/[가-힣]목/g,"").replace(/\s|제|호|[\[\]]/g,"");
+function lawDisplay(s){
+  s=s||"";
+  const b=s.match(/별표\s*([0-9의]+)/), c=s.match(/([0-9]+(?:\.[0-9]+)+)\s*호?/) || s.match(/제\s*([0-9]+)\s*호/);
+  if(b&&c) return `별표 ${b[1]} · ${c[1]}호`;
+  return s.length>26?s.slice(0,26)+"…":s;
+}
+const defText=d=>((d.field||"")+" "+(d.summary||"")).toLowerCase();
+function defInGroup(d,g){
+  if(!g) return true;
+  if(g.type==="topic") { const t=defText(d); return (g.kw||[]).some(k=>t.includes(k.toLowerCase())); }
+  return normLaw(d.law)===g.key;
+}
+
 // theme toggle
 const themeBtn=$("#themeBtn");
 themeBtn.onclick=()=>{
@@ -217,7 +281,53 @@ function init(){
   const maxD=DATA.map(x=>x.regDate).filter(Boolean).sort().pop()||"—";
   $("#updated").textContent=maxD;
   renderTiles(); renderCharts(); fillSelects(); bindFilters();
+  renderGroups(); bindGroups();
   apply();
+}
+
+function computeTopicRows(){
+  const c=TAXONOMY.map(t=>({label:t.label,kw:t.kw,type:"topic",key:t.label,v:0}));
+  for(const x of DATA) for(const d of (x.deficiencies||[])){ const t=defText(d);
+    c.forEach(o=>{ if(o.kw.some(k=>t.includes(k.toLowerCase()))) o.v++; }); }
+  return c.filter(o=>o.v>0).sort((a,b)=>b.v-a.v);
+}
+function computeLawRows(){
+  const m={};
+  for(const x of DATA) for(const d of (x.deficiencies||[])){ if(!d.law) continue; const k=normLaw(d.law); if(!k) continue;
+    if(!m[k]) m[k]={v:0,disp:lawDisplay(d.law)}; m[k].v++; }
+  return Object.entries(m).map(([k,o])=>({label:o.disp,type:"law",key:k,v:o.v})).sort((a,b)=>b.v-a.v).slice(0,15);
+}
+function renderGroups(){
+  const rows=groupView==="topic"?computeTopicRows():computeLawRows();
+  const max=Math.max(1,...rows.map(r=>r.v));
+  const el=$("#groupBars");
+  el.innerHTML=rows.map(r=>{
+    const sel=activeGroup&&activeGroup.type===r.type&&activeGroup.key===r.key;
+    return `<div class="barrow clk ${sel?'sel':''}" data-gtype="${esc(r.type)}" data-gkey="${esc(r.key)}" data-tip="${esc(r.label)}: ${r.v}건 (클릭하면 필터)">
+      <span class="lbl" title="${esc(r.label)}">${esc(r.label)}</span>
+      <span class="track"><span class="fill" style="width:${(r.v/max*100).toFixed(1)}%"></span></span>
+      <span class="val">${r.v.toLocaleString()}</span></div>`;
+  }).join("");
+  el.querySelectorAll(".barrow.clk").forEach(b=>b.onclick=()=>{
+    const row=rows.find(r=>r.type===b.dataset.gtype&&r.key===b.dataset.gkey); if(row) setGroup(row);
+  });
+}
+function setGroup(row){
+  if(activeGroup&&activeGroup.type===row.type&&activeGroup.key===row.key) activeGroup=null;
+  else activeGroup={type:row.type,key:row.key,label:row.label,kw:row.kw||[]};
+  page=1; renderGroups(); updateChip(); apply();
+}
+function updateChip(){
+  const c=$("#gchip");
+  if(activeGroup){ c.style.display="inline-flex"; c.innerHTML=`유형: ${esc(activeGroup.label)} <span class="x">✕</span>`; }
+  else c.style.display="none";
+}
+function bindGroups(){
+  document.querySelectorAll(".gtab").forEach(t=>t.onclick=()=>{
+    document.querySelectorAll(".gtab").forEach(x=>x.classList.remove("active"));
+    t.classList.add("active"); groupView=t.dataset.view; renderGroups();
+  });
+  $("#gchip").onclick=()=>{ activeGroup=null; renderGroups(); updateChip(); page=1; apply(); };
 }
 
 function renderTiles(){
@@ -274,6 +384,7 @@ function apply(){
     if(fc&&x.country!==fc) return false;
     if(fr&&x.result!==fr) return false;
     if(ff && !(x.deficiencies||[]).some(d=>(d.field||"").trim()===ff)) return false;
+    if(activeGroup && !(x.deficiencies||[]).some(d=>defInGroup(d,activeGroup))) return false;
     if(q){
       const hay=(x.site+" "+x.address+" "+x.country+" "+(x.deficiencies||[]).map(d=>d.summary+" "+d.law).join(" ")).toLowerCase();
       if(!hay.includes(q)) return false;
@@ -321,7 +432,7 @@ function detailHtml(x){
   let h="";
   if((x.deficiencies||[]).length){
     h+=`<table class="deftable"><thead><tr><th>분야</th><th>구분</th><th>근거법령</th><th>지적(보완)사항 요약</th><th>비고</th></tr></thead><tbody>`;
-    h+=x.deficiencies.map(d=>`<tr>
+    h+=x.deficiencies.map(d=>`<tr class="${activeGroup&&defInGroup(d,activeGroup)?'hit':''}">
       <td class="fld">${esc(d.field)}</td><td class="fld">${esc(d.gubun)}</td>
       <td class="law">${esc(d.law)}</td><td>${esc(d.summary)}</td>
       <td class="rmk">${esc(d.remark)}</td></tr>`).join("");
