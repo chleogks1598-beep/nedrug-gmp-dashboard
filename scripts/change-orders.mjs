@@ -56,7 +56,12 @@ function emit(obj) {
 async function main() {
   const res = await fetch(LIST_URL, {
     method: "POST",
-    headers: { "content-type": "application/x-www-form-urlencoded" },
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+      "accept": "text/html,application/xhtml+xml",
+      "accept-language": "ko-KR,ko;q=0.9",
+    },
     body: "keyword=&page=1&limit=100000&title=&registDateStart=&registDateEnd=&searchYn=&sort=&sortOrder=",
   });
   if (!res.ok) throw new Error("getList HTTP " + res.status);
@@ -130,4 +135,8 @@ async function main() {
   emit({ send: "true", subject, to: recipients.join(","), promote: "true" });
   console.log(`SEND=true 신규 ${fresh.length} 변경 ${changed.length} → ${recipients.join(",")}`);
 }
-main().catch(e => { console.error("CO_ERROR:", e.message); process.exit(1); });
+main().catch(e => {
+  const cause = e && e.cause ? (e.cause.code || e.cause.message || String(e.cause)) : "";
+  console.error("CO_ERROR:", e.message, cause ? "| cause: " + cause : "");
+  process.exit(1);
+});
