@@ -1,0 +1,39 @@
+name: Notify on data update
+
+on:
+  push:
+    branches: [main]
+    paths: ['public/data.json']
+  workflow_dispatch: {}
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Snapshot previous data.json
+        run: git show HEAD~1:public/data.json > prev-data.json || echo "[]" > prev-data.json
+      - name: Build email payload (diff vs previous)
+        env:
+          RECIPIENT: ${{ vars.RECIPIENT }}
+        run: node scripts/build-email.mjs prev-data.json | tee build.out
+      - name: Send email via Resend (only if new records)
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          if grep -q "SEND=true" build.out; then
+            echo "Sending update email…"
+            code=$(curl -sS -o resp.json -w "%{http_code}" -X POST https://api.resend.com/emails \
+              -H "Authorization: Bearer $RESEND_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d @email-payload.json)
+            echo "Resend HTTP $code"; cat resp.json
+            test "$code" = "200"
+          else
+            echo "No new records — skipping email."
+          fi
