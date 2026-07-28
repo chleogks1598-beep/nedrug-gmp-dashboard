@@ -1,8 +1,8 @@
 name: Deploy to Vercel
 
+# NOTE: 토큰 기반 CLI 배포가 이 프로젝트에서 "Building…"에 멈추는 이슈로,
+# 자동 배포는 Vercel 네이티브 Git 연동을 사용합니다. 이 워크플로우는 수동 전용(fallback)입니다.
 on:
-  push:
-    branches: [main]
   workflow_dispatch: {}
 
 # Vercel project identifiers (not secret). Token comes from repo secret VERCEL_TOKEN.
