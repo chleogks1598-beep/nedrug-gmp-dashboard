@@ -68,9 +68,13 @@ function pdfToText(file) {
 
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
+  const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
   const res = await fetch(LIST_URL, {
     method: "POST",
-    headers: { "content-type": "application/x-www-form-urlencoded" },
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      "user-agent": UA, "accept": "text/html,application/xhtml+xml", "accept-language": "ko-KR,ko;q=0.9",
+    },
     body: "keyword=&page=1&limit=100000&sort=&sortOrder=&searchYn=&mnfctrName=&countryName=&startDate=&endDate=",
   });
   if (!res.ok) throw new Error("getList HTTP " + res.status);
@@ -85,7 +89,7 @@ async function main() {
 
   const manifest = [];
   for (const r of fresh) {
-    const dres = await fetch(DOWN + r.docId);
+    const dres = await fetch(DOWN + r.docId, { headers: { "user-agent": UA } });
     const buf = Buffer.from(await dres.arrayBuffer());
     const isZip = buf.slice(0, 2).toString() === "PK";
     const ext = isZip ? "hwpx" : "pdf";
