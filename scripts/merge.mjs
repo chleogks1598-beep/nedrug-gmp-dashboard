@@ -14,8 +14,9 @@ import { fileURLToPath } from "url";
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
 const DATA = path.join(ROOT, "public", "data.json");
-const LIST = path.join(ROOT, "newdocs", "list.json");
-const EXTRACTED = path.join(ROOT, "newdocs", "extracted.json");
+// LIST_PATH/EXTRACTED_PATH let the caller work out of ./pending instead of ./newdocs
+const LIST = process.env.LIST_PATH || path.join(ROOT, "newdocs", "list.json");
+const EXTRACTED = process.env.EXTRACTED_PATH || path.join(ROOT, "newdocs", "extracted.json");
 
 const norm = d => ({
   field: (d.field || "").trim(), gubun: (d.gubun || "").trim(),

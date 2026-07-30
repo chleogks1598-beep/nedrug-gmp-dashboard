@@ -1,13 +1,19 @@
 // Fetch the full CCBBD03 list, detect NEW docIds vs public/data.json,
 // download only the new source files, and write working files for the extractor.
 //
-// Outputs (in ./newdocs):
+// Outputs (in ./newdocs, or ./pending with --pending):
 //   list.json      – ALL current records with fresh metadata + seq (authoritative)
 //   manifest.json  – only the NEW records (need deficiency extraction), incl. saved file path + extracted text
 //   <docId>.txt    – extracted text for each new record (PDF via pdftotext if present, else raw; HWPX via fflate)
 //
+// --pending mode (run in GitHub Actions, which reliably reaches MFDS):
+//   writes to ./pending/ (committed to the repo) and keeps ONLY text/json there —
+//   the downloaded PDF/HWPX binaries go to a temp dir so the repo stays small.
+//   The dir is rebuilt from scratch each run, so processed items disappear by themselves.
+//
 // Exit prints "NEW=<n>" so the caller/agent knows how many need extraction.
 import fs from "fs";
+import os from "os";
 import path from "path";
 import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
@@ -16,7 +22,8 @@ import { unzipSync, strFromU8 } from "fflate";
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
 const DATA = path.join(ROOT, "public", "data.json");
-const OUT = path.join(ROOT, "newdocs");
+const PENDING = process.argv.includes("--pending");
+const OUT = path.join(ROOT, PENDING ? "pending" : "newdocs");
 const LIST_URL = "https://nedrug.mfds.go.kr/pbp/CCBBD03/getList";
 const DOWN = "https://nedrug.mfds.go.kr/cmn/edms/down/";
 
@@ -81,6 +88,14 @@ async function fetchRetry(url, opts, tries = 6) {
 
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
+  // pending/ is a rebuilt-each-run view of "not yet in the dashboard" — clear stale entries
+  if (PENDING) {
+    for (const f of fs.readdirSync(OUT)) {
+      if (/\.(txt|json|pdf|hwpx)$/.test(f)) fs.rmSync(path.join(OUT, f));
+    }
+  }
+  // in pending mode the binaries are throwaway: keep them out of the repo
+  const BIN = PENDING ? fs.mkdtempSync(path.join(os.tmpdir(), "gmp-src-")) : OUT;
   const res = await fetchRetry(LIST_URL, {
     method: "POST",
     headers: {
@@ -105,13 +120,14 @@ async function main() {
     catch (e) { console.log("다운로드 실패 skip:", r.docId, e.message); continue; }
     const isZip = buf.slice(0, 2).toString() === "PK";
     const ext = isZip ? "hwpx" : "pdf";
-    const file = path.join(OUT, r.docId + "." + ext);
+    const file = path.join(BIN, r.docId + "." + ext);
     fs.writeFileSync(file, buf);
     let text = null;
     if (isZip) { try { text = hwpxToText(buf); } catch (e) { text = null; } }
     else { text = pdfToText(file); }
     if (text != null) fs.writeFileSync(path.join(OUT, r.docId + ".txt"), text);
-    manifest.push({ ...r, file, ext, hasText: text != null });
+    // pending mode: `file` is a temp path the consumer can't reach — give it the source URL instead
+    manifest.push({ ...r, file: PENDING ? null : file, downUrl: DOWN + r.docId, ext, hasText: text != null });
     await new Promise(s => setTimeout(s, 150));
   }
   fs.writeFileSync(path.join(OUT, "manifest.json"), JSON.stringify(manifest, null, 2));
