@@ -88,12 +88,6 @@ async function fetchRetry(url, opts, tries = 6) {
 
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
-  // pending/ is a rebuilt-each-run view of "not yet in the dashboard" — clear stale entries
-  if (PENDING) {
-    for (const f of fs.readdirSync(OUT)) {
-      if (/\.(txt|json|pdf|hwpx)$/.test(f)) fs.rmSync(path.join(OUT, f));
-    }
-  }
   // in pending mode the binaries are throwaway: keep them out of the repo
   const BIN = PENDING ? fs.mkdtempSync(path.join(os.tmpdir(), "gmp-src-")) : OUT;
   const res = await fetchRetry(LIST_URL, {
@@ -131,6 +125,14 @@ async function main() {
     await new Promise(s => setTimeout(s, 150));
   }
   fs.writeFileSync(path.join(OUT, "manifest.json"), JSON.stringify(manifest, null, 2));
+  // pending/ mirrors "not yet in the dashboard". Prune only AFTER a successful fetch —
+  // clearing it up front would wipe the backlog whenever MFDS is unreachable.
+  if (PENDING) {
+    const keep = new Set(["list.json", "manifest.json", ...manifest.map(r => r.docId + ".txt")]);
+    for (const f of fs.readdirSync(OUT)) {
+      if (/\.(txt|json|pdf|hwpx)$/.test(f) && !keep.has(f)) fs.rmSync(path.join(OUT, f));
+    }
+  }
   console.log(`TOTAL=${list.length} KNOWN=${known.size} NEW=${fresh.length}`);
   if (fresh.length) console.log("NEW_DOCIDS=" + fresh.map(r => r.docId).join(","));
 }

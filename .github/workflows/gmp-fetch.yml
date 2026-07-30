@@ -1,12 +1,16 @@
 name: Fetch GMP 실사결과 (수집·감지)
 
-# 식약처 수집은 GitHub Actions에서 수행한다(클라우드 루틴보다 MFDS 접속이 안정적).
-# 신규 문서의 본문 텍스트를 pending/ 에 커밋해 두면, 08시 클라우드 루틴은
-# MFDS에 접속하지 않고 지적사항 추출·병합·푸시만 담당한다.
+# 식약처는 클라우드 IP를 간헐적으로 차단한다(측정: Actions 성공률 약 60%).
+# 그래서 실패를 정상 상태로 취급하고 2시간마다 재시도한다 — 하루 안에 최소 한 번은 성공.
+# 성공하면 신규 문서의 본문 텍스트를 pending/ 에 커밋하고, 08시 클라우드 루틴은
+# 식약처에 접속하지 않고 지적사항 추출·병합·푸시만 담당한다.
+#
+# 조용한 실패 방지: scripts/pending-alert.mjs 가 ①26시간 넘게 미반영 ②24시간 넘게
+# 수집 성공 없음 두 경우에 경고 메일을 보낸다.
 
 on:
   schedule:
-    - cron: '30 22 * * *'   # 07:30 KST — 08시 추출 루틴보다 앞서 실행
+    - cron: '0 */2 * * *'   # 2시간마다 (UTC) — 08시 KST 추출 루틴 이전에 여러 번 시도
   workflow_dispatch: {}
 
 permissions:
@@ -28,9 +32,18 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - run: npm ci
       - name: 식약처 목록 조회 · 신규 문서 수집
-        run: node scripts/fetch-new.mjs --pending
-      - name: 미반영 건 감지 · 경고 메일 준비
+        id: fetch
+        run: |
+          if node scripts/fetch-new.mjs --pending; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::식약처 접속 실패 — 다음 실행(2시간 후)에서 재시도합니다."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: 미반영·수집중단 감시
         id: alert
+        env:
+          FETCH_OK: ${{ steps.fetch.outputs.ok }}
         run: node scripts/pending-alert.mjs
       - name: Send email via Gmail SMTP
         if: steps.alert.outputs.send == 'true'
@@ -46,7 +59,6 @@ jobs:
           subject: ${{ steps.alert.outputs.subject }}
           html_body: file://gmp-pending-email.html
       - name: pending/ 커밋
-        if: success()
         run: |
           git config user.name "nedrug-bot"
           git config user.email "bot@users.noreply.github.com"
