@@ -1,0 +1,3128 @@
+{
+ "1P_mcuE4KYv": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1P_mcuE4K6H": {
+  "forms": [
+   "비무균-일반제제-내용고형제(산제)",
+   "비무균-일반제제-합성",
+   "비무균-일반제제-정제(합성에 한함)",
+   "비무균-세팔로스포린제제-합성",
+   "무균-세팔로스포린제제-합성",
+   "무균-세팔로스포린제제-혼합"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1P_mcuE47q1": {
+  "forms": [
+   "비무균-일반제제-합성(합성)",
+   "무균-일반제제-주사제(주사제)",
+   "무균-세팔로스포린제제*-주사제(분말주사제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1P_mcuE463F": {
+  "forms": [
+   "비무균-일반제제-내용고형제(산제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1P_iX9eOyBx": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1P_iHfVEJzq": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pzzvm8pprt": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pzzvm8poTD": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PzTi7L-SxA": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PzTi7L-SIF": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "비무균-일반제제-소분"
+  ],
+  "sterile": "비무균"
+ },
+ "1PzTi7L-ORx": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PzTi7L-NZn": {
+  "forms": [
+   "비무균-일반제제-내용고형제(과립제, 산제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pz0eO3IuUQ": {
+  "forms": [
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pz07CdMALt": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pz07CdM5Qk": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PyLW-asYv7": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PyLW-asWoD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PyLW-asUDD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PyLW-asSGJ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PyLW-asOMf": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PyLW-asNCa": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PyLW-asL5S": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PyJBfLEtwC": {
+  "forms": [
+   "비무균-일반제제-내용액제(시럽제(액상) , 현탁제)",
+   "비무균-일반제제-외용액제(외용액제, 리니멘트제(액상))",
+   "비무균-일반제제-연고제(연고제, 크림제, 겔제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Px_jsc118o": {
+  "forms": [
+   "비무균-일반제제-내용액제(경구용액제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Px_jsc10ws": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1PxzwRCkCdX": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1Pxznco5UBw": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pxznco5TX7": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PxzbB4Txr9": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PxtsjZTS6w": {
+  "forms": [
+   "비무균-일반제제-그밖의방법"
+  ],
+  "sterile": "비무균"
+ },
+ "1PxtsjZTGIp": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PxteXRZ-ht": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PxFVteOIsG": {
+  "forms": [
+   "무균-일반제제-점안제"
+  ],
+  "sterile": "무균"
+ },
+ "1Px9gdRy2mE": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Px9gdRy1KU": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1Px9VsU4MaJ": {
+  "forms": [
+   "비무균-일반제제-내용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PwLTeeBfDH": {
+  "forms": [
+   "비무균-일반제제-정제(발효에 한함)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PwLTeeBdNe": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1Pw1mH44tfE": {
+  "forms": [
+   "비무균-일반제제-내용고형제(산제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pw1mH44sLC": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1Pw1mH44qde": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pw1mH44pvH": {
+  "forms": [
+   "무균-일반제제-주사제(주사제, 수액제, 관류제)",
+   "비무균-일반제제-내용액제(경구용액제, 흡입액제)",
+   "비무균-일반제제-외용액제(외용액제, 혈액투석제(액상))"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1Pw1mH44oy0": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pw1ukw_1Ir": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pw1ukw_0E0": {
+  "forms": [
+   "생물-독소-주사제(동결건조주사제)"
+  ],
+  "sterile": ""
+ },
+ "1PvoSBbO49X": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PvoSBbO2zp": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PvoSBbO1to": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PvoSBbO15Z": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PvoAqrh-gM": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pv3nd7cuGF": {
+  "forms": [
+   "비무균-일반제제-내용고형제(구강붕해정, 완제 정제, 츄어블정(저작정) , 캡슐제)",
+   "무균-세포독성항암제제-주사제(주사제, 동결건조주사제)",
+   "비무균-일반제제-과립"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1Pv2tztOgv1": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PusVPRX_CI": {
+  "forms": [
+   "무균-일반제제-주사제(동결건조주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PutNZjPSLI": {
+  "forms": [
+   "비무균-일반제제-추출, 그밖의 방법(분쇄)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PutNZjPRZ9": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PutNZjPQaP": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PutNZjPPqf": {
+  "forms": [
+   "비무균-세포독성항암제제-합성",
+   "비무균-일반제제-합성",
+   "비무균-일반제제-추출",
+   "비무균-세포독성항암제제-정제(합성에 한함)",
+   "비무균-일반제제-(정제(추출에 한함))",
+   "비무균-일반제제-소분"
+  ],
+  "sterile": "비무균"
+ },
+ "1PutNZjPOSU": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PugEn1ze7p": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PufrIA30yb": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PufDyaR_-p": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PufDyaRzTr": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PufFoALz1B": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PufFoALy8H": {
+  "forms": [
+   "무균-성호르몬제제-주사제"
+  ],
+  "sterile": "무균"
+ },
+ "1PufDyaRX_4": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PufDyaRUHO": {
+  "forms": [
+   "비무균-성호르몬제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Puf3C5bL3O": {
+  "forms": [
+   "비무균-일반제제-그밖의제형"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtSbOlpxXk": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "무균-일반제제-주사제(동결건조주사제, 주사제)",
+   "무균-일반제제-그 밖의 고형제(외용산제)",
+   "비무균-일반제제-합성",
+   "비무균-일반제제-발효"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PtSdWCaU5q": {
+  "forms": [
+   "비무균-일반제제-과립",
+   "무균-세팔로스포린제제-합성",
+   "비무균-세팔로스포린제제-합성",
+   "비무균-세포독성항암제제-합성",
+   "무균-세팔로스포린제제-주사제(분말주사제)",
+   "비무균-세팔로스포린제제-내용고형제"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PtReFNR7KI": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제)",
+   "비무균-일반제제-연고제(겔제, 크림제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtReFNR69-": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtReFNR5go": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtR8IU-rmi": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제, 과립제)",
+   "비무균-일반제제-내용액제(시럽제(액상))",
+   "무균-일반제제-주사제(주사제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PtR8IU-rA1": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtR8IU-pnE": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtR8IU-pM8": {
+  "forms": [
+   "생물-백신-(배양, 정제, 바이러스불활화, 원액제조)(무균)",
+   "생물-유전자재조합의약품-(배양, 정제, 바이러스불활화, 원액제조)",
+   "생물-백신-주사제(동결건조주사제)",
+   "생물-유전자재조합의약품-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PtR8IU-orV": {
+  "forms": [
+   "무균-일반제제-주사제(주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PtR8IU-oE9": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtR8IU-nE4": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtReFNR3Dc": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PtNdJYH9pI": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Psoagh7YY2": {
+  "forms": [
+   "무균-일반제제-주사제(방사성)"
+  ],
+  "sterile": "무균"
+ },
+ "1PsokQqBkMR": {
+  "forms": [
+   "무균-일반제제-주사제"
+  ],
+  "sterile": "무균"
+ },
+ "1Psoagh7X_8": {
+  "forms": [
+   "무균-일반제제-점안제",
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1Ps9UEWceqZ": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ps9I_uTylt": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ps9UEWceKZ": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ps9I_uTw4A": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ps9I_uTvjA": {
+  "forms": [
+   "비무균-일반제제-외용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ps9UEWccwm": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ps9I_uTAFc": {
+  "forms": [
+   "무균-일반제제-합성",
+   "비무균-일반제제-추출",
+   "무균-일반제제-주사제(주사제, 동결)",
+   "무균-일반제제-점안제(점안제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1Prq-VKodN6": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "비무균-일반제제-연고제(연고제, 크림제, 겔제)",
+   "무균-일반제제-주사제(주사제, 수액제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PrI3px-gja": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PrHq4H3_Nh": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PrHq4H3qKL": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PrGop3fCYx": {
+  "forms": [
+   "무균-일반제제-발효",
+   "비무균-일반제제-발효",
+   "비무균-일반제제-합성",
+   "비무균-일반제제-추출",
+   "무균-일반제제-주사제"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PrGop3fBq8": {
+  "forms": [
+   "비무균-일반제제-외용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pr1SWtn7fL": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제"
+  ],
+  "sterile": "무균"
+ },
+ "1PqP13Laraw": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PqP13LaqMN": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PqP13Lap-j": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PqP13LapT5": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PqP13LaoUd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PqP13LanX4": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PqP13LamVW": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PqP13Lalb3": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PqP13LakjQ": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PpwUctwhLY": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "무균-일반제제-주사제(주사제)",
+   "무균-세팔로스포린제제-주사제(분말주사제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PpvSjJTdsj": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Ppq18vD2AB": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpWHCaHmxs": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpWJi1HkEF": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "비무균-일반제제-소분"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpWJi1HimB": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "비무균-일반제제-외용액제(로션제, 외용액제, 점비액제)",
+   "비무균-일반제제-연고제(겔제, 연고제, 크림제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpWJi1Hhyj": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpWJi1HgtV": {
+  "forms": [
+   "비무균-일반제제-내용고형제(캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpH2GwCTi8": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PpH2GwCQp0": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PollZQgs0z": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-그 밖의 고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PollZQgi5C": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PollZQgg_l": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoTKNL1A0o": {
+  "forms": [
+   "비무균-일반제제-정제(합성에 한함)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoTKNL194T": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSZNb0-rK": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSZNb0uKf": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSaf29b7M": {
+  "forms": [
+   "비무균-연고제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSaf29aWz": {
+  "forms": [
+   "비무균-내용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSaf29Xp0": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSZNb0nwB": {
+  "forms": [
+   "비무균-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSZNb0hUe": {
+  "forms": [
+   "비무균-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSaf29QRP": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "비무균-일반제제-연고제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoSaf29JS4": {
+  "forms": [
+   "비무균-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoJLBcEDxd": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGmhe": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGk8U": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGhRu": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-첩부제",
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGhLk": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGgay": {
+  "forms": [
+   "비무균-일반제제-외용액제(외용액제, 완제 신신제약(주) 신신제약(주))",
+   "비무균-일반제제-연고제(크림제, 겔제)",
+   "비무균-일반제제-첩부제(첩부제, 카타플라스마제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xQnJ": {
+  "forms": [
+   "비무균-일반제제-가스제(의료용 고압가스)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xQhp": {
+  "forms": [
+   "비무균-일반제-내용고형제",
+   "비무균-일반제제-내용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xQB4": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xOhg": {
+  "forms": [
+   "비무균-일반제-내용고형제",
+   "무균-일반제제-주사제",
+   "무균-세포독성항암제제-주사제"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PoI0V7xMyE": {
+  "forms": [
+   "생물-혈장분획제제-정제(무균)"
+  ],
+  "sterile": "무균"
+ },
+ "1PoI0V7xMWj": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xLJ8": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xKR4": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xJUw": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xJ0T": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xIU6": {
+  "forms": [
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xHc0": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제, 구강붕해정, 츄어블정(저작정))",
+   "비무균-일반제제-외용액제(외용액제, 로션제)",
+   "비무균-일반제제-연고제(연고제, 크림제, 겔제)",
+   "비무균-일반제제-첩부제(첩부제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xHOq": {
+  "forms": [
+   "무균-일반제제-주사제(관류제, 수액제)",
+   "비무균-일반제제-외용액제(투석제(액상))"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PoI0V7xGVr": {
+  "forms": [
+   "비무균-일반제제-외용액제(외용액제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xF2L": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제, 산제)",
+   "비무균-일반제제-주사제(수액제, 동결건조주사제)",
+   "비무균-일반제제-내용액제(경구용액제, 시럽제 완제(액상) , 현탁제)",
+   "비무균-일반제제-외용액제(외용액제, 로션제, 펌프 스프레이제)",
+   "비무균-일반제제-연고제(연고제, 크림제, 겔제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xEbl": {
+  "forms": [
+   "비무균-카바페넴제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xDbH": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xDI6": {
+  "forms": [
+   "비무균-일반제제-첩부제(첩부제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xDCt": {
+  "forms": [
+   "비무균-일반제제-내용액제(경구용액제, 현탁제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7xCbF": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGe6i": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGddZ": {
+  "forms": [
+   "비무균-일반제제-내용고형제(시럽제(고형) , 정제, 질정, 캡슐제)",
+   "비무균-일반제제-연고제(겔제, 연고제, 크림제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGdSR": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGcmI": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGbpl": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGaKt": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-연고제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGZZ9": {
+  "forms": [
+   "비무균-세팔로스포린제제-내용고형제(정제, 캡슐제, 산제, 시럽제(고형))",
+   "비무균-일반제제-내용고형제(정제, 캡슐제, 산제, 시럽제(고형) , 츄어블정(저작정))",
+   "비무균-페니실린제제-내용고형제(정제, 캡슐제, 시럽제(고형))",
+   "무균-일반제제-주사제(주사제)",
+   "무균-카바페넴제제-주사제(분말주사제)",
+   "비무균-일반제제-외용액제(로션제)",
+   "비무균-일반제제-연고제(연고제, 크림제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PoHw9kGZEW": {
+  "forms": [
+   "무균-세팔로스포린제제-주사제(분말주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PoHw9kGYEd": {
+  "forms": [
+   "무균-일반제제-점안제"
+  ],
+  "sterile": "무균"
+ },
+ "1PoHw9kGX61": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "무균-일반제제-주사제(동결건조주사제, 주사제)",
+   "생물-백신-주사제(동결건조주사제, 주사제)",
+   "생물-유전자재조합의역품-주사제(동결건조주사제, 주사제)",
+   "생물-백신-(바이러스불활화, 배양, 원액 제조, 정제)",
+   "생물-백신-원액 제조(무균)",
+   "생물-유전자재조합의약품-(배양, 원액 제조, 정제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PoHw9kGWiV": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGWKy": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7x9gl": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoI0V7x9Ix": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-외용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGSJB": {
+  "forms": [
+   "생물-독소-주사제(동결건조주사제)"
+  ],
+  "sterile": ""
+ },
+ "1PoI0V7x7NK": {
+  "forms": [
+   "생물-독소-주사제",
+   "생물-독소-배양, 원액제조, 정제"
+  ],
+  "sterile": ""
+ },
+ "1PoI0V7x635": {
+  "forms": [
+   "무균-일반제제-발효"
+  ],
+  "sterile": "무균"
+ },
+ "1PoHw9kGRB0": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제)",
+   "무균-일반제제-주사제(주사제, 동결건조주사제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PoHw9kGPoX": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGOap": {
+  "forms": [
+   "비무균-일반제제-추출",
+   "무균-일반제제-주사제(주사제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PoHw9kGGz8": {
+  "forms": [
+   "비무균-일반제제-외용액제(혈액투석제(액상))",
+   "비무균-일반제제-그 밖의 고형제(혈액투석제(고형))"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGGZ9": {
+  "forms": [
+   "비무균-일반제제-외용액제(가글제(액상) , 관장제(액상,반고형))"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGDXr": {
+  "forms": [
+   "비무균-일반제제-내용액제(시럽제(액상) , 현탁제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PoHw9kGCR7": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "무균-세팔로스포린제제-합성",
+   "비무균-세팔로스포린제제-내용고형제",
+   "무균-일반제제-주사제(수액제)"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1Pnvf8cm6jo": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pnvf8cm5Yg": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pnvf8cm3os": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pnumq9cCX5": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pnr9BSpSOp": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Pnqn8zQemM": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PnpdUY8Cq_": {
+  "forms": [
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1PmcvGNnXhe": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PmcvGNnVYZ": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "비무균-세팔로스포린제제-합성",
+   "무균-세팔로스포린제제-합성",
+   "비무균-일반제제-내용고형제",
+   "무균-일반제제-주사제",
+   "비무균-세포독성항암제제-내용고형제"
+  ],
+  "sterile": "무균+비무균"
+ },
+ "1PmcvGNnSLd": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PmcvGNnQFc": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "비무균-일반제제-추출",
+   "비무균-일반제제-그 밖의 방법(혼합)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PmcvGNnOI4": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-주사제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PmcvGNnLN3": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-내용액제",
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1PmcgdTZz4N": {
+  "forms": [
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pm7FTSDF51": {
+  "forms": [
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_SxgFJq8": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_SxgFFpm": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_SxgF6_t": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_SxgF5Z9": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_SxgF2a0": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_8ouOz2m": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_8ouOxu0": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_Ld8xU7u": {
+  "forms": [
+   "비무균-일반제제-발효"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_Ld8xSsv": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_Ld8xRbd": {
+  "forms": [
+   "비무균-일반제제-내용고형제",
+   "비무균-일반제제-내용액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pl_8ouOriZ": {
+  "forms": [
+   "비무균-일반제제(의료용고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PlZbBDOxyw": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pla9U8Q_9O": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "비무균-성호르몬제-내용고형제(정제)",
+   "비무균-성호르몬제-연고제(크림제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1PlUwpGnmZ6": {
+  "forms": [
+   "비무균-일반제제-추출"
+  ],
+  "sterile": "비무균"
+ },
+ "1PlLbd2YJBf": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PlLbd2YIGe": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PkCYsIDJrC": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PjiZ74sKgi": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Piby4dzntX": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 질정)",
+   "비무균-일반제제-연고제(좌제, 질용좌제)"
+  ],
+  "sterile": "비무균"
+ },
+ "1Piby4dzMKN": {
+  "forms": [
+   "무균-일반제제-주사제"
+  ],
+  "sterile": "무균"
+ },
+ "1PiahFAej7t": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PiahFAeiGK": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiahFAehU9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PiahFAegOV": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiahFAeZWL": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiahFAeYA7": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiahFAeWmL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PiahFAeOjD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PiahFAeMnz": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PiahFAe9Es": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiaVxxConK": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiaVxxCngB": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PiAQpeQGxt": {
+  "forms": [
+   "비무균-일반제제(의료용 고압가스)-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Pi0eurUda7": {
+  "forms": [
+   "무균-카바페넴제제-주사제(분말주사제)"
+  ],
+  "sterile": "무균"
+ },
+ "1PhyFxM0UBS": {
+  "forms": [
+   "비무균-일반제제-가스제"
+  ],
+  "sterile": "비무균"
+ },
+ "1PgKV4kaA7F": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1Pf-Zs-6Ot-": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1Pf-Zs-6Nz9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Pf-Zs-6NDZ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Pf-Zs-6Lvu": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Pf-Zs-6LAw": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PfxOD7pkJ8": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PfxOD7pUO-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PfsZcD03ye": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PfsPXZr_r9": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PfsPXZrzhp": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PatAAz_kpL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PZo0o0izFB": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PZfmDVy9YL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PZfmDVy8iY": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PZbXhlZhun": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PZbXhlZfpC": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PZbXhlZfc6": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PZbXhlZc35": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PZbXhlZZ8H": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PXuYVTZORi": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PXuYVTZ2ne": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PXtlZoke9U": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PW-FqEJKfs": {
+  "forms": [
+   "합성-무균-카바페넴제제-합성",
+   "합성-비무균-일반제제-합성",
+   "합성-비무균-카바페넴제제-합성",
+   "그밖의방법-무균-카바페넴제제-혼합"
+  ],
+  "sterile": ""
+ },
+ "1PW-FqEJJ2V": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PW-FqEJFH-": {
+  "forms": [
+   "완제의약품-비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": ""
+ },
+ "1PW-FqEJEdC": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PW-FqEJCzX": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PW-FqEJBcH": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PW-FqEJAGG": {
+  "forms": [
+   "완제의약품-비무균-일반제제-내용고형제(정제, 캡슐제, 과립제, 시럽제)"
+  ],
+  "sterile": ""
+ },
+ "1PW-FqEJ9Wr": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PWNLMrQRnc": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PVYt7z1rJ7": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PVZGsf79Wc": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PVK9vg8il2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PVK9vg8B2-": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PVCJCHpxRz": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PV9J1jGKmP": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PV9J1jGJEL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PV9J1jGHnn": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PTx7jl8mc9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PTx7jl8l0f": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSKCQsShPp": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PSKCQsSg49": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSKCQsSVgL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSB7mIrDuh": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSB7mIrCm3": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PSB7mIrBvm": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSAEWUIHF8": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSAEWUIGG8": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSA_cBv3h5": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSA_cBv2Wx": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSA_cBv12c": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSA_cBv0De": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PSAqeFt_tH": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PSAqeFtzYl": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PRDQanj9m_": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PRDQanj8F2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PQeOvGre9G": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PQeOvGrbk2": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PQeOvGraWl": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PQeOvGrYly": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PQeMdI8JkA": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PQeOvGrXjP": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PQeOvGrV4f": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKvbm_wicA": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKvbm_wh5J": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKsyyZ23XK": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PKsyyZ22ll": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKsqEVbahj": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKsqEVbZtL": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PKsqEVbYoh": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKXWh0scdq": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKHYOW0f5Z": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKHYOW0eLd": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PKHciyuYeB": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKHYOW0X4R": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKHYOW0WAq": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PKHYOW0Qjx": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PK309-WY_V": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJnatECGf7": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GcLk": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GcKZ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GcJy": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GcJd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GcIn": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJjU_9GcIS": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJjU_9GcI7": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJjU_9GcHr": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GcDO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GG17": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GFvC": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GFmg": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GFZo": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJjU_9GFSj": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GEb1": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GEOu": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GEGT": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJjU_9GE53": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJUjFR9ESC": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yEDOZD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yEDIyt": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yEDFYt": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yEDE46": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJF7yEDCB8": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yEDB1q": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yED90S": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yED7u7": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yED5zo": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJF7yED4jb": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJF7yED1rY": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJF7yED0yj": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJF7yED06a": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEmvJc-O-": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEmvJc_Pf": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJcza9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJcxUr": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJcwr6": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJcva-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJcuY8": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJc7S0": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEmvJc2Ql": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-xjF": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-plL": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEcCg-iv-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-gTA": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEcCg-cYg": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEcCg-bHy": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-Ze8": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-Wtm": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-SM-": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEcCg-6ng": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-5PP": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJEcCg-3Tc": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJEcCg-1zu": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIy-rg": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIy_lG": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIywTT": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIyt4-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIysDM": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIyjeb": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIyhzw": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJESNIybky": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJESNIyZOZ": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJESNIyXBt": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIyRvi": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJESNIyPNy": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJARCSr-7h": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJARCSrza1": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJARCSrqvl": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PJARCSrYDz": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PJAHlw0QCA": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PJA8DLaWHT": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PID4TO3j2H": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PID4TO3Om5": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PIC8f6IWyv": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PIC8f6IM8p": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PHRTWC2JuO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PHRTWC2JpT": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PGfcVm-LZy": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRvEEY3AG": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRvEEY0n9": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGRvEEY05S": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_-Qp": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGRUNJ_-6i": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ__ji": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_zor": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_z21": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGRUNJ_ye1": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_yFj": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGRUNJ_xiG": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGRUNJ_wvZ": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGRUNJ_vAd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_u2m": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_tWT": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGRUNJ_t2p": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGR8fQkHKS": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGR8fQkGh9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGR8fQkGJ1": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGR8fQkFUf": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PGR8fQkF9u": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PGR8fQkCG1": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PGR8fQk7Ed": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PFBK8czYYa": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PFCoyOW4nN": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PFCoyOW4Ec": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PFCoyOW3Zx": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PFCoyOW331": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PFC9VqyjKB": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEp6jLLBe6": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEp6jLL9ih": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEfmBhHGCZ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PENb1hWwzJ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PENb1hWvv_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PENb1hWtWX": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PENb1hWsfM": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEFzUr7rNv": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEFzUr7qnn": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEFzUr7qOO": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PEFzUr7phC": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEFzUr7o0Q": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEFzUr7n6A": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PEFzUr7WkD": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PEFzUr7V-p": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PDrTYgnSOz": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PDrTYgnSOM": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1PDrTYgnSML": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PDrTYgnSLV": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PDrTYgnSEx": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PBQkSg5cTw": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PAzM_7avu2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PAsjrtI17G": {
+  "forms": [
+   "원료의약품-비무균"
+  ],
+  "sterile": ""
+ },
+ "1PAk4p4KXEZ": {
+  "forms": [
+   "완제의약품-비무균"
+  ],
+  "sterile": ""
+ },
+ "1PAbJvVXmU6": {
+  "forms": [
+   "완제의약품-무균-주사제"
+  ],
+  "sterile": ""
+ },
+ "1PAbJvVXIKt": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1PAbJvVXIKY": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1PAbJvVXIKD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P9sMKKKqAx": {
+  "forms": [
+   "완제의약품-무균"
+  ],
+  "sterile": ""
+ },
+ "1P9sMKKKhKe": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P9q7sJ51cB": {
+  "forms": [
+   "완제의약품-비무균"
+  ],
+  "sterile": ""
+ },
+ "1P9CSnreUyD": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P9CSnreUx2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P9CSnreUw9": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P9CSnreUtX": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P9CSnreUmC": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P9CSnreUiD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P9CSnreUd6": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P9CSnreUZP": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P8B4CKolXJ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P8B4CKolSj": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P8B4CKolKl": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P8B4CKolDv": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P761xgBEaX": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P761xgBD0s": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P761xgBAUc": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P761xgB8rs": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P41wm3_fct": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P41wm3_ePP": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P41wm3_dX2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P41wm3_cU5": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P41wm3_bah": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P41wm3_aHg": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P3YT4PZ8AL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P3TwIppa-g": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P2hKsqMr6T": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P2V3qgMQEi": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P2V3qgMPAO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2V3qgMNJ4": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P2V3qgMLQt": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFV3l": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFUeg": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFTkO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFTI6": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFRbG": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFR7h": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFQcG": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P2UhIKFPxu": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P1oYPFWrh0": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P1j3miv_2P": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P1JgiaXCUu": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5g_Z": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1P19k0H5ehL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5di3": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5dFG": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5chE": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5c0h": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1P19k0H5bUm": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5abX": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5a8W": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P19k0H5ZZW": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjQL": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjOK": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjL2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjK9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjJG": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjI5": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1P0r6voXjFi": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrLHf": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrLHK": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrLGR": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrLF_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrLE_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrL9t": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrL9G": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyuoHKrL8i": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OyiGZ6FzjJ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyiGZ6Fs3-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyiGZ6Fr4f": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyiGZ6Fpy9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyiGZ6FoW5": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OyiGZ6FnR0": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OyiGZ6Fe2N": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OwUAfH9aJN": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OwUAfH9a2m": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OvxT5W4mTn": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OvvP7RbIJX": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OvvP7RbHPB": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OvvP7RbGD_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OvvP7RbDcq": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OtAeDkgPxM": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Os1QfRkNkd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Os1QfRkNgM": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Os1QfRkNcd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Os1QfRkNSu": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1Orz9gcU3zh": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Orz9gcU3vB": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Orz9gcU3uI": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Orz9gcU3pE": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Orz9gcU3i9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Orz9gcU3fs": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Orz9gcU3dH": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OpiYHzC0DD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OpiJDMezkF": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OpiJDMexUd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OpiJDMewtQ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OoAc19n94V": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo6LYA-jnH": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo1IQuC-xo": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo1IQuCrB_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo1IQuCr7_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo1IQuCqtx": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1Oo1IQuCqQb": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo1IQuCqNS": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1Oo1IQuCqCj": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OmyYmOOkIs": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OhsJNgvcxu": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OhKRKb0i-n": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OhF57vNnQ6": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OhF57vNnIu": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OhF57vNm_X": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OhF57vNmqZ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OhF57vNkQm": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OfilpYPYVb": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OfUcpQ6HK4": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OfUcpQ67gI": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OfUcpQ677N": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OehHUIE4Ih": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OeRELoVnSO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OeRELoVe73": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OeRELoVdDb": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OeRELoVcMA": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OeRELoVbQ0": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OeRELoVYV1": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OeRELoVXM9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OeRELoVUuD": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OeQ-A3TiOG": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1Oe79QK5tRa": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OdylyCymBk": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OdylyCyiqO": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OdSbg17pMH": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OdOKTMzLbS": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1Oa0PkES4Nt": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1Oa0PkES3cm": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OZ-Ie6Rxi2": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OYlGy0XtIx": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OYlGy0Xt3_": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OYlGy0XoNr": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OYlGy0Xnsr": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OX11FkRGgq": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OWEpCP2oPb": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OWEpCP2AB-": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OWEpCP2A47": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OWEpCP2A0i": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OWEpCP2A05": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OWEpCP29zW": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OSntC_QwSP": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OSntC_QwCO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OSntC_QtyR": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OS2oStCukL": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OS1FLU0jCo": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORvh9dW4gu": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORvh9dW41f": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORvh9dW37K": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORfAVWv7Qr": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORektF52ZE": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OReJis_vqm": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OReJis_bPk": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORdxzFh5W7": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORb67MC902": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORb67MC75Z": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORb67MC3MB": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORb67MC100": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORaRNM6x_R": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORaCOY0CYl": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORaCOY09GH": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1ORURS9GwgI": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OR61byp2pw": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OR61byp2m2": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OR61byp2gx": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OR61byp2Wz": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OR61byp2OX": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OPtbB4FGS-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OOmFiNzrOg": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OOmFiNzr1z": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OOmFiNzqfw": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OO6g7WHMic": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OO6g7WHMae": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OMLha-_xC9": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OMBOuNTu3I": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OMBOuNTr32": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OMBOuNTpDF": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OLXQ4p939J": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OL3GadwmaH": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OKpU3II0O1": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OKpU3II00n": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OKmP66JvEX": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OKmP66Jv26": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OJ2hqQvU-X": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OJ2hqQvU_w": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OHpKvYmuXS": {
+  "forms": [],
+  "sterile": ""
+ },
+ "1OHpKvYmrbQ": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGnMFiPlgO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGnMFiPjL9": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGmfTF1KKd": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGmQL0ZwIO": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGiiutK3Yu": {
+  "forms": [],
+  "sterile": "무균"
+ },
+ "1OGiYmAfrnA": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGTO3wIGf-": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGTO3wI0_Q": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGSwu6Oz5V": {
+  "forms": [],
+  "sterile": "비무균"
+ },
+ "1OGSwu6OoP0": {
+  "forms": [],
+  "sterile": "무균"
+ }
+}

@@ -18,10 +18,12 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
 import { unzipSync, strFromU8 } from "fflate";
+import { extractFormInfo } from "./forms.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
 const DATA = path.join(ROOT, "public", "data.json");
+const FORMS = path.join(ROOT, "forms.json");
 const PENDING = process.argv.includes("--pending");
 const OUT = path.join(ROOT, PENDING ? "pending" : "newdocs");
 const LIST_URL = "https://nedrug.mfds.go.kr/pbp/CCBBD03/getList";
@@ -108,6 +110,7 @@ async function main() {
   const fresh = list.filter(r => !known.has(r.docId));
 
   const manifest = [];
+  const formsMap = fs.existsSync(FORMS) ? JSON.parse(fs.readFileSync(FORMS, "utf8")) : {};
   for (const r of fresh) {
     let buf;
     try { const dres = await fetchRetry(DOWN + r.docId, {}); buf = Buffer.from(await dres.arrayBuffer()); }
@@ -120,11 +123,15 @@ async function main() {
     if (isZip) { try { text = hwpxToText(buf); } catch (e) { text = null; } }
     else { text = pdfToText(file); }
     if (text != null) fs.writeFileSync(path.join(OUT, r.docId + ".txt"), text);
+    // 제형은 규칙 기반으로 바로 뽑아 forms.json 에 누적한다 (LLM 불필요)
+    const info = text != null ? extractFormInfo(text) : { forms: [], sterile: "" };
+    formsMap[r.docId] = info;
     // pending mode: `file` is a temp path the consumer can't reach — give it the source URL instead
-    manifest.push({ ...r, file: PENDING ? null : file, downUrl: DOWN + r.docId, ext, hasText: text != null });
+    manifest.push({ ...r, file: PENDING ? null : file, downUrl: DOWN + r.docId, ext, hasText: text != null, ...info });
     await new Promise(s => setTimeout(s, 150));
   }
   fs.writeFileSync(path.join(OUT, "manifest.json"), JSON.stringify(manifest, null, 2));
+  if (fresh.length) fs.writeFileSync(FORMS, JSON.stringify(formsMap, null, 1));
   // pending/ mirrors "not yet in the dashboard". Prune only AFTER a successful fetch —
   // clearing it up front would wipe the backlog whenever MFDS is unreachable.
   if (PENDING) {

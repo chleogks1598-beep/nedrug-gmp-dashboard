@@ -143,6 +143,23 @@
     border-radius:20px;padding:5px 12px;font-size:12.5px;font-weight:700;cursor:pointer;border:0}
   .gchip .x{font-weight:900}
   .deftable tr.hit td{background:var(--accent-soft)}
+
+  /* 검색어 하이라이트 */
+  mark.hl{background:#ffdf7e;color:#3a2a00;border-radius:3px;padding:0 1px;font-weight:700}
+  @media (prefers-color-scheme: dark){ mark.hl{background:#8a6400;color:#ffeeb8} }
+  :root[data-theme="dark"] mark.hl{background:#8a6400;color:#ffeeb8}
+  :root[data-theme="light"] mark.hl{background:#ffdf7e;color:#3a2a00}
+  .hitchip{display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:20px;
+    padding:1px 8px;font-size:11px;font-weight:700;margin-left:6px;white-space:nowrap}
+
+  /* 제형 */
+  .forms{margin-top:3px;display:flex;flex-wrap:wrap;gap:3px}
+  .fchip{display:inline-block;background:var(--surface-2);border:1px solid var(--border);color:var(--ink-2);
+    border-radius:6px;padding:1px 6px;font-size:11px;font-weight:600;white-space:nowrap;font-family:inherit}
+  tr.main:hover .fchip{border-color:var(--border)}
+  .fchip.na{font-style:italic;font-weight:500;color:var(--ink-3)}
+  .metaline{color:var(--ink-3);font-size:12px;margin-top:10px}
+  .metaline b{color:var(--ink-2);font-weight:700}
   @media (max-width:900px){ .tiles{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr} }
   @media (max-width:560px){ td.site .addr{display:none} .barrow{grid-template-columns:80px 1fr 40px} .bars.wide .barrow{grid-template-columns:110px 1fr 44px} }
 </style>
@@ -187,8 +204,14 @@
 
   <section>
     <div class="filters">
-      <input id="q" type="search" placeholder="제조소명·소재지·지적사항 내용 검색…">
+      <input id="q" type="search" placeholder="제조소명·소재지·제형·지적사항 내용 검색…">
       <select id="fCountry"><option value="">전체 국가</option></select>
+      <select id="fSterile">
+        <option value="">무균/비무균 전체</option>
+        <option value="무균">무균</option>
+        <option value="비무균">비무균</option>
+      </select>
+      <select id="fForm"><option value="">전체 제형</option></select>
       <select id="fField"><option value="">전체 분야</option></select>
       <select id="fResult">
         <option value="">전체 결과</option>
@@ -227,6 +250,21 @@ const DOWN_BASE="https://nedrug.mfds.go.kr/cmn/edms/down/";
 let DATA=[], view=[], page=1, per=25, sortKey="regDate", sortDir=-1;
 const $=s=>document.querySelector(s);
 const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// 검색어 하이라이트 — 이스케이프한 뒤 이스케이프한 검색어로 매칭한다
+let curQ="";
+function hl(s){
+  const t=esc(s);
+  if(!curQ) return t;
+  const q=esc(curQ).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  if(!q) return t;
+  return t.replace(new RegExp(q,"gi"),m=>`<mark class="hl">${m}</mark>`);
+}
+// 제형 문자열에서 필터 축을 뽑는다 ("비무균-일반제제-내용고형제(정제)" → 제제유형/제형 토큰)
+const formTokens=f=>f.split("-").slice(1)
+  .map(p=>p.replace(/\([^)]*\)/g,"").replace(/[*]/g,"").trim()).filter(Boolean);
+const recFormTokens=x=>[...new Set((x.forms||[]).flatMap(formTokens))];
+const defHay=d=>((d.field||"")+" "+(d.gubun||"")+" "+(d.law||"")+" "+(d.summary||"")+" "+(d.remark||"")).toLowerCase();
 
 // ── 유사 지적사항 그룹핑 ──
 let activeGroup=null, groupView="topic";
@@ -366,10 +404,21 @@ function fillSelects(){
   $("#fCountry").insertAdjacentHTML("beforeend",cs.map(c=>`<option>${esc(c)}</option>`).join(""));
   const fs=new Set(); for(const x of DATA) for(const d of (x.deficiencies||[])){if(d.field)fs.add(d.field.trim());}
   $("#fField").insertAdjacentHTML("beforeend",[...fs].sort((a,b)=>a.localeCompare(b,"ko")).map(c=>`<option>${esc(c)}</option>`).join(""));
+  // 제형: 제제유형(…제제)과 세부 제형을 나눠 optgroup으로 묶는다
+  const cnt={}; for(const x of DATA) for(const t of recFormTokens(x)) cnt[t]=(cnt[t]||0)+1;
+  const toks=Object.entries(cnt).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],"ko"));
+  const kinds=toks.filter(([t])=>/제제$/.test(t)), shapes=toks.filter(([t])=>!/제제$/.test(t));
+  const opts=g=>g.map(([t,n])=>`<option value="${esc(t)}">${esc(t)} (${n})</option>`).join("");
+  let h="";
+  if(kinds.length) h+=`<optgroup label="제제 유형">${opts(kinds)}</optgroup>`;
+  if(shapes.length) h+=`<optgroup label="제형·제조방법">${opts(shapes)}</optgroup>`;
+  const noForm=DATA.filter(x=>!(x.forms||[]).length).length;
+  if(noForm) h+=`<optgroup label="기타"><option value="__none__">제형 미기재 (${noForm})</option></optgroup>`;
+  $("#fForm").insertAdjacentHTML("beforeend",h);
 }
 
 function bindFilters(){
-  ["#q","#fCountry","#fField","#fResult"].forEach(s=>$(s).addEventListener("input",()=>{page=1;apply();}));
+  ["#q","#fCountry","#fSterile","#fForm","#fField","#fResult"].forEach(s=>$(s).addEventListener("input",()=>{page=1;apply();}));
   document.querySelectorAll("thead th[data-sort]").forEach(th=>th.onclick=()=>{
     const k=th.dataset.sort;
     if(sortKey===k) sortDir*=-1; else {sortKey=k;sortDir=(k==="site"||k==="country")?1:-1;}
@@ -379,14 +428,20 @@ function bindFilters(){
 
 function apply(){
   const q=$("#q").value.trim().toLowerCase();
+  curQ=$("#q").value.trim();
   const fc=$("#fCountry").value, ff=$("#fField").value, fr=$("#fResult").value;
+  const fst=$("#fSterile").value, ffm=$("#fForm").value;
   view=DATA.filter(x=>{
     if(fc&&x.country!==fc) return false;
     if(fr&&x.result!==fr) return false;
     if(ff && !(x.deficiencies||[]).some(d=>(d.field||"").trim()===ff)) return false;
+    if(fst && !(x.sterile||"").split("+").includes(fst)) return false;
+    if(ffm==="__none__"){ if((x.forms||[]).length) return false; }
+    else if(ffm && !recFormTokens(x).includes(ffm)) return false;
     if(activeGroup && !(x.deficiencies||[]).some(d=>defInGroup(d,activeGroup))) return false;
     if(q){
-      const hay=(x.site+" "+x.address+" "+x.country+" "+(x.deficiencies||[]).map(d=>d.summary+" "+d.law).join(" ")).toLowerCase();
+      const hay=(x.site+" "+x.address+" "+x.country+" "+(x.forms||[]).join(" ")+" "
+        +(x.deficiencies||[]).map(defHay).join(" ")).toLowerCase();
       if(!hay.includes(q)) return false;
     }
     return true;
@@ -409,17 +464,25 @@ function renderTable(){
   const rows=view.slice((page-1)*per,page*per);
   const tb=$("#tbody");
   if(!rows.length){tb.innerHTML='<tr><td colspan="6" class="none">조건에 맞는 결과가 없습니다.</td></tr>';$("#pager").innerHTML="";return;}
+  const q=curQ.toLowerCase();
   tb.innerHTML=rows.map(x=>{
     const badge=x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`;
-    return `<tr class="main" data-id="${esc(x.docId)}">
+    // 검색어가 지적사항 본문에 걸린 행은 펼친 채로 보여준다 — 어디에 걸렸는지 바로 보이도록
+    const hits=q?(x.deficiencies||[]).filter(d=>defHay(d).includes(q)).length:0;
+    const open=hits>0;
+    const chip=hits?`<span class="hitchip">지적사항 일치 ${hits}</span>`:"";
+    const forms=(x.forms||[]).length
+      ? `<div class="forms">${x.forms.map(f=>`<span class="fchip">${hl(f)}</span>`).join("")}</div>`
+      : (x.sterile?`<div class="forms"><span class="fchip na">${esc(x.sterile)} · 제형 미기재</span></div>`:"");
+    return `<tr class="main${open?" open":""}" data-id="${esc(x.docId)}">
       <td class="num"><span class="chev">▸</span> ${x.seq}</td>
       <td class="num">${esc(x.regDate)}</td>
-      <td>${esc(x.country)}</td>
-      <td class="site">${esc(x.site)}<div class="addr">${esc(x.address)}</div></td>
+      <td>${hl(x.country)}</td>
+      <td class="site">${hl(x.site)}${chip}<div class="addr">${hl(x.address)}</div>${forms}</td>
       <td>${badge}</td>
       <td class="num">${x.defCount||0}</td>
     </tr>
-    <tr class="detail" data-for="${esc(x.docId)}" style="display:none"><td colspan="6"><div class="inner">${detailHtml(x)}</div></td></tr>`;
+    <tr class="detail" data-for="${esc(x.docId)}" style="display:${open?"table-row":"none"}"><td colspan="6"><div class="inner">${detailHtml(x)}</div></td></tr>`;
   }).join("");
   tb.querySelectorAll("tr.main").forEach(tr=>tr.onclick=()=>{
     const d=tb.querySelector(`tr.detail[data-for="${CSS.escape(tr.dataset.id)}"]`);
@@ -430,12 +493,21 @@ function renderTable(){
 
 function detailHtml(x){
   let h="";
+  const q=curQ.toLowerCase();
+  if((x.forms||[]).length){
+    h+=`<div class="metaline"><b>제형</b> — ${x.forms.map(f=>`<span class="fchip">${hl(f)}</span>`).join(" ")}</div>`;
+  } else {
+    h+=`<div class="metaline"><b>제형</b> — <span class="fchip na">원본에 제형 표 없음${x.sterile?" ("+esc(x.sterile)+" 표기)":""}</span></div>`;
+  }
   if((x.deficiencies||[]).length){
     h+=`<table class="deftable"><thead><tr><th>분야</th><th>구분</th><th>근거법령</th><th>지적(보완)사항 요약</th><th>비고</th></tr></thead><tbody>`;
-    h+=x.deficiencies.map(d=>`<tr class="${activeGroup&&defInGroup(d,activeGroup)?'hit':''}">
-      <td class="fld">${esc(d.field)}</td><td class="fld">${esc(d.gubun)}</td>
-      <td class="law">${esc(d.law)}</td><td>${esc(d.summary)}</td>
-      <td class="rmk">${esc(d.remark)}</td></tr>`).join("");
+    h+=x.deficiencies.map(d=>{
+      const cls=[activeGroup&&defInGroup(d,activeGroup)?"hit":"",q&&defHay(d).includes(q)?"hit":""].filter(Boolean)[0]||"";
+      return `<tr class="${cls}">
+      <td class="fld">${hl(d.field)}</td><td class="fld">${hl(d.gubun)}</td>
+      <td class="law">${hl(d.law)}</td><td>${hl(d.summary)}</td>
+      <td class="rmk">${hl(d.remark)}</td></tr>`;
+    }).join("");
     h+=`</tbody></table>`;
   } else {
     h+=`<div class="none">지적(보완)사항 없음 — 적합 판정.</div>`;
