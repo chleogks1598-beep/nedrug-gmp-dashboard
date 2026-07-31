@@ -40,6 +40,11 @@ jobs:
             echo "::warning::식약처 접속 실패 — 다음 실행(2시간 후)에서 재시도합니다."
             echo "ok=false" >> "$GITHUB_OUTPUT"
           fi
+      # ★ 원본 PDF 영구 보관: 식약처가 나중에 원문을 내려도 대시보드에서 계속 열리도록
+      #   public/archive/<docId>.pdf 로 받아 커밋한다(이미 있는 건 건너뜀).
+      - name: 원본 PDF 보관
+        if: steps.fetch.outputs.ok == 'true'
+        run: node scripts/archive-pdfs.mjs || echo "::warning::원본 보관 일부 실패 — 다음 실행에서 재시도"
       - name: 미반영·수집중단 감시
         id: alert
         env:
@@ -62,7 +67,7 @@ jobs:
         run: |
           git config user.name "nedrug-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A pending pending-state.json forms.json
+          git add -A pending pending-state.json forms.json public/archive
           if git diff --cached --quiet; then
             echo "pending 변화 없음 — 커밋 생략."
             exit 0

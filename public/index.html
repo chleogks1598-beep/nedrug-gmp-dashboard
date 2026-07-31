@@ -102,6 +102,11 @@
   .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:700;white-space:nowrap}
   .badge.ok{background:var(--ok-soft);color:var(--ok)}
   .badge.warn{background:var(--warn-soft);color:var(--warn)}
+  /* 식약처가 목록에서 내린 건(우리는 보존) */
+  .badge.gone{background:var(--surface-2);color:var(--ink-3);border:1px dashed var(--border)}
+  tr.main.gone td.site{color:var(--ink-2)}
+  .gonenote{color:var(--ink-3);font-size:12px;margin-top:10px;padding:8px 10px;
+    background:var(--surface-2);border-left:3px solid var(--ink-3);border-radius:4px}
   .chev{color:var(--ink-3);transition:transform .15s;display:inline-block}
   tr.main.open .chev{transform:rotate(90deg)}
   tr.detail td{background:var(--surface-2);padding:0}
@@ -217,6 +222,7 @@
         <option value="">전체 결과</option>
         <option value="지적사항 있음">지적사항 있음</option>
         <option value="적합">적합</option>
+        <option value="__gone__">식약처 공개 종료(보존본)</option>
       </select>
       <button class="gchip" id="gchip" style="display:none"></button>
       <span class="count" id="count"></span>
@@ -433,7 +439,8 @@ function apply(){
   const fst=$("#fSterile").value, ffm=$("#fForm").value;
   view=DATA.filter(x=>{
     if(fc&&x.country!==fc) return false;
-    if(fr&&x.result!==fr) return false;
+    if(fr==="__gone__"){ if(!x.delisted) return false; }
+    else if(fr&&x.result!==fr) return false;
     if(ff && !(x.deficiencies||[]).some(d=>(d.field||"").trim()===ff)) return false;
     if(fst && !(x.sterile||"").split("+").includes(fst)) return false;
     if(ffm==="__none__"){ if((x.forms||[]).length) return false; }
@@ -466,7 +473,8 @@ function renderTable(){
   if(!rows.length){tb.innerHTML='<tr><td colspan="6" class="none">조건에 맞는 결과가 없습니다.</td></tr>';$("#pager").innerHTML="";return;}
   const q=curQ.toLowerCase();
   tb.innerHTML=rows.map(x=>{
-    const badge=x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`;
+    const badge=(x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`)
+      + (x.delisted?` <span class="badge gone" title="식약처 목록에서 내려갔지만 이 대시보드에 보존된 자료입니다${x.delistedAt?" (감지 "+esc(x.delistedAt)+")":""}">공개종료</span>`:"");
     // 검색어가 지적사항 본문에 걸린 행은 펼친 채로 보여준다 — 어디에 걸렸는지 바로 보이도록
     const hits=q?(x.deficiencies||[]).filter(d=>defHay(d).includes(q)).length:0;
     const open=hits>0;
@@ -474,7 +482,7 @@ function renderTable(){
     const forms=(x.forms||[]).length
       ? `<div class="forms">${x.forms.map(f=>`<span class="fchip">${hl(f)}</span>`).join("")}</div>`
       : (x.sterile?`<div class="forms"><span class="fchip na">${esc(x.sterile)} · 제형 미기재</span></div>`:"");
-    return `<tr class="main${open?" open":""}" data-id="${esc(x.docId)}">
+    return `<tr class="main${open?" open":""}${x.delisted?" gone":""}" data-id="${esc(x.docId)}">
       <td class="num"><span class="chev">▸</span> ${x.seq}</td>
       <td class="num">${esc(x.regDate)}</td>
       <td>${hl(x.country)}</td>
@@ -513,7 +521,13 @@ function detailHtml(x){
     h+=`<div class="none">지적(보완)사항 없음 — 적합 판정.</div>`;
   }
   const period=(x.inspStart||"")+(x.inspEnd&&x.inspEnd!==x.inspStart?" ~ "+x.inspEnd:"");
-  h+=`<a class="dl" href="${DOWN_BASE}${esc(x.docId)}" target="_blank" rel="noopener">⬇ 원본 실사결과서 (PDF)</a>`;
+  // 보존본(아카이브)이 있으면 그걸 먼저 — 식약처가 원문을 내려도 계속 열린다.
+  if(x.archiveFile){
+    const isHwpx=/\.hwpx$/i.test(x.archiveFile);
+    h+=`<a class="dl" href="archive/${esc(x.archiveFile)}" target="_blank" rel="noopener">⬇ 실사결과서 보존본 (${isHwpx?"HWPX":"PDF"})</a> `;
+  }
+  h+=`<a class="dl" href="${DOWN_BASE}${esc(x.docId)}" target="_blank" rel="noopener">⬇ ${x.archiveFile?"식약처 원문":"원본 실사결과서 (PDF)"}</a>`;
+  if(x.delisted) h+=`<div class="gonenote">이 자료는 식약처 공개 목록에서 내려갔습니다${x.delistedAt?` (감지일 ${esc(x.delistedAt)})`:""}. 이 대시보드가 보존한 사본이며, 식약처 원문 링크는 열리지 않을 수 있습니다.</div>`;
   if(period) h+=`<span style="color:var(--ink-3);font-size:12px;margin-left:12px">실사기간: ${esc(period)} · 구분: ${esc(x.prePost)} · ${esc(x.type)}</span>`;
   return h;
 }
