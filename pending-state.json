@@ -1,5 +1,21 @@
 {
-  "docs": {},
+  "docs": {
+    "1P_rHLDTS7l": {
+      "firstSeen": "2026-07-31T10:06:11.064Z",
+      "site": "(주)킵스바이오파마",
+      "regDate": "2026-07-31"
+    },
+    "1P_rAodwYSY": {
+      "firstSeen": "2026-07-31T10:06:11.064Z",
+      "site": "Qingdao Huazhong Pharmaceuticals Co., Ltd.",
+      "regDate": "2026-07-31"
+    },
+    "1PoI0V7xQ3B": {
+      "firstSeen": "2026-07-31T10:06:11.064Z",
+      "site": "동화약품(주)",
+      "regDate": "2026-02-25"
+    }
+  },
   "lastWarnAt": null,
-  "lastFetchOkAt": "2026-07-30T23:56:04.177Z"
+  "lastFetchOkAt": "2026-07-31T10:06:11.064Z"
 }

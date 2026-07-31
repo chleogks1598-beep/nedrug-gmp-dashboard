@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "docId": "1P_rHLDTS7l",
+    "seq": 1,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "(주)킵스바이오파마",
+    "address": "충청남도 서천군 종천면 종천공단길32번길 26",
+    "inspStart": "2025-07-01",
+    "inspEnd": "2025-07-03",
+    "regDate": "2026-07-31",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1P_rHLDTS7l",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제-내용고형제(정제, 캡슐제)"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1P_rAodwYSY",
+    "seq": 2,
+    "prePost": "사후",
+    "type": "원료(단일)",
+    "country": "중국",
+    "site": "Qingdao Huazhong Pharmaceuticals Co., Ltd.",
+    "address": "No.202 Chongqing Nan Road, Qingdao, China",
+    "inspStart": "2026-05-12",
+    "inspEnd": "2026-05-14",
+    "regDate": "2026-07-31",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1P_rAodwYSY",
+    "ext": "hwpx",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제-추출"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1PoI0V7xQ3B",
+    "seq": 143,
+    "prePost": "사후",
+    "type": "완제+원료(겸업)",
+    "country": "대한민국",
+    "site": "동화약품(주)",
+    "address": "충청북도 충주시 충주산단1로 167",
+    "inspStart": "2025-03-04",
+    "inspEnd": "2025-03-06",
+    "regDate": "2026-02-25",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1PoI0V7xQ3B",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제-내용고형제(정제, 캡슐제, 트로키제)",
+      "비무균-일반제제-연고제(연고제, 크림제, 겔제, 페이스트제)",
+      "비무균-일반제제-내용액제(경구용액제, 시럽제(액상))",
+      "비무균-일반제제-합성"
+    ],
+    "sterile": "비무균"
+  }
+]
