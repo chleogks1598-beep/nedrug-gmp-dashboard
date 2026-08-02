@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url';
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, '..');
 const DATA = path.join(ROOT, 'public', 'data.json');
+const PENDING = path.join(ROOT, 'pending', 'list.json');
 const OUT = path.join(ROOT, 'public', 'archive');
 const DOWN = 'https://nedrug.mfds.go.kr/cmn/edms/down/';
 const UA =
@@ -53,8 +54,14 @@ const kindOf = (buf) => {
 };
 
 fs.mkdirSync(OUT, { recursive: true });
+// data.json(대시보드 반영분) + pending/list.json(아직 추출 대기 중인 신규 건).
+//  ※ 신규 건은 추출·병합 전까지 data.json 에 없다. data.json 만 보면 그 동안 원본을
+//    확보하지 못하는 공백이 생긴다 — 식약처가 그 사이 원문을 내리면 영영 못 받는다.
 const data = JSON.parse(fs.readFileSync(DATA, 'utf8'));
-let targets = ONLY.length ? data.filter((r) => ONLY.includes(r.docId)) : data;
+const pendingList = fs.existsSync(PENDING) ? JSON.parse(fs.readFileSync(PENDING, 'utf8')) : [];
+const seen = new Set(data.map((r) => r.docId));
+const all = [...data, ...pendingList.filter((r) => !seen.has(r.docId))];
+let targets = ONLY.length ? all.filter((r) => ONLY.includes(r.docId)) : all;
 targets = targets.filter((r) => {
   const pdf = path.join(OUT, r.docId + '.pdf');
   const hwpx = path.join(OUT, r.docId + '.hwpx');
@@ -62,8 +69,8 @@ targets = targets.filter((r) => {
 });
 if (LIMIT) targets = targets.slice(0, LIMIT);
 
-const already = data.length - targets.length;
-console.log(`보관 대상 ${targets.length}건 (이미 보관 ${already}건 / 전체 ${data.length}건)`);
+const already = all.length - targets.length;
+console.log(`보관 대상 ${targets.length}건 (이미 보관 ${already}건 / 전체 ${all.length}건)`);
 
 let ok = 0;
 let fail = 0;
