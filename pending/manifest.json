@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "docId": "1P-6YUq0LLc",
+    "seq": 1,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "(주)팩슨",
+    "address": "대구광역시 달서구 달서대로58길 53",
+    "inspStart": "2026-05-29",
+    "inspEnd": "2026-05-29",
+    "regDate": "2026-08-03",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1P-6YUq0LLc",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1P-6WXvKgB4",
+    "seq": 2,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "한국한의약진흥원 한약제제생산센터",
+    "address": "대구광역시 동구 혁신대로78길 3한약제제생산센터",
+    "inspStart": "2026-05-07",
+    "inspEnd": "2026-05-07",
+    "regDate": "2026-08-03",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1P-6WXvKgB4",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제-내용고형제(정제, 캡슐제)",
+      "비무균-일반제제-내용액제(엑스제(액상))"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1P-6WXvKbaf",
+    "seq": 3,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "동방산업가스",
+    "address": "경상북도 안동시 풍산읍 절뒤길 34 동방산업가스",
+    "inspStart": "2026-04-28",
+    "inspEnd": "2026-04-29",
+    "regDate": "2026-08-03",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1P-6WXvKbaf",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1P-6WXvKY5L",
+    "seq": 4,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "경북산소(주)",
+    "address": "대구광역시 서구 와룡로100길 54",
+    "inspStart": "2026-05-22",
+    "inspEnd": "2026-05-22",
+    "regDate": "2026-08-03",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1P-6WXvKY5L",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제(의료용 고압가스)-가스제(의료용 고압가스)"
+    ],
+    "sterile": "비무균"
+  }
+]
