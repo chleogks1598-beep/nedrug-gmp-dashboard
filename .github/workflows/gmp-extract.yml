@@ -42,10 +42,20 @@ jobs:
 
       - name: 신규 건 확인
         id: check
+        env:
+          HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
         run: |
           n=$(node -e "const m=require('./pending/manifest.json');console.log(m.length)" 2>/dev/null || echo 0)
-          echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "미반영 신규 문서: ${n}건"
+          # ANTHROPIC_API_KEY 가 없으면 이 경로는 잠들어 있는다.
+          # 회사 정책상 유료 API 키를 못 쓰는 동안은 로컬 러너(run-local-update.cmd)가 추출을 담당한다.
+          # 여기서 실패시키면 매번 빨간 실행만 쌓이므로, 조용히 건너뛰고 초록으로 끝낸다.
+          if [ "$HAS_KEY" != "true" ]; then
+            echo "::notice::ANTHROPIC_API_KEY 미설정 — Actions 추출 경로는 대기 상태입니다. 로컬 러너가 처리합니다."
+            echo "count=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "count=$n" >> "$GITHUB_OUTPUT"
 
       - name: 지적사항 추출 (Claude API)
         if: steps.check.outputs.count != '0'

@@ -18,3 +18,6 @@ pending/extracted.json
 .routine-backup/
 
 .vercel
+
+# 로컬 자동갱신 러너 로그
+local-update.log
