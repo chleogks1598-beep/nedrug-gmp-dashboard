@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260102/4",
+    "infoNo": "20260102",
+    "infoClassCode": "4",
+    "title": "카르복시말토오스수산화제이철착염 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-11-04",
+    "stage": "변경명령",
+    "regDate": "2026-08-05",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260102&infoClassCode=4"
+  },
+  {
     "key": "20260087/4",
     "infoNo": "20260087",
     "infoClassCode": "4",
@@ -10,18 +22,6 @@
     "stage": "변경명령",
     "regDate": "2026-08-04",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260087&infoClassCode=4"
-  },
-  {
-    "key": "20260102/4",
-    "infoNo": "20260102",
-    "infoClassCode": "4",
-    "title": "카르복시말토오스수산화제이철착염 성분 제제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-11-04",
-    "stage": "변경명령",
-    "regDate": "2026-08-04",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260102&infoClassCode=4"
   },
   {
     "key": "20260113/3",
