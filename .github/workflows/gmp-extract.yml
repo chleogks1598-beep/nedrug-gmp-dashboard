@@ -1,0 +1,81 @@
+name: Extract GMP 지적사항 (추출·반영)
+
+# 수집(gmp-fetch.yml)이 끝나면 이어서 지적사항을 추출하고 data.json 에 반영한다.
+#
+# 원래 이 단계는 claude.ai 클라우드 루틴(매일 08시)이 담당했는데, 루틴 샌드박스에서
+# git push 가 403 으로 막혀 2026-07-28 생성 이후 단 한 번도 성공하지 못했다.
+# (GitHub 연결을 재인증해도 동일 — 쓰기 자격증명이 주입되지 않는 것으로 보인다.)
+# Actions 는 push 가 되고 로그도 보이므로 수집·추출·배포가 한 시스템으로 합쳐진다.
+#
+# ★ 부분 성공을 커밋하지 않는다: 추출이 한 건이라도 실패하면 merge 없이 실패 처리한다.
+#   일부만 반영하면 실패한 문서가 대시보드에 '적합'으로 잘못 표시되기 때문이다.
+
+on:
+  workflow_run:
+    workflows: ["Fetch GMP 실사결과 (수집·감지)"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gmp-extract
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    # 수집이 실패한 회차는 pending 이 갱신되지 않았으므로 건너뛴다.
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+
+      # 수집 워크플로우가 방금 커밋한 pending/ 을 확실히 집어온다
+      # (workflow_run 은 트리거 시점의 커밋을 체크아웃하므로 최신이 아닐 수 있다).
+      - name: 최신 pending 받기
+        run: git pull --rebase --autostash -q origin main
+
+      - name: 신규 건 확인
+        id: check
+        run: |
+          n=$(node -e "const m=require('./pending/manifest.json');console.log(m.length)" 2>/dev/null || echo 0)
+          echo "count=$n" >> "$GITHUB_OUTPUT"
+          echo "미반영 신규 문서: ${n}건"
+
+      - name: 지적사항 추출 (Claude API)
+        if: steps.check.outputs.count != '0'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/extract.mjs
+
+      - name: data.json 병합
+        if: steps.check.outputs.count != '0'
+        env:
+          LIST_PATH: pending/list.json
+          EXTRACTED_PATH: pending/extracted.json
+        run: node scripts/merge.mjs
+
+      # [skip ci] 를 붙이지 않는다 — 이 push 가 Pages 재배포와 팀 알림메일(notify.yml)을 발화시킨다.
+      - name: 커밋·푸시
+        if: steps.check.outputs.count != '0'
+        run: |
+          git config user.name "nedrug-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/data.json
+          if git diff --cached --quiet; then
+            echo "data.json 변화 없음 — 커밋 생략."
+            exit 0
+          fi
+          git commit -m "data: 실사결과 자동 갱신 (신규 ${{ steps.check.outputs.count }}건)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash -q origin main && git push origin HEAD:main && exit 0
+            echo "push 재시도 $i"
+            sleep 5
+          done
+          echo "push 실패" >&2
+          exit 1

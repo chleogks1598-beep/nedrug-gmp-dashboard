@@ -10,6 +10,7 @@
     "serve": "node scripts/serve.mjs public 8787"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
     "fflate": "^0.8.3"
   }
 }
