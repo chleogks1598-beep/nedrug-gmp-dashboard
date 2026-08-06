@@ -4,8 +4,10 @@
 // Claude Code CLI(`claude -p`)** 를 호출한다. 기존 구독으로 처리되므로 API 비용이 없다.
 // (회사 정책상 유료 API 키 발급이 어려워 이 경로를 기본으로 쓴다.)
 //
-// 입력:  pending/manifest.json + pending/<docId>.txt
-// 출력:  pending/extracted.json
+// 입력:  <작업디렉터리>/manifest.json + <작업디렉터리>/<docId>.txt
+// 출력:  <작업디렉터리>/extracted.json
+//        작업디렉터리 = 환경변수 WORK_DIR (기본 pending = Actions 가 받아둔 백로그).
+//        로컬에서 직접 수집한 경우 러너가 WORK_DIR=newdocs 로 부른다.
 // 필요:  PATH 에 claude CLI (2.1.220 에서 검증)
 //
 // ★ 부분 성공을 만들지 않는다: 한 건이라도 실패하면 exit 1.
@@ -18,7 +20,8 @@ import { fileURLToPath } from "url";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
-const PENDING = path.join(ROOT, "pending");
+const WORK_DIR = process.env.WORK_DIR || "pending";
+const PENDING = path.join(ROOT, WORK_DIR);
 const MANIFEST = path.join(PENDING, "manifest.json");
 const OUT = path.join(PENDING, "extracted.json");
 
@@ -100,7 +103,7 @@ async function main() {
   for (const rec of manifest) {
     const txt = path.join(PENDING, `${rec.docId}.txt`);
     try {
-      if (!fs.existsSync(txt)) throw new Error(`본문 파일 없음: pending/${rec.docId}.txt`);
+      if (!fs.existsSync(txt)) throw new Error(`본문 파일 없음: ${WORK_DIR}/${rec.docId}.txt`);
       const defs = parseArray(await runClaude(fs.readFileSync(txt, "utf8")));
       out.push({ docId: rec.docId, deficiencies: defs });
       console.log(`  ${rec.docId} ${rec.site} → 지적 ${defs.length}건`);

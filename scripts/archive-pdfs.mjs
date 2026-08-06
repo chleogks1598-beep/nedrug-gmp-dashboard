@@ -17,7 +17,10 @@ import { fileURLToPath } from 'node:url';
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, '..');
 const DATA = path.join(ROOT, 'public', 'data.json');
-const PENDING = path.join(ROOT, 'pending', 'list.json');
+// 아직 data.json 에 안 들어간 신규 건의 목록 — 수집 주체가 둘이라 둘 다 본다.
+//   pending/  = GitHub Actions 가 수집한 백로그
+//   newdocs/  = 로컬 스케줄러가 방금 직접 수집한 것(gitignore, 같은 PC 에서 바로 처리)
+const LISTS = [path.join(ROOT, 'pending', 'list.json'), path.join(ROOT, 'newdocs', 'list.json')];
 const OUT = path.join(ROOT, 'public', 'archive');
 const DOWN = 'https://nedrug.mfds.go.kr/cmn/edms/down/';
 const UA =
@@ -58,9 +61,16 @@ fs.mkdirSync(OUT, { recursive: true });
 //  ※ 신규 건은 추출·병합 전까지 data.json 에 없다. data.json 만 보면 그 동안 원본을
 //    확보하지 못하는 공백이 생긴다 — 식약처가 그 사이 원문을 내리면 영영 못 받는다.
 const data = JSON.parse(fs.readFileSync(DATA, 'utf8'));
-const pendingList = fs.existsSync(PENDING) ? JSON.parse(fs.readFileSync(PENDING, 'utf8')) : [];
 const seen = new Set(data.map((r) => r.docId));
-const all = [...data, ...pendingList.filter((r) => !seen.has(r.docId))];
+const all = [...data];
+for (const listPath of LISTS) {
+  if (!fs.existsSync(listPath)) continue;
+  for (const r of JSON.parse(fs.readFileSync(listPath, 'utf8'))) {
+    if (seen.has(r.docId)) continue;
+    seen.add(r.docId);
+    all.push(r);
+  }
+}
 let targets = ONLY.length ? all.filter((r) => ONLY.includes(r.docId)) : all;
 targets = targets.filter((r) => {
   const pdf = path.join(OUT, r.docId + '.pdf');
