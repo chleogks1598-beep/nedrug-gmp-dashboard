@@ -16,9 +16,9 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 import { fileURLToPath } from "url";
-import { execFileSync } from "child_process";
 import { unzipSync, strFromU8 } from "fflate";
 import { extractFormInfo } from "./forms.mjs";
+import { pdfToText } from "./pdftext.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
@@ -64,15 +64,6 @@ function hwpxToText(buf) {
       .replace(/<[^>]+>/g, "") + "\n";
   }
   return out;
-}
-
-function pdfToText(file) {
-  try {
-    return execFileSync("pdftotext", ["-enc", "UTF-8", "-layout", file, "-"],
-      { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
-  } catch {
-    return null; // pdftotext unavailable — caller/agent should Read the PDF directly
-  }
 }
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
@@ -125,7 +116,10 @@ async function main() {
     if (text != null) fs.writeFileSync(path.join(OUT, r.docId + ".txt"), text);
     // 제형은 규칙 기반으로 바로 뽑아 forms.json 에 누적한다 (LLM 불필요)
     const info = text != null ? extractFormInfo(text) : { forms: [], sterile: "" };
-    formsMap[r.docId] = info;
+    // 본문을 못 읽은 건은 forms.json 에 남기지 않는다.
+    // 빈 값을 적어두면 "제형 없는 문서"로 굳어져, 나중에 본문을 읽을 수 있게 돼도
+    // scan-forms 가 `docId in forms` 로 건너뛰어 영영 채워지지 않는다.
+    if (text != null) formsMap[r.docId] = info;
     // pending mode: `file` is a temp path the consumer can't reach — give it the source URL instead
     manifest.push({ ...r, file: PENDING ? null : file, downUrl: DOWN + r.docId, ext, hasText: text != null, ...info });
     await new Promise(s => setTimeout(s, 150));

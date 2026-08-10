@@ -10,9 +10,9 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 import { fileURLToPath } from "url";
-import { execFileSync } from "child_process";
 import { unzipSync, strFromU8 } from "fflate";
 import { extractFormInfo } from "./forms.mjs";
+import { pdfToText } from "./pdftext.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
@@ -56,13 +56,6 @@ function hwpxToText(buf) {
   }
   return out;
 }
-
-const pdfToText = file => {
-  try {
-    return execFileSync("pdftotext", ["-enc", "UTF-8", "-layout", file, "-"],
-      { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
-  } catch { return null; }
-};
 
 const data = JSON.parse(fs.readFileSync(DATA, "utf8"));
 const forms = fs.existsSync(OUTF) ? JSON.parse(fs.readFileSync(OUTF, "utf8")) : {};
