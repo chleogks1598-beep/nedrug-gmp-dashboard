@@ -105,7 +105,9 @@ async function main() {
   for (const r of fresh) {
     let buf;
     try { const dres = await fetchRetry(DOWN + r.docId, {}); buf = Buffer.from(await dres.arrayBuffer()); }
-    catch (e) { console.log("다운로드 실패 skip:", r.docId, e.message); continue; }
+    // 이 건만 빼고 진행한다. 목록엔 남아 있으므로 merge 가 '적합' 오표시를 막으려고
+    // 중단시킨다(호출부는 이번 실행을 통째로 건너뛰고 다음에 재시도한다).
+    catch (e) { console.error("DOWNLOAD_FAILED:", r.docId, r.site, e.message); continue; }
     const isZip = buf.slice(0, 2).toString() === "PK";
     const ext = isZip ? "hwpx" : "pdf";
     const file = path.join(BIN, r.docId + "." + ext);

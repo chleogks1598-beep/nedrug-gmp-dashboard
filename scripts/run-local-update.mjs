@@ -73,6 +73,23 @@ function main() {
   }
   let commitMsg = `data: 실사결과 자동 갱신 (신규 ${manifest.length}건)`;
 
+  // ★ 안전장치: 목록에 있는데 data.json 에도 manifest 에도 없는 문서가 하나라도 있으면
+  //   이번 실행은 통째로 건너뛴다. 그런 건은 merge 에서 빈 배열 = '적합' 으로 잘못 찍힌다.
+  //   다운로드가 그 건만 실패하면(fetch-new.mjs 가 skip) 이 상태가 된다.
+  //   ※ 신규가 여러 건일 때 일부만 실패하는 경우까지 잡으려면 추출 '전'에 봐야 한다
+  //     — 그래야 쓸데없는 LLM 호출도, 부분 반영도 없다.
+  const listFile = path.join(ROOT, work, "list.json");
+  if (fs.existsSync(listFile)) {
+    const list = JSON.parse(fs.readFileSync(listFile, "utf8"));
+    const known = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, "public", "data.json"), "utf8")).map((r) => r.docId));
+    const inManifest = new Set(manifest.map((r) => r.docId));
+    const missing = list.filter((r) => !known.has(r.docId) && !inManifest.has(r.docId));
+    if (missing.length) {
+      log(`미수집 문서 ${missing.length}건(${missing.map((r) => r.docId).join(", ")}) — 이번 실행 건너뜀, 다음 실행에서 재시도.`);
+      return;
+    }
+  }
+
   if (!manifest.length) {
     // 신규 0건이어도 목록 메타데이터는 바뀔 수 있다. 실제로 '디아이지에어가스(주)'가
     // '에어리퀴드코리아(주)'로 사명이 바뀌었는데, 갱신이 신규 건에만 걸려 있어서
@@ -82,16 +99,7 @@ function main() {
       log("신규 0건 — 할 일 없음.");
       return;
     }
-    // ★ 안전장치: 목록에 있는데 data.json 에 없는 문서가 하나라도 있으면 메타 갱신을 하지 않는다.
-    //   (다운로드 실패로 manifest 에서 빠진 건이 그렇다. 그대로 merge 하면 추출 없이
-    //    빈 배열 = '적합' 으로 잘못 찍힌다.)
-    const list = JSON.parse(fs.readFileSync(path.join(ROOT, "newdocs", "list.json"), "utf8"));
-    const known = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, "public", "data.json"), "utf8")).map((r) => r.docId));
-    const missing = list.filter((r) => !known.has(r.docId));
-    if (missing.length) {
-      log(`신규 0건이지만 미수집 문서 ${missing.length}건(${missing.map((r) => r.docId).join(", ")}) — 메타 갱신 생략, 다음 실행에서 재시도.`);
-      return;
-    }
+    // (미수집 문서 확인은 위에서 두 분기 공통으로 끝냈다.)
     log(node("scripts/merge.mjs", {
       LIST_PATH: "newdocs/list.json",
       EXTRACTED_PATH: "newdocs/__none.json", // 없는 경로 = 추출분 없음(기존 지적사항 그대로 유지)

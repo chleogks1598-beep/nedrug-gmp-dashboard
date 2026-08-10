@@ -22,7 +22,9 @@ const esc = s => (s == null ? "" : String(s)).replace(/[&<>]/g, c => ({ "&": "&a
 
 // recipients
 let recipients = [];
-try { recipients = JSON.parse(fs.readFileSync(RECIP, "utf8")).filter(x => typeof x === "string" && x.includes("@")); } catch {}
+let recipError = "";
+try { recipients = JSON.parse(fs.readFileSync(RECIP, "utf8")).filter(x => typeof x === "string" && x.includes("@")); }
+catch (e) { recipError = e.message; }
 if (recipients.length === 0 && process.env.RECIPIENT) recipients = [process.env.RECIPIENT];
 
 const cur = JSON.parse(fs.readFileSync(CUR, "utf8"));
@@ -47,10 +49,15 @@ if (fresh.length === 0) {
   console.log("SEND=false N=0");
   process.exit(0);
 }
+// 신규 건이 있는데 수신자를 못 정하면 조용히 넘어가지 않는다.
+// send=false 로 끝내면 워크플로우가 초록으로 끝나서, 아무도 메일을 못 받고 있다는 걸
+// 알아챌 방법이 없다(recipients.json 이 깨지거나 비면 그렇게 된다).
 if (recipients.length === 0) {
-  emitOutput({ send: "false" });
-  console.log("SEND=false N=" + fresh.length + " (수신자 없음: recipients.json 확인)");
-  process.exit(0);
+  console.error(
+    `RECIPIENTS_ERROR: 신규 ${fresh.length}건이 있는데 수신자가 없습니다 — ${RECIP} 확인 필요.` +
+      (recipError ? ` (읽기 실패: ${recipError})` : ""),
+  );
+  process.exit(1);
 }
 
 const withDef = fresh.filter(r => r.defCount > 0).length;

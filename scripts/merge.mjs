@@ -42,6 +42,22 @@ function main() {
   );
   const prevForms = new Map(prev.map(r => [r.docId, { forms: r.forms || [], sterile: r.sterile || "" }]));
 
+  // ★ 추출 없는 신규 건은 절대 통과시키지 않는다.
+  //   목록에 있는데 extracted 에도 직전 data.json 에도 없으면 아래에서 defs=[] 가 되어
+  //   '적합' 으로 찍힌다. 실제 지적사항이 있는 제조소가 적합으로 공개되고, 한 번 들어가면
+  //   다음 실행부터는 'known' 이라 영영 다시 보지 않는다.
+  //   이런 상태는 다운로드 실패(fetch-new.mjs 가 그 건만 skip)나 본문 추출 실패로 생긴다.
+  //   여기서 멈추면 커밋이 없으니 다음 실행에서 통째로 재시도된다.
+  const unextracted = list.filter(r => !newDef.has(r.docId) && !prevDef.has(r.docId));
+  if (unextracted.length && !process.env.ALLOW_UNEXTRACTED) {
+    console.error(
+      `MERGE_ERROR: 추출 정보가 없는 신규 문서 ${unextracted.length}건 — '적합' 오표시를 막기 위해 중단합니다:\n` +
+        unextracted.map(r => `  - ${r.docId} ${r.site}`).join("\n") +
+        `\n(최초 구축처럼 의도적으로 비워둬야 할 때만 ALLOW_UNEXTRACTED=1)`,
+    );
+    process.exit(1);
+  }
+
   let added = 0, carried = 0;
   const out = list.map(r => {
     let defs;

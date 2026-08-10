@@ -141,11 +141,19 @@ async function main() {
   }
 
   let recipients = [];
-  try { recipients = JSON.parse(fs.readFileSync(RECIP, "utf8")).filter(x => typeof x === "string" && x.includes("@")); } catch {}
+  let recipError = "";
+  try { recipients = JSON.parse(fs.readFileSync(RECIP, "utf8")).filter(x => typeof x === "string" && x.includes("@")); }
+  catch (e) { recipError = e.message; }
+  // baseline 을 전진시키지 않으니 알림이 유실되진 않는다. 다만 조용히 초록으로 끝나면
+  // 아무도 못 받고 있다는 걸 알 수 없어서, 설정 오류로 드러나게 실패시킨다.
   if (recipients.length === 0) {
     emit({ send: "false", promote: "false" });
-    console.log(`변화 감지(신규 ${fresh.length}, 변경 ${changed.length})했으나 수신자 없음 → baseline 유지(다음 실행 재알림).`);
-    return;
+    console.error(
+      `RECIPIENTS_ERROR: 변화 감지(신규 ${fresh.length}, 변경 ${changed.length})했으나 수신자가 없습니다 — ${RECIP} 확인 필요.` +
+        (recipError ? ` (읽기 실패: ${recipError})` : "") +
+        " baseline 은 그대로라 고치면 다음 실행에서 재알림됩니다.",
+    );
+    process.exit(1);
   }
 
   const freshRows = fresh.map(r => `<tr>
