@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>의약품 행정처분 대시보드</title>
+<style>
+  :root{
+    --bg:#f6f8fa; --surface:#ffffff; --surface-2:#f0f3f6; --border:#e2e8f0;
+    --ink:#1a2733; --ink-2:#4a5966; --ink-3:#78889a;
+    --accent:#1367d6; --accent-soft:#e7f0fc;
+    --bar:#1c6fd0; --bar-soft:#dbe7f5;
+    --ok:#0f8a5f; --ok-soft:#e2f4ec; --warn:#c2410c; --warn-soft:#fdece2;
+    --danger:#c02638; --danger-soft:#fdeaec;
+    --shadow:0 1px 2px rgba(16,32,48,.06),0 2px 8px rgba(16,32,48,.05);
+    --radius:12px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e141b; --surface:#161e27; --surface-2:#1c2733; --border:#2a3846;
+      --ink:#e6edf3; --ink-2:#a9b8c6; --ink-3:#748291;
+      --accent:#4c9aff; --accent-soft:#16273c; --bar:#4c9aff; --bar-soft:#22384f;
+      --ok:#3fce97; --ok-soft:#12291f; --warn:#f0894f; --warn-soft:#2c1a10;
+      --danger:#ff7b8a; --danger-soft:#33161b;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 2px 10px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e141b; --surface:#161e27; --surface-2:#1c2733; --border:#2a3846;
+    --ink:#e6edf3; --ink-2:#a9b8c6; --ink-3:#748291;
+    --accent:#4c9aff; --accent-soft:#16273c; --bar:#4c9aff; --bar-soft:#22384f;
+    --ok:#3fce97; --ok-soft:#12291f; --warn:#f0894f; --warn-soft:#2c1a10;
+    --danger:#ff7b8a; --danger-soft:#33161b;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 2px 10px rgba(0,0,0,.25);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);
+    font-family:"Malgun Gothic","맑은 고딕",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px 18px 64px}
+  header.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 20px;margin:8px 0 18px}
+  header.top h1{font-size:22px;margin:0;letter-spacing:-.3px;font-weight:800}
+  header.top .sub{color:var(--ink-2);font-size:13px;margin-top:4px}
+  header.top .sub a{color:var(--accent);text-decoration:none}
+  header.top .sub a:hover{text-decoration:underline}
+  .spacer{flex:1}
+  .theme-btn{background:var(--surface);border:1px solid var(--border);color:var(--ink-2);
+    border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:inherit}
+  .theme-btn:hover{border-color:var(--accent)}
+  nav.site{display:flex;gap:4px;background:var(--surface-2);border-radius:9px;padding:3px;margin-bottom:20px;flex-wrap:wrap}
+  nav.site a{color:var(--ink-2);text-decoration:none;padding:7px 14px;border-radius:7px;font-size:13px;font-weight:600}
+  nav.site a:hover{color:var(--accent)}
+  nav.site a.cur{background:var(--surface);color:var(--accent);box-shadow:var(--shadow)}
+
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  .tile{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 18px;box-shadow:var(--shadow)}
+  .tile .k{font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.2px}
+  .tile .v{font-size:30px;font-weight:800;letter-spacing:-1px;margin-top:6px;font-variant-numeric:tabular-nums}
+  .tile .v.warn{color:var(--warn)} .tile .v.ok{color:var(--ok)} .tile .v.danger{color:var(--danger)}
+  .tile .u{font-size:12px;color:var(--ink-3);margin-left:4px;font-weight:600}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 18px;box-shadow:var(--shadow)}
+  .card h2{font-size:14px;margin:0 0 14px;font-weight:700}
+  .card h2 .muted{color:var(--ink-3);font-weight:500;font-size:12px}
+
+  .bars{display:flex;flex-direction:column;gap:9px}
+  .barrow{display:grid;grid-template-columns:124px 1fr 46px;align-items:center;gap:10px;font-size:12.5px}
+  .barrow .lbl{color:var(--ink-2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .barrow .track{background:var(--surface-2);border-radius:5px;height:16px;overflow:hidden}
+  .barrow .fill{display:block;background:var(--bar);height:100%;border-radius:5px;min-width:2px;transition:width .3s}
+  .barrow .val{color:var(--ink-2);text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  .barrow.clk{cursor:pointer;border-radius:5px}
+  .barrow.clk:hover{background:var(--surface-2)}
+  .barrow.clk:hover .lbl{color:var(--accent)}
+  .barrow.sel .fill{background:var(--warn)}
+  .barrow.sel .lbl{color:var(--warn);font-weight:700}
+
+  .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+  .filters input,.filters select{background:var(--surface);border:1px solid var(--border);color:var(--ink);
+    border-radius:8px;padding:9px 11px;font-size:13px;font-family:inherit}
+  .filters input{flex:1;min-width:220px}
+  .filters input:focus,.filters select:focus{outline:none;border-color:var(--accent)}
+  .filters .count{color:var(--ink-3);font-size:12.5px;margin-left:auto;font-weight:600}
+
+  .tablewrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{background:var(--surface-2);color:var(--ink-2);text-align:left;font-weight:700;
+    padding:11px 12px;font-size:12px;position:sticky;top:0;cursor:pointer;white-space:nowrap;border-bottom:1px solid var(--border)}
+  thead th:hover{color:var(--accent)}
+  thead th .arw{opacity:.5;font-size:10px}
+  tbody tr.main{border-bottom:1px solid var(--border);cursor:pointer}
+  tbody tr.main:hover{background:var(--surface-2)}
+  tbody td{padding:10px 12px;vertical-align:top}
+  td.num{font-variant-numeric:tabular-nums;color:var(--ink-3);white-space:nowrap}
+  td.ent{font-weight:600;max-width:260px}
+  td.ent .addr{font-weight:400;color:var(--ink-3);font-size:11.5px;margin-top:2px;
+    display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+  td.itm{color:var(--ink-2);max-width:220px;font-size:12.5px}
+  td.dsp{max-width:360px;color:var(--ink-2)}
+  .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:700;white-space:nowrap}
+  .badge.ok{background:var(--ok-soft);color:var(--ok)}
+  .badge.warn{background:var(--warn-soft);color:var(--warn)}
+  .badge.danger{background:var(--danger-soft);color:var(--danger)}
+  .badge.gone{background:var(--surface-2);color:var(--ink-3);border:1px dashed var(--border)}
+  .badge.cat{background:var(--accent-soft);color:var(--accent)}
+  .chev{color:var(--ink-3);transition:transform .15s;display:inline-block}
+  tr.main.open .chev{transform:rotate(90deg)}
+  tr.detail td{background:var(--surface-2);padding:0}
+  tr.detail .inner{padding:6px 14px 16px}
+  .kv{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+  .kv th{background:transparent;color:var(--ink-3);text-align:left;font-weight:700;padding:7px 8px;
+    border-bottom:1px solid var(--border);position:static;cursor:default;font-size:11.5px;white-space:nowrap;width:96px;vertical-align:top}
+  .kv td{padding:7px 8px;border-bottom:1px solid var(--border);vertical-align:top;white-space:pre-wrap}
+  .itmtable{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px;background:var(--surface);border-radius:8px;overflow:hidden}
+  .itmtable th{background:var(--surface-2);color:var(--ink-3);text-align:left;font-weight:700;padding:6px 8px;
+    position:static;cursor:default;font-size:11px;white-space:nowrap;width:auto}
+  .itmtable td{padding:6px 8px;border-bottom:1px solid var(--border);white-space:normal}
+  .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .dl{display:inline-flex;align-items:center;gap:5px;color:var(--accent);text-decoration:none;
+    font-size:12px;font-weight:600;border:1px solid var(--border);border-radius:7px;padding:5px 10px}
+  .dl:hover{border-color:var(--accent);background:var(--accent-soft)}
+  .gonenote{color:var(--ink-3);font-size:12px;margin-top:10px;padding:8px 10px;
+    background:var(--surface);border-left:3px solid var(--ink-3);border-radius:4px}
+  .none{color:var(--ink-3);font-style:italic;padding:22px 12px;text-align:center}
+  footer{margin-top:26px;color:var(--ink-3);font-size:12px;text-align:center;line-height:1.7}
+  .pager{display:flex;justify-content:center;gap:6px;margin-top:16px;flex-wrap:wrap}
+  .pager button{background:var(--surface);border:1px solid var(--border);color:var(--ink-2);
+    border-radius:7px;padding:7px 12px;font-size:13px;cursor:pointer;min-width:38px;font-family:inherit}
+  .pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+  .pager button:disabled{opacity:.4;cursor:default}
+  .pager button.cur{background:var(--accent);color:#fff;border-color:var(--accent)}
+  mark.hl{background:#ffdf7e;color:#3a2a00;border-radius:3px;padding:0 1px;font-weight:700}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) mark.hl{background:#8a6400;color:#ffeeb8} }
+  :root[data-theme="dark"] mark.hl{background:#8a6400;color:#ffeeb8}
+  @media (max-width:900px){ .tiles{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr} }
+  @media (max-width:560px){ td.itm,td.ent .addr{display:none} .barrow{grid-template-columns:84px 1fr 40px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>의약품 행정처분 대시보드</h1>
+      <div class="sub">
+        출처: <a href="https://nedrug.mfds.go.kr/pbp/CCBAO01" target="_blank" rel="noopener">의약품안전나라 · 행정처분정보</a>
+        · 최종 갱신 <b id="updated">—</b>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button class="theme-btn" id="themeBtn">◐ 테마</button>
+  </header>
+
+  <nav class="site">
+    <a href="../">GMP 실사결과</a>
+    <a href="../recall/">회수·폐기</a>
+    <a href="./" class="cur">행정처분</a>
+  </nav>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="grid2">
+    <div class="card">
+      <h2>연도별 처분 건수 <span class="muted">(처분일자 기준)</span></h2>
+      <div class="bars" id="chartYear"></div>
+    </div>
+    <div class="card">
+      <h2>처분 유형 <span class="muted">(막대를 누르면 필터)</span></h2>
+      <div class="bars" id="chartCat"></div>
+    </div>
+  </section>
+
+  <section class="filters">
+    <input id="q" type="search" placeholder="업체명 · 품목명 · 처분명 · 위반내용 · 근거법령 검색">
+    <select id="fYear"><option value="">연도 전체</option></select>
+    <select id="fCat"><option value="">처분유형 전체</option></select>
+    <select id="fBiz"><option value="">업종 전체</option></select>
+    <select id="fState">
+      <option value="">공개상태 전체</option>
+      <option value="open">공개중</option>
+      <option value="gone">식약처 공개 종료(보존본)</option>
+    </select>
+    <span class="count" id="count"></span>
+  </section>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr>
+        <th data-k="dispsDate">처분일자<span class="arw"></span></th>
+        <th data-k="entpName">업체명 · 소재지<span class="arw"></span></th>
+        <th data-k="itemName">품목명<span class="arw"></span></th>
+        <th data-k="dispsName">처분명<span class="arw"></span></th>
+        <th data-k="openEndDate">공개종료<span class="arw"></span></th>
+      </tr></thead>
+      <tbody id="tb"></tbody>
+    </table>
+  </div>
+  <div class="pager" id="pager"></div>
+
+  <footer>
+    식약처 의약품안전나라 공개데이터를 자동 수집·정리한 <b>참고용</b> 자료입니다. 정확한 내용은 원문을 확인하세요.<br>
+    행정처분은 공개기간이 짧아(수개월) 목록에서 빨리 내려갑니다 — 내려간 자료도 <b>삭제하지 않고 보존</b>합니다.
+  </footer>
+</div>
+
+<script>
+const DATA_URL = "../admin-data.json";
+const ITEM_URL = k => `https://nedrug.mfds.go.kr/pbp/CCBAO01/getItem?limit=10&searchYn=true&page=1&dispsApplySeq=${encodeURIComponent(k)}`;
+const DRUG_URL = s => `https://nedrug.mfds.go.kr/pbp/CCBBB01/getItemDetail?itemSeq=${encodeURIComponent(s)}`;
+const PER = 50;
+
+// 처분 유형 — 위에서부터 먼저 걸리는 것 하나만 매긴다(과징금은 업무정지에 갈음하는 경우가 많아 먼저 본다).
+const CATS = [
+  ["허가·등록취소", /허가.{0,4}취소|등록.{0,2}취소|지정.{0,2}취소|폐쇄/],
+  ["과징금", /과징금/],
+  ["업무정지", /업무.{0,2}정지|제조정지|판매정지/],
+  ["품목 폐기·회수", /폐기|회수/],
+  ["경고", /경고/],
+  ["시정명령", /시정/],
+];
+const catOf = r => (CATS.find(([, re]) => re.test(r.dispsName || "")) || ["기타"])[0];
+const yearOf = r => (r.dispsDate || "").slice(0, 4);
+const catClass = c => (c === "허가·등록취소" ? "danger" : c === "경고" || c === "시정명령" ? "ok" : "cat");
+
+let ALL = [], VIEW = [], page = 1, sortK = "dispsDate", sortDir = -1;
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+function hl(s) {
+  const t = esc(s);
+  const q = document.getElementById("q").value.trim();
+  if (!q) return t;
+  try { return t.replace(new RegExp(escRe(esc(q)), "gi"), m => `<mark class="hl">${m}</mark>`); }
+  catch { return t; }
+}
+
+const themeBtn = document.getElementById("themeBtn");
+const saved = localStorage.getItem("theme");
+if (saved) document.documentElement.dataset.theme = saved;
+themeBtn.onclick = () => {
+  const cur = document.documentElement.dataset.theme;
+  const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = cur === "dark" ? "light" : cur === "light" ? "dark" : dark ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem("theme", next);
+};
+
+function tiles() {
+  const y1 = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
+  const recent = ALL.filter(r => (r.dispsDate || "") >= y1).length;
+  const ent = new Set(ALL.map(r => r.entpName).filter(Boolean)).size;
+  const stop = ALL.filter(r => catOf(r) === "업무정지").length;
+  const gone = ALL.filter(r => r.delisted).length;
+  const t = [
+    ["전체 행정처분", ALL.length, "건", ""],
+    ["최근 1년", recent, "건", "warn"],
+    ["업무정지", stop, "건", "danger"],
+    ["공개 종료(보존)", gone, "건", "ok"],
+  ];
+  document.getElementById("tiles").innerHTML = t.map(([k, v, u, c]) =>
+    `<div class="tile"><div class="k">${k}</div><div class="v ${c}">${v.toLocaleString()}<span class="u">${u}</span></div></div>`).join("");
+}
+
+function bars(el, rows, opts = {}) {
+  const max = Math.max(1, ...rows.map(r => r[1]));
+  el.innerHTML = rows.map(([lbl, n]) =>
+    `<div class="barrow ${opts.clk ? "clk" : ""} ${opts.sel === lbl ? "sel" : ""}" data-lbl="${esc(lbl)}">
+      <span class="lbl" title="${esc(lbl)}">${esc(lbl)}</span>
+      <span class="track"><span class="fill" style="width:${(n / max * 100).toFixed(1)}%"></span></span>
+      <span class="val">${n.toLocaleString()}</span>
+    </div>`).join("");
+  if (opts.clk) el.querySelectorAll(".barrow").forEach(b => b.onclick = () => opts.clk(b.dataset.lbl));
+}
+
+function charts() {
+  const byYear = new Map();
+  ALL.forEach(r => { const y = yearOf(r); if (y) byYear.set(y, (byYear.get(y) || 0) + 1); });
+  bars(document.getElementById("chartYear"), [...byYear.entries()].sort((a, b) => b[0].localeCompare(a[0])).slice(0, 10));
+
+  const sel = document.getElementById("fCat").value;
+  const byCat = new Map();
+  ALL.forEach(r => { const c = catOf(r); byCat.set(c, (byCat.get(c) || 0) + 1); });
+  bars(document.getElementById("chartCat"), [...byCat.entries()].sort((a, b) => b[1] - a[1]), {
+    sel,
+    clk: lbl => {
+      const f = document.getElementById("fCat");
+      f.value = f.value === lbl ? "" : lbl;
+      apply();
+    },
+  });
+}
+
+function fillSelects() {
+  const years = [...new Set(ALL.map(yearOf).filter(Boolean))].sort().reverse();
+  document.getElementById("fYear").innerHTML = '<option value="">연도 전체</option>' + years.map(y => `<option>${y}</option>`).join("");
+  const cats = [...new Set(ALL.map(catOf))];
+  document.getElementById("fCat").innerHTML = '<option value="">처분유형 전체</option>' + cats.map(c => `<option>${esc(c)}</option>`).join("");
+  const biz = [...new Set(ALL.map(r => (r.detail && r.detail.bizType) || "").filter(Boolean))].sort();
+  document.getElementById("fBiz").innerHTML = '<option value="">업종 전체</option>' + biz.map(b => `<option>${esc(b)}</option>`).join("");
+}
+
+function apply() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const fy = document.getElementById("fYear").value;
+  const fc = document.getElementById("fCat").value;
+  const fb = document.getElementById("fBiz").value;
+  const fs = document.getElementById("fState").value;
+  VIEW = ALL.filter(r => {
+    if (fy && yearOf(r) !== fy) return false;
+    if (fc && catOf(r) !== fc) return false;
+    if (fb && ((r.detail && r.detail.bizType) || "") !== fb) return false;
+    if (fs === "open" && r.delisted) return false;
+    if (fs === "gone" && !r.delisted) return false;
+    if (!q) return true;
+    const d = r.detail || {};
+    return [r.entpName, r.itemName, r.dispsName, d.addr, d.violation, d.disposition, d.law, d.permitNo,
+      ...(d.items || []).map(i => i.name)].filter(Boolean).join(" ").toLowerCase().includes(q);
+  });
+  VIEW.sort((a, b) => String(a[sortK] ?? "").localeCompare(String(b[sortK] ?? ""), "ko") * sortDir);
+  page = 1;
+  charts();
+  render();
+}
+
+function render() {
+  const total = VIEW.length;
+  const pages = Math.max(1, Math.ceil(total / PER));
+  page = Math.min(page, pages);
+  const rows = VIEW.slice((page - 1) * PER, page * PER);
+  document.getElementById("count").textContent = `${total.toLocaleString()}건 / 전체 ${ALL.length.toLocaleString()}건`;
+
+  document.getElementById("tb").innerHTML = rows.length ? rows.map((r, i) => {
+    const d = r.detail || {};
+    const cat = catOf(r);
+    const items = d.items || [];
+    return `<tr class="main" data-i="${i}">
+      <td class="num"><span class="chev">▶</span> ${esc(r.dispsDate || "")}</td>
+      <td class="ent">${hl(r.entpName || "")} ${r.delisted ? '<span class="badge gone">공개종료</span>' : ""}
+        <div class="addr">${hl(d.addr || "")}</div></td>
+      <td class="itm">${hl(r.itemName || "—")}</td>
+      <td class="dsp"><span class="badge ${catClass(cat)}">${esc(cat)}</span><br>${hl(r.dispsName || "")}</td>
+      <td class="num">${esc(r.openEndDate || "")}</td>
+    </tr>
+    <tr class="detail" id="d${i}" hidden><td colspan="5"><div class="inner">
+      <table class="kv">
+        <tr><th>업체</th><td>${hl(d.entpName || r.entpName || "")}${d.bizType ? ` · ${hl(d.bizType)}` : ""}${d.permitNo ? ` · 허가(신고)번호 ${hl(d.permitNo)}` : ""}${d.entpGubun ? ` · ${hl(d.entpGubun)}` : ""}</td></tr>
+        <tr><th>소재지</th><td>${hl(d.addr || "—")}</td></tr>
+        <tr><th>위반내용</th><td>${hl(d.violation || "—")}</td></tr>
+        <tr><th>처분사항</th><td>${hl(d.disposition || r.dispsName || "—")}</td></tr>
+        <tr><th>근거법령</th><td>${hl(d.law || "—")}</td></tr>
+        <tr><th>공개기간</th><td>${esc(r.dispsDate || "")} ~ ${esc(r.openEndDate || "")}${r.firstSeen ? ` <span style="color:var(--ink-3)">· 수집 ${esc(r.firstSeen)}</span>` : ""}</td></tr>
+      </table>
+      ${items.length ? `<table class="itmtable">
+        <tr><th>품목기준코드</th><th>품목명</th><th>품목구분</th><th>전문/일반</th></tr>
+        ${items.map(it => `<tr><td>${hl(it.code || "")}</td><td>${it.itemSeq ? `<a class="dl" style="border:0;padding:0" href="${DRUG_URL(it.itemSeq)}" target="_blank" rel="noopener">${hl(it.name || "")}</a>` : hl(it.name || "")}</td><td>${hl(it.gubun || "")}</td><td>${hl(it.etcOtc || "")}</td></tr>`).join("")}
+      </table>` : ""}
+      ${r.delisted ? `<div class="gonenote">식약처 공개기간이 끝나 현재 원문 목록에는 없는 자료입니다(${esc(r.delistedAt || "")} 확인). 이 대시보드가 보존한 내용입니다.</div>` : ""}
+      <div class="links"><a class="dl" href="${ITEM_URL(r.key)}" target="_blank" rel="noopener">식약처 원문 상세 ↗</a></div>
+    </div></td></tr>`;
+  }).join("") : `<tr><td colspan="5" class="none">조건에 맞는 행정처분 건이 없습니다.</td></tr>`;
+
+  document.querySelectorAll("tr.main").forEach(tr => tr.onclick = e => {
+    if (e.target.tagName === "A") return;
+    const d = document.getElementById("d" + tr.dataset.i);
+    d.hidden = !d.hidden; tr.classList.toggle("open", !d.hidden);
+  });
+
+  const pg = document.getElementById("pager");
+  if (pages <= 1) { pg.innerHTML = ""; return; }
+  const nums = [];
+  for (let p = 1; p <= pages; p++) if (p <= 2 || p > pages - 2 || Math.abs(p - page) <= 2) nums.push(p);
+  let html = `<button ${page === 1 ? "disabled" : ""} data-p="${page - 1}">‹</button>`;
+  let last = 0;
+  nums.forEach(p => { if (p - last > 1) html += `<button disabled>…</button>`; html += `<button class="${p === page ? "cur" : ""}" data-p="${p}">${p}</button>`; last = p; });
+  html += `<button ${page === pages ? "disabled" : ""} data-p="${page + 1}">›</button>`;
+  pg.innerHTML = html;
+  pg.querySelectorAll("button[data-p]").forEach(b => b.onclick = () => { page = +b.dataset.p; render(); window.scrollTo({ top: document.querySelector(".tablewrap").offsetTop - 20, behavior: "smooth" }); });
+}
+
+document.querySelectorAll("thead th").forEach(th => th.onclick = () => {
+  const k = th.dataset.k;
+  if (sortK === k) sortDir *= -1; else { sortK = k; sortDir = k === "dispsDate" || k === "openEndDate" ? -1 : 1; }
+  document.querySelectorAll("thead th .arw").forEach(a => a.textContent = "");
+  th.querySelector(".arw").textContent = sortDir > 0 ? " ▲" : " ▼";
+  apply();
+});
+["q", "fYear", "fCat", "fBiz", "fState"].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener(id === "q" ? "input" : "change", apply);
+});
+
+fetch(DATA_URL, { cache: "no-store" }).then(r => r.json()).then(js => {
+  ALL = js;
+  const last = ALL.map(r => r.dispsDate).filter(Boolean).sort().pop() || "";
+  document.getElementById("updated").textContent = `${last} (최신 처분일자) · ${ALL.length.toLocaleString()}건`;
+  tiles(); fillSelects(); apply();
+}).catch(e => {
+  document.getElementById("tb").innerHTML = `<tr><td colspan="5" class="none">데이터를 불러오지 못했습니다 — ${esc(e.message)}</td></tr>`;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+name: Notify 회수·폐기 / 행정처분
+
+# public/recall-data.json · admin-data.json 이 바뀐 푸시마다 직전 커밋과 비교해
+# 신규·변경 건만 뽑아 메일로 보낸다. 로컬 스케줄러가 푸시해도 동일하게 동작한다.
+# 수신자: recipients-safety.json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/recall-data.json'
+      - 'public/admin-data.json'
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 diff)'
+        required: false
+        default: '0'
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 직전 스냅샷 확보
+        run: |
+          git show HEAD~1:public/recall-data.json > prev-recall.json 2>/dev/null || echo "[]" > prev-recall.json
+          git show HEAD~1:public/admin-data.json  > prev-admin.json  2>/dev/null || echo "[]" > prev-admin.json
+      - name: 메일 본문 생성 (직전 대비 diff)
+        id: build
+        env:
+          SAMPLE: ${{ github.event.inputs.sample }}
+        run: node scripts/build-safety-email.mjs prev-recall.json prev-admin.json
+      - name: Send email via Gmail SMTP
+        if: steps.build.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: 의약품 안전성정보 <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.build.outputs.to }}
+          subject: ${{ steps.build.outputs.subject }}
+          html_body: file://safety-email-body.html
+      - name: No email needed
+        if: steps.build.outputs.send != 'true'
+        run: echo "신규·변경 없음 — 메일 발송 생략."

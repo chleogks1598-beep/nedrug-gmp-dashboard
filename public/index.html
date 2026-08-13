@@ -165,6 +165,12 @@
   .fchip.na{font-style:italic;font-weight:500;color:var(--ink-3)}
   .metaline{color:var(--ink-3);font-size:12px;margin-top:10px}
   .metaline b{color:var(--ink-2);font-weight:700}
+
+  /* 대시보드 간 이동 (GMP · 회수·폐기 · 행정처분) */
+  nav.site{display:flex;gap:4px;background:var(--surface-2);border-radius:9px;padding:3px;margin:0 0 20px;flex-wrap:wrap}
+  nav.site a{color:var(--ink-2);text-decoration:none;padding:7px 14px;border-radius:7px;font-size:13px;font-weight:600}
+  nav.site a:hover{color:var(--accent)}
+  nav.site a.cur{background:var(--surface);color:var(--accent);box-shadow:var(--shadow)}
   @media (max-width:900px){ .tiles{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr} }
   @media (max-width:560px){ td.site .addr{display:none} .barrow{grid-template-columns:80px 1fr 40px} .bars.wide .barrow{grid-template-columns:110px 1fr 44px} }
 </style>
@@ -182,6 +188,12 @@
     <div class="spacer"></div>
     <button class="theme-btn" id="themeBtn">◐ 테마</button>
   </header>
+
+  <nav class="site">
+    <a href="./" class="cur">GMP 실사결과</a>
+    <a href="./recall/">회수·폐기</a>
+    <a href="./admin/">행정처분</a>
+  </nav>
 
   <section class="tiles" id="tiles"></section>
 
