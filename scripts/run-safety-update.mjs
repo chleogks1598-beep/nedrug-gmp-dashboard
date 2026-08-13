@@ -55,6 +55,8 @@ try {
 } catch (e) {
   // execFileSync 는 자식의 stderr 를 e.stderr 에 담아 온다 — 원인을 로그에 남긴다.
   const detail = (e.stderr || "").toString().trim() || e.message;
-  log(`ERROR ${detail.split("\n").slice(-3).join(" / ")}`);
+  // safety-fetch 의 종료코드 2 = 표 구조/양식 변경 의심(파서를 고쳐야 함).
+  const hint = e.status === 2 ? "[구조변경 의심 — 파서 점검 필요] " : "";
+  log(`ERROR ${hint}${detail.split("\n").slice(-3).join(" / ")}`);
   process.exit(1);
 }

@@ -29,14 +29,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      # 종료코드 1(접속 실패)은 경고만 남기고 초록으로 끝낸다 — 다음 회차에 저절로 낫는다.
+      # 종료코드 2(표 구조·양식 변경)는 파서를 고쳐야 하는 일이므로 job 을 실패시킨다.
+      # 예약 워크플로우 실패는 GitHub 이 저장소 소유자에게 메일로 알린다 = 조용한 실패 방지.
       - name: 식약처 목록·상세 수집 및 병합
         id: fetch
         run: |
-          if node scripts/safety-fetch.mjs; then
+          set +e
+          node scripts/safety-fetch.mjs
+          rc=$?
+          set -e
+          if [ $rc -eq 0 ]; then
             echo "ok=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "::warning::수집 실패(식약처 접속 또는 양식 변경) — 다음 실행에서 재시도합니다."
+          elif [ $rc -eq 2 ]; then
             echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "::error::목록/상세 표 구조가 바뀐 것으로 보입니다 — 파서(scripts/safety-common.mjs) 점검 필요."
+            exit 1
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::식약처 접속 실패 — 다음 실행(2시간 후)에서 재시도합니다."
           fi
       - name: 변경분 커밋
         if: steps.fetch.outputs.ok == 'true'

@@ -18,6 +18,11 @@ import {
   ROOT, SOURCES, fetchRetry, listUrl, itemUrl, parseList, parseDetail, parseTotal,
 } from "./safety-common.mjs";
 
+// 종료코드를 갈라 놓는다: 1 = 식약처 접속 실패(자연 치유되니 조용히 재시도),
+// 2 = 표 구조/양식 변경 의심(사람이 봐야 한다 → 워크플로우를 빨간불로 실패시켜 알림이 가게).
+// 과거 이 프로젝트가 "실패를 삼키고 초록으로 끝나는" 경로 때문에 두 번 데였다.
+const STRUCT = 2;
+
 const CACHE = path.join(os.tmpdir(), "nedrug-safety-cache");
 const CONC = Number(process.env.CONC || 4);
 const NO_CACHE = process.env.NO_CACHE === "1";
@@ -79,18 +84,18 @@ async function run(src) {
   let prev = [];
   if (fs.existsSync(dataPath)) {
     try { prev = JSON.parse(fs.readFileSync(dataPath, "utf8")); }
-    catch (e) { console.error(`DATA_READ_ERROR ${src.dataFile}: ${e.message}`); return 1; }
+    catch (e) { console.error(`DATA_READ_ERROR ${src.dataFile}: ${e.message}`); return STRUCT; }
   }
   const prevByKey = new Map(prev.map(r => [r.key, r]));
 
   const html = await fetchRetry(listUrl(src));
   const list = parseList(html, src);
   const total = parseTotal(html);
-  if (list.length === 0) { console.error(`${src.id}: LIST_EMPTY — 파싱 0건, 표 구조 변경 의심`); return 1; }
+  if (list.length === 0) { console.error(`${src.id}: LIST_EMPTY — 파싱 0건, 표 구조 변경 의심`); return STRUCT; }
   if (total != null && total !== list.length) {
     // 페이지 상단 "총 N건"과 실제 행 수가 다르면 limit 이 모자란 것 → 통째로 중단
     console.error(`${src.id}: LIST_INCOMPLETE 총 ${total}건인데 ${list.length}행만 파싱됨`);
-    return 1;
+    return STRUCT;
   }
 
   const need = list.filter(r => {
@@ -103,7 +108,7 @@ async function run(src) {
   if (failed) {
     // 이번 회차 통째로 포기. 이미 받은 건은 캐시에 남아 다음 회차에서 이어받는다.
     console.error(`${src.id}: DETAIL_FETCH_FAILED — ${failed.message} (이번 회차 반영 안 함)`);
-    return 1;
+    return /DETAIL_TABLE_NOT_FOUND/.test(failed.message) ? STRUCT : 1;
   }
 
   const stamp = today();
@@ -143,12 +148,13 @@ async function run(src) {
 let code = 0;
 for (const id of wanted) {
   const src = SOURCES[id];
-  if (!src) { console.error(`unknown source: ${id}`); code = 1; continue; }
+  if (!src) { console.error(`unknown source: ${id}`); code = Math.max(code, STRUCT); continue; }
   try {
-    code = (await run(src)) || code;
+    code = Math.max(code, (await run(src)) || 0);
   } catch (e) {
     console.error(`${id}: ERROR ${e.message}`);
-    code = 1;
+    // 표를 못 찾는 류는 양식 변경이므로 사람이 봐야 한다.
+    code = Math.max(code, /NOT_FOUND|LIST_/.test(e.message) ? STRUCT : 1);
   }
 }
 process.exit(code);
