@@ -26248,6 +26248,7 @@
    "office": "대전청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-08-16"
  }
 ]
