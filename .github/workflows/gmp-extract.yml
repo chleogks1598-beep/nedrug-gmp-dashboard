@@ -16,8 +16,11 @@ on:
     types: [completed]
   workflow_dispatch: {}
 
+# pages/id-token 은 deploy 잡(pages.yml 재사용)에 필요하다.
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: gmp-extract
@@ -25,6 +28,9 @@ concurrency:
 
 jobs:
   extract:
+    outputs:
+      committed: ${{ steps.push.outputs.committed }}
+      sha: ${{ steps.push.outputs.sha }}
     # 수집이 실패한 회차는 pending 이 갱신되지 않았으므로 건너뛴다.
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
@@ -70,8 +76,11 @@ jobs:
           EXTRACTED_PATH: pending/extracted.json
         run: node scripts/merge.mjs
 
-      # [skip ci] 를 붙이지 않는다 — 이 push 가 Pages 재배포와 팀 알림메일(notify.yml)을 발화시킨다.
+      # ★ 이 push 는 Pages 재배포·알림메일을 발화시키지 못한다 —
+      #   GITHUB_TOKEN 으로 만든 푸시는 워크플로우를 트리거하지 않는다(GitHub 사양).
+      #   그래서 아래 deploy·notify 잡에서 재사용 워크플로우로 직접 호출한다.
       - name: 커밋·푸시
+        id: push
         if: steps.check.outputs.count != '0'
         run: |
           git config user.name "nedrug-bot"
@@ -79,13 +88,33 @@ jobs:
           git add public/data.json
           if git diff --cached --quiet; then
             echo "data.json 변화 없음 — 커밋 생략."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "data: 실사결과 자동 갱신 (신규 ${{ steps.check.outputs.count }}건)"
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash -q origin main && git push origin HEAD:main && exit 0
+            if git pull --rebase --autostash -q origin main && git push origin HEAD:main; then
+              echo "committed=true" >> "$GITHUB_OUTPUT"
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             echo "push 재시도 $i"
             sleep 5
           done
           echo "push 실패" >&2
           exit 1
+
+  deploy:
+    needs: extract
+    if: needs.extract.outputs.committed == 'true'
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.extract.outputs.sha }}
+
+  notify:
+    needs: extract
+    if: needs.extract.outputs.committed == 'true'
+    uses: ./.github/workflows/notify.yml
+    with:
+      ref: ${{ needs.extract.outputs.sha }}
+    secrets: inherit

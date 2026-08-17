@@ -4,18 +4,38 @@ name: Notify 회수·폐기 / 행정처분
 # 신규·변경 건만 뽑아 메일로 보낸다. 로컬 스케줄러가 푸시해도 동일하게 동작한다.
 # 수신자: recipients-safety.json
 
+# ★ Actions(safety-fetch)가 만든 커밋은 push 이벤트를 발화시키지 못한다
+#   (GITHUB_TOKEN 푸시는 워크플로우를 트리거하지 않는 GitHub 사양).
+#   그래서 safety-fetch 가 이 워크플로우를 workflow_call 로 직접 호출한다.
+#   push 트리거는 로컬 스케줄러가 푸시하는 경우를 위해 그대로 둔다.
 on:
   push:
     branches: [main]
     paths:
       - 'public/recall-data.json'
       - 'public/admin-data.json'
+  workflow_call:
+    inputs:
+      ref:
+        description: '비교 기준이 될 커밋(보통 방금 만든 커밋의 sha)'
+        type: string
+        required: false
+        default: ''
+      prev_ref:
+        description: '직전 스냅샷을 뽑을 커밋(비우면 HEAD~1)'
+        type: string
+        required: false
+        default: ''
   workflow_dispatch:
     inputs:
       sample:
         description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 diff)'
         required: false
         default: '0'
+      prev_ref:
+        description: '보정 발송: 이 커밋 이후의 변화를 한 번에 알림 (비우면 HEAD~1)'
+        required: false
+        default: ''
 
 jobs:
   email:
@@ -23,14 +43,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          ref: ${{ inputs.ref }}
+          # 옛 커밋과 비교하는 보정 발송일 때만 전체 이력이 필요하다.
+          fetch-depth: ${{ inputs.prev_ref && '0' || '2' }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: 직전 스냅샷 확보
+        env:
+          PREV: ${{ inputs.prev_ref || 'HEAD~1' }}
         run: |
-          git show HEAD~1:public/recall-data.json > prev-recall.json 2>/dev/null || echo "[]" > prev-recall.json
-          git show HEAD~1:public/admin-data.json  > prev-admin.json  2>/dev/null || echo "[]" > prev-admin.json
+          echo "비교 기준: $PREV"
+          git show "$PREV:public/recall-data.json" > prev-recall.json 2>/dev/null || echo "[]" > prev-recall.json
+          git show "$PREV:public/admin-data.json"  > prev-admin.json  2>/dev/null || echo "[]" > prev-admin.json
       - name: 메일 본문 생성 (직전 대비 diff)
         id: build
         env:

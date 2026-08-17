@@ -3,7 +3,13 @@ name: Fetch 회수·폐기 / 행정처분 (수집·반영)
 # 의약품안전나라 CCBAI01(회수·폐기) · CCBAO01(행정처분) 자동 수집.
 #
 # GMP 파이프라인과 달리 이쪽은 첨부 PDF 도, LLM 추출도 없어서 이 워크플로우 하나로
-# 수집→병합→푸시가 끝난다(푸시하면 pages.yml 배포 + safety-notify.yml 메일).
+# 수집→병합→푸시→배포→알림이 끝난다.
+#
+# ★ 배포·알림을 push 이벤트에 기대면 안 된다: GitHub 은 GITHUB_TOKEN 으로 만든 푸시가
+#   다른 워크플로우를 트리거하지 못하게 막는다(무한루프 방지). 2026-08-13~08-18 사이
+#   이 워크플로우가 6건을 정상 수집·커밋했는데도 공개 사이트와 알림메일이 4일간
+#   멈춰 있던 원인이 바로 이것이다. 그래서 pages.yml·safety-notify.yml 을
+#   workflow_call 로 직접 호출한다(아래 deploy·notify 잡).
 #
 # 식약처는 클라우드 IP 를 간헐 차단하므로 실패는 정상 상태로 취급하고 다음 회차에 재시도한다.
 # 로컬 작업 스케줄러(NedrugGmpUpdate)가 같은 스크립트를 2시간마다 돌리므로,
@@ -14,8 +20,12 @@ on:
     - cron: '35 */2 * * *'   # gmp-fetch(정각)와 겹치지 않게 35분에
   workflow_dispatch: {}
 
+# pages/id-token 은 deploy 잡(pages.yml 재사용)에 필요하다 —
+# 재사용 워크플로우는 호출한 쪽의 토큰 권한을 넘어설 수 없다.
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: safety-fetch
@@ -24,6 +34,9 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    outputs:
+      committed: ${{ steps.commit.outputs.committed }}
+      sha: ${{ steps.commit.outputs.sha }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -50,6 +63,7 @@ jobs:
             echo "::warning::식약처 접속 실패 — 다음 실행(2시간 후)에서 재시도합니다."
           fi
       - name: 변경분 커밋
+        id: commit
         if: steps.fetch.outputs.ok == 'true'
         run: |
           git config user.name "nedrug-bot"
@@ -57,14 +71,35 @@ jobs:
           git add public/recall-data.json public/admin-data.json
           if git diff --cached --quiet; then
             echo "변화 없음 — 커밋 생략."
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          # [skip ci] 를 붙이지 않는다 — 이 푸시가 배포·알림 워크플로우를 깨워야 한다.
           git commit -m "safety: 회수·폐기/행정처분 데이터 갱신"
           for i in 1 2 3; do
-            git pull --rebase --autostash -q origin main && git push origin HEAD:main && exit 0
+            if git pull --rebase --autostash -q origin main && git push origin HEAD:main; then
+              # 이 출력이 배포·알림의 유일한 신호다(push 이벤트는 발생하지 않는다).
+              echo "committed=true" >> "$GITHUB_OUTPUT"
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             echo "push 재시도 $i"
             sleep 5
           done
           echo "push 실패" >&2
           exit 1
+
+  # 커밋이 실제로 일어난 회차에만 배포·알림한다(수집 실패·변화 없음이면 건너뜀).
+  deploy:
+    needs: fetch
+    if: needs.fetch.outputs.committed == 'true'
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.fetch.outputs.sha }}
+
+  notify:
+    needs: fetch
+    if: needs.fetch.outputs.committed == 'true'
+    uses: ./.github/workflows/safety-notify.yml
+    with:
+      ref: ${{ needs.fetch.outputs.sha }}
+    secrets: inherit

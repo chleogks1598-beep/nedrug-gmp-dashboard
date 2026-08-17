@@ -1,8 +1,20 @@
 name: Deploy to GitHub Pages
 
+# ★ 호출 방식이 두 가지다.
+#   ①push: 로컬 스케줄러가 푸시하면 이 이벤트로 배포된다.
+#   ②workflow_call: Actions(safety-fetch·gmp-extract)가 커밋한 경우엔 push 이벤트가
+#     아예 발생하지 않는다 — GitHub 은 GITHUB_TOKEN 으로 만든 푸시가 워크플로우를
+#     트리거하지 못하게 막는다(무한루프 방지). 그래서 그쪽은 이 워크플로우를 직접 호출한다.
 on:
   push:
     branches: [main]
+  workflow_call:
+    inputs:
+      ref:
+        description: '배포할 커밋(비우면 기본 체크아웃)'
+        type: string
+        required: false
+        default: ''
   workflow_dispatch: {}
 
 permissions:
@@ -22,6 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
       - uses: actions/configure-pages@v5
         with:
           enablement: true

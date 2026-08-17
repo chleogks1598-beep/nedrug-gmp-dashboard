@@ -1,15 +1,34 @@
 name: Notify on data update
 
+# ★ Actions(gmp-extract)가 만든 커밋은 push 이벤트를 발화시키지 못하므로
+#   (GITHUB_TOKEN 푸시는 워크플로우를 트리거하지 않는다) 그쪽은 workflow_call 로 직접 호출한다.
+#   push 트리거는 로컬 스케줄러 푸시용으로 유지.
 on:
   push:
     branches: [main]
     paths: ['public/data.json']
+  workflow_call:
+    inputs:
+      ref:
+        description: '비교 기준이 될 커밋(보통 방금 만든 커밋의 sha)'
+        type: string
+        required: false
+        default: ''
+      prev_ref:
+        description: '직전 스냅샷을 뽑을 커밋(비우면 HEAD~1)'
+        type: string
+        required: false
+        default: ''
   workflow_dispatch:
     inputs:
       sample:
         description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 diff)'
         required: false
         default: '0'
+      prev_ref:
+        description: '보정 발송: 이 커밋 이후의 변화를 한 번에 알림 (비우면 HEAD~1)'
+        required: false
+        default: ''
 
 jobs:
   email:
@@ -17,12 +36,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          ref: ${{ inputs.ref }}
+          fetch-depth: ${{ inputs.prev_ref && '0' || '2' }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Snapshot previous data.json
-        run: git show HEAD~1:public/data.json > prev-data.json || echo "[]" > prev-data.json
+        env:
+          PREV: ${{ inputs.prev_ref || 'HEAD~1' }}
+        run: git show "$PREV:public/data.json" > prev-data.json 2>/dev/null || echo "[]" > prev-data.json
       - name: Build email (diff vs previous)
         id: build
         env:
