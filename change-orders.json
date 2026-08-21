@@ -1,15 +1,15 @@
 [
   {
-    "key": "20260127/3",
-    "infoNo": "20260127",
+    "key": "20260164/3",
+    "infoNo": "20260164",
     "infoClassCode": "3",
-    "title": "포도당 단일제",
-    "type": "안전성 정보",
+    "title": "시타글립틴인산염수화물-메트포르민염산염 복합제(함량 50-500, 50-850, 50-1000 mg, 필름코팅정) 허가사항 변경명령(통일조정)",
+    "type": "통일조정(안전성·유효성 심사)",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
-    "regDate": "2026-08-19",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260127&infoClassCode=3"
+    "regDate": "2026-08-21",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260164&infoClassCode=3"
   },
   {
     "key": "20260140/2",
@@ -24,6 +24,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260140&infoClassCode=2"
   },
   {
+    "key": "20260127/3",
+    "infoNo": "20260127",
+    "infoClassCode": "3",
+    "title": "포도당 단일제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-08-19",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260127&infoClassCode=3"
+  },
+  {
     "key": "20260146/2",
     "infoNo": "20260146",
     "infoClassCode": "2",
@@ -34,18 +46,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-08-19",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260146&infoClassCode=2"
-  },
-  {
-    "key": "20260153/2",
-    "infoNo": "20260153",
-    "infoClassCode": "2",
-    "title": "독소루비신 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-08-19",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260153&infoClassCode=2"
   },
   {
     "key": "20260176/2",
@@ -60,6 +60,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260176&infoClassCode=2"
   },
   {
+    "key": "20260153/2",
+    "infoNo": "20260153",
+    "infoClassCode": "2",
+    "title": "독소루비신 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-08-19",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260153&infoClassCode=2"
+  },
+  {
     "key": "20260165/3",
     "infoNo": "20260165",
     "infoClassCode": "3",
@@ -70,6 +82,18 @@
     "stage": "사전예고",
     "regDate": "2026-08-19",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260165&infoClassCode=3"
+  },
+  {
+    "key": "20260155/3",
+    "infoNo": "20260155",
+    "infoClassCode": "3",
+    "title": "암로디핀·발사르탄·로수바스타틴 복합제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-08-18",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260155&infoClassCode=3"
   },
   {
     "key": "20260134/4",
@@ -106,18 +130,6 @@
     "stage": "변경명령",
     "regDate": "2026-08-18",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260133&infoClassCode=4"
-  },
-  {
-    "key": "20260155/3",
-    "infoNo": "20260155",
-    "infoClassCode": "3",
-    "title": "암로디핀·발사르탄·로수바스타틴 복합제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-08-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260155&infoClassCode=3"
   },
   {
     "key": "20260135/3",
@@ -204,16 +216,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260120&infoClassCode=4"
   },
   {
-    "key": "20260164/2",
-    "infoNo": "20260164",
-    "infoClassCode": "2",
-    "title": "시타글립틴인산염수화물-메트포르민염산염 복합제(함량 50-500, 50-850, 50-1000 mg, 필름코팅정) 허가사항 변경명령(통일조정)",
-    "type": "통일조정(안전성·유효성 심사)",
+    "key": "20260141/3",
+    "infoNo": "20260141",
+    "infoClassCode": "3",
+    "title": "리보시클립 성분 제제",
+    "type": "신약 등의 재심사",
     "status": "진행중",
     "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-08-06",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260164&infoClassCode=2"
+    "stage": "사전예고",
+    "regDate": "2026-08-05",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260141&infoClassCode=3"
   },
   {
     "key": "20260102/4",
@@ -226,18 +238,6 @@
     "stage": "변경명령",
     "regDate": "2026-08-05",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260102&infoClassCode=4"
-  },
-  {
-    "key": "20260141/3",
-    "infoNo": "20260141",
-    "infoClassCode": "3",
-    "title": "리보시클립 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-08-05",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260141&infoClassCode=3"
   },
   {
     "key": "20260126/4",
