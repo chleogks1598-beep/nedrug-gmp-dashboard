@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260179/2",
+    "infoNo": "20260179",
+    "infoClassCode": "2",
+    "title": "카스포펀진 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-08-25",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260179&infoClassCode=2"
+  },
+  {
     "key": "20260142/3",
     "infoNo": "20260142",
     "infoClassCode": "3",
@@ -46,18 +58,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-08-24",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260180&infoClassCode=2"
-  },
-  {
-    "key": "20260179/2",
-    "infoNo": "20260179",
-    "infoClassCode": "2",
-    "title": "카스포펀진 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-08-21",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260179&infoClassCode=2"
   },
   {
     "key": "20260164/3",
