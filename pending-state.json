@@ -1,5 +1,36 @@
 {
-  "docs": {},
+  "docs": {
+    "1Q0tuRbX8Vj": {
+      "firstSeen": "2026-08-25T08:11:41.619Z",
+      "site": "PHIL Inter Pharma Co., Ltd.",
+      "regDate": "2026-08-25"
+    },
+    "1Q0stu63hLx": {
+      "firstSeen": "2026-08-25T08:11:41.619Z",
+      "site": "(주)종근당바이오",
+      "regDate": "2026-08-25"
+    },
+    "1Q0ru5IuiUK": {
+      "firstSeen": "2026-08-25T08:11:41.619Z",
+      "site": "(주)티디에스팜",
+      "regDate": "2026-08-25"
+    },
+    "1Q0ru5Iufs4": {
+      "firstSeen": "2026-08-25T08:11:41.619Z",
+      "site": "지에이치(주) 응봉공장",
+      "regDate": "2026-08-25"
+    },
+    "1Q0rVqgoott": {
+      "firstSeen": "2026-08-25T08:11:41.619Z",
+      "site": "엔비케이제약(주)",
+      "regDate": "2026-08-25"
+    },
+    "1Q0ru5Iua2u": {
+      "firstSeen": "2026-08-25T08:11:41.619Z",
+      "site": "(주)애거슨바이오",
+      "regDate": "2026-08-25"
+    }
+  },
   "lastWarnAt": "2026-08-04T18:15:32.608Z",
-  "lastFetchOkAt": "2026-08-24T22:58:34.615Z"
+  "lastFetchOkAt": "2026-08-25T08:11:41.619Z"
 }
