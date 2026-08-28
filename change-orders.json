@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260173/2",
+    "infoNo": "20260173",
+    "infoClassCode": "2",
+    "title": "타펜타돌 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-08-27",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260173&infoClassCode=2"
+  },
+  {
     "key": "20260179/2",
     "infoNo": "20260179",
     "infoClassCode": "2",
@@ -72,18 +84,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260164&infoClassCode=3"
   },
   {
-    "key": "20260141/4",
-    "infoNo": "20260141",
-    "infoClassCode": "4",
-    "title": "리보시클립 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "종결",
-    "reflectDate": "2026-11-23",
-    "stage": "변경명령",
-    "regDate": "2026-08-21",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260141&infoClassCode=4"
-  },
-  {
     "key": "20260113/4",
     "infoNo": "20260113",
     "infoClassCode": "4",
@@ -96,6 +96,30 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260113&infoClassCode=4"
   },
   {
+    "key": "20260141/4",
+    "infoNo": "20260141",
+    "infoClassCode": "4",
+    "title": "리보시클립 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2026-11-23",
+    "stage": "변경명령",
+    "regDate": "2026-08-21",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260141&infoClassCode=4"
+  },
+  {
+    "key": "20260153/2",
+    "infoNo": "20260153",
+    "infoClassCode": "2",
+    "title": "독소루비신 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-08-19",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260153&infoClassCode=2"
+  },
+  {
     "key": "20260176/2",
     "infoNo": "20260176",
     "infoClassCode": "2",
@@ -106,30 +130,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-08-19",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260176&infoClassCode=2"
-  },
-  {
-    "key": "20260140/2",
-    "infoNo": "20260140",
-    "infoClassCode": "2",
-    "title": "트립토렐린 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-08-19",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260140&infoClassCode=2"
-  },
-  {
-    "key": "20260146/2",
-    "infoNo": "20260146",
-    "infoClassCode": "2",
-    "title": "아토목세틴 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-08-19",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260146&infoClassCode=2"
   },
   {
     "key": "20260165/3",
@@ -156,16 +156,28 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260127&infoClassCode=3"
   },
   {
-    "key": "20260153/2",
-    "infoNo": "20260153",
+    "key": "20260146/2",
+    "infoNo": "20260146",
     "infoClassCode": "2",
-    "title": "독소루비신 성분 제제",
+    "title": "아토목세틴 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-08-19",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260153&infoClassCode=2"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260146&infoClassCode=2"
+  },
+  {
+    "key": "20260140/2",
+    "infoNo": "20260140",
+    "infoClassCode": "2",
+    "title": "트립토렐린 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-08-19",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260140&infoClassCode=2"
   },
   {
     "key": "20260134/4",
@@ -180,18 +192,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260134&infoClassCode=4"
   },
   {
-    "key": "20260156/3",
-    "infoNo": "20260156",
-    "infoClassCode": "3",
-    "title": "올라파립 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-08-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260156&infoClassCode=3"
-  },
-  {
     "key": "20260133/4",
     "infoNo": "20260133",
     "infoClassCode": "4",
@@ -204,6 +204,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260133&infoClassCode=4"
   },
   {
+    "key": "20260156/3",
+    "infoNo": "20260156",
+    "infoClassCode": "3",
+    "title": "올라파립 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-08-18",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260156&infoClassCode=3"
+  },
+  {
     "key": "20260155/3",
     "infoNo": "20260155",
     "infoClassCode": "3",
@@ -214,18 +226,6 @@
     "stage": "사전예고",
     "regDate": "2026-08-18",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260155&infoClassCode=3"
-  },
-  {
-    "key": "20260173/2",
-    "infoNo": "20260173",
-    "infoClassCode": "2",
-    "title": "타펜타돌 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-08-14",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260173&infoClassCode=2"
   },
   {
     "key": "20260135/3",
