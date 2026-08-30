@@ -26404,7 +26404,8 @@
    "office": "서울청 의약품안전관리과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-08-30"
  },
  {
   "key": "202302175",
