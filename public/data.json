@@ -1,6 +1,200 @@
 [
   {
     "seq": 1,
+    "docId": "1Q1ah2GeC5e",
+    "prePost": "사후",
+    "type": "완제+원료(겸업)",
+    "country": "대한민국",
+    "site": "경방신약(주)",
+    "address": "충청남도 금산군 부리면 인삼약초공단로 27",
+    "inspStart": "2026-04-13",
+    "inspEnd": "2026-04-16",
+    "regDate": "2026-09-03",
+    "forms": [
+      "비무균-일반제제-내용고형제(산제)",
+      "비무균-일반제제-내용액제(경구용액제, 시럽제(액상))",
+      "비무균-일반제제-추출"
+    ],
+    "sterile": "비무균",
+    "archiveFile": "1Q1ah2GeC5e.pdf",
+    "result": "지적사항 있음",
+    "defCount": 7,
+    "deficiencies": [
+      {
+        "field": "시설장비",
+        "gubun": "기타",
+        "law": "[별표 1] 2.2, [별표 1의2] 5",
+        "summary": "자동화장치 등 모든 기록은 저장 및 보관할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "시설장비",
+        "gubun": "기타",
+        "law": "[별표 1] 6.4, [별표 1의2] 12.4",
+        "summary": "장비의 가동범위을 모두 포함하여 적격성평가를 실시할 것",
+        "remark": "보완완료"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1] 8.1, [별표 1의2] 8.1",
+        "summary": "생산 설비에 대한 세척 밸리데이션을 실시할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1] 8.1, [별표 1의2] 8.1",
+        "summary": "세척밸리데이션 시 적절한 세척, 채취방법을 설정할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1] 8.1, [별표 1의2] 8.1",
+        "summary": "모든 세척방법에 대한 밸리데이션을 실시할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1] 8.1, [별표 1의2] 8.1",
+        "summary": "반제품 보관기간의 타당성을 입증할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1] 8.1, [별표 1의2] 8.1",
+        "summary": "반제품 보관기간의 타당성을 예측적으로 평가할 것",
+        "remark": "이행계획서 타당성 인정"
+      }
+    ]
+  },
+  {
+    "seq": 2,
+    "docId": "1Q1ah2Ge9pI",
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "당진산업가스(주)",
+    "address": "충청남도 당진시 송악읍 송악로 418",
+    "inspStart": "2026-03-16",
+    "inspEnd": "2026-03-16",
+    "regDate": "2026-09-03",
+    "forms": [
+      "비무균-일반제제(의료용 고압가스)"
+    ],
+    "sterile": "비무균",
+    "archiveFile": "1Q1ah2Ge9pI.pdf",
+    "result": "적합",
+    "defCount": 0,
+    "deficiencies": []
+  },
+  {
+    "seq": 3,
+    "docId": "1Q1aXrIaooX",
+    "prePost": "사후",
+    "type": "완제+원료(겸업)",
+    "country": "대한민국",
+    "site": "유니메드제약(주)",
+    "address": "충청남도 아산시 실옥로 110-27",
+    "inspStart": "2026-03-09",
+    "inspEnd": "2026-03-12",
+    "regDate": "2026-09-03",
+    "forms": [
+      "비무균-일반제제-내용고형제(정제, 캡슐제)",
+      "비무균-일반제제-첩부제(첩부제)",
+      "무균-일반제제-주사제(주사제)",
+      "무균-일반제제-점안제(점안제)",
+      "비무균-일반제제-추출"
+    ],
+    "sterile": "무균+비무균",
+    "archiveFile": "1Q1aXrIaooX.pdf",
+    "result": "지적사항 있음",
+    "defCount": 8,
+    "deficiencies": [
+      {
+        "field": "시설장비",
+        "gubun": "기타",
+        "law": "[별표 1의2] 5",
+        "summary": "제조 및 시험에 사용하는 중요 장비의 교정을 실시할 것",
+        "remark": "보완 완료"
+      },
+      {
+        "field": "포장표시",
+        "gubun": "기타",
+        "law": "[별표 1의2] 5",
+        "summary": "장비의 가동범위을 모두 포함하여 적격성평가를 실시할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1의2] 9",
+        "summary": "표시재료 사용 전 점검절차를 마련할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "제조",
+        "gubun": "기타",
+        "law": "[별표 1의2] 12.4",
+        "summary": "제조설비 및 도구에 대하여 세척벨리데이션을 실시할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "시험실",
+        "gubun": "기타",
+        "law": "[별표 1의2] 12.4",
+        "summary": "세척밸리데이션 시 적절한 검체 채취방법을 설정할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "시험실",
+        "gubun": "기타",
+        "law": "[별표 1의2] 12.2",
+        "summary": "제조공정이 일관되게 유지되고 있음을 검증할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "시험실",
+        "gubun": "기타",
+        "law": "[별표 1의2] 8.1",
+        "summary": "반제품 보관기간의 타당성을 입증할 것",
+        "remark": "이행계획서 타당성 인정"
+      },
+      {
+        "field": "시험실",
+        "gubun": "기타",
+        "law": "[별표 1] 7.1",
+        "summary": "제품과 접촉하는 질소가스의 품질관리 절차를 마련할 것",
+        "remark": "이행계획서 타당성 인정"
+      }
+    ]
+  },
+  {
+    "seq": 4,
+    "docId": "1Q1X48wtmJ0",
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "중앙산업가스(주) 대덕",
+    "address": "대전광역시 대덕구 대전로 1331",
+    "inspStart": "2025-10-15",
+    "inspEnd": "2025-10-17",
+    "regDate": "2026-09-02",
+    "forms": [],
+    "sterile": "",
+    "archiveFile": null,
+    "result": "확인중",
+    "defCount": 0,
+    "deficiencies": [],
+    "unresolved": true,
+    "unresolvedReason": "식약처 원문이 문서보안(DRM) 래퍼로 업로드됨 — 파일 매직 SCDSA004(SoftCamp Document Security), 277,148바이트 안에 %PDF·PK·HWP·OLE 시그니처가 전혀 없어 본문이 암호화된 상태. pdftotext·HWPX 경로 모두 불가하고 4회 재다운로드 모두 동일 바이트수였다(일시 오류 아님).",
+    "unresolvedSince": "2026-09-03"
+  },
+  {
+    "seq": 5,
     "docId": "1Q1QIYZZLwM",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -57,7 +251,7 @@
     ]
   },
   {
-    "seq": 2,
+    "seq": 6,
     "docId": "1Q1QIYZZKMK",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -113,7 +307,7 @@
     ]
   },
   {
-    "seq": 3,
+    "seq": 7,
     "docId": "1Q1QIYZZIbf",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -133,7 +327,7 @@
     "deficiencies": []
   },
   {
-    "seq": 4,
+    "seq": 8,
     "docId": "1Q0yBve7VdX",
     "prePost": "사후",
     "type": "해당없음",
@@ -168,7 +362,7 @@
     ]
   },
   {
-    "seq": 5,
+    "seq": 9,
     "docId": "1Q0yBve7V66",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -196,7 +390,7 @@
     ]
   },
   {
-    "seq": 6,
+    "seq": 10,
     "docId": "1Q0yBve7Ucd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -245,7 +439,7 @@
     ]
   },
   {
-    "seq": 7,
+    "seq": 11,
     "docId": "1Q0tuRbX8Vj",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -271,7 +465,7 @@
     ]
   },
   {
-    "seq": 8,
+    "seq": 12,
     "docId": "1Q0stu63hLx",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -291,7 +485,7 @@
     "deficiencies": []
   },
   {
-    "seq": 9,
+    "seq": 13,
     "docId": "1Q0ru5IuiUK",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -333,7 +527,7 @@
     ]
   },
   {
-    "seq": 10,
+    "seq": 14,
     "docId": "1Q0ru5Iufs4",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -438,7 +632,7 @@
     ]
   },
   {
-    "seq": 11,
+    "seq": 15,
     "docId": "1Q0rVqgoott",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -487,7 +681,7 @@
     ]
   },
   {
-    "seq": 12,
+    "seq": 16,
     "docId": "1Q0ru5Iua2u",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -536,7 +730,7 @@
     ]
   },
   {
-    "seq": 13,
+    "seq": 17,
     "docId": "1Q0I8CiIsRn",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -697,7 +891,7 @@
     ]
   },
   {
-    "seq": 14,
+    "seq": 18,
     "docId": "1Q0I8CiIr0X",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -809,7 +1003,7 @@
     ]
   },
   {
-    "seq": 15,
+    "seq": 19,
     "docId": "1Q0I8CiIUNN",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1033,7 +1227,7 @@
     ]
   },
   {
-    "seq": 16,
+    "seq": 20,
     "docId": "1P-j3DfJpwb",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1089,7 +1283,7 @@
     ]
   },
   {
-    "seq": 17,
+    "seq": 21,
     "docId": "1P-j3DfJpj_",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1145,7 +1339,7 @@
     ]
   },
   {
-    "seq": 18,
+    "seq": 22,
     "docId": "1P-fAQkIKy4",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1165,7 +1359,7 @@
     "deficiencies": []
   },
   {
-    "seq": 19,
+    "seq": 23,
     "docId": "1P-6YUq0LLc",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1185,7 +1379,7 @@
     "deficiencies": []
   },
   {
-    "seq": 20,
+    "seq": 24,
     "docId": "1P-6WXvKgB4",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1206,7 +1400,7 @@
     "deficiencies": []
   },
   {
-    "seq": 21,
+    "seq": 25,
     "docId": "1P-6WXvKbaf",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1234,7 +1428,7 @@
     ]
   },
   {
-    "seq": 22,
+    "seq": 26,
     "docId": "1P-6WXvKY5L",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1254,7 +1448,7 @@
     "deficiencies": []
   },
   {
-    "seq": 23,
+    "seq": 27,
     "docId": "1P_rHLDTS7l",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1359,7 +1553,7 @@
     ]
   },
   {
-    "seq": 24,
+    "seq": 28,
     "docId": "1P_rAodwYSY",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -1401,7 +1595,7 @@
     ]
   },
   {
-    "seq": 25,
+    "seq": 29,
     "docId": "1P_mcuE4KYv",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -1421,7 +1615,7 @@
     "deficiencies": []
   },
   {
-    "seq": 26,
+    "seq": 30,
     "docId": "1P_mcuE4K6H",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -1503,7 +1697,7 @@
     ]
   },
   {
-    "seq": 27,
+    "seq": 31,
     "docId": "1P_mcuE47q1",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -1603,7 +1797,7 @@
     ]
   },
   {
-    "seq": 28,
+    "seq": 32,
     "docId": "1P_mcuE463F",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1623,7 +1817,7 @@
     "deficiencies": []
   },
   {
-    "seq": 29,
+    "seq": 33,
     "docId": "1P_iX9eOyBx",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1651,7 +1845,7 @@
     ]
   },
   {
-    "seq": 30,
+    "seq": 34,
     "docId": "1P_iHfVEJzq",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1728,7 +1922,7 @@
     ]
   },
   {
-    "seq": 31,
+    "seq": 35,
     "docId": "1Pzzvm8pprt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1756,7 +1950,7 @@
     ]
   },
   {
-    "seq": 32,
+    "seq": 36,
     "docId": "1Pzzvm8poTD",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1776,7 +1970,7 @@
     "deficiencies": []
   },
   {
-    "seq": 33,
+    "seq": 37,
     "docId": "1PzTi7L-SxA",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1867,7 +2061,7 @@
     ]
   },
   {
-    "seq": 34,
+    "seq": 38,
     "docId": "1PzTi7L-SIF",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -1888,7 +2082,7 @@
     "deficiencies": []
   },
   {
-    "seq": 35,
+    "seq": 39,
     "docId": "1PzTi7L-ORx",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -1930,7 +2124,7 @@
     ]
   },
   {
-    "seq": 36,
+    "seq": 40,
     "docId": "1PzTi7L-NZn",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2028,7 +2222,7 @@
     ]
   },
   {
-    "seq": 37,
+    "seq": 41,
     "docId": "1Pz0eO3IuUQ",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -2084,7 +2278,7 @@
     ]
   },
   {
-    "seq": 38,
+    "seq": 42,
     "docId": "1Pz07CdMALt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2104,7 +2298,7 @@
     "deficiencies": []
   },
   {
-    "seq": 39,
+    "seq": 43,
     "docId": "1Pz07CdM5Qk",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2124,7 +2318,7 @@
     "deficiencies": []
   },
   {
-    "seq": 40,
+    "seq": 44,
     "docId": "1PyLW-asYv7",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2142,7 +2336,7 @@
     "deficiencies": []
   },
   {
-    "seq": 41,
+    "seq": 45,
     "docId": "1PyLW-asWoD",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2160,7 +2354,7 @@
     "deficiencies": []
   },
   {
-    "seq": 42,
+    "seq": 46,
     "docId": "1PyLW-asUDD",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2178,7 +2372,7 @@
     "deficiencies": []
   },
   {
-    "seq": 43,
+    "seq": 47,
     "docId": "1PyLW-asSGJ",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2196,7 +2390,7 @@
     "deficiencies": []
   },
   {
-    "seq": 44,
+    "seq": 48,
     "docId": "1PyLW-asOMf",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2214,7 +2408,7 @@
     "deficiencies": []
   },
   {
-    "seq": 45,
+    "seq": 49,
     "docId": "1PyLW-asNCa",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2232,7 +2426,7 @@
     "deficiencies": []
   },
   {
-    "seq": 46,
+    "seq": 50,
     "docId": "1PyLW-asL5S",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -2250,7 +2444,7 @@
     "deficiencies": []
   },
   {
-    "seq": 47,
+    "seq": 51,
     "docId": "1PyJBfLEtwC",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2413,7 +2607,7 @@
     ]
   },
   {
-    "seq": 48,
+    "seq": 52,
     "docId": "1Px_jsc118o",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2441,7 +2635,7 @@
     ]
   },
   {
-    "seq": 49,
+    "seq": 53,
     "docId": "1Px_jsc10ws",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -2462,7 +2656,7 @@
     "deficiencies": []
   },
   {
-    "seq": 50,
+    "seq": 54,
     "docId": "1PxzwRCkCdX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2518,7 +2712,7 @@
     ]
   },
   {
-    "seq": 51,
+    "seq": 55,
     "docId": "1Pxznco5UBw",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2588,7 +2782,7 @@
     ]
   },
   {
-    "seq": 52,
+    "seq": 56,
     "docId": "1Pxznco5TX7",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2679,7 +2873,7 @@
     ]
   },
   {
-    "seq": 53,
+    "seq": 57,
     "docId": "1PxzbB4Txr9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2805,7 +2999,7 @@
     ]
   },
   {
-    "seq": 54,
+    "seq": 58,
     "docId": "1PxtsjZTS6w",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -2840,7 +3034,7 @@
     ]
   },
   {
-    "seq": 55,
+    "seq": 59,
     "docId": "1PxtsjZTGIp",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2860,7 +3054,7 @@
     "deficiencies": []
   },
   {
-    "seq": 56,
+    "seq": 60,
     "docId": "1PxteXRZ-ht",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2880,7 +3074,7 @@
     "deficiencies": []
   },
   {
-    "seq": 57,
+    "seq": 61,
     "docId": "1PxFVteOIsG",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2915,7 +3109,7 @@
     ]
   },
   {
-    "seq": 58,
+    "seq": 62,
     "docId": "1Px9gdRy2mE",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -2935,7 +3129,7 @@
     "deficiencies": []
   },
   {
-    "seq": 59,
+    "seq": 63,
     "docId": "1Px9gdRy1KU",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -2955,7 +3149,7 @@
     "deficiencies": []
   },
   {
-    "seq": 60,
+    "seq": 64,
     "docId": "1Px9VsU4MaJ",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -2975,7 +3169,7 @@
     "deficiencies": []
   },
   {
-    "seq": 61,
+    "seq": 65,
     "docId": "1PwLTeeBfDH",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -2995,7 +3189,7 @@
     "deficiencies": []
   },
   {
-    "seq": 62,
+    "seq": 66,
     "docId": "1PwLTeeBdNe",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3142,7 +3336,7 @@
     ]
   },
   {
-    "seq": 63,
+    "seq": 67,
     "docId": "1Pw1mH44tfE",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3226,7 +3420,7 @@
     ]
   },
   {
-    "seq": 64,
+    "seq": 68,
     "docId": "1Pw1mH44sLC",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3296,7 +3490,7 @@
     ]
   },
   {
-    "seq": 65,
+    "seq": 69,
     "docId": "1Pw1mH44qde",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3316,7 +3510,7 @@
     "deficiencies": []
   },
   {
-    "seq": 66,
+    "seq": 70,
     "docId": "1Pw1mH44pvH",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3437,7 +3631,7 @@
     ]
   },
   {
-    "seq": 67,
+    "seq": 71,
     "docId": "1Pw1mH44oy0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3457,7 +3651,7 @@
     "deficiencies": []
   },
   {
-    "seq": 68,
+    "seq": 72,
     "docId": "1Pw1ukw_1Ir",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3477,7 +3671,7 @@
     "deficiencies": []
   },
   {
-    "seq": 69,
+    "seq": 73,
     "docId": "1Pw1ukw_0E0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3540,7 +3734,7 @@
     ]
   },
   {
-    "seq": 70,
+    "seq": 74,
     "docId": "1PvoSBbO49X",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3560,7 +3754,7 @@
     "deficiencies": []
   },
   {
-    "seq": 71,
+    "seq": 75,
     "docId": "1PvoSBbO2zp",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3580,7 +3774,7 @@
     "deficiencies": []
   },
   {
-    "seq": 72,
+    "seq": 76,
     "docId": "1PvoSBbO1to",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3600,7 +3794,7 @@
     "deficiencies": []
   },
   {
-    "seq": 73,
+    "seq": 77,
     "docId": "1PvoSBbO15Z",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3620,7 +3814,7 @@
     "deficiencies": []
   },
   {
-    "seq": 74,
+    "seq": 78,
     "docId": "1PvoAqrh-gM",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3640,7 +3834,7 @@
     "deficiencies": []
   },
   {
-    "seq": 75,
+    "seq": 79,
     "docId": "1Pv3nd7cuGF",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -3719,7 +3913,7 @@
     ]
   },
   {
-    "seq": 76,
+    "seq": 80,
     "docId": "1Pv2tztOgv1",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3761,7 +3955,7 @@
     ]
   },
   {
-    "seq": 77,
+    "seq": 81,
     "docId": "1PusVPRX_CI",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3859,7 +4053,7 @@
     ]
   },
   {
-    "seq": 78,
+    "seq": 82,
     "docId": "1PutNZjPSLI",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -3957,7 +4151,7 @@
     ]
   },
   {
-    "seq": 79,
+    "seq": 83,
     "docId": "1PutNZjPRZ9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -3977,7 +4171,7 @@
     "deficiencies": []
   },
   {
-    "seq": 80,
+    "seq": 84,
     "docId": "1PutNZjPQaP",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4047,7 +4241,7 @@
     ]
   },
   {
-    "seq": 81,
+    "seq": 85,
     "docId": "1PutNZjPPqf",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -4164,7 +4358,7 @@
     ]
   },
   {
-    "seq": 82,
+    "seq": 86,
     "docId": "1PutNZjPOSU",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4184,7 +4378,7 @@
     "deficiencies": []
   },
   {
-    "seq": 83,
+    "seq": 87,
     "docId": "1PugEn1ze7p",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4247,7 +4441,7 @@
     ]
   },
   {
-    "seq": 84,
+    "seq": 88,
     "docId": "1PufrIA30yb",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4267,7 +4461,7 @@
     "deficiencies": []
   },
   {
-    "seq": 85,
+    "seq": 89,
     "docId": "1PufDyaR_-p",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4309,7 +4503,7 @@
     ]
   },
   {
-    "seq": 86,
+    "seq": 90,
     "docId": "1PufDyaRzTr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4400,7 +4594,7 @@
     ]
   },
   {
-    "seq": 87,
+    "seq": 91,
     "docId": "1PufFoALz1B",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4420,7 +4614,7 @@
     "deficiencies": []
   },
   {
-    "seq": 88,
+    "seq": 92,
     "docId": "1PufFoALy8H",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4440,7 +4634,7 @@
     "deficiencies": []
   },
   {
-    "seq": 89,
+    "seq": 93,
     "docId": "1PufDyaRX_4",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -4468,7 +4662,7 @@
     ]
   },
   {
-    "seq": 90,
+    "seq": 94,
     "docId": "1PufDyaRUHO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4488,7 +4682,7 @@
     "deficiencies": []
   },
   {
-    "seq": 91,
+    "seq": 95,
     "docId": "1Puf3C5bL3O",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4516,7 +4710,7 @@
     ]
   },
   {
-    "seq": 92,
+    "seq": 96,
     "docId": "1PtSbOlpxXk",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -4730,7 +4924,7 @@
     ]
   },
   {
-    "seq": 93,
+    "seq": 97,
     "docId": "1PtSdWCaU5q",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -4798,7 +4992,7 @@
     ]
   },
   {
-    "seq": 94,
+    "seq": 98,
     "docId": "1PtReFNR7KI",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4876,7 +5070,7 @@
     ]
   },
   {
-    "seq": 95,
+    "seq": 99,
     "docId": "1PtReFNR69-",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -4896,7 +5090,7 @@
     "deficiencies": []
   },
   {
-    "seq": 96,
+    "seq": 100,
     "docId": "1PtReFNR5go",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -4945,7 +5139,7 @@
     ]
   },
   {
-    "seq": 97,
+    "seq": 101,
     "docId": "1PtR8IU-rmi",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5101,7 +5295,7 @@
     ]
   },
   {
-    "seq": 98,
+    "seq": 102,
     "docId": "1PtR8IU-rA1",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5157,7 +5351,7 @@
     ]
   },
   {
-    "seq": 99,
+    "seq": 103,
     "docId": "1PtR8IU-pnE",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5192,7 +5386,7 @@
     ]
   },
   {
-    "seq": 100,
+    "seq": 104,
     "docId": "1PtR8IU-pM8",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -5272,7 +5466,7 @@
     ]
   },
   {
-    "seq": 101,
+    "seq": 105,
     "docId": "1PtR8IU-orV",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5356,7 +5550,7 @@
     ]
   },
   {
-    "seq": 102,
+    "seq": 106,
     "docId": "1PtR8IU-oE9",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -5412,7 +5606,7 @@
     ]
   },
   {
-    "seq": 103,
+    "seq": 107,
     "docId": "1PtR8IU-nE4",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5482,7 +5676,7 @@
     ]
   },
   {
-    "seq": 104,
+    "seq": 108,
     "docId": "1PtReFNR3Dc",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5545,7 +5739,7 @@
     ]
   },
   {
-    "seq": 105,
+    "seq": 109,
     "docId": "1PtNdJYH9pI",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5594,7 +5788,7 @@
     ]
   },
   {
-    "seq": 106,
+    "seq": 110,
     "docId": "1Psoagh7YY2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5636,7 +5830,7 @@
     ]
   },
   {
-    "seq": 107,
+    "seq": 111,
     "docId": "1PsokQqBkMR",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5678,7 +5872,7 @@
     ]
   },
   {
-    "seq": 108,
+    "seq": 112,
     "docId": "1Psoagh7X_8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5714,7 +5908,7 @@
     ]
   },
   {
-    "seq": 109,
+    "seq": 113,
     "docId": "1Ps9UEWceqZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5734,7 +5928,7 @@
     "deficiencies": []
   },
   {
-    "seq": 110,
+    "seq": 114,
     "docId": "1Ps9I_uTylt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5762,7 +5956,7 @@
     ]
   },
   {
-    "seq": 111,
+    "seq": 115,
     "docId": "1Ps9UEWceKZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5797,7 +5991,7 @@
     ]
   },
   {
-    "seq": 112,
+    "seq": 116,
     "docId": "1Ps9I_uTw4A",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5817,7 +6011,7 @@
     "deficiencies": []
   },
   {
-    "seq": 113,
+    "seq": 117,
     "docId": "1Ps9I_uTvjA",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5852,7 +6046,7 @@
     ]
   },
   {
-    "seq": 114,
+    "seq": 118,
     "docId": "1Ps9UEWccwm",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -5872,7 +6066,7 @@
     "deficiencies": []
   },
   {
-    "seq": 115,
+    "seq": 119,
     "docId": "1Ps9I_uTAFc",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -6043,7 +6237,7 @@
     ]
   },
   {
-    "seq": 116,
+    "seq": 120,
     "docId": "1Prq-VKodN6",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6136,7 +6330,7 @@
     ]
   },
   {
-    "seq": 117,
+    "seq": 121,
     "docId": "1PrI3px-gja",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6156,7 +6350,7 @@
     "deficiencies": []
   },
   {
-    "seq": 118,
+    "seq": 122,
     "docId": "1PrHq4H3_Nh",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6176,7 +6370,7 @@
     "deficiencies": []
   },
   {
-    "seq": 119,
+    "seq": 123,
     "docId": "1PrHq4H3qKL",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6302,7 +6496,7 @@
     ]
   },
   {
-    "seq": 120,
+    "seq": 124,
     "docId": "1PrGop3fCYx",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -6418,7 +6612,7 @@
     ]
   },
   {
-    "seq": 121,
+    "seq": 125,
     "docId": "1PrGop3fBq8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6488,7 +6682,7 @@
     ]
   },
   {
-    "seq": 122,
+    "seq": 126,
     "docId": "1Pr1SWtn7fL",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6544,7 +6738,7 @@
     ]
   },
   {
-    "seq": 123,
+    "seq": 127,
     "docId": "1PqP13Laraw",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6562,7 +6756,7 @@
     "deficiencies": []
   },
   {
-    "seq": 124,
+    "seq": 128,
     "docId": "1PqP13LaqMN",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6580,7 +6774,7 @@
     "deficiencies": []
   },
   {
-    "seq": 125,
+    "seq": 129,
     "docId": "1PqP13Lap-j",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6598,7 +6792,7 @@
     "deficiencies": []
   },
   {
-    "seq": 126,
+    "seq": 130,
     "docId": "1PqP13LapT5",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6616,7 +6810,7 @@
     "deficiencies": []
   },
   {
-    "seq": 127,
+    "seq": 131,
     "docId": "1PqP13LaoUd",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6634,7 +6828,7 @@
     "deficiencies": []
   },
   {
-    "seq": 128,
+    "seq": 132,
     "docId": "1PqP13LanX4",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6652,7 +6846,7 @@
     "deficiencies": []
   },
   {
-    "seq": 129,
+    "seq": 133,
     "docId": "1PqP13LamVW",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6670,7 +6864,7 @@
     "deficiencies": []
   },
   {
-    "seq": 130,
+    "seq": 134,
     "docId": "1PqP13Lalb3",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6688,7 +6882,7 @@
     "deficiencies": []
   },
   {
-    "seq": 131,
+    "seq": 135,
     "docId": "1PqP13LakjQ",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -6706,7 +6900,7 @@
     "deficiencies": []
   },
   {
-    "seq": 132,
+    "seq": 136,
     "docId": "1PpwUctwhLY",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6771,7 +6965,7 @@
     ]
   },
   {
-    "seq": 133,
+    "seq": 137,
     "docId": "1PpvSjJTdsj",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6834,7 +7028,7 @@
     ]
   },
   {
-    "seq": 134,
+    "seq": 138,
     "docId": "1Ppq18vD2AB",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6883,7 +7077,7 @@
     ]
   },
   {
-    "seq": 135,
+    "seq": 139,
     "docId": "1PpWHCaHmxs",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -6911,7 +7105,7 @@
     ]
   },
   {
-    "seq": 136,
+    "seq": 140,
     "docId": "1PpWJi1HkEF",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -6968,7 +7162,7 @@
     ]
   },
   {
-    "seq": 137,
+    "seq": 141,
     "docId": "1PpWJi1HimB",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7040,7 +7234,7 @@
     ]
   },
   {
-    "seq": 138,
+    "seq": 142,
     "docId": "1PpWJi1Hhyj",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7082,7 +7276,7 @@
     ]
   },
   {
-    "seq": 139,
+    "seq": 143,
     "docId": "1PpWJi1HgtV",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7166,7 +7360,7 @@
     ]
   },
   {
-    "seq": 140,
+    "seq": 144,
     "docId": "1PpH2GwCTi8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7208,7 +7402,7 @@
     ]
   },
   {
-    "seq": 141,
+    "seq": 145,
     "docId": "1PpH2GwCQp0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7299,7 +7493,7 @@
     ]
   },
   {
-    "seq": 142,
+    "seq": 146,
     "docId": "1PollZQgs0z",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7356,7 +7550,7 @@
     ]
   },
   {
-    "seq": 143,
+    "seq": 147,
     "docId": "1PollZQgi5C",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7376,7 +7570,7 @@
     "deficiencies": []
   },
   {
-    "seq": 144,
+    "seq": 148,
     "docId": "1PollZQgg_l",
     "prePost": "사후",
     "type": "해당없음",
@@ -7396,7 +7590,7 @@
     "deficiencies": []
   },
   {
-    "seq": 145,
+    "seq": 149,
     "docId": "1PoTKNL1A0o",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7416,7 +7610,7 @@
     "deficiencies": []
   },
   {
-    "seq": 146,
+    "seq": 150,
     "docId": "1PoTKNL194T",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7436,7 +7630,7 @@
     "deficiencies": []
   },
   {
-    "seq": 147,
+    "seq": 151,
     "docId": "1PoSZNb0-rK",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7456,7 +7650,7 @@
     "deficiencies": []
   },
   {
-    "seq": 148,
+    "seq": 152,
     "docId": "1PoSZNb0uKf",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7505,7 +7699,7 @@
     ]
   },
   {
-    "seq": 149,
+    "seq": 153,
     "docId": "1PoSaf29b7M",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7568,7 +7762,7 @@
     ]
   },
   {
-    "seq": 150,
+    "seq": 154,
     "docId": "1PoSaf29aWz",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7588,7 +7782,7 @@
     "deficiencies": []
   },
   {
-    "seq": 151,
+    "seq": 155,
     "docId": "1PoSaf29Xp0",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7608,7 +7802,7 @@
     "deficiencies": []
   },
   {
-    "seq": 152,
+    "seq": 156,
     "docId": "1PoSZNb0nwB",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7628,7 +7822,7 @@
     "deficiencies": []
   },
   {
-    "seq": 153,
+    "seq": 157,
     "docId": "1PoSZNb0hUe",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7648,7 +7842,7 @@
     "deficiencies": []
   },
   {
-    "seq": 154,
+    "seq": 158,
     "docId": "1PoSaf29QRP",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -7719,7 +7913,7 @@
     ]
   },
   {
-    "seq": 155,
+    "seq": 159,
     "docId": "1PoSaf29JS4",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7739,7 +7933,7 @@
     "deficiencies": []
   },
   {
-    "seq": 156,
+    "seq": 160,
     "docId": "1PoJLBcEDxd",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -7781,7 +7975,7 @@
     ]
   },
   {
-    "seq": 157,
+    "seq": 161,
     "docId": "1PoHw9kGmhe",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -7837,7 +8031,7 @@
     ]
   },
   {
-    "seq": 158,
+    "seq": 162,
     "docId": "1PoHw9kGk8U",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7857,7 +8051,7 @@
     "deficiencies": []
   },
   {
-    "seq": 159,
+    "seq": 163,
     "docId": "1PoHw9kGhRu",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -7915,7 +8109,7 @@
     ]
   },
   {
-    "seq": 160,
+    "seq": 164,
     "docId": "1PoHw9kGhLk",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -7971,7 +8165,7 @@
     ]
   },
   {
-    "seq": 161,
+    "seq": 165,
     "docId": "1PoHw9kGgay",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8127,7 +8321,7 @@
     ]
   },
   {
-    "seq": 162,
+    "seq": 166,
     "docId": "1PoI0V7xQnJ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8147,7 +8341,7 @@
     "deficiencies": []
   },
   {
-    "seq": 163,
+    "seq": 167,
     "docId": "1PoI0V7xQhp",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8197,7 +8391,7 @@
     ]
   },
   {
-    "seq": 164,
+    "seq": 168,
     "docId": "1PoI0V7xQB4",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -8217,7 +8411,7 @@
     "deficiencies": []
   },
   {
-    "seq": 165,
+    "seq": 169,
     "docId": "1PoI0V7xQ3B",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -8304,7 +8498,7 @@
     ]
   },
   {
-    "seq": 166,
+    "seq": 170,
     "docId": "1PoI0V7xOhg",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8362,7 +8556,7 @@
     ]
   },
   {
-    "seq": 167,
+    "seq": 171,
     "docId": "1PoI0V7xMyE",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -8425,7 +8619,7 @@
     ]
   },
   {
-    "seq": 168,
+    "seq": 172,
     "docId": "1PoI0V7xMWj",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8523,7 +8717,7 @@
     ]
   },
   {
-    "seq": 169,
+    "seq": 173,
     "docId": "1PoI0V7xLJ8",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -8551,7 +8745,7 @@
     ]
   },
   {
-    "seq": 170,
+    "seq": 174,
     "docId": "1PoI0V7xKR4",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8600,7 +8794,7 @@
     ]
   },
   {
-    "seq": 171,
+    "seq": 175,
     "docId": "1PoI0V7xJUw",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8620,7 +8814,7 @@
     "deficiencies": []
   },
   {
-    "seq": 172,
+    "seq": 176,
     "docId": "1PoI0V7xJ0T",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -8690,7 +8884,7 @@
     ]
   },
   {
-    "seq": 173,
+    "seq": 177,
     "docId": "1PoI0V7xIU6",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -8802,7 +8996,7 @@
     ]
   },
   {
-    "seq": 174,
+    "seq": 178,
     "docId": "1PoI0V7xHc0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8825,7 +9019,7 @@
     "deficiencies": []
   },
   {
-    "seq": 175,
+    "seq": 179,
     "docId": "1PoI0V7xHOq",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8903,7 +9097,7 @@
     ]
   },
   {
-    "seq": 176,
+    "seq": 180,
     "docId": "1PoI0V7xGVr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -8938,7 +9132,7 @@
     ]
   },
   {
-    "seq": 177,
+    "seq": 181,
     "docId": "1PoI0V7xF2L",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9012,7 +9206,7 @@
     ]
   },
   {
-    "seq": 178,
+    "seq": 182,
     "docId": "1PoI0V7xEbl",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -9068,7 +9262,7 @@
     ]
   },
   {
-    "seq": 179,
+    "seq": 183,
     "docId": "1PoI0V7xDbH",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9124,7 +9318,7 @@
     ]
   },
   {
-    "seq": 180,
+    "seq": 184,
     "docId": "1PoI0V7xDI6",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9313,7 +9507,7 @@
     ]
   },
   {
-    "seq": 181,
+    "seq": 185,
     "docId": "1PoI0V7xDCt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9341,7 +9535,7 @@
     ]
   },
   {
-    "seq": 182,
+    "seq": 186,
     "docId": "1PoI0V7xCbF",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9361,7 +9555,7 @@
     "deficiencies": []
   },
   {
-    "seq": 183,
+    "seq": 187,
     "docId": "1PoHw9kGe6i",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9381,7 +9575,7 @@
     "deficiencies": []
   },
   {
-    "seq": 184,
+    "seq": 188,
     "docId": "1PoHw9kGddZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9494,7 +9688,7 @@
     ]
   },
   {
-    "seq": 185,
+    "seq": 189,
     "docId": "1PoHw9kGdSR",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9557,7 +9751,7 @@
     ]
   },
   {
-    "seq": 186,
+    "seq": 190,
     "docId": "1PoHw9kGcmI",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9577,7 +9771,7 @@
     "deficiencies": []
   },
   {
-    "seq": 187,
+    "seq": 191,
     "docId": "1PoHw9kGbpl",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9668,7 +9862,7 @@
     ]
   },
   {
-    "seq": 188,
+    "seq": 192,
     "docId": "1PoHw9kGaKt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9802,7 +9996,7 @@
     ]
   },
   {
-    "seq": 189,
+    "seq": 193,
     "docId": "1PoHw9kGZZ9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9828,7 +10022,7 @@
     "deficiencies": []
   },
   {
-    "seq": 190,
+    "seq": 194,
     "docId": "1PoHw9kGZEW",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -9975,7 +10169,7 @@
     ]
   },
   {
-    "seq": 191,
+    "seq": 195,
     "docId": "1PoHw9kGYEd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10010,7 +10204,7 @@
     ]
   },
   {
-    "seq": 192,
+    "seq": 196,
     "docId": "1PoHw9kGX61",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -10093,7 +10287,7 @@
     ]
   },
   {
-    "seq": 193,
+    "seq": 197,
     "docId": "1PoHw9kGWiV",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10233,7 +10427,7 @@
     ]
   },
   {
-    "seq": 194,
+    "seq": 198,
     "docId": "1PoHw9kGWKy",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -10282,7 +10476,7 @@
     ]
   },
   {
-    "seq": 195,
+    "seq": 199,
     "docId": "1PoI0V7x9gl",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10331,7 +10525,7 @@
     ]
   },
   {
-    "seq": 196,
+    "seq": 200,
     "docId": "1PoI0V7x9Ix",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10430,7 +10624,7 @@
     ]
   },
   {
-    "seq": 197,
+    "seq": 201,
     "docId": "1PoHw9kGSJB",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10486,7 +10680,7 @@
     ]
   },
   {
-    "seq": 198,
+    "seq": 202,
     "docId": "1PoI0V7x7NK",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -10529,7 +10723,7 @@
     ]
   },
   {
-    "seq": 199,
+    "seq": 203,
     "docId": "1PoI0V7x635",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -10613,7 +10807,7 @@
     ]
   },
   {
-    "seq": 200,
+    "seq": 204,
     "docId": "1PoHw9kGRB0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10663,7 +10857,7 @@
     ]
   },
   {
-    "seq": 201,
+    "seq": 205,
     "docId": "1PoHw9kGPoX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10691,7 +10885,7 @@
     ]
   },
   {
-    "seq": 202,
+    "seq": 206,
     "docId": "1PoHw9kGOap",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -10797,7 +10991,7 @@
     ]
   },
   {
-    "seq": 203,
+    "seq": 207,
     "docId": "1PoHw9kGGz8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10826,7 +11020,7 @@
     ]
   },
   {
-    "seq": 204,
+    "seq": 208,
     "docId": "1PoHw9kGGZ9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -10924,7 +11118,7 @@
     ]
   },
   {
-    "seq": 205,
+    "seq": 209,
     "docId": "1PoHw9kGDXr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11001,7 +11195,7 @@
     ]
   },
   {
-    "seq": 206,
+    "seq": 210,
     "docId": "1PoHw9kGCR7",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -11137,7 +11331,7 @@
     ]
   },
   {
-    "seq": 207,
+    "seq": 211,
     "docId": "1Pnvf8cm6jo",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11207,7 +11401,7 @@
     ]
   },
   {
-    "seq": 208,
+    "seq": 212,
     "docId": "1Pnvf8cm5Yg",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11235,7 +11429,7 @@
     ]
   },
   {
-    "seq": 209,
+    "seq": 213,
     "docId": "1Pnvf8cm3os",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11263,7 +11457,7 @@
     ]
   },
   {
-    "seq": 210,
+    "seq": 214,
     "docId": "1Pnumq9cCX5",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11283,7 +11477,7 @@
     "deficiencies": []
   },
   {
-    "seq": 211,
+    "seq": 215,
     "docId": "1Pnr9BSpSOp",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11301,7 +11495,7 @@
     "deficiencies": []
   },
   {
-    "seq": 212,
+    "seq": 216,
     "docId": "1Pnqn8zQemM",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -11319,7 +11513,7 @@
     "deficiencies": []
   },
   {
-    "seq": 213,
+    "seq": 217,
     "docId": "1PnpdUY8Cq_",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -11368,7 +11562,7 @@
     ]
   },
   {
-    "seq": 214,
+    "seq": 218,
     "docId": "1PmcvGNnXhe",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11431,7 +11625,7 @@
     ]
   },
   {
-    "seq": 215,
+    "seq": 219,
     "docId": "1PmcvGNnVYZ",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -11548,7 +11742,7 @@
     ]
   },
   {
-    "seq": 216,
+    "seq": 220,
     "docId": "1PmcvGNnSLd",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -11568,7 +11762,7 @@
     "deficiencies": []
   },
   {
-    "seq": 217,
+    "seq": 221,
     "docId": "1PmcvGNnQFc",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -11590,7 +11784,7 @@
     "deficiencies": []
   },
   {
-    "seq": 218,
+    "seq": 222,
     "docId": "1PmcvGNnOI4",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11661,7 +11855,7 @@
     ]
   },
   {
-    "seq": 219,
+    "seq": 223,
     "docId": "1PmcvGNnLN3",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -11810,7 +12004,7 @@
     ]
   },
   {
-    "seq": 220,
+    "seq": 224,
     "docId": "1PmcgdTZz4N",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -11908,7 +12102,7 @@
     ]
   },
   {
-    "seq": 221,
+    "seq": 225,
     "docId": "1Pm7FTSDF51",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -11957,7 +12151,7 @@
     ]
   },
   {
-    "seq": 222,
+    "seq": 226,
     "docId": "1Pl_SxgFJq8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11977,7 +12171,7 @@
     "deficiencies": []
   },
   {
-    "seq": 223,
+    "seq": 227,
     "docId": "1Pl_SxgFFpm",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -11997,7 +12191,7 @@
     "deficiencies": []
   },
   {
-    "seq": 224,
+    "seq": 228,
     "docId": "1Pl_SxgF6_t",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12017,7 +12211,7 @@
     "deficiencies": []
   },
   {
-    "seq": 225,
+    "seq": 229,
     "docId": "1Pl_SxgF5Z9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12037,7 +12231,7 @@
     "deficiencies": []
   },
   {
-    "seq": 226,
+    "seq": 230,
     "docId": "1Pl_SxgF2a0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12057,7 +12251,7 @@
     "deficiencies": []
   },
   {
-    "seq": 227,
+    "seq": 231,
     "docId": "1Pl_8ouOz2m",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12077,7 +12271,7 @@
     "deficiencies": []
   },
   {
-    "seq": 228,
+    "seq": 232,
     "docId": "1Pl_8ouOxu0",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12097,7 +12291,7 @@
     "deficiencies": []
   },
   {
-    "seq": 229,
+    "seq": 233,
     "docId": "1Pl_Ld8xU7u",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -12117,7 +12311,7 @@
     "deficiencies": []
   },
   {
-    "seq": 230,
+    "seq": 234,
     "docId": "1Pl_Ld8xSsv",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12201,7 +12395,7 @@
     ]
   },
   {
-    "seq": 231,
+    "seq": 235,
     "docId": "1Pl_Ld8xRbd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12314,7 +12508,7 @@
     ]
   },
   {
-    "seq": 232,
+    "seq": 236,
     "docId": "1Pl_8ouOriZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12334,7 +12528,7 @@
     "deficiencies": []
   },
   {
-    "seq": 233,
+    "seq": 237,
     "docId": "1PlZbBDOxyw",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -12397,7 +12591,7 @@
     ]
   },
   {
-    "seq": 234,
+    "seq": 238,
     "docId": "1Pla9U8Q_9O",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12434,7 +12628,7 @@
     ]
   },
   {
-    "seq": 235,
+    "seq": 239,
     "docId": "1PlUwpGnmZ6",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -12476,7 +12670,7 @@
     ]
   },
   {
-    "seq": 236,
+    "seq": 240,
     "docId": "1PlLbd2YJBf",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12544,7 +12738,7 @@
     ]
   },
   {
-    "seq": 237,
+    "seq": 241,
     "docId": "1PlLbd2YIGe",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12562,7 +12756,7 @@
     "deficiencies": []
   },
   {
-    "seq": 238,
+    "seq": 242,
     "docId": "1PkCYsIDJrC",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12590,7 +12784,7 @@
     ]
   },
   {
-    "seq": 239,
+    "seq": 243,
     "docId": "1PjiZ74sKgi",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -12608,7 +12802,7 @@
     "deficiencies": []
   },
   {
-    "seq": 240,
+    "seq": 244,
     "docId": "1Piby4dzntX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12629,7 +12823,7 @@
     "deficiencies": []
   },
   {
-    "seq": 241,
+    "seq": 245,
     "docId": "1Piby4dzMKN",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -12839,7 +13033,7 @@
     ]
   },
   {
-    "seq": 242,
+    "seq": 246,
     "docId": "1PiahFAej7t",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12857,7 +13051,7 @@
     "deficiencies": []
   },
   {
-    "seq": 243,
+    "seq": 247,
     "docId": "1PiahFAeiGK",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12875,7 +13069,7 @@
     "deficiencies": []
   },
   {
-    "seq": 244,
+    "seq": 248,
     "docId": "1PiahFAehU9",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12893,7 +13087,7 @@
     "deficiencies": []
   },
   {
-    "seq": 245,
+    "seq": 249,
     "docId": "1PiahFAegOV",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12911,7 +13105,7 @@
     "deficiencies": []
   },
   {
-    "seq": 246,
+    "seq": 250,
     "docId": "1PiahFAeZWL",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12929,7 +13123,7 @@
     "deficiencies": []
   },
   {
-    "seq": 247,
+    "seq": 251,
     "docId": "1PiahFAeYA7",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12947,7 +13141,7 @@
     "deficiencies": []
   },
   {
-    "seq": 248,
+    "seq": 252,
     "docId": "1PiahFAeWmL",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12965,7 +13159,7 @@
     "deficiencies": []
   },
   {
-    "seq": 249,
+    "seq": 253,
     "docId": "1PiahFAeOjD",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -12983,7 +13177,7 @@
     "deficiencies": []
   },
   {
-    "seq": 250,
+    "seq": 254,
     "docId": "1PiahFAeMnz",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13001,7 +13195,7 @@
     "deficiencies": []
   },
   {
-    "seq": 251,
+    "seq": 255,
     "docId": "1PiahFAe9Es",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13019,7 +13213,7 @@
     "deficiencies": []
   },
   {
-    "seq": 252,
+    "seq": 256,
     "docId": "1PiaVxxConK",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13037,7 +13231,7 @@
     "deficiencies": []
   },
   {
-    "seq": 253,
+    "seq": 257,
     "docId": "1PiaVxxCngB",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13055,7 +13249,7 @@
     "deficiencies": []
   },
   {
-    "seq": 254,
+    "seq": 258,
     "docId": "1PiAQpeQGxt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13075,7 +13269,7 @@
     "deficiencies": []
   },
   {
-    "seq": 255,
+    "seq": 259,
     "docId": "1Pi0eurUda7",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13103,7 +13297,7 @@
     ]
   },
   {
-    "seq": 256,
+    "seq": 260,
     "docId": "1PhyFxM0UBS",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13123,7 +13317,7 @@
     "deficiencies": []
   },
   {
-    "seq": 257,
+    "seq": 261,
     "docId": "1PgKV4kaA7F",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13141,7 +13335,7 @@
     "deficiencies": []
   },
   {
-    "seq": 258,
+    "seq": 262,
     "docId": "1Pf-Zs-6Ot-",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13159,7 +13353,7 @@
     "deficiencies": []
   },
   {
-    "seq": 259,
+    "seq": 263,
     "docId": "1Pf-Zs-6Nz9",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13177,7 +13371,7 @@
     "deficiencies": []
   },
   {
-    "seq": 260,
+    "seq": 264,
     "docId": "1Pf-Zs-6NDZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13195,7 +13389,7 @@
     "deficiencies": []
   },
   {
-    "seq": 261,
+    "seq": 265,
     "docId": "1Pf-Zs-6Lvu",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13213,7 +13407,7 @@
     "deficiencies": []
   },
   {
-    "seq": 262,
+    "seq": 266,
     "docId": "1Pf-Zs-6LAw",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13231,7 +13425,7 @@
     "deficiencies": []
   },
   {
-    "seq": 263,
+    "seq": 267,
     "docId": "1PfxOD7pkJ8",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13249,7 +13443,7 @@
     "deficiencies": []
   },
   {
-    "seq": 264,
+    "seq": 268,
     "docId": "1PfxOD7pUO-",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13267,7 +13461,7 @@
     "deficiencies": []
   },
   {
-    "seq": 265,
+    "seq": 269,
     "docId": "1PfsZcD03ye",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13285,7 +13479,7 @@
     "deficiencies": []
   },
   {
-    "seq": 266,
+    "seq": 270,
     "docId": "1PfsPXZr_r9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13303,7 +13497,7 @@
     "deficiencies": []
   },
   {
-    "seq": 267,
+    "seq": 271,
     "docId": "1PfsPXZrzhp",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13321,7 +13515,7 @@
     "deficiencies": []
   },
   {
-    "seq": 268,
+    "seq": 272,
     "docId": "1PatAAz_kpL",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13339,7 +13533,7 @@
     "deficiencies": []
   },
   {
-    "seq": 269,
+    "seq": 273,
     "docId": "1PZo0o0izFB",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13357,7 +13551,7 @@
     "deficiencies": []
   },
   {
-    "seq": 270,
+    "seq": 274,
     "docId": "1PZfmDVy9YL",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13375,7 +13569,7 @@
     "deficiencies": []
   },
   {
-    "seq": 271,
+    "seq": 275,
     "docId": "1PZfmDVy8iY",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13393,7 +13587,7 @@
     "deficiencies": []
   },
   {
-    "seq": 272,
+    "seq": 276,
     "docId": "1PZbXhlZhun",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13411,7 +13605,7 @@
     "deficiencies": []
   },
   {
-    "seq": 273,
+    "seq": 277,
     "docId": "1PZbXhlZfpC",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13429,7 +13623,7 @@
     "deficiencies": []
   },
   {
-    "seq": 274,
+    "seq": 278,
     "docId": "1PZbXhlZfc6",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13447,7 +13641,7 @@
     "deficiencies": []
   },
   {
-    "seq": 275,
+    "seq": 279,
     "docId": "1PZbXhlZc35",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13465,7 +13659,7 @@
     "deficiencies": []
   },
   {
-    "seq": 276,
+    "seq": 280,
     "docId": "1PZbXhlZZ8H",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13483,7 +13677,7 @@
     "deficiencies": []
   },
   {
-    "seq": 277,
+    "seq": 281,
     "docId": "1PXuYVTZORi",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13501,7 +13695,7 @@
     "deficiencies": []
   },
   {
-    "seq": 278,
+    "seq": 282,
     "docId": "1PXuYVTZ2ne",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13519,7 +13713,7 @@
     "deficiencies": []
   },
   {
-    "seq": 279,
+    "seq": 283,
     "docId": "1PXu9CD0pL1",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13537,7 +13731,7 @@
     "deficiencies": []
   },
   {
-    "seq": 280,
+    "seq": 284,
     "docId": "1PXtlZoke9U",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -13555,7 +13749,7 @@
     "deficiencies": []
   },
   {
-    "seq": 281,
+    "seq": 285,
     "docId": "1PW-FqEJKfs",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13621,7 +13815,7 @@
     ]
   },
   {
-    "seq": 282,
+    "seq": 286,
     "docId": "1PW-FqEJJ2V",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13731,7 +13925,7 @@
     ]
   },
   {
-    "seq": 283,
+    "seq": 287,
     "docId": "1PW-FqEJFH-",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13773,7 +13967,7 @@
     ]
   },
   {
-    "seq": 284,
+    "seq": 288,
     "docId": "1PW-FqEJEdC",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -13813,7 +14007,7 @@
     ]
   },
   {
-    "seq": 285,
+    "seq": 289,
     "docId": "1PW-FqEJCzX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13853,7 +14047,7 @@
     ]
   },
   {
-    "seq": 286,
+    "seq": 290,
     "docId": "1PW-FqEJBcH",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -13871,7 +14065,7 @@
     "deficiencies": []
   },
   {
-    "seq": 287,
+    "seq": 291,
     "docId": "1PW-FqEJAGG",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -13948,7 +14142,7 @@
     ]
   },
   {
-    "seq": 288,
+    "seq": 292,
     "docId": "1PW-FqEJ9Wr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14016,7 +14210,7 @@
     ]
   },
   {
-    "seq": 289,
+    "seq": 293,
     "docId": "1PWNLMrQRnc",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -14034,7 +14228,7 @@
     "deficiencies": []
   },
   {
-    "seq": 290,
+    "seq": 294,
     "docId": "1PVYt7z1rJ7",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14052,7 +14246,7 @@
     "deficiencies": []
   },
   {
-    "seq": 291,
+    "seq": 295,
     "docId": "1PVZGsf79Wc",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14070,7 +14264,7 @@
     "deficiencies": []
   },
   {
-    "seq": 292,
+    "seq": 296,
     "docId": "1PVK9vg8il2",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14088,7 +14282,7 @@
     "deficiencies": []
   },
   {
-    "seq": 293,
+    "seq": 297,
     "docId": "1PVK9vg8B2-",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14106,7 +14300,7 @@
     "deficiencies": []
   },
   {
-    "seq": 294,
+    "seq": 298,
     "docId": "1PVCJCHpxRz",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14124,7 +14318,7 @@
     "deficiencies": []
   },
   {
-    "seq": 295,
+    "seq": 299,
     "docId": "1PV9J1jGKmP",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14142,7 +14336,7 @@
     "deficiencies": []
   },
   {
-    "seq": 296,
+    "seq": 300,
     "docId": "1PV9J1jGJEL",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14160,7 +14354,7 @@
     "deficiencies": []
   },
   {
-    "seq": 297,
+    "seq": 301,
     "docId": "1PV9J1jGHnn",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14178,7 +14372,7 @@
     "deficiencies": []
   },
   {
-    "seq": 298,
+    "seq": 302,
     "docId": "1PTx7jl8mc9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14196,7 +14390,7 @@
     "deficiencies": []
   },
   {
-    "seq": 299,
+    "seq": 303,
     "docId": "1PTx7jl8l0f",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14214,7 +14408,7 @@
     "deficiencies": []
   },
   {
-    "seq": 300,
+    "seq": 304,
     "docId": "1PSKCQsShPp",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14232,7 +14426,7 @@
     "deficiencies": []
   },
   {
-    "seq": 301,
+    "seq": 305,
     "docId": "1PSKCQsSg49",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14250,7 +14444,7 @@
     "deficiencies": []
   },
   {
-    "seq": 302,
+    "seq": 306,
     "docId": "1PSKCQsSVgL",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14268,7 +14462,7 @@
     "deficiencies": []
   },
   {
-    "seq": 303,
+    "seq": 307,
     "docId": "1PSB7mIrDuh",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14308,7 +14502,7 @@
     ]
   },
   {
-    "seq": 304,
+    "seq": 308,
     "docId": "1PSB7mIrCm3",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -14369,7 +14563,7 @@
     ]
   },
   {
-    "seq": 305,
+    "seq": 309,
     "docId": "1PSB7mIrBvm",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14387,7 +14581,7 @@
     "deficiencies": []
   },
   {
-    "seq": 306,
+    "seq": 310,
     "docId": "1PSAEWUIHF8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14469,7 +14663,7 @@
     ]
   },
   {
-    "seq": 307,
+    "seq": 311,
     "docId": "1PSAEWUIGG8",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14600,7 +14794,7 @@
     ]
   },
   {
-    "seq": 308,
+    "seq": 312,
     "docId": "1PSA_cBv3h5",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14661,7 +14855,7 @@
     ]
   },
   {
-    "seq": 309,
+    "seq": 313,
     "docId": "1PSA_cBv2Wx",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14694,7 +14888,7 @@
     ]
   },
   {
-    "seq": 310,
+    "seq": 314,
     "docId": "1PSA_cBv12c",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14741,7 +14935,7 @@
     ]
   },
   {
-    "seq": 311,
+    "seq": 315,
     "docId": "1PSA_cBv0De",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -14886,7 +15080,7 @@
     ]
   },
   {
-    "seq": 312,
+    "seq": 316,
     "docId": "1PSAqeFt_tH",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -14954,7 +15148,7 @@
     ]
   },
   {
-    "seq": 313,
+    "seq": 317,
     "docId": "1PSAqeFtzYl",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -14987,7 +15181,7 @@
     ]
   },
   {
-    "seq": 314,
+    "seq": 318,
     "docId": "1PRDQanj9m_",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15062,7 +15256,7 @@
     ]
   },
   {
-    "seq": 315,
+    "seq": 319,
     "docId": "1PRDQanj8F2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15102,7 +15296,7 @@
     ]
   },
   {
-    "seq": 316,
+    "seq": 320,
     "docId": "1PQeOvGre9G",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -15120,7 +15314,7 @@
     "deficiencies": []
   },
   {
-    "seq": 317,
+    "seq": 321,
     "docId": "1PQeOvGrbk2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15138,7 +15332,7 @@
     "deficiencies": []
   },
   {
-    "seq": 318,
+    "seq": 322,
     "docId": "1PQeOvGraWl",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15156,7 +15350,7 @@
     "deficiencies": []
   },
   {
-    "seq": 319,
+    "seq": 323,
     "docId": "1PQeOvGrYly",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15174,7 +15368,7 @@
     "deficiencies": []
   },
   {
-    "seq": 320,
+    "seq": 324,
     "docId": "1PQeMdI8JkA",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -15192,7 +15386,7 @@
     "deficiencies": []
   },
   {
-    "seq": 321,
+    "seq": 325,
     "docId": "1PQeOvGrXjP",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15210,7 +15404,7 @@
     "deficiencies": []
   },
   {
-    "seq": 322,
+    "seq": 326,
     "docId": "1PQeOvGrV4f",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15228,7 +15422,7 @@
     "deficiencies": []
   },
   {
-    "seq": 323,
+    "seq": 327,
     "docId": "1PKvbm_wicA",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15246,7 +15440,7 @@
     "deficiencies": []
   },
   {
-    "seq": 324,
+    "seq": 328,
     "docId": "1PKvbm_wh5J",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15264,7 +15458,7 @@
     "deficiencies": []
   },
   {
-    "seq": 325,
+    "seq": 329,
     "docId": "1PKsyyZ23XK",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15444,7 +15638,7 @@
     ]
   },
   {
-    "seq": 326,
+    "seq": 330,
     "docId": "1PKsyyZ22ll",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -15505,7 +15699,7 @@
     ]
   },
   {
-    "seq": 327,
+    "seq": 331,
     "docId": "1PKsqEVbahj",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -15538,7 +15732,7 @@
     ]
   },
   {
-    "seq": 328,
+    "seq": 332,
     "docId": "1PKsqEVbZtL",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15592,7 +15786,7 @@
     ]
   },
   {
-    "seq": 329,
+    "seq": 333,
     "docId": "1PKsqEVbYoh",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15667,7 +15861,7 @@
     ]
   },
   {
-    "seq": 330,
+    "seq": 334,
     "docId": "1PKXWh0scdq",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -15685,7 +15879,7 @@
     "deficiencies": []
   },
   {
-    "seq": 331,
+    "seq": 335,
     "docId": "1PKHYOW0f5Z",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -15703,7 +15897,7 @@
     "deficiencies": []
   },
   {
-    "seq": 332,
+    "seq": 336,
     "docId": "1PKHYOW0eLd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15721,7 +15915,7 @@
     "deficiencies": []
   },
   {
-    "seq": 333,
+    "seq": 337,
     "docId": "1PKHciyuYeB",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15739,7 +15933,7 @@
     "deficiencies": []
   },
   {
-    "seq": 334,
+    "seq": 338,
     "docId": "1PKHYOW0X4R",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15757,7 +15951,7 @@
     "deficiencies": []
   },
   {
-    "seq": 335,
+    "seq": 339,
     "docId": "1PKHYOW0WAq",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15775,7 +15969,7 @@
     "deficiencies": []
   },
   {
-    "seq": 336,
+    "seq": 340,
     "docId": "1PKHYOW0Qjx",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15793,7 +15987,7 @@
     "deficiencies": []
   },
   {
-    "seq": 337,
+    "seq": 341,
     "docId": "1PK309-WY_V",
     "prePost": "사후",
     "type": "해당없음",
@@ -15811,7 +16005,7 @@
     "deficiencies": []
   },
   {
-    "seq": 338,
+    "seq": 342,
     "docId": "1PJnatECGf7",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -15829,7 +16023,7 @@
     "deficiencies": []
   },
   {
-    "seq": 339,
+    "seq": 343,
     "docId": "1PJjU_9GcLk",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15847,7 +16041,7 @@
     "deficiencies": []
   },
   {
-    "seq": 340,
+    "seq": 344,
     "docId": "1PJjU_9GcKZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15865,7 +16059,7 @@
     "deficiencies": []
   },
   {
-    "seq": 341,
+    "seq": 345,
     "docId": "1PJjU_9GcJy",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15883,7 +16077,7 @@
     "deficiencies": []
   },
   {
-    "seq": 342,
+    "seq": 346,
     "docId": "1PJjU_9GcJd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15901,7 +16095,7 @@
     "deficiencies": []
   },
   {
-    "seq": 343,
+    "seq": 347,
     "docId": "1PJjU_9GcIn",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15919,7 +16113,7 @@
     "deficiencies": []
   },
   {
-    "seq": 344,
+    "seq": 348,
     "docId": "1PJjU_9GcIS",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15937,7 +16131,7 @@
     "deficiencies": []
   },
   {
-    "seq": 345,
+    "seq": 349,
     "docId": "1PJjU_9GcI7",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15955,7 +16149,7 @@
     "deficiencies": []
   },
   {
-    "seq": 346,
+    "seq": 350,
     "docId": "1PJjU_9GcHr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15973,7 +16167,7 @@
     "deficiencies": []
   },
   {
-    "seq": 347,
+    "seq": 351,
     "docId": "1PJjU_9GcDO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -15991,7 +16185,7 @@
     "deficiencies": []
   },
   {
-    "seq": 348,
+    "seq": 352,
     "docId": "1PJjU_9GG17",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -16009,7 +16203,7 @@
     "deficiencies": []
   },
   {
-    "seq": 349,
+    "seq": 353,
     "docId": "1PJjU_9GFvC",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -16027,7 +16221,7 @@
     "deficiencies": []
   },
   {
-    "seq": 350,
+    "seq": 354,
     "docId": "1PJjU_9GFmg",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -16045,7 +16239,7 @@
     "deficiencies": []
   },
   {
-    "seq": 351,
+    "seq": 355,
     "docId": "1PJjU_9GFZo",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -16063,7 +16257,7 @@
     "deficiencies": []
   },
   {
-    "seq": 352,
+    "seq": 356,
     "docId": "1PJjU_9GFSj",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -16081,7 +16275,7 @@
     "deficiencies": []
   },
   {
-    "seq": 353,
+    "seq": 357,
     "docId": "1PJjU_9GEb1",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -16099,7 +16293,7 @@
     "deficiencies": []
   },
   {
-    "seq": 354,
+    "seq": 358,
     "docId": "1PJjU_9GEOu",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -16117,7 +16311,7 @@
     "deficiencies": []
   },
   {
-    "seq": 355,
+    "seq": 359,
     "docId": "1PJjU_9GEGT",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -16135,7 +16329,7 @@
     "deficiencies": []
   },
   {
-    "seq": 356,
+    "seq": 360,
     "docId": "1PJjU_9GE53",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -16153,7 +16347,7 @@
     "deficiencies": []
   },
   {
-    "seq": 357,
+    "seq": 361,
     "docId": "1PJUjFR9ESC",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16171,7 +16365,7 @@
     "deficiencies": []
   },
   {
-    "seq": 358,
+    "seq": 362,
     "docId": "1PJF7yEDOZD",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16189,7 +16383,7 @@
     "deficiencies": []
   },
   {
-    "seq": 359,
+    "seq": 363,
     "docId": "1PJF7yEDIyt",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16207,7 +16401,7 @@
     "deficiencies": []
   },
   {
-    "seq": 360,
+    "seq": 364,
     "docId": "1PJF7yEDFYt",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16225,7 +16419,7 @@
     "deficiencies": []
   },
   {
-    "seq": 361,
+    "seq": 365,
     "docId": "1PJF7yEDE46",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16243,7 +16437,7 @@
     "deficiencies": []
   },
   {
-    "seq": 362,
+    "seq": 366,
     "docId": "1PJF7yEDCB8",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16261,7 +16455,7 @@
     "deficiencies": []
   },
   {
-    "seq": 363,
+    "seq": 367,
     "docId": "1PJF7yEDB1q",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16279,7 +16473,7 @@
     "deficiencies": []
   },
   {
-    "seq": 364,
+    "seq": 368,
     "docId": "1PJF7yED90S",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16297,7 +16491,7 @@
     "deficiencies": []
   },
   {
-    "seq": 365,
+    "seq": 369,
     "docId": "1PJF7yED7u7",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16315,7 +16509,7 @@
     "deficiencies": []
   },
   {
-    "seq": 366,
+    "seq": 370,
     "docId": "1PJF7yED5zo",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16333,7 +16527,7 @@
     "deficiencies": []
   },
   {
-    "seq": 367,
+    "seq": 371,
     "docId": "1PJF7yED4jb",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16351,7 +16545,7 @@
     "deficiencies": []
   },
   {
-    "seq": 368,
+    "seq": 372,
     "docId": "1PJF7yED1rY",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16369,7 +16563,7 @@
     "deficiencies": []
   },
   {
-    "seq": 369,
+    "seq": 373,
     "docId": "1PJF7yED0yj",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16387,7 +16581,7 @@
     "deficiencies": []
   },
   {
-    "seq": 370,
+    "seq": 374,
     "docId": "1PJF7yED06a",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16405,7 +16599,7 @@
     "deficiencies": []
   },
   {
-    "seq": 371,
+    "seq": 375,
     "docId": "1PJEmvJc-O-",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16423,7 +16617,7 @@
     "deficiencies": []
   },
   {
-    "seq": 372,
+    "seq": 376,
     "docId": "1PJEmvJc_Pf",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16441,7 +16635,7 @@
     "deficiencies": []
   },
   {
-    "seq": 373,
+    "seq": 377,
     "docId": "1PJEmvJcza9",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16459,7 +16653,7 @@
     "deficiencies": []
   },
   {
-    "seq": 374,
+    "seq": 378,
     "docId": "1PJEmvJcxUr",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16477,7 +16671,7 @@
     "deficiencies": []
   },
   {
-    "seq": 375,
+    "seq": 379,
     "docId": "1PJEmvJcwr6",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16495,7 +16689,7 @@
     "deficiencies": []
   },
   {
-    "seq": 376,
+    "seq": 380,
     "docId": "1PJEmvJcva-",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16513,7 +16707,7 @@
     "deficiencies": []
   },
   {
-    "seq": 377,
+    "seq": 381,
     "docId": "1PJEmvJcuY8",
     "prePost": "사전",
     "type": "완제+원료(겸업)",
@@ -16531,7 +16725,7 @@
     "deficiencies": []
   },
   {
-    "seq": 378,
+    "seq": 382,
     "docId": "1PJEmvJc7S0",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16549,7 +16743,7 @@
     "deficiencies": []
   },
   {
-    "seq": 379,
+    "seq": 383,
     "docId": "1PJEmvJc2Ql",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16567,7 +16761,7 @@
     "deficiencies": []
   },
   {
-    "seq": 380,
+    "seq": 384,
     "docId": "1PJEcCg-xjF",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16585,7 +16779,7 @@
     "deficiencies": []
   },
   {
-    "seq": 381,
+    "seq": 385,
     "docId": "1PJEcCg-plL",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16603,7 +16797,7 @@
     "deficiencies": []
   },
   {
-    "seq": 382,
+    "seq": 386,
     "docId": "1PJEcCg-iv-",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16621,7 +16815,7 @@
     "deficiencies": []
   },
   {
-    "seq": 383,
+    "seq": 387,
     "docId": "1PJEcCg-gTA",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16639,7 +16833,7 @@
     "deficiencies": []
   },
   {
-    "seq": 384,
+    "seq": 388,
     "docId": "1PJEcCg-cYg",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16657,7 +16851,7 @@
     "deficiencies": []
   },
   {
-    "seq": 385,
+    "seq": 389,
     "docId": "1PJEcCg-bHy",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16675,7 +16869,7 @@
     "deficiencies": []
   },
   {
-    "seq": 386,
+    "seq": 390,
     "docId": "1PJEcCg-Ze8",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16693,7 +16887,7 @@
     "deficiencies": []
   },
   {
-    "seq": 387,
+    "seq": 391,
     "docId": "1PJEcCg-Wtm",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16711,7 +16905,7 @@
     "deficiencies": []
   },
   {
-    "seq": 388,
+    "seq": 392,
     "docId": "1PJEcCg-SM-",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16729,7 +16923,7 @@
     "deficiencies": []
   },
   {
-    "seq": 389,
+    "seq": 393,
     "docId": "1PJEcCg-6ng",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16747,7 +16941,7 @@
     "deficiencies": []
   },
   {
-    "seq": 390,
+    "seq": 394,
     "docId": "1PJEcCg-5PP",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16765,7 +16959,7 @@
     "deficiencies": []
   },
   {
-    "seq": 391,
+    "seq": 395,
     "docId": "1PJEcCg-3Tc",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16783,7 +16977,7 @@
     "deficiencies": []
   },
   {
-    "seq": 392,
+    "seq": 396,
     "docId": "1PJEcCg-1zu",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16801,7 +16995,7 @@
     "deficiencies": []
   },
   {
-    "seq": 393,
+    "seq": 397,
     "docId": "1PJESNIy-rg",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16819,7 +17013,7 @@
     "deficiencies": []
   },
   {
-    "seq": 394,
+    "seq": 398,
     "docId": "1PJESNIy_lG",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16837,7 +17031,7 @@
     "deficiencies": []
   },
   {
-    "seq": 395,
+    "seq": 399,
     "docId": "1PJESNIywTT",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16855,7 +17049,7 @@
     "deficiencies": []
   },
   {
-    "seq": 396,
+    "seq": 400,
     "docId": "1PJESNIyt4-",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16873,7 +17067,7 @@
     "deficiencies": []
   },
   {
-    "seq": 397,
+    "seq": 401,
     "docId": "1PJESNIysDM",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16891,7 +17085,7 @@
     "deficiencies": []
   },
   {
-    "seq": 398,
+    "seq": 402,
     "docId": "1PJESNIyjeb",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16909,7 +17103,7 @@
     "deficiencies": []
   },
   {
-    "seq": 399,
+    "seq": 403,
     "docId": "1PJESNIyhzw",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16927,7 +17121,7 @@
     "deficiencies": []
   },
   {
-    "seq": 400,
+    "seq": 404,
     "docId": "1PJESNIybky",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16945,7 +17139,7 @@
     "deficiencies": []
   },
   {
-    "seq": 401,
+    "seq": 405,
     "docId": "1PJESNIyZOZ",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -16963,7 +17157,7 @@
     "deficiencies": []
   },
   {
-    "seq": 402,
+    "seq": 406,
     "docId": "1PJESNIyXBt",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16981,7 +17175,7 @@
     "deficiencies": []
   },
   {
-    "seq": 403,
+    "seq": 407,
     "docId": "1PJESNIyRvi",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -16999,7 +17193,7 @@
     "deficiencies": []
   },
   {
-    "seq": 404,
+    "seq": 408,
     "docId": "1PJESNIyPNy",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17017,7 +17211,7 @@
     "deficiencies": []
   },
   {
-    "seq": 405,
+    "seq": 409,
     "docId": "1PJARCSr-7h",
     "prePost": "사전",
     "type": "해당없음",
@@ -17035,7 +17229,7 @@
     "deficiencies": []
   },
   {
-    "seq": 406,
+    "seq": 410,
     "docId": "1PJARCSrza1",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17053,7 +17247,7 @@
     "deficiencies": []
   },
   {
-    "seq": 407,
+    "seq": 411,
     "docId": "1PJARCSrqvl",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17071,7 +17265,7 @@
     "deficiencies": []
   },
   {
-    "seq": 408,
+    "seq": 412,
     "docId": "1PJARCSrYDz",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17089,7 +17283,7 @@
     "deficiencies": []
   },
   {
-    "seq": 409,
+    "seq": 413,
     "docId": "1PJAHlw0QCA",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17107,7 +17301,7 @@
     "deficiencies": []
   },
   {
-    "seq": 410,
+    "seq": 414,
     "docId": "1PJA8DLaWHT",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17125,7 +17319,7 @@
     "deficiencies": []
   },
   {
-    "seq": 411,
+    "seq": 415,
     "docId": "1PID4TO3j2H",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17143,7 +17337,7 @@
     "deficiencies": []
   },
   {
-    "seq": 412,
+    "seq": 416,
     "docId": "1PID4TO3Om5",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17161,7 +17355,7 @@
     "deficiencies": []
   },
   {
-    "seq": 413,
+    "seq": 417,
     "docId": "1PIC8f6IWyv",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17179,7 +17373,7 @@
     "deficiencies": []
   },
   {
-    "seq": 414,
+    "seq": 418,
     "docId": "1PIC8f6IM8p",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17197,7 +17391,7 @@
     "deficiencies": []
   },
   {
-    "seq": 415,
+    "seq": 419,
     "docId": "1PHRTWC2JuO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -17215,7 +17409,7 @@
     "deficiencies": []
   },
   {
-    "seq": 416,
+    "seq": 420,
     "docId": "1PHRTWC2JpT",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17233,7 +17427,7 @@
     "deficiencies": []
   },
   {
-    "seq": 417,
+    "seq": 421,
     "docId": "1PGfcVm-LZy",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17251,7 +17445,7 @@
     "deficiencies": []
   },
   {
-    "seq": 418,
+    "seq": 422,
     "docId": "1PGRvEEY3AG",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17269,7 +17463,7 @@
     "deficiencies": []
   },
   {
-    "seq": 419,
+    "seq": 423,
     "docId": "1PGRvEEY0n9",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17287,7 +17481,7 @@
     "deficiencies": []
   },
   {
-    "seq": 420,
+    "seq": 424,
     "docId": "1PGRvEEY05S",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17305,7 +17499,7 @@
     "deficiencies": []
   },
   {
-    "seq": 421,
+    "seq": 425,
     "docId": "1PGRUNJ_-Qp",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17323,7 +17517,7 @@
     "deficiencies": []
   },
   {
-    "seq": 422,
+    "seq": 426,
     "docId": "1PGRUNJ_-6i",
     "prePost": "사전",
     "type": "해당없음",
@@ -17341,7 +17535,7 @@
     "deficiencies": []
   },
   {
-    "seq": 423,
+    "seq": 427,
     "docId": "1PGRUNJ__ji",
     "prePost": "사전",
     "type": "해당없음",
@@ -17359,7 +17553,7 @@
     "deficiencies": []
   },
   {
-    "seq": 424,
+    "seq": 428,
     "docId": "1PGRUNJ_zor",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17377,7 +17571,7 @@
     "deficiencies": []
   },
   {
-    "seq": 425,
+    "seq": 429,
     "docId": "1PGRUNJ_z21",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17395,7 +17589,7 @@
     "deficiencies": []
   },
   {
-    "seq": 426,
+    "seq": 430,
     "docId": "1PGRUNJ_ye1",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17413,7 +17607,7 @@
     "deficiencies": []
   },
   {
-    "seq": 427,
+    "seq": 431,
     "docId": "1PGRUNJ_yFj",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17431,7 +17625,7 @@
     "deficiencies": []
   },
   {
-    "seq": 428,
+    "seq": 432,
     "docId": "1PGRUNJ_xiG",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17449,7 +17643,7 @@
     "deficiencies": []
   },
   {
-    "seq": 429,
+    "seq": 433,
     "docId": "1PGRUNJ_wvZ",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17467,7 +17661,7 @@
     "deficiencies": []
   },
   {
-    "seq": 430,
+    "seq": 434,
     "docId": "1PGRUNJ_vAd",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17485,7 +17679,7 @@
     "deficiencies": []
   },
   {
-    "seq": 431,
+    "seq": 435,
     "docId": "1PGRUNJ_u2m",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17503,7 +17697,7 @@
     "deficiencies": []
   },
   {
-    "seq": 432,
+    "seq": 436,
     "docId": "1PGRUNJ_tWT",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17521,7 +17715,7 @@
     "deficiencies": []
   },
   {
-    "seq": 433,
+    "seq": 437,
     "docId": "1PGRUNJ_t2p",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17539,7 +17733,7 @@
     "deficiencies": []
   },
   {
-    "seq": 434,
+    "seq": 438,
     "docId": "1PGR8fQkHKS",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17557,7 +17751,7 @@
     "deficiencies": []
   },
   {
-    "seq": 435,
+    "seq": 439,
     "docId": "1PGR8fQkGh9",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17575,7 +17769,7 @@
     "deficiencies": []
   },
   {
-    "seq": 436,
+    "seq": 440,
     "docId": "1PGR8fQkGJ1",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17593,7 +17787,7 @@
     "deficiencies": []
   },
   {
-    "seq": 437,
+    "seq": 441,
     "docId": "1PGR8fQkFUf",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -17611,7 +17805,7 @@
     "deficiencies": []
   },
   {
-    "seq": 438,
+    "seq": 442,
     "docId": "1PGR8fQkF9u",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17629,7 +17823,7 @@
     "deficiencies": []
   },
   {
-    "seq": 439,
+    "seq": 443,
     "docId": "1PGR8fQkCG1",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17647,7 +17841,7 @@
     "deficiencies": []
   },
   {
-    "seq": 440,
+    "seq": 444,
     "docId": "1PGR8fQk7Ed",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -17665,7 +17859,7 @@
     "deficiencies": []
   },
   {
-    "seq": 441,
+    "seq": 445,
     "docId": "1PFBK8czYYa",
     "prePost": "사후",
     "type": "해당없음",
@@ -17683,7 +17877,7 @@
     "deficiencies": []
   },
   {
-    "seq": 442,
+    "seq": 446,
     "docId": "1PFCoyOW4nN",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17701,7 +17895,7 @@
     "deficiencies": []
   },
   {
-    "seq": 443,
+    "seq": 447,
     "docId": "1PFCoyOW4Ec",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -17719,7 +17913,7 @@
     "deficiencies": []
   },
   {
-    "seq": 444,
+    "seq": 448,
     "docId": "1PFCoyOW3Zx",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17737,7 +17931,7 @@
     "deficiencies": []
   },
   {
-    "seq": 445,
+    "seq": 449,
     "docId": "1PFCoyOW331",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -17791,7 +17985,7 @@
     ]
   },
   {
-    "seq": 446,
+    "seq": 450,
     "docId": "1PFC9VqyjKB",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -17809,7 +18003,7 @@
     "deficiencies": []
   },
   {
-    "seq": 447,
+    "seq": 451,
     "docId": "1PEp6jLLBe6",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17827,7 +18021,7 @@
     "deficiencies": []
   },
   {
-    "seq": 448,
+    "seq": 452,
     "docId": "1PEp6jLL9ih",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17845,7 +18039,7 @@
     "deficiencies": []
   },
   {
-    "seq": 449,
+    "seq": 453,
     "docId": "1PEfmBhHGCZ",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -17863,7 +18057,7 @@
     "deficiencies": []
   },
   {
-    "seq": 450,
+    "seq": 454,
     "docId": "1PENb1hWwzJ",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17910,7 +18104,7 @@
     ]
   },
   {
-    "seq": 451,
+    "seq": 455,
     "docId": "1PENb1hWvv_",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17943,7 +18137,7 @@
     ]
   },
   {
-    "seq": 452,
+    "seq": 456,
     "docId": "1PENb1hWtWX",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -17961,7 +18155,7 @@
     "deficiencies": []
   },
   {
-    "seq": 453,
+    "seq": 457,
     "docId": "1PENb1hWsfM",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18001,7 +18195,7 @@
     ]
   },
   {
-    "seq": 454,
+    "seq": 458,
     "docId": "1PEFzUr7rNv",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18019,7 +18213,7 @@
     "deficiencies": []
   },
   {
-    "seq": 455,
+    "seq": 459,
     "docId": "1PEFzUr7qnn",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18037,7 +18231,7 @@
     "deficiencies": []
   },
   {
-    "seq": 456,
+    "seq": 460,
     "docId": "1PEFzUr7qOO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18055,7 +18249,7 @@
     "deficiencies": []
   },
   {
-    "seq": 457,
+    "seq": 461,
     "docId": "1PEFzUr7phC",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18073,7 +18267,7 @@
     "deficiencies": []
   },
   {
-    "seq": 458,
+    "seq": 462,
     "docId": "1PEFzUr7o0Q",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18091,7 +18285,7 @@
     "deficiencies": []
   },
   {
-    "seq": 459,
+    "seq": 463,
     "docId": "1PEFzUr7n6A",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18109,7 +18303,7 @@
     "deficiencies": []
   },
   {
-    "seq": 460,
+    "seq": 464,
     "docId": "1PEFzUr7WkD",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18127,7 +18321,7 @@
     "deficiencies": []
   },
   {
-    "seq": 461,
+    "seq": 465,
     "docId": "1PEFzUr7V-p",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18145,7 +18339,7 @@
     "deficiencies": []
   },
   {
-    "seq": 462,
+    "seq": 466,
     "docId": "1PDrTYgnSOz",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18213,7 +18407,7 @@
     ]
   },
   {
-    "seq": 463,
+    "seq": 467,
     "docId": "1PDrTYgnSOM",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18274,7 +18468,7 @@
     ]
   },
   {
-    "seq": 464,
+    "seq": 468,
     "docId": "1PDrTYgnSML",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18419,7 +18613,7 @@
     ]
   },
   {
-    "seq": 465,
+    "seq": 469,
     "docId": "1PDrTYgnSLV",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18480,7 +18674,7 @@
     ]
   },
   {
-    "seq": 466,
+    "seq": 470,
     "docId": "1PDrTYgnSEx",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -18548,7 +18742,7 @@
     ]
   },
   {
-    "seq": 467,
+    "seq": 471,
     "docId": "1PBQkSg5cTw",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -18566,7 +18760,7 @@
     "deficiencies": []
   },
   {
-    "seq": 468,
+    "seq": 472,
     "docId": "1PAzM_7avu2",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -18584,7 +18778,7 @@
     "deficiencies": []
   },
   {
-    "seq": 469,
+    "seq": 473,
     "docId": "1PAsjrtI17G",
     "prePost": "",
     "type": "원료(단일)",
@@ -18604,7 +18798,7 @@
     "deficiencies": []
   },
   {
-    "seq": 470,
+    "seq": 474,
     "docId": "1PAk4p4KXEZ",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -18624,7 +18818,7 @@
     "deficiencies": []
   },
   {
-    "seq": 471,
+    "seq": 475,
     "docId": "1PAbJvVXmU6",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -18644,7 +18838,7 @@
     "deficiencies": []
   },
   {
-    "seq": 472,
+    "seq": 476,
     "docId": "1PAbJvVXIKt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18712,7 +18906,7 @@
     ]
   },
   {
-    "seq": 473,
+    "seq": 477,
     "docId": "1PAbJvVXIKY",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18766,7 +18960,7 @@
     ]
   },
   {
-    "seq": 474,
+    "seq": 478,
     "docId": "1PAbJvVXIKD",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -18890,7 +19084,7 @@
     ]
   },
   {
-    "seq": 475,
+    "seq": 479,
     "docId": "1P9sMKKKqAx",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -18910,7 +19104,7 @@
     "deficiencies": []
   },
   {
-    "seq": 476,
+    "seq": 480,
     "docId": "1P9sMKKKhKe",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -18928,7 +19122,7 @@
     "deficiencies": []
   },
   {
-    "seq": 477,
+    "seq": 481,
     "docId": "1P9q7sJ51cB",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -18948,7 +19142,7 @@
     "deficiencies": []
   },
   {
-    "seq": 478,
+    "seq": 482,
     "docId": "1P9CSnreUyD",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18966,7 +19160,7 @@
     "deficiencies": []
   },
   {
-    "seq": 479,
+    "seq": 483,
     "docId": "1P9CSnreUx2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -18984,7 +19178,7 @@
     "deficiencies": []
   },
   {
-    "seq": 480,
+    "seq": 484,
     "docId": "1P9CSnreUw9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19002,7 +19196,7 @@
     "deficiencies": []
   },
   {
-    "seq": 481,
+    "seq": 485,
     "docId": "1P9CSnreUtX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19020,7 +19214,7 @@
     "deficiencies": []
   },
   {
-    "seq": 482,
+    "seq": 486,
     "docId": "1P9CSnreUmC",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19038,7 +19232,7 @@
     "deficiencies": []
   },
   {
-    "seq": 483,
+    "seq": 487,
     "docId": "1P9CSnreUiD",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19056,7 +19250,7 @@
     "deficiencies": []
   },
   {
-    "seq": 484,
+    "seq": 488,
     "docId": "1P9CSnreUd6",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19074,7 +19268,7 @@
     "deficiencies": []
   },
   {
-    "seq": 485,
+    "seq": 489,
     "docId": "1P9CSnreUZP",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19092,7 +19286,7 @@
     "deficiencies": []
   },
   {
-    "seq": 486,
+    "seq": 490,
     "docId": "1P8B4CKolXJ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19202,7 +19396,7 @@
     ]
   },
   {
-    "seq": 487,
+    "seq": 491,
     "docId": "1P8B4CKolSj",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19326,7 +19520,7 @@
     ]
   },
   {
-    "seq": 488,
+    "seq": 492,
     "docId": "1P8B4CKolKl",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19344,7 +19538,7 @@
     "deficiencies": []
   },
   {
-    "seq": 489,
+    "seq": 493,
     "docId": "1P8B4CKolDv",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19538,7 +19732,7 @@
     ]
   },
   {
-    "seq": 490,
+    "seq": 494,
     "docId": "1P761xgBEaX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19578,7 +19772,7 @@
     ]
   },
   {
-    "seq": 491,
+    "seq": 495,
     "docId": "1P761xgBD0s",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19625,7 +19819,7 @@
     ]
   },
   {
-    "seq": 492,
+    "seq": 496,
     "docId": "1P761xgBAUc",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19643,7 +19837,7 @@
     "deficiencies": []
   },
   {
-    "seq": 493,
+    "seq": 497,
     "docId": "1P761xgB8rs",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19661,7 +19855,7 @@
     "deficiencies": []
   },
   {
-    "seq": 494,
+    "seq": 498,
     "docId": "1P41wm3_fct",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19679,7 +19873,7 @@
     "deficiencies": []
   },
   {
-    "seq": 495,
+    "seq": 499,
     "docId": "1P41wm3_ePP",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19697,7 +19891,7 @@
     "deficiencies": []
   },
   {
-    "seq": 496,
+    "seq": 500,
     "docId": "1P41wm3_dX2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19715,7 +19909,7 @@
     "deficiencies": []
   },
   {
-    "seq": 497,
+    "seq": 501,
     "docId": "1P41wm3_cU5",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19733,7 +19927,7 @@
     "deficiencies": []
   },
   {
-    "seq": 498,
+    "seq": 502,
     "docId": "1P41wm3_bah",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19751,7 +19945,7 @@
     "deficiencies": []
   },
   {
-    "seq": 499,
+    "seq": 503,
     "docId": "1P41wm3_aHg",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19769,7 +19963,7 @@
     "deficiencies": []
   },
   {
-    "seq": 500,
+    "seq": 504,
     "docId": "1P3YT4PZ8AL",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19787,7 +19981,7 @@
     "deficiencies": []
   },
   {
-    "seq": 501,
+    "seq": 505,
     "docId": "1P3TwIppa-g",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19805,7 +19999,7 @@
     "deficiencies": []
   },
   {
-    "seq": 502,
+    "seq": 506,
     "docId": "1P2hKsqMr6T",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19823,7 +20017,7 @@
     "deficiencies": []
   },
   {
-    "seq": 503,
+    "seq": 507,
     "docId": "1P2V3qgMQEi",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19841,7 +20035,7 @@
     "deficiencies": []
   },
   {
-    "seq": 504,
+    "seq": 508,
     "docId": "1P2V3qgMPAO",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19859,7 +20053,7 @@
     "deficiencies": []
   },
   {
-    "seq": 505,
+    "seq": 509,
     "docId": "1P2V3qgMNJ4",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19877,7 +20071,7 @@
     "deficiencies": []
   },
   {
-    "seq": 506,
+    "seq": 510,
     "docId": "1P2V3qgMLQt",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -19895,7 +20089,7 @@
     "deficiencies": []
   },
   {
-    "seq": 507,
+    "seq": 511,
     "docId": "1P2UhIKFV3l",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19956,7 +20150,7 @@
     ]
   },
   {
-    "seq": 508,
+    "seq": 512,
     "docId": "1P2UhIKFUeg",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -19996,7 +20190,7 @@
     ]
   },
   {
-    "seq": 509,
+    "seq": 513,
     "docId": "1P2UhIKFTkO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20169,7 +20363,7 @@
     ]
   },
   {
-    "seq": 510,
+    "seq": 514,
     "docId": "1P2UhIKFTI6",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20223,7 +20417,7 @@
     ]
   },
   {
-    "seq": 511,
+    "seq": 515,
     "docId": "1P2UhIKFRbG",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20241,7 +20435,7 @@
     "deficiencies": []
   },
   {
-    "seq": 512,
+    "seq": 516,
     "docId": "1P2UhIKFR7h",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20281,7 +20475,7 @@
     ]
   },
   {
-    "seq": 513,
+    "seq": 517,
     "docId": "1P2UhIKFQcG",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20363,7 +20557,7 @@
     ]
   },
   {
-    "seq": 514,
+    "seq": 518,
     "docId": "1P2UhIKFPxu",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20410,7 +20604,7 @@
     ]
   },
   {
-    "seq": 515,
+    "seq": 519,
     "docId": "1P1oYPFWrh0",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20428,7 +20622,7 @@
     "deficiencies": []
   },
   {
-    "seq": 516,
+    "seq": 520,
     "docId": "1P1j3miv_2P",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -20446,7 +20640,7 @@
     "deficiencies": []
   },
   {
-    "seq": 517,
+    "seq": 521,
     "docId": "1P19k0H5g_Z",
     "prePost": "사후",
     "type": "해당없음",
@@ -20464,7 +20658,7 @@
     "deficiencies": []
   },
   {
-    "seq": 518,
+    "seq": 522,
     "docId": "1P19k0H5ehL",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20482,7 +20676,7 @@
     "deficiencies": []
   },
   {
-    "seq": 519,
+    "seq": 523,
     "docId": "1P19k0H5di3",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20500,7 +20694,7 @@
     "deficiencies": []
   },
   {
-    "seq": 520,
+    "seq": 524,
     "docId": "1P19k0H5dFG",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20518,7 +20712,7 @@
     "deficiencies": []
   },
   {
-    "seq": 521,
+    "seq": 525,
     "docId": "1P19k0H5chE",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20536,7 +20730,7 @@
     "deficiencies": []
   },
   {
-    "seq": 522,
+    "seq": 526,
     "docId": "1P19k0H5c0h",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20554,7 +20748,7 @@
     "deficiencies": []
   },
   {
-    "seq": 523,
+    "seq": 527,
     "docId": "1P19k0H5bUm",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20572,7 +20766,7 @@
     "deficiencies": []
   },
   {
-    "seq": 524,
+    "seq": 528,
     "docId": "1P19k0H5abX",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20590,7 +20784,7 @@
     "deficiencies": []
   },
   {
-    "seq": 525,
+    "seq": 529,
     "docId": "1P19k0H5a8W",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20608,7 +20802,7 @@
     "deficiencies": []
   },
   {
-    "seq": 526,
+    "seq": 530,
     "docId": "1P19k0H5ZZW",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -20626,7 +20820,7 @@
     "deficiencies": []
   },
   {
-    "seq": 527,
+    "seq": 531,
     "docId": "1P0r6voXjQL",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20715,7 +20909,7 @@
     ]
   },
   {
-    "seq": 528,
+    "seq": 532,
     "docId": "1P0r6voXjOK",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20769,7 +20963,7 @@
     ]
   },
   {
-    "seq": 529,
+    "seq": 533,
     "docId": "1P0r6voXjL2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -20886,7 +21080,7 @@
     ]
   },
   {
-    "seq": 530,
+    "seq": 534,
     "docId": "1P0r6voXjK9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21066,7 +21260,7 @@
     ]
   },
   {
-    "seq": 531,
+    "seq": 535,
     "docId": "1P0r6voXjJG",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21106,7 +21300,7 @@
     ]
   },
   {
-    "seq": 532,
+    "seq": 536,
     "docId": "1P0r6voXjI5",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21300,7 +21494,7 @@
     ]
   },
   {
-    "seq": 533,
+    "seq": 537,
     "docId": "1P0r6voXjFi",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21361,7 +21555,7 @@
     ]
   },
   {
-    "seq": 534,
+    "seq": 538,
     "docId": "1OyuoHKrLHf",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -21457,7 +21651,7 @@
     ]
   },
   {
-    "seq": 535,
+    "seq": 539,
     "docId": "1OyuoHKrLHK",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -21475,7 +21669,7 @@
     "deficiencies": []
   },
   {
-    "seq": 536,
+    "seq": 540,
     "docId": "1OyuoHKrLGR",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21529,7 +21723,7 @@
     ]
   },
   {
-    "seq": 537,
+    "seq": 541,
     "docId": "1OyuoHKrLF_",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -21569,7 +21763,7 @@
     ]
   },
   {
-    "seq": 538,
+    "seq": 542,
     "docId": "1OyuoHKrLE_",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -21840,7 +22034,7 @@
     ]
   },
   {
-    "seq": 539,
+    "seq": 543,
     "docId": "1OyuoHKrL9t",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21922,7 +22116,7 @@
     ]
   },
   {
-    "seq": 540,
+    "seq": 544,
     "docId": "1OyuoHKrL9G",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21940,7 +22134,7 @@
     "deficiencies": []
   },
   {
-    "seq": 541,
+    "seq": 545,
     "docId": "1OyuoHKrL8i",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -21987,7 +22181,7 @@
     ]
   },
   {
-    "seq": 542,
+    "seq": 546,
     "docId": "1OyiGZ6FzjJ",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22005,7 +22199,7 @@
     "deficiencies": []
   },
   {
-    "seq": 543,
+    "seq": 547,
     "docId": "1OyiGZ6Fs3-",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22023,7 +22217,7 @@
     "deficiencies": []
   },
   {
-    "seq": 544,
+    "seq": 548,
     "docId": "1OyiGZ6Fr4f",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22041,7 +22235,7 @@
     "deficiencies": []
   },
   {
-    "seq": 545,
+    "seq": 549,
     "docId": "1OyiGZ6Fpy9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22059,7 +22253,7 @@
     "deficiencies": []
   },
   {
-    "seq": 546,
+    "seq": 550,
     "docId": "1OyiGZ6FoW5",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22077,7 +22271,7 @@
     "deficiencies": []
   },
   {
-    "seq": 547,
+    "seq": 551,
     "docId": "1OyiGZ6FnR0",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22095,7 +22289,7 @@
     "deficiencies": []
   },
   {
-    "seq": 548,
+    "seq": 552,
     "docId": "1OyiGZ6Fe2N",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -22113,7 +22307,7 @@
     "deficiencies": []
   },
   {
-    "seq": 549,
+    "seq": 553,
     "docId": "1OwUAfH9aJN",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22131,7 +22325,7 @@
     "deficiencies": []
   },
   {
-    "seq": 550,
+    "seq": 554,
     "docId": "1OwUAfH9a2m",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22149,7 +22343,7 @@
     "deficiencies": []
   },
   {
-    "seq": 551,
+    "seq": 555,
     "docId": "1OvxT5W4mTn",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22280,7 +22474,7 @@
     ]
   },
   {
-    "seq": 552,
+    "seq": 556,
     "docId": "1OvvP7RbIJX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22404,7 +22598,7 @@
     ]
   },
   {
-    "seq": 553,
+    "seq": 557,
     "docId": "1OvvP7RbHPB",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22451,7 +22645,7 @@
     ]
   },
   {
-    "seq": 554,
+    "seq": 558,
     "docId": "1OvvP7RbGD_",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22469,7 +22663,7 @@
     "deficiencies": []
   },
   {
-    "seq": 555,
+    "seq": 559,
     "docId": "1OvvP7RbDcq",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22558,7 +22752,7 @@
     ]
   },
   {
-    "seq": 556,
+    "seq": 560,
     "docId": "1OtAeDkgPxM",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -22576,7 +22770,7 @@
     "deficiencies": []
   },
   {
-    "seq": 557,
+    "seq": 561,
     "docId": "1Os1QfRkNkd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22594,7 +22788,7 @@
     "deficiencies": []
   },
   {
-    "seq": 558,
+    "seq": 562,
     "docId": "1Os1QfRkNgM",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22612,7 +22806,7 @@
     "deficiencies": []
   },
   {
-    "seq": 559,
+    "seq": 563,
     "docId": "1Os1QfRkNcd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22630,7 +22824,7 @@
     "deficiencies": []
   },
   {
-    "seq": 560,
+    "seq": 564,
     "docId": "1Os1QfRkNSu",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22648,7 +22842,7 @@
     "deficiencies": []
   },
   {
-    "seq": 561,
+    "seq": 565,
     "docId": "1Orz9gcU3zh",
     "prePost": "사후",
     "type": "해당없음",
@@ -22666,7 +22860,7 @@
     "deficiencies": []
   },
   {
-    "seq": 562,
+    "seq": 566,
     "docId": "1Orz9gcU3vB",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22684,7 +22878,7 @@
     "deficiencies": []
   },
   {
-    "seq": 563,
+    "seq": 567,
     "docId": "1Orz9gcU3uI",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22702,7 +22896,7 @@
     "deficiencies": []
   },
   {
-    "seq": 564,
+    "seq": 568,
     "docId": "1Orz9gcU3pE",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22720,7 +22914,7 @@
     "deficiencies": []
   },
   {
-    "seq": 565,
+    "seq": 569,
     "docId": "1Orz9gcU3i9",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22738,7 +22932,7 @@
     "deficiencies": []
   },
   {
-    "seq": 566,
+    "seq": 570,
     "docId": "1Orz9gcU3fs",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22756,7 +22950,7 @@
     "deficiencies": []
   },
   {
-    "seq": 567,
+    "seq": 571,
     "docId": "1Orz9gcU3dH",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22774,7 +22968,7 @@
     "deficiencies": []
   },
   {
-    "seq": 568,
+    "seq": 572,
     "docId": "1OpiYHzC0DD",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22814,7 +23008,7 @@
     ]
   },
   {
-    "seq": 569,
+    "seq": 573,
     "docId": "1OpiJDMezkF",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22832,7 +23026,7 @@
     "deficiencies": []
   },
   {
-    "seq": 570,
+    "seq": 574,
     "docId": "1OpiJDMexUd",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22858,7 +23052,7 @@
     ]
   },
   {
-    "seq": 571,
+    "seq": 575,
     "docId": "1OpiJDMewtQ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22876,7 +23070,7 @@
     "deficiencies": []
   },
   {
-    "seq": 572,
+    "seq": 576,
     "docId": "1OoAc19n94V",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22894,7 +23088,7 @@
     "deficiencies": []
   },
   {
-    "seq": 573,
+    "seq": 577,
     "docId": "1Oo6LYA-jnH",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22912,7 +23106,7 @@
     "deficiencies": []
   },
   {
-    "seq": 574,
+    "seq": 578,
     "docId": "1Oo1IQuC-xo",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22930,7 +23124,7 @@
     "deficiencies": []
   },
   {
-    "seq": 575,
+    "seq": 579,
     "docId": "1Oo1IQuCrB_",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -22948,7 +23142,7 @@
     "deficiencies": []
   },
   {
-    "seq": 576,
+    "seq": 580,
     "docId": "1Oo1IQuCr7_",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22966,7 +23160,7 @@
     "deficiencies": []
   },
   {
-    "seq": 577,
+    "seq": 581,
     "docId": "1Oo1IQuCqtx",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -22984,7 +23178,7 @@
     "deficiencies": []
   },
   {
-    "seq": 578,
+    "seq": 582,
     "docId": "1Oo1IQuCqQb",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23002,7 +23196,7 @@
     "deficiencies": []
   },
   {
-    "seq": 579,
+    "seq": 583,
     "docId": "1Oo1IQuCqNS",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23020,7 +23214,7 @@
     "deficiencies": []
   },
   {
-    "seq": 580,
+    "seq": 584,
     "docId": "1Oo1IQuCqCj",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23038,7 +23232,7 @@
     "deficiencies": []
   },
   {
-    "seq": 581,
+    "seq": 585,
     "docId": "1OmyYmOOkIs",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23113,7 +23307,7 @@
     ]
   },
   {
-    "seq": 582,
+    "seq": 586,
     "docId": "1OhsJNgvcxu",
     "prePost": "사후",
     "type": "해당없음",
@@ -23131,7 +23325,7 @@
     "deficiencies": []
   },
   {
-    "seq": 583,
+    "seq": 587,
     "docId": "1OhKRKb0i-n",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -23149,7 +23343,7 @@
     "deficiencies": []
   },
   {
-    "seq": 584,
+    "seq": 588,
     "docId": "1OhF57vNnQ6",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -23167,7 +23361,7 @@
     "deficiencies": []
   },
   {
-    "seq": 585,
+    "seq": 589,
     "docId": "1OhF57vNnIu",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -23185,7 +23379,7 @@
     "deficiencies": []
   },
   {
-    "seq": 586,
+    "seq": 590,
     "docId": "1OhF57vNm_X",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23203,7 +23397,7 @@
     "deficiencies": []
   },
   {
-    "seq": 587,
+    "seq": 591,
     "docId": "1OhF57vNmqZ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23221,7 +23415,7 @@
     "deficiencies": []
   },
   {
-    "seq": 588,
+    "seq": 592,
     "docId": "1OhF57vNkQm",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23239,7 +23433,7 @@
     "deficiencies": []
   },
   {
-    "seq": 589,
+    "seq": 593,
     "docId": "1OfilpYPYVb",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23257,7 +23451,7 @@
     "deficiencies": []
   },
   {
-    "seq": 590,
+    "seq": 594,
     "docId": "1OfUcpQ6HK4",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23275,7 +23469,7 @@
     "deficiencies": []
   },
   {
-    "seq": 591,
+    "seq": 595,
     "docId": "1OfUcpQ67gI",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23293,7 +23487,7 @@
     "deficiencies": []
   },
   {
-    "seq": 592,
+    "seq": 596,
     "docId": "1OfUcpQ677N",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23311,7 +23505,7 @@
     "deficiencies": []
   },
   {
-    "seq": 593,
+    "seq": 597,
     "docId": "1OehHUIE4Ih",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -23329,7 +23523,7 @@
     "deficiencies": []
   },
   {
-    "seq": 594,
+    "seq": 598,
     "docId": "1OeRELoVnSO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23347,7 +23541,7 @@
     "deficiencies": []
   },
   {
-    "seq": 595,
+    "seq": 599,
     "docId": "1OeRELoVe73",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -23365,7 +23559,7 @@
     "deficiencies": []
   },
   {
-    "seq": 596,
+    "seq": 600,
     "docId": "1OeRELoVdDb",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23383,7 +23577,7 @@
     "deficiencies": []
   },
   {
-    "seq": 597,
+    "seq": 601,
     "docId": "1OeRELoVcMA",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23401,7 +23595,7 @@
     "deficiencies": []
   },
   {
-    "seq": 598,
+    "seq": 602,
     "docId": "1OeRELoVbQ0",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -23419,7 +23613,7 @@
     "deficiencies": []
   },
   {
-    "seq": 599,
+    "seq": 603,
     "docId": "1OeRELoVYV1",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -23437,7 +23631,7 @@
     "deficiencies": []
   },
   {
-    "seq": 600,
+    "seq": 604,
     "docId": "1OeRELoVXM9",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23455,7 +23649,7 @@
     "deficiencies": []
   },
   {
-    "seq": 601,
+    "seq": 605,
     "docId": "1OeRELoVUuD",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23473,7 +23667,7 @@
     "deficiencies": []
   },
   {
-    "seq": 602,
+    "seq": 606,
     "docId": "1OeQ-A3TiOG",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23491,7 +23685,7 @@
     "deficiencies": []
   },
   {
-    "seq": 603,
+    "seq": 607,
     "docId": "1Oe79QK5tRa",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23509,7 +23703,7 @@
     "deficiencies": []
   },
   {
-    "seq": 604,
+    "seq": 608,
     "docId": "1OdylyCymBk",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23527,7 +23721,7 @@
     "deficiencies": []
   },
   {
-    "seq": 605,
+    "seq": 609,
     "docId": "1OdylyCyiqO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23545,7 +23739,7 @@
     "deficiencies": []
   },
   {
-    "seq": 606,
+    "seq": 610,
     "docId": "1OdSbg17pMH",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23563,7 +23757,7 @@
     "deficiencies": []
   },
   {
-    "seq": 607,
+    "seq": 611,
     "docId": "1OdOKTMzLbS",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -23581,7 +23775,7 @@
     "deficiencies": []
   },
   {
-    "seq": 608,
+    "seq": 612,
     "docId": "1Oa0PkES4Nt",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23599,7 +23793,7 @@
     "deficiencies": []
   },
   {
-    "seq": 609,
+    "seq": 613,
     "docId": "1Oa0PkES3cm",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23617,7 +23811,7 @@
     "deficiencies": []
   },
   {
-    "seq": 610,
+    "seq": 614,
     "docId": "1OZ-Ie6Rxi2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23635,7 +23829,7 @@
     "deficiencies": []
   },
   {
-    "seq": 611,
+    "seq": 615,
     "docId": "1OYlGy0XtIx",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23653,7 +23847,7 @@
     "deficiencies": []
   },
   {
-    "seq": 612,
+    "seq": 616,
     "docId": "1OYlGy0Xt3_",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23671,7 +23865,7 @@
     "deficiencies": []
   },
   {
-    "seq": 613,
+    "seq": 617,
     "docId": "1OYlGy0XoNr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23689,7 +23883,7 @@
     "deficiencies": []
   },
   {
-    "seq": 614,
+    "seq": 618,
     "docId": "1OYlGy0Xnsr",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23707,7 +23901,7 @@
     "deficiencies": []
   },
   {
-    "seq": 615,
+    "seq": 619,
     "docId": "1OX11FkRGgq",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23725,7 +23919,7 @@
     "deficiencies": []
   },
   {
-    "seq": 616,
+    "seq": 620,
     "docId": "1OWEpCP2oPb",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23743,7 +23937,7 @@
     "deficiencies": []
   },
   {
-    "seq": 617,
+    "seq": 621,
     "docId": "1OWEpCP2AB-",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -23761,7 +23955,7 @@
     "deficiencies": []
   },
   {
-    "seq": 618,
+    "seq": 622,
     "docId": "1OWEpCP2A47",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23779,7 +23973,7 @@
     "deficiencies": []
   },
   {
-    "seq": 619,
+    "seq": 623,
     "docId": "1OWEpCP2A0i",
     "prePost": "사후",
     "type": "해당없음",
@@ -23797,7 +23991,7 @@
     "deficiencies": []
   },
   {
-    "seq": 620,
+    "seq": 624,
     "docId": "1OWEpCP2A05",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23815,7 +24009,7 @@
     "deficiencies": []
   },
   {
-    "seq": 621,
+    "seq": 625,
     "docId": "1OWEpCP29zW",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23833,7 +24027,7 @@
     "deficiencies": []
   },
   {
-    "seq": 622,
+    "seq": 626,
     "docId": "1OSntC_QwSP",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23851,7 +24045,7 @@
     "deficiencies": []
   },
   {
-    "seq": 623,
+    "seq": 627,
     "docId": "1OSntC_QwCO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23869,7 +24063,7 @@
     "deficiencies": []
   },
   {
-    "seq": 624,
+    "seq": 628,
     "docId": "1OSntC_QtyR",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -23887,7 +24081,7 @@
     "deficiencies": []
   },
   {
-    "seq": 625,
+    "seq": 629,
     "docId": "1OS2oStCukL",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23905,7 +24099,7 @@
     "deficiencies": []
   },
   {
-    "seq": 626,
+    "seq": 630,
     "docId": "1OS1FLU0jCo",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23923,7 +24117,7 @@
     "deficiencies": []
   },
   {
-    "seq": 627,
+    "seq": 631,
     "docId": "1ORvh9dW4gu",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23941,7 +24135,7 @@
     "deficiencies": []
   },
   {
-    "seq": 628,
+    "seq": 632,
     "docId": "1ORvh9dW41f",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23959,7 +24153,7 @@
     "deficiencies": []
   },
   {
-    "seq": 629,
+    "seq": 633,
     "docId": "1ORvh9dW37K",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23977,7 +24171,7 @@
     "deficiencies": []
   },
   {
-    "seq": 630,
+    "seq": 634,
     "docId": "1ORfAVWv7Qr",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -23995,7 +24189,7 @@
     "deficiencies": []
   },
   {
-    "seq": 631,
+    "seq": 635,
     "docId": "1ORektF52ZE",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24013,7 +24207,7 @@
     "deficiencies": []
   },
   {
-    "seq": 632,
+    "seq": 636,
     "docId": "1OReJis_vqm",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24031,7 +24225,7 @@
     "deficiencies": []
   },
   {
-    "seq": 633,
+    "seq": 637,
     "docId": "1OReJis_bPk",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24049,7 +24243,7 @@
     "deficiencies": []
   },
   {
-    "seq": 634,
+    "seq": 638,
     "docId": "1ORdxzFh5W7",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24067,7 +24261,7 @@
     "deficiencies": []
   },
   {
-    "seq": 635,
+    "seq": 639,
     "docId": "1ORb67MC902",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -24085,7 +24279,7 @@
     "deficiencies": []
   },
   {
-    "seq": 636,
+    "seq": 640,
     "docId": "1ORb67MC75Z",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24103,7 +24297,7 @@
     "deficiencies": []
   },
   {
-    "seq": 637,
+    "seq": 641,
     "docId": "1ORb67MC3MB",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24121,7 +24315,7 @@
     "deficiencies": []
   },
   {
-    "seq": 638,
+    "seq": 642,
     "docId": "1ORb67MC100",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24139,7 +24333,7 @@
     "deficiencies": []
   },
   {
-    "seq": 639,
+    "seq": 643,
     "docId": "1ORaRNM6x_R",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -24157,7 +24351,7 @@
     "deficiencies": []
   },
   {
-    "seq": 640,
+    "seq": 644,
     "docId": "1ORaCOY0CYl",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24175,7 +24369,7 @@
     "deficiencies": []
   },
   {
-    "seq": 641,
+    "seq": 645,
     "docId": "1ORaCOY09GH",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24193,7 +24387,7 @@
     "deficiencies": []
   },
   {
-    "seq": 642,
+    "seq": 646,
     "docId": "1ORURS9GwgI",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24211,7 +24405,7 @@
     "deficiencies": []
   },
   {
-    "seq": 643,
+    "seq": 647,
     "docId": "1OR61byp2pw",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24229,7 +24423,7 @@
     "deficiencies": []
   },
   {
-    "seq": 644,
+    "seq": 648,
     "docId": "1OR61byp2m2",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24247,7 +24441,7 @@
     "deficiencies": []
   },
   {
-    "seq": 645,
+    "seq": 649,
     "docId": "1OR61byp2gx",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24265,7 +24459,7 @@
     "deficiencies": []
   },
   {
-    "seq": 646,
+    "seq": 650,
     "docId": "1OR61byp2Wz",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24283,7 +24477,7 @@
     "deficiencies": []
   },
   {
-    "seq": 647,
+    "seq": 651,
     "docId": "1OR61byp2OX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24301,7 +24495,7 @@
     "deficiencies": []
   },
   {
-    "seq": 648,
+    "seq": 652,
     "docId": "1OPtbB4FGS-",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24319,7 +24513,7 @@
     "deficiencies": []
   },
   {
-    "seq": 649,
+    "seq": 653,
     "docId": "1OOmFiNzrOg",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -24337,7 +24531,7 @@
     "deficiencies": []
   },
   {
-    "seq": 650,
+    "seq": 654,
     "docId": "1OOmFiNzr1z",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -24355,7 +24549,7 @@
     "deficiencies": []
   },
   {
-    "seq": 651,
+    "seq": 655,
     "docId": "1OOmFiNzqfw",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24373,7 +24567,7 @@
     "deficiencies": []
   },
   {
-    "seq": 652,
+    "seq": 656,
     "docId": "1OO6g7WHMic",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24391,7 +24585,7 @@
     "deficiencies": []
   },
   {
-    "seq": 653,
+    "seq": 657,
     "docId": "1OO6g7WHMae",
     "prePost": "사후",
     "type": "원료(단일)",
@@ -24409,7 +24603,7 @@
     "deficiencies": []
   },
   {
-    "seq": 654,
+    "seq": 658,
     "docId": "1OMLha-_xC9",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24427,7 +24621,7 @@
     "deficiencies": []
   },
   {
-    "seq": 655,
+    "seq": 659,
     "docId": "1OMBOuNTu3I",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -24445,7 +24639,7 @@
     "deficiencies": []
   },
   {
-    "seq": 656,
+    "seq": 660,
     "docId": "1OMBOuNTr32",
     "prePost": "사전",
     "type": "원료(단일)",
@@ -24463,7 +24657,7 @@
     "deficiencies": []
   },
   {
-    "seq": 657,
+    "seq": 661,
     "docId": "1OMBOuNTpDF",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -24481,7 +24675,7 @@
     "deficiencies": []
   },
   {
-    "seq": 658,
+    "seq": 662,
     "docId": "1OLXQ4p939J",
     "prePost": "사전",
     "type": "완제(단일)",
@@ -24499,7 +24693,7 @@
     "deficiencies": []
   },
   {
-    "seq": 659,
+    "seq": 663,
     "docId": "1OL3GadwmaH",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24517,7 +24711,7 @@
     "deficiencies": []
   },
   {
-    "seq": 660,
+    "seq": 664,
     "docId": "1OKpU3II0O1",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24535,7 +24729,7 @@
     "deficiencies": []
   },
   {
-    "seq": 661,
+    "seq": 665,
     "docId": "1OKpU3II00n",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24553,7 +24747,7 @@
     "deficiencies": []
   },
   {
-    "seq": 662,
+    "seq": 666,
     "docId": "1OKmP66JvEX",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24571,7 +24765,7 @@
     "deficiencies": []
   },
   {
-    "seq": 663,
+    "seq": 667,
     "docId": "1OKmP66Jv26",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24589,7 +24783,7 @@
     "deficiencies": []
   },
   {
-    "seq": 664,
+    "seq": 668,
     "docId": "1OJ2hqQvU-X",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24607,7 +24801,7 @@
     "deficiencies": []
   },
   {
-    "seq": 665,
+    "seq": 669,
     "docId": "1OJ2hqQvU_w",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24625,7 +24819,7 @@
     "deficiencies": []
   },
   {
-    "seq": 666,
+    "seq": 670,
     "docId": "1OHpKvYmuXS",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24643,7 +24837,7 @@
     "deficiencies": []
   },
   {
-    "seq": 667,
+    "seq": 671,
     "docId": "1OHpKvYmrbQ",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24661,7 +24855,7 @@
     "deficiencies": []
   },
   {
-    "seq": 668,
+    "seq": 672,
     "docId": "1OGnMFiPlgO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24679,7 +24873,7 @@
     "deficiencies": []
   },
   {
-    "seq": 669,
+    "seq": 673,
     "docId": "1OGnMFiPjL9",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -24697,7 +24891,7 @@
     "deficiencies": []
   },
   {
-    "seq": 670,
+    "seq": 674,
     "docId": "1OGmfTF1KKd",
     "prePost": "사후",
     "type": "완제+원료(겸업)",
@@ -24715,7 +24909,7 @@
     "deficiencies": []
   },
   {
-    "seq": 671,
+    "seq": 675,
     "docId": "1OGmQL0ZwIO",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24733,7 +24927,7 @@
     "deficiencies": []
   },
   {
-    "seq": 672,
+    "seq": 676,
     "docId": "1OGiiutK3Yu",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24751,7 +24945,7 @@
     "deficiencies": []
   },
   {
-    "seq": 673,
+    "seq": 677,
     "docId": "1OGiYmAfrnA",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24769,7 +24963,7 @@
     "deficiencies": []
   },
   {
-    "seq": 674,
+    "seq": 678,
     "docId": "1OGTO3wIGf-",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24787,7 +24981,7 @@
     "deficiencies": []
   },
   {
-    "seq": 675,
+    "seq": 679,
     "docId": "1OGTO3wI0_Q",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24805,7 +24999,7 @@
     "deficiencies": []
   },
   {
-    "seq": 676,
+    "seq": 680,
     "docId": "1OGSwu6Oz5V",
     "prePost": "사후",
     "type": "완제(단일)",
@@ -24823,7 +25017,7 @@
     "deficiencies": []
   },
   {
-    "seq": 677,
+    "seq": 681,
     "docId": "1OGSwu6OoP0",
     "prePost": "사후",
     "type": "완제(단일)",
