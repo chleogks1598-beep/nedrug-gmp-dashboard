@@ -190,7 +190,7 @@
     "defCount": 0,
     "deficiencies": [],
     "unresolved": true,
-    "unresolvedReason": "식약처 원문이 문서보안(DRM) 래퍼로 업로드됨 — 파일 매직 SCDSA004(SoftCamp Document Security), 277,148바이트 안에 %PDF·PK·HWP·OLE 시그니처가 전혀 없어 본문이 암호화된 상태. pdftotext·HWPX 경로 모두 불가하고 4회 재다운로드 모두 동일 바이트수였다(일시 오류 아님).",
+    "unresolvedReason": "식약처가 실사결과서가 아닌 잘못된 파일을 올렸습니다(2026-09-03 직접 확인). 올라온 277,148바이트 파일은 문서보안(DRM)이 걸린 채로 업로드된 것으로, 파일 앞머리가 SCDSA004(SoftCamp)이고 안에 %PDF·PK·HWP·OLE 시그니처가 전혀 없어 어떤 프로그램으로도 열리지 않습니다. 4회 재다운로드 모두 같은 바이트수여서 일시적인 다운로드 오류가 아닙니다.",
     "unresolvedSince": "2026-09-03"
   },
   {

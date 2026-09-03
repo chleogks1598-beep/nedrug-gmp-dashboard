@@ -92,7 +92,10 @@ for (let i = 0; i < targets.length; i++) {
     const res = await fetchRetry(DOWN + r.docId);
     const buf = Buffer.from(await res.arrayBuffer());
     const kind = kindOf(buf);
-    if (!kind) throw new Error(`PDF/HWPX 아님 (${buf.length}바이트) — 원문이 이미 삭제됐을 수 있음`);
+    // 원문이 이미 내려갔거나, 식약처가 애초에 잘못된 파일을 올린 경우다. 후자는 재시도로
+    // 풀리지 않으므로 quarantine.json 에 적어 '확인중'으로 빼야 한다(2026-09-02 중앙산업가스 건).
+    if (!kind) throw new Error(`PDF/HWPX 아님 (${buf.length}바이트, 앞머리 ${JSON.stringify(buf.slice(0, 8).toString("latin1"))})`
+      + ` — 원문이 내려갔거나 식약처가 잘못된 파일을 올렸을 수 있음`);
     fs.writeFileSync(path.join(OUT, `${r.docId}.${kind}`), buf);
     ok++;
     bytes += buf.length;

@@ -74,8 +74,8 @@ const rowsHtml = fresh.map(r => {
     : `<span style="background:#e2f4ec;color:#0f8a5f;border-radius:20px;padding:2px 9px;font-size:12px;font-weight:700">적합</span>`;
   const hold = r.unresolved
     ? `<div style="background:#e7f0fc;border-left:3px solid #1367d6;padding:8px 10px;margin:6px 0 0;font-size:12.5px;color:#1a2733">
-        <b>확인중 — 적합 판정이 아닙니다.</b> 식약처 원문이 자동으로 판독되지 않아 지적(보완)사항을
-        아직 확인하지 못했습니다. 아래 원본 링크로 직접 확인해 주세요.</div>`
+        <b>확인중 — 적합 판정이 아닙니다.</b> 식약처가 공개한 원문에서 지적(보완)사항을 읽어오지 못해
+        아직 확인하지 못했습니다.${r.unresolvedReason ? `<div style="margin-top:5px;color:#666;font-size:11.5px">${esc(r.unresolvedReason)}</div>` : ""}</div>`
     : "";
   const defs = (r.deficiencies || []).map(d =>
     `<li style="margin:3px 0"><b>${esc(d.field)}</b>${d.gubun ? " · " + esc(d.gubun) : ""}${d.law ? ` <span style="color:#888">(${esc(d.law)})</span>` : ""}<br>${esc(d.summary)}${d.remark ? ` <span style="color:#0f8a5f">— ${esc(d.remark)}</span>` : ""}</li>`

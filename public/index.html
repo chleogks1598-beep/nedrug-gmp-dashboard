@@ -526,8 +526,7 @@ function detailHtml(x){
   const q=curQ.toLowerCase();
   // '확인중'은 지적사항이 없다는 뜻이 아니라 아직 못 읽었다는 뜻이다 — 맨 위에 명시한다.
   if(x.unresolved) h+=`<div class="reviewnote"><b>확인중 — 적합 판정이 아닙니다.</b><br>
-    식약처가 공개한 원문이 자동으로 판독되지 않아 지적(보완)사항을 아직 확인하지 못했습니다.
-    아래 원문 링크로 직접 확인해 주세요.${x.unresolvedReason?`<div style="margin-top:6px;color:var(--ink-3);font-size:11.5px">${esc(x.unresolvedReason)}</div>`:""}
+    식약처가 공개한 원문에서 지적(보완)사항을 읽어오지 못해 아직 확인하지 못했습니다.${x.unresolvedReason?`<div style="margin-top:6px;color:var(--ink-3);font-size:11.5px">${esc(x.unresolvedReason)}</div>`:""}
     ${x.unresolvedSince?`<div style="margin-top:4px;color:var(--ink-3);font-size:11.5px">확인중 처리일 ${esc(x.unresolvedSince)}</div>`:""}</div>`;
   if((x.forms||[]).length){
     h+=`<div class="metaline"><b>제형</b> — ${x.forms.map(f=>`<span class="fchip">${hl(f)}</span>`).join(" ")}</div>`;
