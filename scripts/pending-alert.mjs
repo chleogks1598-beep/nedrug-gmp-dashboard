@@ -13,6 +13,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { loadQuarantine } from "./quarantine.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
@@ -36,7 +37,10 @@ let recipients = readJson(path.join(ROOT, "recipients-ops.json"), null)
   || readJson(path.join(ROOT, "recipients.json"), []);
 recipients = (Array.isArray(recipients) ? recipients : []).filter(x => typeof x === "string" && x.includes("@"));
 
-const pending = readJson(MANIFEST, []);
+// 보류(quarantine.json) 건은 사람이 이미 인지하고 '확인중'으로 대시보드에 올려둔 상태다.
+// 여기서 빼지 않으면 원문이 고쳐질 때까지 20시간마다 같은 경고가 계속 나간다.
+const held = loadQuarantine();
+const pending = readJson(MANIFEST, []).filter(r => !held.has(r.docId));
 const state = readJson(STATE, {});
 state.docs = state.docs || {};
 const now = new Date();

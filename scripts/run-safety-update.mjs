@@ -8,6 +8,7 @@ import fs from "fs";
 import path from "path";
 import { execFileSync } from "child_process";
 import { fileURLToPath } from "url";
+import { syncPull } from "./git-sync.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOG = path.join(ROOT, "local-update.log");
@@ -23,7 +24,9 @@ const git = args => execFileSync("git", args, { cwd: ROOT, encoding: "utf8" }).t
 
 function main() {
   log("시작");
-  git(["pull", "--rebase", "--autostash", "-q", "origin", "main"]);
+  // GMP 쪽이 남긴 untracked 보존본 때문에 pull 이 막혀 safety 까지 멈춘 적이 있다
+  // (2026-09-03). syncPull 이 그 상황을 스스로 푼다 — scripts/git-sync.mjs 참고.
+  syncPull(git, log, ROOT);
 
   const out = execFileSync(process.execPath, [path.join(ROOT, "scripts", "safety-fetch.mjs")], {
     cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"],
@@ -39,7 +42,7 @@ function main() {
        "commit", "-q", "-m", "safety: 회수·폐기/행정처분 데이터 갱신"]);
   for (let i = 1; i <= 5; i++) {
     try {
-      git(["pull", "--rebase", "--autostash", "-q", "origin", "main"]);
+      syncPull(git, log, ROOT);
       git(["push", "-q", "origin", "HEAD:main"]);
       log(`push 성공 — ${git(["log", "-1", "--oneline"])}`);
       return;

@@ -55,12 +55,13 @@
     border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer}
   .theme-btn:hover{border-color:var(--accent)}
 
-  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  /* auto-fit: 타일이 4개면 4열, '확인중' 타일이 붙어 5개가 되면 5열로 늘어난다 */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:22px}
   .tile{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
     padding:16px 18px;box-shadow:var(--shadow)}
   .tile .k{font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.2px}
   .tile .v{font-size:30px;font-weight:800;letter-spacing:-1px;margin-top:6px;font-variant-numeric:tabular-nums}
-  .tile .v.warn{color:var(--warn)} .tile .v.ok{color:var(--ok)}
+  .tile .v.warn{color:var(--warn)} .tile .v.ok{color:var(--ok)} .tile .v.review{color:var(--accent)}
   .tile .u{font-size:12px;color:var(--ink-3);margin-left:4px;font-weight:600}
 
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px}
@@ -102,11 +103,15 @@
   .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11.5px;font-weight:700;white-space:nowrap}
   .badge.ok{background:var(--ok-soft);color:var(--ok)}
   .badge.warn{background:var(--warn-soft);color:var(--warn)}
+  /* 원문이 자동 판독되지 않아 지적사항을 아직 확인하지 못한 건 — '적합'과 반드시 구분한다 */
+  .badge.review{background:var(--accent-soft);color:var(--accent)}
   /* 식약처가 목록에서 내린 건(우리는 보존) */
   .badge.gone{background:var(--surface-2);color:var(--ink-3);border:1px dashed var(--border)}
   tr.main.gone td.site{color:var(--ink-2)}
   .gonenote{color:var(--ink-3);font-size:12px;margin-top:10px;padding:8px 10px;
     background:var(--surface-2);border-left:3px solid var(--ink-3);border-radius:4px}
+  .reviewnote{color:var(--ink-2);font-size:12.5px;margin:2px 0 10px;padding:9px 11px;
+    background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:4px}
   .chev{color:var(--ink-3);transition:transform .15s;display:inline-block}
   tr.main.open .chev{transform:rotate(90deg)}
   tr.detail td{background:var(--surface-2);padding:0}
@@ -234,6 +239,7 @@
         <option value="">전체 결과</option>
         <option value="지적사항 있음">지적사항 있음</option>
         <option value="적합">적합</option>
+        <option value="확인중">확인중 (원문 판독 불가)</option>
         <option value="__gone__">식약처 공개 종료(보존본)</option>
       </select>
       <button class="gchip" id="gchip" style="display:none"></button>
@@ -389,12 +395,15 @@ function bindGroups(){
 function renderTiles(){
   const total=DATA.length;
   const withDef=DATA.filter(x=>x.defCount>0).length;
-  const ok=total-withDef;
+  // '확인중'은 아직 판정이 안 된 건이다 — 적합 건수에 섞으면 안 된다.
+  const review=DATA.filter(x=>x.unresolved).length;
+  const ok=total-withDef-review;
   const items=DATA.reduce((a,x)=>a+(x.defCount||0),0);
   const t=[
     {k:"공개 실사 건수",v:total,u:"건"},
     {k:"지적사항 있음",v:withDef,u:"건",cls:"warn"},
     {k:"적합 (지적없음)",v:ok,u:"건",cls:"ok"},
+    ...(review?[{k:"확인중 (판독 불가)",v:review,u:"건",cls:"review"}]:[]),
     {k:"총 지적(보완)항목",v:items,u:"항목"},
   ];
   $("#tiles").innerHTML=t.map(x=>`<div class="tile"><div class="k">${x.k}</div>
@@ -485,7 +494,8 @@ function renderTable(){
   if(!rows.length){tb.innerHTML='<tr><td colspan="6" class="none">조건에 맞는 결과가 없습니다.</td></tr>';$("#pager").innerHTML="";return;}
   const q=curQ.toLowerCase();
   tb.innerHTML=rows.map(x=>{
-    const badge=(x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`)
+    const badge=(x.unresolved?`<span class="badge review" title="원문이 자동 판독되지 않아 지적(보완)사항을 아직 확인하지 못했습니다. 적합 판정이 아닙니다.">확인중</span>`
+        :x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`)
       + (x.delisted?` <span class="badge gone" title="식약처 목록에서 내려갔지만 이 대시보드에 보존된 자료입니다${x.delistedAt?" (감지 "+esc(x.delistedAt)+")":""}">공개종료</span>`:"");
     // 검색어가 지적사항 본문에 걸린 행은 펼친 채로 보여준다 — 어디에 걸렸는지 바로 보이도록
     const hits=q?(x.deficiencies||[]).filter(d=>defHay(d).includes(q)).length:0;
@@ -514,6 +524,11 @@ function renderTable(){
 function detailHtml(x){
   let h="";
   const q=curQ.toLowerCase();
+  // '확인중'은 지적사항이 없다는 뜻이 아니라 아직 못 읽었다는 뜻이다 — 맨 위에 명시한다.
+  if(x.unresolved) h+=`<div class="reviewnote"><b>확인중 — 적합 판정이 아닙니다.</b><br>
+    식약처가 공개한 원문이 자동으로 판독되지 않아 지적(보완)사항을 아직 확인하지 못했습니다.
+    아래 원문 링크로 직접 확인해 주세요.${x.unresolvedReason?`<div style="margin-top:6px;color:var(--ink-3);font-size:11.5px">${esc(x.unresolvedReason)}</div>`:""}
+    ${x.unresolvedSince?`<div style="margin-top:4px;color:var(--ink-3);font-size:11.5px">확인중 처리일 ${esc(x.unresolvedSince)}</div>`:""}</div>`;
   if((x.forms||[]).length){
     h+=`<div class="metaline"><b>제형</b> — ${x.forms.map(f=>`<span class="fchip">${hl(f)}</span>`).join(" ")}</div>`;
   } else {
@@ -529,7 +544,7 @@ function detailHtml(x){
       <td class="rmk">${hl(d.remark)}</td></tr>`;
     }).join("");
     h+=`</tbody></table>`;
-  } else {
+  } else if(!x.unresolved){
     h+=`<div class="none">지적(보완)사항 없음 — 적합 판정.</div>`;
   }
   const period=(x.inspStart||"")+(x.inspEnd&&x.inspEnd!==x.inspStart?" ~ "+x.inspEnd:"");

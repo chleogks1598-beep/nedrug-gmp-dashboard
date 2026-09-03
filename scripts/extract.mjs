@@ -15,6 +15,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import Anthropic from "@anthropic-ai/sdk";
+import { loadQuarantine } from "./quarantine.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
@@ -101,27 +102,37 @@ async function main() {
     console.log("EXTRACTED n=0 (신규 없음)");
     process.exit(0);
   }
+  // 사람이 '보류'로 판정해 둔 건은 건너뛴다 — merge 가 '확인중'으로 표시한다.
+  const quarantined = loadQuarantine();
+  const skippedIds = new Set(manifest.filter((r) => quarantined.has(r.docId) && !r.hasText).map((r) => r.docId));
+  const targets = manifest.filter((r) => !skippedIds.has(r.docId));
+  if (skippedIds.size) {
+    console.log(`보류 ${skippedIds.size}건 건너뜀 — '확인중'으로 표시됩니다(quarantine.json): ${[...skippedIds].join(", ")}`);
+  }
+
   // hasText:false 는 자동 추출이 불가능하다. 그냥 넘기면 '적합'으로 잘못 표시되므로
   // 여기서 멈추고 사람이 처리하게 한다.
-  const noText = manifest.filter((r) => !r.hasText);
+  const noText = targets.filter((r) => !r.hasText);
   if (noText.length) {
     console.error(
       `EXTRACT_ERROR: 본문 텍스트 추출 실패 문서 ${noText.length}건 — 자동 처리 불가, 수동 확인 필요:\n` +
-        noText.map((r) => `  - ${r.docId} ${r.site}`).join("\n"),
+        noText.map((r) => `  - ${r.docId} ${r.site}`).join("\n") +
+        `\n(원문 자체가 계속 읽히지 않는 건이면 quarantine.json 에 적어 '확인중'으로 빼두세요.)`,
     );
     process.exit(1);
   }
 
   // 키 검사는 실제로 호출할 일이 있을 때만 — 신규 0건인 회차가 키 때문에 실패하지 않도록.
-  if (!process.env.ANTHROPIC_API_KEY) {
+  if (targets.length && !process.env.ANTHROPIC_API_KEY) {
     console.error("EXTRACT_ERROR: ANTHROPIC_API_KEY 가 없습니다 (저장소 시크릿 확인).");
     process.exit(1);
   }
 
-  const client = new Anthropic();
+  // 보류 건만 남아 대상이 0건이면 클라이언트를 만들지 않는다(키 없이도 통과해야 한다).
+  const client = targets.length ? new Anthropic() : null;
   const out = [];
   const failed = [];
-  for (const rec of manifest) {
+  for (const rec of targets) {
     try {
       const defs = await extractOne(client, rec);
       out.push({ docId: rec.docId, deficiencies: defs });
@@ -133,15 +144,17 @@ async function main() {
   }
 
   if (failed.length) {
-    console.error(`EXTRACT_ERROR: ${failed.length}/${manifest.length}건 추출 실패 — merge 하지 않고 중단합니다.`);
+    console.error(`EXTRACT_ERROR: ${failed.length}/${targets.length}건 추출 실패 — merge 하지 않고 중단합니다.`);
     console.error("(일부만 반영하면 실패한 문서가 '적합'으로 잘못 표시됩니다.)");
     process.exit(1);
   }
 
+  // 대상이 0건이어도 반드시 새로 쓴다 — 지난 실행의 extracted.json 이 남아 있으면
+  // merge 가 그걸 이번 추출 결과로 착각한다.
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2));
   const items = out.reduce((a, r) => a + r.deficiencies.length, 0);
   const withDef = out.filter((r) => r.deficiencies.length).length;
-  console.log(`EXTRACTED n=${out.length} withDeficiency=${withDef} totalItems=${items}`);
+  console.log(`EXTRACTED n=${out.length} withDeficiency=${withDef} totalItems=${items} quarantined=${skippedIds.size}`);
 }
 
 main().catch((e) => {

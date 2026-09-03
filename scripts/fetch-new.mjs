@@ -97,7 +97,10 @@ async function main() {
   fs.writeFileSync(path.join(OUT, "list.json"), JSON.stringify(list, null, 2));
 
   const existing = fs.existsSync(DATA) ? JSON.parse(fs.readFileSync(DATA, "utf8")) : [];
-  const known = new Set(existing.map(r => r.docId));
+  // '확인중'(unresolved) 으로 대시보드에 올려둔 건은 아직 처리가 끝난 게 아니다 — 매 회차
+  // 다시 받아본다. 식약처가 정상 파일로 재업로드하면 본문이 읽히고 자동으로 추출·반영된다.
+  // (재다운로드 비용은 문서 한 건뿐이라 무시할 만하다.)
+  const known = new Set(existing.filter(r => !r.unresolved).map(r => r.docId));
   const fresh = list.filter(r => !known.has(r.docId));
 
   const manifest = [];

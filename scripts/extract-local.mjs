@@ -13,10 +13,13 @@
 // ★ 부분 성공을 만들지 않는다: 한 건이라도 실패하면 exit 1.
 //   merge.mjs 는 extracted.json 에 없는 신규 docId 를 빈 배열=**'적합'으로 표시**하므로,
 //   일부만 반영하면 지적사항이 있는 제조소가 적합으로 뒤바뀐다.
+//   예외는 quarantine.json 에 사람이 적어둔 '보류' 건뿐이다 — 그건 건너뛰고 merge 가
+//   '적합'이 아니라 '확인중'으로 표시한다(scripts/quarantine.mjs 참고).
 import fs from "fs";
 import path from "path";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
+import { loadQuarantine } from "./quarantine.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
@@ -89,18 +92,33 @@ async function main() {
     process.exit(0);
   }
 
+  // 사람이 '보류'로 판정해 둔 건은 건너뛴다 — merge 가 '확인중'으로 표시한다.
+  // 본문이 읽히게 되면(식약처 재업로드 등) 보류 목록에 남아 있어도 정상 추출로 되돌린다.
+  const quarantined = loadQuarantine();
+  const skipped = manifest.filter((r) => quarantined.has(r.docId) && !r.hasText);
+  const skippedIds = new Set(skipped.map((r) => r.docId));
+  const targets = manifest.filter((r) => !skippedIds.has(r.docId));
+  if (skipped.length) {
+    console.log(
+      `보류 ${skipped.length}건 건너뜀 — '확인중'으로 표시됩니다(quarantine.json):\n` +
+        skipped.map((r) => `  - ${r.docId} ${r.site}`).join("\n"),
+    );
+  }
+
   // hasText:false 는 자동 추출이 불가능하다. 넘기면 '적합'으로 잘못 표시되므로 중단한다.
-  const noText = manifest.filter((r) => !r.hasText);
+  const noText = targets.filter((r) => !r.hasText);
   if (noText.length) {
     console.error(
       `EXTRACT_ERROR: 본문 텍스트 추출 실패 문서 ${noText.length}건 — 자동 처리 불가, 수동 확인 필요:\n` +
-        noText.map((r) => `  - ${r.docId} ${r.site}`).join("\n"),
+        noText.map((r) => `  - ${r.docId} ${r.site}`).join("\n") +
+        `\n(원문 자체가 계속 읽히지 않는 건이면 quarantine.json 에 적어 '확인중'으로 빼두세요.` +
+        ` 그래야 나머지 신규 건과 이후 갱신이 막히지 않습니다.)`,
     );
     process.exit(1);
   }
 
   const out = [], failed = [];
-  for (const rec of manifest) {
+  for (const rec of targets) {
     const txt = path.join(PENDING, `${rec.docId}.txt`);
     try {
       if (!fs.existsSync(txt)) throw new Error(`본문 파일 없음: ${WORK_DIR}/${rec.docId}.txt`);
@@ -114,15 +132,17 @@ async function main() {
   }
 
   if (failed.length) {
-    console.error(`EXTRACT_ERROR: ${failed.length}/${manifest.length}건 추출 실패 — merge 하지 않고 중단합니다.`);
+    console.error(`EXTRACT_ERROR: ${failed.length}/${targets.length}건 추출 실패 — merge 하지 않고 중단합니다.`);
     console.error("(일부만 반영하면 실패한 문서가 '적합'으로 잘못 표시됩니다.)");
     process.exit(1);
   }
 
+  // 보류 건만 남아 추출 대상이 0건이어도 반드시 새로 쓴다 — 지난 실행의 extracted.json 이
+  // 남아 있으면 merge 가 엉뚱한 추출 결과를 이번 것으로 착각한다.
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2));
   const items = out.reduce((a, r) => a + r.deficiencies.length, 0);
   const withDef = out.filter((r) => r.deficiencies.length).length;
-  console.log(`EXTRACTED n=${out.length} withDeficiency=${withDef} totalItems=${items}`);
+  console.log(`EXTRACTED n=${out.length} withDeficiency=${withDef} totalItems=${items} quarantined=${skipped.length}`);
 }
 
 main().catch((e) => {

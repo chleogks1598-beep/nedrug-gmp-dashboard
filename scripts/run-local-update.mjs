@@ -20,6 +20,8 @@ import { execFileSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { loadQuarantine } from "./quarantine.mjs";
+import { syncPull } from "./git-sync.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOG = path.join(ROOT, "local-update.log");
@@ -45,10 +47,45 @@ function readManifest(dir) {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : [];
 }
 
+const IDENT = ["-c", "user.name=nedrug-bot", "-c", "user.email=bot@users.noreply.github.com"];
+
+// Actions 가 같은 브랜치에 수시로 커밋하므로 non-fast-forward 거부가 흔하다.
+function pushWithRetry(label) {
+  for (let i = 1; i <= 5; i++) {
+    try {
+      syncPull(git, log, ROOT);
+      git(["push", "-q", "origin", "HEAD:main"]);
+      log(`${label} push 성공 — ${git(["log", "-1", "--oneline"])}`);
+      return;
+    } catch (e) {
+      log(`${label} push 재시도 ${i}/5: ${String(e.message).split("\n")[0]}`);
+    }
+  }
+  throw new Error(`${label} push 5회 실패`);
+}
+
+// ★ 추출이 실패해도 보존본은 먼저 커밋·푸시한다.
+//   untracked 로 남겨두면, 그사이 Actions 수집기가 같은 파일을 커밋했을 때 이후 모든 pull 이
+//   "untracked working tree files would be overwritten" 으로 거부되고 GMP·safety 파이프라인이
+//   통째로 멈춘다 — 2026-09-03 에 실제로 14시간 정지했다.
+//   notify.yml 은 public/data.json 경로만 보고 발화하므로 보존본만 올라가도 알림메일은 안 간다.
+//   forms.json(제형)도 같이 커밋한다. 수집 단계에서 이미 채워졌고, 여기서 커밋해 두지 않으면
+//   아래 push 의 pull --autostash 가 Actions 가 올린 forms.json 과 충돌해 실행이 꼬인다.
+function commitArchive() {
+  const paths = ["public/archive", "forms.json"];
+  git(["add", ...paths]);
+  const staged = git(["diff", "--cached", "--name-only", "--", ...paths]);
+  if (!staged) return;
+  const n = staged.split("\n").filter((f) => f.startsWith("public/archive/")).length;
+  git([...IDENT, "commit", "-q", "-m", `archive: 실사결과서 보존본 ${n}건 추가`, "--", ...paths]);
+  log(`보존본 ${n}건 선커밋 — 추출이 실패해도 다음 pull 이 막히지 않는다.`);
+  pushWithRetry("보존본");
+}
+
 function main() {
   log("=== 로컬 갱신 시작 ===");
 
-  git(["pull", "--rebase", "--autostash", "-q", "origin", "main"]);
+  syncPull(git, log, ROOT);
 
   // ① 수집 — newdocs/ 는 gitignore 대상이라 저장소를 더럽히지 않는다.
   //    실패해도 멈추지 않는다: Actions 가 pending/ 에 받아둔 백로그로 넘어간다.
@@ -78,12 +115,16 @@ function main() {
   //   다운로드가 그 건만 실패하면(fetch-new.mjs 가 skip) 이 상태가 된다.
   //   ※ 신규가 여러 건일 때 일부만 실패하는 경우까지 잡으려면 추출 '전'에 봐야 한다
   //     — 그래야 쓸데없는 LLM 호출도, 부분 반영도 없다.
+  //   ※ 보류(quarantine.json) 건은 제외한다. 그 건은 merge 가 '확인중'으로 표시하므로
+  //     '적합' 오표시 위험이 없고, 식약처가 원문을 내려 다운로드마저 실패하면 이 안전장치가
+  //     매 회차 실행을 통째로 건너뛰게 만들어 파이프라인이 영구 정지한다.
+  const quarantined = loadQuarantine();
   const listFile = path.join(ROOT, work, "list.json");
   if (fs.existsSync(listFile)) {
     const list = JSON.parse(fs.readFileSync(listFile, "utf8"));
     const known = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, "public", "data.json"), "utf8")).map((r) => r.docId));
     const inManifest = new Set(manifest.map((r) => r.docId));
-    const missing = list.filter((r) => !known.has(r.docId) && !inManifest.has(r.docId));
+    const missing = list.filter((r) => !known.has(r.docId) && !inManifest.has(r.docId) && !quarantined.has(r.docId));
     if (missing.length) {
       log(`미수집 문서 ${missing.length}건(${missing.map((r) => r.docId).join(", ")}) — 이번 실행 건너뜀, 다음 실행에서 재시도.`);
       return;
@@ -115,6 +156,8 @@ function main() {
     } catch (e) {
       log(`원본 보관 일부 실패 — 계속 진행(다음 실행에서 재시도): ${String(e.message).split("\n")[0]}`);
     }
+    // 받은 보존본은 여기서 바로 커밋·푸시한다(이유는 commitArchive 주석 참고).
+    if (!process.env.DRY_RUN) commitArchive();
 
     // ③ 추출 실패 시 여기서 예외가 나고 merge 로 넘어가지 않는다(부분 반영 방지).
     log(node("scripts/extract-local.mjs", { WORK_DIR: work }));
@@ -133,6 +176,7 @@ function main() {
   }
 
   // forms.json(제형)·public/archive(보존본)도 이번 실행에서 늘어난다 — 같이 커밋해야 한다.
+  // quarantine.json 은 사람이 손으로 고치는 파일이라 러너가 건드리지 않는다.
   git(["add", "public/data.json", "forms.json", "public/archive"]);
   const staged = git(["diff", "--cached", "--name-only"]);
   if (!staged) {
@@ -140,21 +184,8 @@ function main() {
     return;
   }
 
-  git(["-c", "user.name=nedrug-bot", "-c", "user.email=bot@users.noreply.github.com",
-       "commit", "-q", "-m", commitMsg]);
-
-  // Actions 가 같은 브랜치에 수시로 커밋하므로 non-fast-forward 거부가 흔하다.
-  for (let i = 1; i <= 5; i++) {
-    try {
-      git(["pull", "--rebase", "--autostash", "-q", "origin", "main"]);
-      git(["push", "-q", "origin", "HEAD:main"]);
-      log(`push 성공 — ${git(["log", "-1", "--oneline"])}`);
-      return;
-    } catch (e) {
-      log(`push 재시도 ${i}/5: ${String(e.message).split("\n")[0]}`);
-    }
-  }
-  throw new Error("push 5회 실패");
+  git([...IDENT, "commit", "-q", "-m", commitMsg]);
+  pushWithRetry("데이터");
 }
 
 try {

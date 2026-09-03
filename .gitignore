@@ -24,3 +24,7 @@ pending/extracted.json
 
 # 로컬 자동갱신 러너 로그
 local-update.log
+# 보존본 다운로드 실패 목록 — 다음 실행이 재시도용으로 쓰는 로컬 작업파일
+archive-failed.json
+# pull 이 막힐 때 원격과 내용이 다른 untracked 파일을 대피시키는 곳 (scripts/git-sync.mjs)
+.conflict/
