@@ -26517,7 +26517,8 @@
    "office": "서울청 의약품안전관리과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-09-04"
  },
  {
   "key": "202302177",
@@ -26544,7 +26545,8 @@
    "office": "대전청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-09-04"
  },
  {
   "key": "202302176",
