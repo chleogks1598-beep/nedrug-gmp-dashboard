@@ -1,7 +1,43 @@
 [
   {
-    "docId": "1Q1ah2GeC5e",
+    "docId": "1Q1fmUkaMTw",
     "seq": 1,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "대덕가스(주)",
+    "address": "충청남도 천안시 서북구 직산읍 직산로 186",
+    "inspStart": "2026-02-12",
+    "inspEnd": "2026-02-12",
+    "regDate": "2026-09-04"
+  },
+  {
+    "docId": "1Q1fmUkaKmS",
+    "seq": 2,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "동성제약(주)",
+    "address": "충청남도 아산시 둔포면 관대안길 45",
+    "inspStart": "2026-01-27",
+    "inspEnd": "2026-01-30",
+    "regDate": "2026-09-04"
+  },
+  {
+    "docId": "1Q1fl7wKsOT",
+    "seq": 3,
+    "prePost": "사후",
+    "type": "완제+원료(겸업)",
+    "country": "대한민국",
+    "site": "한국원자력연구원",
+    "address": "대전광역시 유성구 대덕대로989번길 111",
+    "inspStart": "2026-05-06",
+    "inspEnd": "2026-05-08",
+    "regDate": "2026-09-04"
+  },
+  {
+    "docId": "1Q1ah2GeC5e",
+    "seq": 4,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -13,7 +49,7 @@
   },
   {
     "docId": "1Q1ah2Ge9pI",
-    "seq": 2,
+    "seq": 5,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -25,7 +61,7 @@
   },
   {
     "docId": "1Q1aXrIaooX",
-    "seq": 3,
+    "seq": 6,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -37,7 +73,7 @@
   },
   {
     "docId": "1Q1X48wtmJ0",
-    "seq": 4,
+    "seq": 7,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -49,7 +85,7 @@
   },
   {
     "docId": "1Q1QIYZZLwM",
-    "seq": 5,
+    "seq": 8,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -61,7 +97,7 @@
   },
   {
     "docId": "1Q1QIYZZKMK",
-    "seq": 6,
+    "seq": 9,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -73,7 +109,7 @@
   },
   {
     "docId": "1Q1QIYZZIbf",
-    "seq": 7,
+    "seq": 10,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -85,7 +121,7 @@
   },
   {
     "docId": "1Q0yBve7VdX",
-    "seq": 8,
+    "seq": 11,
     "prePost": "사후",
     "type": "해당없음",
     "country": "대한민국",
@@ -97,7 +133,7 @@
   },
   {
     "docId": "1Q0yBve7V66",
-    "seq": 9,
+    "seq": 12,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -109,7 +145,7 @@
   },
   {
     "docId": "1Q0yBve7Ucd",
-    "seq": 10,
+    "seq": 13,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -121,7 +157,7 @@
   },
   {
     "docId": "1Q0tuRbX8Vj",
-    "seq": 11,
+    "seq": 14,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "베트남",
@@ -133,7 +169,7 @@
   },
   {
     "docId": "1Q0stu63hLx",
-    "seq": 12,
+    "seq": 15,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -145,7 +181,7 @@
   },
   {
     "docId": "1Q0ru5IuiUK",
-    "seq": 13,
+    "seq": 16,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -157,7 +193,7 @@
   },
   {
     "docId": "1Q0ru5Iufs4",
-    "seq": 14,
+    "seq": 17,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -169,7 +205,7 @@
   },
   {
     "docId": "1Q0rVqgoott",
-    "seq": 15,
+    "seq": 18,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -181,7 +217,7 @@
   },
   {
     "docId": "1Q0ru5Iua2u",
-    "seq": 16,
+    "seq": 19,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -193,7 +229,7 @@
   },
   {
     "docId": "1Q0I8CiIsRn",
-    "seq": 17,
+    "seq": 20,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -205,7 +241,7 @@
   },
   {
     "docId": "1Q0I8CiIr0X",
-    "seq": 18,
+    "seq": 21,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -217,7 +253,7 @@
   },
   {
     "docId": "1Q0I8CiIUNN",
-    "seq": 19,
+    "seq": 22,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -229,7 +265,7 @@
   },
   {
     "docId": "1P-j3DfJpwb",
-    "seq": 20,
+    "seq": 23,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -241,7 +277,7 @@
   },
   {
     "docId": "1P-j3DfJpj_",
-    "seq": 21,
+    "seq": 24,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -253,7 +289,7 @@
   },
   {
     "docId": "1P-fAQkIKy4",
-    "seq": 22,
+    "seq": 25,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -265,7 +301,7 @@
   },
   {
     "docId": "1P-6YUq0LLc",
-    "seq": 23,
+    "seq": 26,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -277,7 +313,7 @@
   },
   {
     "docId": "1P-6WXvKgB4",
-    "seq": 24,
+    "seq": 27,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -289,7 +325,7 @@
   },
   {
     "docId": "1P-6WXvKbaf",
-    "seq": 25,
+    "seq": 28,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -301,7 +337,7 @@
   },
   {
     "docId": "1P-6WXvKY5L",
-    "seq": 26,
+    "seq": 29,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -313,7 +349,7 @@
   },
   {
     "docId": "1P_rHLDTS7l",
-    "seq": 27,
+    "seq": 30,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -325,7 +361,7 @@
   },
   {
     "docId": "1P_rAodwYSY",
-    "seq": 28,
+    "seq": 31,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -337,7 +373,7 @@
   },
   {
     "docId": "1P_mcuE4KYv",
-    "seq": 29,
+    "seq": 32,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -349,7 +385,7 @@
   },
   {
     "docId": "1P_mcuE4K6H",
-    "seq": 30,
+    "seq": 33,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -361,7 +397,7 @@
   },
   {
     "docId": "1P_mcuE47q1",
-    "seq": 31,
+    "seq": 34,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -373,7 +409,7 @@
   },
   {
     "docId": "1P_mcuE463F",
-    "seq": 32,
+    "seq": 35,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -385,7 +421,7 @@
   },
   {
     "docId": "1P_iX9eOyBx",
-    "seq": 33,
+    "seq": 36,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -397,7 +433,7 @@
   },
   {
     "docId": "1P_iHfVEJzq",
-    "seq": 34,
+    "seq": 37,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -409,7 +445,7 @@
   },
   {
     "docId": "1Pzzvm8pprt",
-    "seq": 35,
+    "seq": 38,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -421,7 +457,7 @@
   },
   {
     "docId": "1Pzzvm8poTD",
-    "seq": 36,
+    "seq": 39,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "포르투갈",
@@ -433,7 +469,7 @@
   },
   {
     "docId": "1PzTi7L-SxA",
-    "seq": 37,
+    "seq": 40,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -445,7 +481,7 @@
   },
   {
     "docId": "1PzTi7L-SIF",
-    "seq": 38,
+    "seq": 41,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -457,7 +493,7 @@
   },
   {
     "docId": "1PzTi7L-ORx",
-    "seq": 39,
+    "seq": 42,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -469,7 +505,7 @@
   },
   {
     "docId": "1PzTi7L-NZn",
-    "seq": 40,
+    "seq": 43,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -481,7 +517,7 @@
   },
   {
     "docId": "1Pz0eO3IuUQ",
-    "seq": 41,
+    "seq": 44,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -493,7 +529,7 @@
   },
   {
     "docId": "1Pz07CdMALt",
-    "seq": 42,
+    "seq": 45,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -505,7 +541,7 @@
   },
   {
     "docId": "1Pz07CdM5Qk",
-    "seq": 43,
+    "seq": 46,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -517,7 +553,7 @@
   },
   {
     "docId": "1PyLW-asYv7",
-    "seq": 44,
+    "seq": 47,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -529,7 +565,7 @@
   },
   {
     "docId": "1PyLW-asWoD",
-    "seq": 45,
+    "seq": 48,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "루마니아",
@@ -541,7 +577,7 @@
   },
   {
     "docId": "1PyLW-asUDD",
-    "seq": 46,
+    "seq": 49,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "스페인",
@@ -553,7 +589,7 @@
   },
   {
     "docId": "1PyLW-asSGJ",
-    "seq": 47,
+    "seq": 50,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -565,7 +601,7 @@
   },
   {
     "docId": "1PyLW-asOMf",
-    "seq": 48,
+    "seq": 51,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -577,7 +613,7 @@
   },
   {
     "docId": "1PyLW-asNCa",
-    "seq": 49,
+    "seq": 52,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -589,7 +625,7 @@
   },
   {
     "docId": "1PyLW-asL5S",
-    "seq": 50,
+    "seq": 53,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "독일",
@@ -601,7 +637,7 @@
   },
   {
     "docId": "1PyJBfLEtwC",
-    "seq": 51,
+    "seq": 54,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -613,7 +649,7 @@
   },
   {
     "docId": "1Px_jsc118o",
-    "seq": 52,
+    "seq": 55,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -625,7 +661,7 @@
   },
   {
     "docId": "1Px_jsc10ws",
-    "seq": 53,
+    "seq": 56,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -637,7 +673,7 @@
   },
   {
     "docId": "1PxzwRCkCdX",
-    "seq": 54,
+    "seq": 57,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -649,7 +685,7 @@
   },
   {
     "docId": "1Pxznco5UBw",
-    "seq": 55,
+    "seq": 58,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -661,7 +697,7 @@
   },
   {
     "docId": "1Pxznco5TX7",
-    "seq": 56,
+    "seq": 59,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -673,7 +709,7 @@
   },
   {
     "docId": "1PxzbB4Txr9",
-    "seq": 57,
+    "seq": 60,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -685,7 +721,7 @@
   },
   {
     "docId": "1PxtsjZTS6w",
-    "seq": 58,
+    "seq": 61,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -697,7 +733,7 @@
   },
   {
     "docId": "1PxtsjZTGIp",
-    "seq": 59,
+    "seq": 62,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -709,7 +745,7 @@
   },
   {
     "docId": "1PxteXRZ-ht",
-    "seq": 60,
+    "seq": 63,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -721,7 +757,7 @@
   },
   {
     "docId": "1PxFVteOIsG",
-    "seq": 61,
+    "seq": 64,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -733,7 +769,7 @@
   },
   {
     "docId": "1Px9gdRy2mE",
-    "seq": 62,
+    "seq": 65,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -745,7 +781,7 @@
   },
   {
     "docId": "1Px9gdRy1KU",
-    "seq": 63,
+    "seq": 66,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -757,7 +793,7 @@
   },
   {
     "docId": "1Px9VsU4MaJ",
-    "seq": 64,
+    "seq": 67,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "미국",
@@ -769,7 +805,7 @@
   },
   {
     "docId": "1PwLTeeBfDH",
-    "seq": 65,
+    "seq": 68,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -781,7 +817,7 @@
   },
   {
     "docId": "1PwLTeeBdNe",
-    "seq": 66,
+    "seq": 69,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -793,7 +829,7 @@
   },
   {
     "docId": "1Pw1mH44tfE",
-    "seq": 67,
+    "seq": 70,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -805,7 +841,7 @@
   },
   {
     "docId": "1Pw1mH44sLC",
-    "seq": 68,
+    "seq": 71,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -817,7 +853,7 @@
   },
   {
     "docId": "1Pw1mH44qde",
-    "seq": 69,
+    "seq": 72,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -829,7 +865,7 @@
   },
   {
     "docId": "1Pw1mH44pvH",
-    "seq": 70,
+    "seq": 73,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -841,7 +877,7 @@
   },
   {
     "docId": "1Pw1mH44oy0",
-    "seq": 71,
+    "seq": 74,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -853,7 +889,7 @@
   },
   {
     "docId": "1Pw1ukw_1Ir",
-    "seq": 72,
+    "seq": 75,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -865,7 +901,7 @@
   },
   {
     "docId": "1Pw1ukw_0E0",
-    "seq": 73,
+    "seq": 76,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -877,7 +913,7 @@
   },
   {
     "docId": "1PvoSBbO49X",
-    "seq": 74,
+    "seq": 77,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -889,7 +925,7 @@
   },
   {
     "docId": "1PvoSBbO2zp",
-    "seq": 75,
+    "seq": 78,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -901,7 +937,7 @@
   },
   {
     "docId": "1PvoSBbO1to",
-    "seq": 76,
+    "seq": 79,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -913,7 +949,7 @@
   },
   {
     "docId": "1PvoSBbO15Z",
-    "seq": 77,
+    "seq": 80,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -925,7 +961,7 @@
   },
   {
     "docId": "1PvoAqrh-gM",
-    "seq": 78,
+    "seq": 81,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -937,7 +973,7 @@
   },
   {
     "docId": "1Pv3nd7cuGF",
-    "seq": 79,
+    "seq": 82,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -949,7 +985,7 @@
   },
   {
     "docId": "1Pv2tztOgv1",
-    "seq": 80,
+    "seq": 83,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -961,7 +997,7 @@
   },
   {
     "docId": "1PusVPRX_CI",
-    "seq": 81,
+    "seq": 84,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -973,7 +1009,7 @@
   },
   {
     "docId": "1PutNZjPSLI",
-    "seq": 82,
+    "seq": 85,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -985,7 +1021,7 @@
   },
   {
     "docId": "1PutNZjPRZ9",
-    "seq": 83,
+    "seq": 86,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -997,7 +1033,7 @@
   },
   {
     "docId": "1PutNZjPQaP",
-    "seq": 84,
+    "seq": 87,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1009,7 +1045,7 @@
   },
   {
     "docId": "1PutNZjPPqf",
-    "seq": 85,
+    "seq": 88,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -1021,7 +1057,7 @@
   },
   {
     "docId": "1PutNZjPOSU",
-    "seq": 86,
+    "seq": 89,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1033,7 +1069,7 @@
   },
   {
     "docId": "1PugEn1ze7p",
-    "seq": 87,
+    "seq": 90,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1045,7 +1081,7 @@
   },
   {
     "docId": "1PufrIA30yb",
-    "seq": 88,
+    "seq": 91,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -1057,7 +1093,7 @@
   },
   {
     "docId": "1PufDyaR_-p",
-    "seq": 89,
+    "seq": 92,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "캐나다",
@@ -1069,7 +1105,7 @@
   },
   {
     "docId": "1PufDyaRzTr",
-    "seq": 90,
+    "seq": 93,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -1081,7 +1117,7 @@
   },
   {
     "docId": "1PufFoALz1B",
-    "seq": 91,
+    "seq": 94,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -1093,7 +1129,7 @@
   },
   {
     "docId": "1PufFoALy8H",
-    "seq": 92,
+    "seq": 95,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -1105,7 +1141,7 @@
   },
   {
     "docId": "1PufDyaRX_4",
-    "seq": 93,
+    "seq": 96,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -1117,7 +1153,7 @@
   },
   {
     "docId": "1PufDyaRUHO",
-    "seq": 94,
+    "seq": 97,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -1129,7 +1165,7 @@
   },
   {
     "docId": "1Puf3C5bL3O",
-    "seq": 95,
+    "seq": 98,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -1141,7 +1177,7 @@
   },
   {
     "docId": "1PtSbOlpxXk",
-    "seq": 96,
+    "seq": 99,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1153,7 +1189,7 @@
   },
   {
     "docId": "1PtSdWCaU5q",
-    "seq": 97,
+    "seq": 100,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1165,7 +1201,7 @@
   },
   {
     "docId": "1PtReFNR7KI",
-    "seq": 98,
+    "seq": 101,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1177,7 +1213,7 @@
   },
   {
     "docId": "1PtReFNR69-",
-    "seq": 99,
+    "seq": 102,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1189,7 +1225,7 @@
   },
   {
     "docId": "1PtReFNR5go",
-    "seq": 100,
+    "seq": 103,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -1201,7 +1237,7 @@
   },
   {
     "docId": "1PtR8IU-rmi",
-    "seq": 101,
+    "seq": 104,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1213,7 +1249,7 @@
   },
   {
     "docId": "1PtR8IU-rA1",
-    "seq": 102,
+    "seq": 105,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1225,7 +1261,7 @@
   },
   {
     "docId": "1PtR8IU-pnE",
-    "seq": 103,
+    "seq": 106,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1237,7 +1273,7 @@
   },
   {
     "docId": "1PtR8IU-pM8",
-    "seq": 104,
+    "seq": 107,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1249,7 +1285,7 @@
   },
   {
     "docId": "1PtR8IU-orV",
-    "seq": 105,
+    "seq": 108,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1261,7 +1297,7 @@
   },
   {
     "docId": "1PtR8IU-oE9",
-    "seq": 106,
+    "seq": 109,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -1273,7 +1309,7 @@
   },
   {
     "docId": "1PtR8IU-nE4",
-    "seq": 107,
+    "seq": 110,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1285,7 +1321,7 @@
   },
   {
     "docId": "1PtReFNR3Dc",
-    "seq": 108,
+    "seq": 111,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1297,7 +1333,7 @@
   },
   {
     "docId": "1PtNdJYH9pI",
-    "seq": 109,
+    "seq": 112,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1309,7 +1345,7 @@
   },
   {
     "docId": "1Psoagh7YY2",
-    "seq": 110,
+    "seq": 113,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1321,7 +1357,7 @@
   },
   {
     "docId": "1PsokQqBkMR",
-    "seq": 111,
+    "seq": 114,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1333,7 +1369,7 @@
   },
   {
     "docId": "1Psoagh7X_8",
-    "seq": 112,
+    "seq": 115,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1345,7 +1381,7 @@
   },
   {
     "docId": "1Ps9UEWceqZ",
-    "seq": 113,
+    "seq": 116,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "그리스",
@@ -1357,7 +1393,7 @@
   },
   {
     "docId": "1Ps9I_uTylt",
-    "seq": 114,
+    "seq": 117,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "핀란드",
@@ -1369,7 +1405,7 @@
   },
   {
     "docId": "1Ps9UEWceKZ",
-    "seq": 115,
+    "seq": 118,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -1381,7 +1417,7 @@
   },
   {
     "docId": "1Ps9I_uTw4A",
-    "seq": 116,
+    "seq": 119,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "캐나다",
@@ -1393,7 +1429,7 @@
   },
   {
     "docId": "1Ps9I_uTvjA",
-    "seq": 117,
+    "seq": 120,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -1405,7 +1441,7 @@
   },
   {
     "docId": "1Ps9UEWccwm",
-    "seq": 118,
+    "seq": 121,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "노르웨이",
@@ -1417,7 +1453,7 @@
   },
   {
     "docId": "1Ps9I_uTAFc",
-    "seq": 119,
+    "seq": 122,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1429,7 +1465,7 @@
   },
   {
     "docId": "1Prq-VKodN6",
-    "seq": 120,
+    "seq": 123,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1441,7 +1477,7 @@
   },
   {
     "docId": "1PrI3px-gja",
-    "seq": 121,
+    "seq": 124,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1453,7 +1489,7 @@
   },
   {
     "docId": "1PrHq4H3_Nh",
-    "seq": 122,
+    "seq": 125,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1465,7 +1501,7 @@
   },
   {
     "docId": "1PrHq4H3qKL",
-    "seq": 123,
+    "seq": 126,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1477,7 +1513,7 @@
   },
   {
     "docId": "1PrGop3fCYx",
-    "seq": 124,
+    "seq": 127,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1489,7 +1525,7 @@
   },
   {
     "docId": "1PrGop3fBq8",
-    "seq": 125,
+    "seq": 128,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1501,7 +1537,7 @@
   },
   {
     "docId": "1Pr1SWtn7fL",
-    "seq": 126,
+    "seq": 129,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1513,7 +1549,7 @@
   },
   {
     "docId": "1PqP13Laraw",
-    "seq": 127,
+    "seq": 130,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "중국",
@@ -1525,7 +1561,7 @@
   },
   {
     "docId": "1PqP13LaqMN",
-    "seq": 128,
+    "seq": 131,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -1537,7 +1573,7 @@
   },
   {
     "docId": "1PqP13Lap-j",
-    "seq": 129,
+    "seq": 132,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "독일",
@@ -1549,7 +1585,7 @@
   },
   {
     "docId": "1PqP13LapT5",
-    "seq": 130,
+    "seq": 133,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -1561,7 +1597,7 @@
   },
   {
     "docId": "1PqP13LaoUd",
-    "seq": 131,
+    "seq": 134,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "루마니아",
@@ -1573,7 +1609,7 @@
   },
   {
     "docId": "1PqP13LanX4",
-    "seq": 132,
+    "seq": 135,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "슬로베니아",
@@ -1585,7 +1621,7 @@
   },
   {
     "docId": "1PqP13LamVW",
-    "seq": 133,
+    "seq": 136,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "독일",
@@ -1597,7 +1633,7 @@
   },
   {
     "docId": "1PqP13Lalb3",
-    "seq": 134,
+    "seq": 137,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -1609,7 +1645,7 @@
   },
   {
     "docId": "1PqP13LakjQ",
-    "seq": 135,
+    "seq": 138,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -1621,7 +1657,7 @@
   },
   {
     "docId": "1PpwUctwhLY",
-    "seq": 136,
+    "seq": 139,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1633,7 +1669,7 @@
   },
   {
     "docId": "1PpvSjJTdsj",
-    "seq": 137,
+    "seq": 140,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1645,7 +1681,7 @@
   },
   {
     "docId": "1Ppq18vD2AB",
-    "seq": 138,
+    "seq": 141,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1657,7 +1693,7 @@
   },
   {
     "docId": "1PpWHCaHmxs",
-    "seq": 139,
+    "seq": 142,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1669,7 +1705,7 @@
   },
   {
     "docId": "1PpWJi1HkEF",
-    "seq": 140,
+    "seq": 143,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1681,7 +1717,7 @@
   },
   {
     "docId": "1PpWJi1HimB",
-    "seq": 141,
+    "seq": 144,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1693,7 +1729,7 @@
   },
   {
     "docId": "1PpWJi1Hhyj",
-    "seq": 142,
+    "seq": 145,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1705,7 +1741,7 @@
   },
   {
     "docId": "1PpWJi1HgtV",
-    "seq": 143,
+    "seq": 146,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1717,7 +1753,7 @@
   },
   {
     "docId": "1PpH2GwCTi8",
-    "seq": 144,
+    "seq": 147,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1729,7 +1765,7 @@
   },
   {
     "docId": "1PpH2GwCQp0",
-    "seq": 145,
+    "seq": 148,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1741,7 +1777,7 @@
   },
   {
     "docId": "1PollZQgs0z",
-    "seq": 146,
+    "seq": 149,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1753,7 +1789,7 @@
   },
   {
     "docId": "1PollZQgi5C",
-    "seq": 147,
+    "seq": 150,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1765,7 +1801,7 @@
   },
   {
     "docId": "1PollZQgg_l",
-    "seq": 148,
+    "seq": 151,
     "prePost": "사후",
     "type": "해당없음",
     "country": "대한민국",
@@ -1777,7 +1813,7 @@
   },
   {
     "docId": "1PoTKNL1A0o",
-    "seq": 149,
+    "seq": 152,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -1789,7 +1825,7 @@
   },
   {
     "docId": "1PoTKNL194T",
-    "seq": 150,
+    "seq": 153,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1801,7 +1837,7 @@
   },
   {
     "docId": "1PoSZNb0-rK",
-    "seq": 151,
+    "seq": 154,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -1813,7 +1849,7 @@
   },
   {
     "docId": "1PoSZNb0uKf",
-    "seq": 152,
+    "seq": 155,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -1825,7 +1861,7 @@
   },
   {
     "docId": "1PoSaf29b7M",
-    "seq": 153,
+    "seq": 156,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -1837,7 +1873,7 @@
   },
   {
     "docId": "1PoSaf29aWz",
-    "seq": 154,
+    "seq": 157,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -1849,7 +1885,7 @@
   },
   {
     "docId": "1PoSaf29Xp0",
-    "seq": 155,
+    "seq": 158,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -1861,7 +1897,7 @@
   },
   {
     "docId": "1PoSZNb0nwB",
-    "seq": 156,
+    "seq": 159,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -1873,7 +1909,7 @@
   },
   {
     "docId": "1PoSZNb0hUe",
-    "seq": 157,
+    "seq": 160,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -1885,7 +1921,7 @@
   },
   {
     "docId": "1PoSaf29QRP",
-    "seq": 158,
+    "seq": 161,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "호주",
@@ -1897,7 +1933,7 @@
   },
   {
     "docId": "1PoSaf29JS4",
-    "seq": 159,
+    "seq": 162,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -1909,7 +1945,7 @@
   },
   {
     "docId": "1PoJLBcEDxd",
-    "seq": 160,
+    "seq": 163,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1921,7 +1957,7 @@
   },
   {
     "docId": "1PoHw9kGmhe",
-    "seq": 161,
+    "seq": 164,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1933,7 +1969,7 @@
   },
   {
     "docId": "1PoHw9kGk8U",
-    "seq": 162,
+    "seq": 165,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -1945,7 +1981,7 @@
   },
   {
     "docId": "1PoHw9kGhRu",
-    "seq": 163,
+    "seq": 166,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -1957,7 +1993,7 @@
   },
   {
     "docId": "1PoHw9kGhLk",
-    "seq": 164,
+    "seq": 167,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -1969,7 +2005,7 @@
   },
   {
     "docId": "1PoHw9kGgay",
-    "seq": 165,
+    "seq": 168,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1981,7 +2017,7 @@
   },
   {
     "docId": "1PoI0V7xQnJ",
-    "seq": 166,
+    "seq": 169,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -1993,7 +2029,7 @@
   },
   {
     "docId": "1PoI0V7xQhp",
-    "seq": 167,
+    "seq": 170,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2005,7 +2041,7 @@
   },
   {
     "docId": "1PoI0V7xQB4",
-    "seq": 168,
+    "seq": 171,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2017,7 +2053,7 @@
   },
   {
     "docId": "1PoI0V7xQ3B",
-    "seq": 169,
+    "seq": 172,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2029,7 +2065,7 @@
   },
   {
     "docId": "1PoI0V7xOhg",
-    "seq": 170,
+    "seq": 173,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2041,7 +2077,7 @@
   },
   {
     "docId": "1PoI0V7xMyE",
-    "seq": 171,
+    "seq": 174,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2053,7 +2089,7 @@
   },
   {
     "docId": "1PoI0V7xMWj",
-    "seq": 172,
+    "seq": 175,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2065,7 +2101,7 @@
   },
   {
     "docId": "1PoI0V7xLJ8",
-    "seq": 173,
+    "seq": 176,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2077,7 +2113,7 @@
   },
   {
     "docId": "1PoI0V7xKR4",
-    "seq": 174,
+    "seq": 177,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2089,7 +2125,7 @@
   },
   {
     "docId": "1PoI0V7xJUw",
-    "seq": 175,
+    "seq": 178,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2101,7 +2137,7 @@
   },
   {
     "docId": "1PoI0V7xJ0T",
-    "seq": 176,
+    "seq": 179,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2113,7 +2149,7 @@
   },
   {
     "docId": "1PoI0V7xIU6",
-    "seq": 177,
+    "seq": 180,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2125,7 +2161,7 @@
   },
   {
     "docId": "1PoI0V7xHc0",
-    "seq": 178,
+    "seq": 181,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2137,7 +2173,7 @@
   },
   {
     "docId": "1PoI0V7xHOq",
-    "seq": 179,
+    "seq": 182,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2149,7 +2185,7 @@
   },
   {
     "docId": "1PoI0V7xGVr",
-    "seq": 180,
+    "seq": 183,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2161,7 +2197,7 @@
   },
   {
     "docId": "1PoI0V7xF2L",
-    "seq": 181,
+    "seq": 184,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2173,7 +2209,7 @@
   },
   {
     "docId": "1PoI0V7xEbl",
-    "seq": 182,
+    "seq": 185,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2185,7 +2221,7 @@
   },
   {
     "docId": "1PoI0V7xDbH",
-    "seq": 183,
+    "seq": 186,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2197,7 +2233,7 @@
   },
   {
     "docId": "1PoI0V7xDI6",
-    "seq": 184,
+    "seq": 187,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2209,7 +2245,7 @@
   },
   {
     "docId": "1PoI0V7xDCt",
-    "seq": 185,
+    "seq": 188,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2221,7 +2257,7 @@
   },
   {
     "docId": "1PoI0V7xCbF",
-    "seq": 186,
+    "seq": 189,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2233,7 +2269,7 @@
   },
   {
     "docId": "1PoHw9kGe6i",
-    "seq": 187,
+    "seq": 190,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2245,7 +2281,7 @@
   },
   {
     "docId": "1PoHw9kGddZ",
-    "seq": 188,
+    "seq": 191,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2257,7 +2293,7 @@
   },
   {
     "docId": "1PoHw9kGdSR",
-    "seq": 189,
+    "seq": 192,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2269,7 +2305,7 @@
   },
   {
     "docId": "1PoHw9kGcmI",
-    "seq": 190,
+    "seq": 193,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2281,7 +2317,7 @@
   },
   {
     "docId": "1PoHw9kGbpl",
-    "seq": 191,
+    "seq": 194,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2293,7 +2329,7 @@
   },
   {
     "docId": "1PoHw9kGaKt",
-    "seq": 192,
+    "seq": 195,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2305,7 +2341,7 @@
   },
   {
     "docId": "1PoHw9kGZZ9",
-    "seq": 193,
+    "seq": 196,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2317,7 +2353,7 @@
   },
   {
     "docId": "1PoHw9kGZEW",
-    "seq": 194,
+    "seq": 197,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2329,7 +2365,7 @@
   },
   {
     "docId": "1PoHw9kGYEd",
-    "seq": 195,
+    "seq": 198,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2341,7 +2377,7 @@
   },
   {
     "docId": "1PoHw9kGX61",
-    "seq": 196,
+    "seq": 199,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2353,7 +2389,7 @@
   },
   {
     "docId": "1PoHw9kGWiV",
-    "seq": 197,
+    "seq": 200,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2365,7 +2401,7 @@
   },
   {
     "docId": "1PoHw9kGWKy",
-    "seq": 198,
+    "seq": 201,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2377,7 +2413,7 @@
   },
   {
     "docId": "1PoI0V7x9gl",
-    "seq": 199,
+    "seq": 202,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2389,7 +2425,7 @@
   },
   {
     "docId": "1PoI0V7x9Ix",
-    "seq": 200,
+    "seq": 203,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2401,7 +2437,7 @@
   },
   {
     "docId": "1PoHw9kGSJB",
-    "seq": 201,
+    "seq": 204,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2413,7 +2449,7 @@
   },
   {
     "docId": "1PoI0V7x7NK",
-    "seq": 202,
+    "seq": 205,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2425,7 +2461,7 @@
   },
   {
     "docId": "1PoI0V7x635",
-    "seq": 203,
+    "seq": 206,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2437,7 +2473,7 @@
   },
   {
     "docId": "1PoHw9kGRB0",
-    "seq": 204,
+    "seq": 207,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2449,7 +2485,7 @@
   },
   {
     "docId": "1PoHw9kGPoX",
-    "seq": 205,
+    "seq": 208,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2461,7 +2497,7 @@
   },
   {
     "docId": "1PoHw9kGOap",
-    "seq": 206,
+    "seq": 209,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2473,7 +2509,7 @@
   },
   {
     "docId": "1PoHw9kGGz8",
-    "seq": 207,
+    "seq": 210,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2485,7 +2521,7 @@
   },
   {
     "docId": "1PoHw9kGGZ9",
-    "seq": 208,
+    "seq": 211,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2497,7 +2533,7 @@
   },
   {
     "docId": "1PoHw9kGDXr",
-    "seq": 209,
+    "seq": 212,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2509,7 +2545,7 @@
   },
   {
     "docId": "1PoHw9kGCR7",
-    "seq": 210,
+    "seq": 213,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2521,7 +2557,7 @@
   },
   {
     "docId": "1Pnvf8cm6jo",
-    "seq": 211,
+    "seq": 214,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2533,7 +2569,7 @@
   },
   {
     "docId": "1Pnvf8cm5Yg",
-    "seq": 212,
+    "seq": 215,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2545,7 +2581,7 @@
   },
   {
     "docId": "1Pnvf8cm3os",
-    "seq": 213,
+    "seq": 216,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2557,7 +2593,7 @@
   },
   {
     "docId": "1Pnumq9cCX5",
-    "seq": 214,
+    "seq": 217,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2569,7 +2605,7 @@
   },
   {
     "docId": "1Pnr9BSpSOp",
-    "seq": 215,
+    "seq": 218,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "중국",
@@ -2581,7 +2617,7 @@
   },
   {
     "docId": "1Pnqn8zQemM",
-    "seq": 216,
+    "seq": 219,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2593,7 +2629,7 @@
   },
   {
     "docId": "1PnpdUY8Cq_",
-    "seq": 217,
+    "seq": 220,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -2605,7 +2641,7 @@
   },
   {
     "docId": "1PmcvGNnXhe",
-    "seq": 218,
+    "seq": 221,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2617,7 +2653,7 @@
   },
   {
     "docId": "1PmcvGNnVYZ",
-    "seq": 219,
+    "seq": 222,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2629,7 +2665,7 @@
   },
   {
     "docId": "1PmcvGNnSLd",
-    "seq": 220,
+    "seq": 223,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2641,7 +2677,7 @@
   },
   {
     "docId": "1PmcvGNnQFc",
-    "seq": 221,
+    "seq": 224,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2653,7 +2689,7 @@
   },
   {
     "docId": "1PmcvGNnOI4",
-    "seq": 222,
+    "seq": 225,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2665,7 +2701,7 @@
   },
   {
     "docId": "1PmcvGNnLN3",
-    "seq": 223,
+    "seq": 226,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -2677,7 +2713,7 @@
   },
   {
     "docId": "1PmcgdTZz4N",
-    "seq": 224,
+    "seq": 227,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -2689,7 +2725,7 @@
   },
   {
     "docId": "1Pm7FTSDF51",
-    "seq": 225,
+    "seq": 228,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -2701,7 +2737,7 @@
   },
   {
     "docId": "1Pl_SxgFJq8",
-    "seq": 226,
+    "seq": 229,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2713,7 +2749,7 @@
   },
   {
     "docId": "1Pl_SxgFFpm",
-    "seq": 227,
+    "seq": 230,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2725,7 +2761,7 @@
   },
   {
     "docId": "1Pl_SxgF6_t",
-    "seq": 228,
+    "seq": 231,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2737,7 +2773,7 @@
   },
   {
     "docId": "1Pl_SxgF5Z9",
-    "seq": 229,
+    "seq": 232,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2749,7 +2785,7 @@
   },
   {
     "docId": "1Pl_SxgF2a0",
-    "seq": 230,
+    "seq": 233,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2761,7 +2797,7 @@
   },
   {
     "docId": "1Pl_8ouOz2m",
-    "seq": 231,
+    "seq": 234,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2773,7 +2809,7 @@
   },
   {
     "docId": "1Pl_8ouOxu0",
-    "seq": 232,
+    "seq": 235,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2785,7 +2821,7 @@
   },
   {
     "docId": "1Pl_Ld8xU7u",
-    "seq": 233,
+    "seq": 236,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2797,7 +2833,7 @@
   },
   {
     "docId": "1Pl_Ld8xSsv",
-    "seq": 234,
+    "seq": 237,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2809,7 +2845,7 @@
   },
   {
     "docId": "1Pl_Ld8xRbd",
-    "seq": 235,
+    "seq": 238,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2821,7 +2857,7 @@
   },
   {
     "docId": "1Pl_8ouOriZ",
-    "seq": 236,
+    "seq": 239,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2833,7 +2869,7 @@
   },
   {
     "docId": "1PlZbBDOxyw",
-    "seq": 237,
+    "seq": 240,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -2845,7 +2881,7 @@
   },
   {
     "docId": "1Pla9U8Q_9O",
-    "seq": 238,
+    "seq": 241,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2857,7 +2893,7 @@
   },
   {
     "docId": "1PlUwpGnmZ6",
-    "seq": 239,
+    "seq": 242,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -2869,7 +2905,7 @@
   },
   {
     "docId": "1PlLbd2YJBf",
-    "seq": 240,
+    "seq": 243,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -2881,7 +2917,7 @@
   },
   {
     "docId": "1PlLbd2YIGe",
-    "seq": 241,
+    "seq": 244,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -2893,7 +2929,7 @@
   },
   {
     "docId": "1PkCYsIDJrC",
-    "seq": 242,
+    "seq": 245,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2905,7 +2941,7 @@
   },
   {
     "docId": "1PjiZ74sKgi",
-    "seq": 243,
+    "seq": 246,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -2917,7 +2953,7 @@
   },
   {
     "docId": "1Piby4dzntX",
-    "seq": 244,
+    "seq": 247,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2929,7 +2965,7 @@
   },
   {
     "docId": "1Piby4dzMKN",
-    "seq": 245,
+    "seq": 248,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -2941,7 +2977,7 @@
   },
   {
     "docId": "1PiahFAej7t",
-    "seq": 246,
+    "seq": 249,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -2953,7 +2989,7 @@
   },
   {
     "docId": "1PiahFAeiGK",
-    "seq": 247,
+    "seq": 250,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -2965,7 +3001,7 @@
   },
   {
     "docId": "1PiahFAehU9",
-    "seq": 248,
+    "seq": 251,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -2977,7 +3013,7 @@
   },
   {
     "docId": "1PiahFAegOV",
-    "seq": 249,
+    "seq": 252,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -2989,7 +3025,7 @@
   },
   {
     "docId": "1PiahFAeZWL",
-    "seq": 250,
+    "seq": 253,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "호주",
@@ -3001,7 +3037,7 @@
   },
   {
     "docId": "1PiahFAeYA7",
-    "seq": 251,
+    "seq": 254,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "중국",
@@ -3013,7 +3049,7 @@
   },
   {
     "docId": "1PiahFAeWmL",
-    "seq": 252,
+    "seq": 255,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -3025,7 +3061,7 @@
   },
   {
     "docId": "1PiahFAeOjD",
-    "seq": 253,
+    "seq": 256,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "영국",
@@ -3037,7 +3073,7 @@
   },
   {
     "docId": "1PiahFAeMnz",
-    "seq": 254,
+    "seq": 257,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "중국",
@@ -3049,7 +3085,7 @@
   },
   {
     "docId": "1PiahFAe9Es",
-    "seq": 255,
+    "seq": 258,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -3061,7 +3097,7 @@
   },
   {
     "docId": "1PiaVxxConK",
-    "seq": 256,
+    "seq": 259,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -3073,7 +3109,7 @@
   },
   {
     "docId": "1PiaVxxCngB",
-    "seq": 257,
+    "seq": 260,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -3085,7 +3121,7 @@
   },
   {
     "docId": "1PiAQpeQGxt",
-    "seq": 258,
+    "seq": 261,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3097,7 +3133,7 @@
   },
   {
     "docId": "1Pi0eurUda7",
-    "seq": 259,
+    "seq": 262,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3109,7 +3145,7 @@
   },
   {
     "docId": "1PhyFxM0UBS",
-    "seq": 260,
+    "seq": 263,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3121,7 +3157,7 @@
   },
   {
     "docId": "1PgKV4kaA7F",
-    "seq": 261,
+    "seq": 264,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -3133,7 +3169,7 @@
   },
   {
     "docId": "1Pf-Zs-6Ot-",
-    "seq": 262,
+    "seq": 265,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "멕시코",
@@ -3145,7 +3181,7 @@
   },
   {
     "docId": "1Pf-Zs-6Nz9",
-    "seq": 263,
+    "seq": 266,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -3157,7 +3193,7 @@
   },
   {
     "docId": "1Pf-Zs-6NDZ",
-    "seq": 264,
+    "seq": 267,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -3169,7 +3205,7 @@
   },
   {
     "docId": "1Pf-Zs-6Lvu",
-    "seq": 265,
+    "seq": 268,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "사이프러스",
@@ -3181,7 +3217,7 @@
   },
   {
     "docId": "1Pf-Zs-6LAw",
-    "seq": 266,
+    "seq": 269,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3193,7 +3229,7 @@
   },
   {
     "docId": "1PfxOD7pkJ8",
-    "seq": 267,
+    "seq": 270,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3205,7 +3241,7 @@
   },
   {
     "docId": "1PfxOD7pUO-",
-    "seq": 268,
+    "seq": 271,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3217,7 +3253,7 @@
   },
   {
     "docId": "1PfsZcD03ye",
-    "seq": 269,
+    "seq": 272,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3229,7 +3265,7 @@
   },
   {
     "docId": "1PfsPXZr_r9",
-    "seq": 270,
+    "seq": 273,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -3241,7 +3277,7 @@
   },
   {
     "docId": "1PfsPXZrzhp",
-    "seq": 271,
+    "seq": 274,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -3253,7 +3289,7 @@
   },
   {
     "docId": "1PatAAz_kpL",
-    "seq": 272,
+    "seq": 275,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3265,7 +3301,7 @@
   },
   {
     "docId": "1PZo0o0izFB",
-    "seq": 273,
+    "seq": 276,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3277,7 +3313,7 @@
   },
   {
     "docId": "1PZfmDVy9YL",
-    "seq": 274,
+    "seq": 277,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3289,7 +3325,7 @@
   },
   {
     "docId": "1PZfmDVy8iY",
-    "seq": 275,
+    "seq": 278,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3301,7 +3337,7 @@
   },
   {
     "docId": "1PZbXhlZhun",
-    "seq": 276,
+    "seq": 279,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3313,7 +3349,7 @@
   },
   {
     "docId": "1PZbXhlZfpC",
-    "seq": 277,
+    "seq": 280,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -3325,7 +3361,7 @@
   },
   {
     "docId": "1PZbXhlZfc6",
-    "seq": 278,
+    "seq": 281,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3337,7 +3373,7 @@
   },
   {
     "docId": "1PZbXhlZc35",
-    "seq": 279,
+    "seq": 282,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -3349,7 +3385,7 @@
   },
   {
     "docId": "1PZbXhlZZ8H",
-    "seq": 280,
+    "seq": 283,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3361,7 +3397,7 @@
   },
   {
     "docId": "1PXuYVTZORi",
-    "seq": 281,
+    "seq": 284,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3373,7 +3409,7 @@
   },
   {
     "docId": "1PXuYVTZ2ne",
-    "seq": 282,
+    "seq": 285,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -3385,7 +3421,7 @@
   },
   {
     "docId": "1PXu9CD0pL1",
-    "seq": 283,
+    "seq": 286,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -3397,7 +3433,7 @@
   },
   {
     "docId": "1PXtlZoke9U",
-    "seq": 284,
+    "seq": 287,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "중국",
@@ -3409,7 +3445,7 @@
   },
   {
     "docId": "1PW-FqEJKfs",
-    "seq": 285,
+    "seq": 288,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3421,7 +3457,7 @@
   },
   {
     "docId": "1PW-FqEJJ2V",
-    "seq": 286,
+    "seq": 289,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3433,7 +3469,7 @@
   },
   {
     "docId": "1PW-FqEJFH-",
-    "seq": 287,
+    "seq": 290,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3445,7 +3481,7 @@
   },
   {
     "docId": "1PW-FqEJEdC",
-    "seq": 288,
+    "seq": 291,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3457,7 +3493,7 @@
   },
   {
     "docId": "1PW-FqEJCzX",
-    "seq": 289,
+    "seq": 292,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3469,7 +3505,7 @@
   },
   {
     "docId": "1PW-FqEJBcH",
-    "seq": 290,
+    "seq": 293,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -3481,7 +3517,7 @@
   },
   {
     "docId": "1PW-FqEJAGG",
-    "seq": 291,
+    "seq": 294,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3493,7 +3529,7 @@
   },
   {
     "docId": "1PW-FqEJ9Wr",
-    "seq": 292,
+    "seq": 295,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3505,7 +3541,7 @@
   },
   {
     "docId": "1PWNLMrQRnc",
-    "seq": 293,
+    "seq": 296,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3517,7 +3553,7 @@
   },
   {
     "docId": "1PVYt7z1rJ7",
-    "seq": 294,
+    "seq": 297,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "중국",
@@ -3529,7 +3565,7 @@
   },
   {
     "docId": "1PVZGsf79Wc",
-    "seq": 295,
+    "seq": 298,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3541,7 +3577,7 @@
   },
   {
     "docId": "1PVK9vg8il2",
-    "seq": 296,
+    "seq": 299,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "일본",
@@ -3553,7 +3589,7 @@
   },
   {
     "docId": "1PVK9vg8B2-",
-    "seq": 297,
+    "seq": 300,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "캐나다",
@@ -3565,7 +3601,7 @@
   },
   {
     "docId": "1PVCJCHpxRz",
-    "seq": 298,
+    "seq": 301,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "덴마크",
@@ -3577,7 +3613,7 @@
   },
   {
     "docId": "1PV9J1jGKmP",
-    "seq": 299,
+    "seq": 302,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대만",
@@ -3589,7 +3625,7 @@
   },
   {
     "docId": "1PV9J1jGJEL",
-    "seq": 300,
+    "seq": 303,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3601,7 +3637,7 @@
   },
   {
     "docId": "1PV9J1jGHnn",
-    "seq": 301,
+    "seq": 304,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -3613,7 +3649,7 @@
   },
   {
     "docId": "1PTx7jl8mc9",
-    "seq": 302,
+    "seq": 305,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -3625,7 +3661,7 @@
   },
   {
     "docId": "1PTx7jl8l0f",
-    "seq": 303,
+    "seq": 306,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스웨덴",
@@ -3637,7 +3673,7 @@
   },
   {
     "docId": "1PSKCQsShPp",
-    "seq": 304,
+    "seq": 307,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -3649,7 +3685,7 @@
   },
   {
     "docId": "1PSKCQsSg49",
-    "seq": 305,
+    "seq": 308,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "캐나다",
@@ -3661,7 +3697,7 @@
   },
   {
     "docId": "1PSKCQsSVgL",
-    "seq": 306,
+    "seq": 309,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -3673,7 +3709,7 @@
   },
   {
     "docId": "1PSB7mIrDuh",
-    "seq": 307,
+    "seq": 310,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3685,7 +3721,7 @@
   },
   {
     "docId": "1PSB7mIrCm3",
-    "seq": 308,
+    "seq": 311,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -3697,7 +3733,7 @@
   },
   {
     "docId": "1PSB7mIrBvm",
-    "seq": 309,
+    "seq": 312,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3709,7 +3745,7 @@
   },
   {
     "docId": "1PSAEWUIHF8",
-    "seq": 310,
+    "seq": 313,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3721,7 +3757,7 @@
   },
   {
     "docId": "1PSAEWUIGG8",
-    "seq": 311,
+    "seq": 314,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3733,7 +3769,7 @@
   },
   {
     "docId": "1PSA_cBv3h5",
-    "seq": 312,
+    "seq": 315,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3745,7 +3781,7 @@
   },
   {
     "docId": "1PSA_cBv2Wx",
-    "seq": 313,
+    "seq": 316,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3757,7 +3793,7 @@
   },
   {
     "docId": "1PSA_cBv12c",
-    "seq": 314,
+    "seq": 317,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3769,7 +3805,7 @@
   },
   {
     "docId": "1PSA_cBv0De",
-    "seq": 315,
+    "seq": 318,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3781,7 +3817,7 @@
   },
   {
     "docId": "1PSAqeFt_tH",
-    "seq": 316,
+    "seq": 319,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -3793,7 +3829,7 @@
   },
   {
     "docId": "1PSAqeFtzYl",
-    "seq": 317,
+    "seq": 320,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3805,7 +3841,7 @@
   },
   {
     "docId": "1PRDQanj9m_",
-    "seq": 318,
+    "seq": 321,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3817,7 +3853,7 @@
   },
   {
     "docId": "1PRDQanj8F2",
-    "seq": 319,
+    "seq": 322,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3829,7 +3865,7 @@
   },
   {
     "docId": "1PQeOvGre9G",
-    "seq": 320,
+    "seq": 323,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -3841,7 +3877,7 @@
   },
   {
     "docId": "1PQeOvGrbk2",
-    "seq": 321,
+    "seq": 324,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -3853,7 +3889,7 @@
   },
   {
     "docId": "1PQeOvGraWl",
-    "seq": 322,
+    "seq": 325,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3865,7 +3901,7 @@
   },
   {
     "docId": "1PQeOvGrYly",
-    "seq": 323,
+    "seq": 326,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3877,7 +3913,7 @@
   },
   {
     "docId": "1PQeMdI8JkA",
-    "seq": 324,
+    "seq": 327,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -3889,7 +3925,7 @@
   },
   {
     "docId": "1PQeOvGrXjP",
-    "seq": 325,
+    "seq": 328,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -3901,7 +3937,7 @@
   },
   {
     "docId": "1PQeOvGrV4f",
-    "seq": 326,
+    "seq": 329,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3913,7 +3949,7 @@
   },
   {
     "docId": "1PKvbm_wicA",
-    "seq": 327,
+    "seq": 330,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -3925,7 +3961,7 @@
   },
   {
     "docId": "1PKvbm_wh5J",
-    "seq": 328,
+    "seq": 331,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -3937,7 +3973,7 @@
   },
   {
     "docId": "1PKsyyZ23XK",
-    "seq": 329,
+    "seq": 332,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3949,7 +3985,7 @@
   },
   {
     "docId": "1PKsyyZ22ll",
-    "seq": 330,
+    "seq": 333,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3961,7 +3997,7 @@
   },
   {
     "docId": "1PKsqEVbahj",
-    "seq": 331,
+    "seq": 334,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -3973,7 +4009,7 @@
   },
   {
     "docId": "1PKsqEVbZtL",
-    "seq": 332,
+    "seq": 335,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3985,7 +4021,7 @@
   },
   {
     "docId": "1PKsqEVbYoh",
-    "seq": 333,
+    "seq": 336,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -3997,7 +4033,7 @@
   },
   {
     "docId": "1PKXWh0scdq",
-    "seq": 334,
+    "seq": 337,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -4009,7 +4045,7 @@
   },
   {
     "docId": "1PKHYOW0f5Z",
-    "seq": 335,
+    "seq": 338,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -4021,7 +4057,7 @@
   },
   {
     "docId": "1PKHYOW0eLd",
-    "seq": 336,
+    "seq": 339,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -4033,7 +4069,7 @@
   },
   {
     "docId": "1PKHciyuYeB",
-    "seq": 337,
+    "seq": 340,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -4045,7 +4081,7 @@
   },
   {
     "docId": "1PKHYOW0X4R",
-    "seq": 338,
+    "seq": 341,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -4057,7 +4093,7 @@
   },
   {
     "docId": "1PKHYOW0WAq",
-    "seq": 339,
+    "seq": 342,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스웨덴",
@@ -4069,7 +4105,7 @@
   },
   {
     "docId": "1PKHYOW0Qjx",
-    "seq": 340,
+    "seq": 343,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -4081,7 +4117,7 @@
   },
   {
     "docId": "1PK309-WY_V",
-    "seq": 341,
+    "seq": 344,
     "prePost": "사후",
     "type": "해당없음",
     "country": "이스라엘",
@@ -4093,7 +4129,7 @@
   },
   {
     "docId": "1PJnatECGf7",
-    "seq": 342,
+    "seq": 345,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "인도",
@@ -4105,7 +4141,7 @@
   },
   {
     "docId": "1PJjU_9GcLk",
-    "seq": 343,
+    "seq": 346,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "사이프러스",
@@ -4117,7 +4153,7 @@
   },
   {
     "docId": "1PJjU_9GcKZ",
-    "seq": 344,
+    "seq": 347,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -4129,7 +4165,7 @@
   },
   {
     "docId": "1PJjU_9GcJy",
-    "seq": 345,
+    "seq": 348,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -4141,7 +4177,7 @@
   },
   {
     "docId": "1PJjU_9GcJd",
-    "seq": 346,
+    "seq": 349,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -4153,7 +4189,7 @@
   },
   {
     "docId": "1PJjU_9GcIn",
-    "seq": 347,
+    "seq": 350,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -4165,7 +4201,7 @@
   },
   {
     "docId": "1PJjU_9GcIS",
-    "seq": 348,
+    "seq": 351,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -4177,7 +4213,7 @@
   },
   {
     "docId": "1PJjU_9GcI7",
-    "seq": 349,
+    "seq": 352,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "네덜란드",
@@ -4189,7 +4225,7 @@
   },
   {
     "docId": "1PJjU_9GcHr",
-    "seq": 350,
+    "seq": 353,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대만",
@@ -4201,7 +4237,7 @@
   },
   {
     "docId": "1PJjU_9GcDO",
-    "seq": 351,
+    "seq": 354,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -4213,7 +4249,7 @@
   },
   {
     "docId": "1PJjU_9GG17",
-    "seq": 352,
+    "seq": 355,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대만",
@@ -4225,7 +4261,7 @@
   },
   {
     "docId": "1PJjU_9GFvC",
-    "seq": 353,
+    "seq": 356,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -4237,7 +4273,7 @@
   },
   {
     "docId": "1PJjU_9GFmg",
-    "seq": 354,
+    "seq": 357,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "프랑스",
@@ -4249,7 +4285,7 @@
   },
   {
     "docId": "1PJjU_9GFZo",
-    "seq": 355,
+    "seq": 358,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -4261,7 +4297,7 @@
   },
   {
     "docId": "1PJjU_9GFSj",
-    "seq": 356,
+    "seq": 359,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -4273,7 +4309,7 @@
   },
   {
     "docId": "1PJjU_9GEb1",
-    "seq": 357,
+    "seq": 360,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -4285,7 +4321,7 @@
   },
   {
     "docId": "1PJjU_9GEOu",
-    "seq": 358,
+    "seq": 361,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -4297,7 +4333,7 @@
   },
   {
     "docId": "1PJjU_9GEGT",
-    "seq": 359,
+    "seq": 362,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -4309,7 +4345,7 @@
   },
   {
     "docId": "1PJjU_9GE53",
-    "seq": 360,
+    "seq": 363,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -4321,7 +4357,7 @@
   },
   {
     "docId": "1PJUjFR9ESC",
-    "seq": 361,
+    "seq": 364,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4333,7 +4369,7 @@
   },
   {
     "docId": "1PJF7yEDOZD",
-    "seq": 362,
+    "seq": 365,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4345,7 +4381,7 @@
   },
   {
     "docId": "1PJF7yEDIyt",
-    "seq": 363,
+    "seq": 366,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4357,7 +4393,7 @@
   },
   {
     "docId": "1PJF7yEDFYt",
-    "seq": 364,
+    "seq": 367,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4369,7 +4405,7 @@
   },
   {
     "docId": "1PJF7yEDE46",
-    "seq": 365,
+    "seq": 368,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "인도",
@@ -4381,7 +4417,7 @@
   },
   {
     "docId": "1PJF7yEDCB8",
-    "seq": 366,
+    "seq": 369,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4393,7 +4429,7 @@
   },
   {
     "docId": "1PJF7yEDB1q",
-    "seq": 367,
+    "seq": 370,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4405,7 +4441,7 @@
   },
   {
     "docId": "1PJF7yED90S",
-    "seq": 368,
+    "seq": 371,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4417,7 +4453,7 @@
   },
   {
     "docId": "1PJF7yED7u7",
-    "seq": 369,
+    "seq": 372,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4429,7 +4465,7 @@
   },
   {
     "docId": "1PJF7yED5zo",
-    "seq": 370,
+    "seq": 373,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -4441,7 +4477,7 @@
   },
   {
     "docId": "1PJF7yED4jb",
-    "seq": 371,
+    "seq": 374,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "스페인",
@@ -4453,7 +4489,7 @@
   },
   {
     "docId": "1PJF7yED1rY",
-    "seq": 372,
+    "seq": 375,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4465,7 +4501,7 @@
   },
   {
     "docId": "1PJF7yED0yj",
-    "seq": 373,
+    "seq": 376,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "독일",
@@ -4477,7 +4513,7 @@
   },
   {
     "docId": "1PJF7yED06a",
-    "seq": 374,
+    "seq": 377,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "오스트리아",
@@ -4489,7 +4525,7 @@
   },
   {
     "docId": "1PJEmvJc-O-",
-    "seq": 375,
+    "seq": 378,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -4501,7 +4537,7 @@
   },
   {
     "docId": "1PJEmvJc_Pf",
-    "seq": 376,
+    "seq": 379,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4513,7 +4549,7 @@
   },
   {
     "docId": "1PJEmvJcza9",
-    "seq": 377,
+    "seq": 380,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "스웨덴",
@@ -4525,7 +4561,7 @@
   },
   {
     "docId": "1PJEmvJcxUr",
-    "seq": 378,
+    "seq": 381,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4537,7 +4573,7 @@
   },
   {
     "docId": "1PJEmvJcwr6",
-    "seq": 379,
+    "seq": 382,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4549,7 +4585,7 @@
   },
   {
     "docId": "1PJEmvJcva-",
-    "seq": 380,
+    "seq": 383,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4561,7 +4597,7 @@
   },
   {
     "docId": "1PJEmvJcuY8",
-    "seq": 381,
+    "seq": 384,
     "prePost": "사전",
     "type": "완제+원료(겸업)",
     "country": "인도",
@@ -4573,7 +4609,7 @@
   },
   {
     "docId": "1PJEmvJc7S0",
-    "seq": 382,
+    "seq": 385,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4585,7 +4621,7 @@
   },
   {
     "docId": "1PJEmvJc2Ql",
-    "seq": 383,
+    "seq": 386,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4597,7 +4633,7 @@
   },
   {
     "docId": "1PJEcCg-xjF",
-    "seq": 384,
+    "seq": 387,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4609,7 +4645,7 @@
   },
   {
     "docId": "1PJEcCg-plL",
-    "seq": 385,
+    "seq": 388,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "남아프리카 공화국",
@@ -4621,7 +4657,7 @@
   },
   {
     "docId": "1PJEcCg-iv-",
-    "seq": 386,
+    "seq": 389,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4633,7 +4669,7 @@
   },
   {
     "docId": "1PJEcCg-gTA",
-    "seq": 387,
+    "seq": 390,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "인도",
@@ -4645,7 +4681,7 @@
   },
   {
     "docId": "1PJEcCg-cYg",
-    "seq": 388,
+    "seq": 391,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -4657,7 +4693,7 @@
   },
   {
     "docId": "1PJEcCg-bHy",
-    "seq": 389,
+    "seq": 392,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4669,7 +4705,7 @@
   },
   {
     "docId": "1PJEcCg-Ze8",
-    "seq": 390,
+    "seq": 393,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4681,7 +4717,7 @@
   },
   {
     "docId": "1PJEcCg-Wtm",
-    "seq": 391,
+    "seq": 394,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4693,7 +4729,7 @@
   },
   {
     "docId": "1PJEcCg-SM-",
-    "seq": 392,
+    "seq": 395,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -4705,7 +4741,7 @@
   },
   {
     "docId": "1PJEcCg-6ng",
-    "seq": 393,
+    "seq": 396,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4717,7 +4753,7 @@
   },
   {
     "docId": "1PJEcCg-5PP",
-    "seq": 394,
+    "seq": 397,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4729,7 +4765,7 @@
   },
   {
     "docId": "1PJEcCg-3Tc",
-    "seq": 395,
+    "seq": 398,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "오스트리아",
@@ -4741,7 +4777,7 @@
   },
   {
     "docId": "1PJEcCg-1zu",
-    "seq": 396,
+    "seq": 399,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "독일",
@@ -4753,7 +4789,7 @@
   },
   {
     "docId": "1PJESNIy-rg",
-    "seq": 397,
+    "seq": 400,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4765,7 +4801,7 @@
   },
   {
     "docId": "1PJESNIy_lG",
-    "seq": 398,
+    "seq": 401,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4777,7 +4813,7 @@
   },
   {
     "docId": "1PJESNIywTT",
-    "seq": 399,
+    "seq": 402,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4789,7 +4825,7 @@
   },
   {
     "docId": "1PJESNIyt4-",
-    "seq": 400,
+    "seq": 403,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "인도",
@@ -4801,7 +4837,7 @@
   },
   {
     "docId": "1PJESNIysDM",
-    "seq": 401,
+    "seq": 404,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4813,7 +4849,7 @@
   },
   {
     "docId": "1PJESNIyjeb",
-    "seq": 402,
+    "seq": 405,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4825,7 +4861,7 @@
   },
   {
     "docId": "1PJESNIyhzw",
-    "seq": 403,
+    "seq": 406,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "인도",
@@ -4837,7 +4873,7 @@
   },
   {
     "docId": "1PJESNIybky",
-    "seq": 404,
+    "seq": 407,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "벨기에",
@@ -4849,7 +4885,7 @@
   },
   {
     "docId": "1PJESNIyZOZ",
-    "seq": 405,
+    "seq": 408,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -4861,7 +4897,7 @@
   },
   {
     "docId": "1PJESNIyXBt",
-    "seq": 406,
+    "seq": 409,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4873,7 +4909,7 @@
   },
   {
     "docId": "1PJESNIyRvi",
-    "seq": 407,
+    "seq": 410,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4885,7 +4921,7 @@
   },
   {
     "docId": "1PJESNIyPNy",
-    "seq": 408,
+    "seq": 411,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4897,7 +4933,7 @@
   },
   {
     "docId": "1PJARCSr-7h",
-    "seq": 409,
+    "seq": 412,
     "prePost": "사전",
     "type": "해당없음",
     "country": "중국",
@@ -4909,7 +4945,7 @@
   },
   {
     "docId": "1PJARCSrza1",
-    "seq": 410,
+    "seq": 413,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4921,7 +4957,7 @@
   },
   {
     "docId": "1PJARCSrqvl",
-    "seq": 411,
+    "seq": 414,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4933,7 +4969,7 @@
   },
   {
     "docId": "1PJARCSrYDz",
-    "seq": 412,
+    "seq": 415,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -4945,7 +4981,7 @@
   },
   {
     "docId": "1PJAHlw0QCA",
-    "seq": 413,
+    "seq": 416,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -4957,7 +4993,7 @@
   },
   {
     "docId": "1PJA8DLaWHT",
-    "seq": 414,
+    "seq": 417,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -4969,7 +5005,7 @@
   },
   {
     "docId": "1PID4TO3j2H",
-    "seq": 415,
+    "seq": 418,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -4981,7 +5017,7 @@
   },
   {
     "docId": "1PID4TO3Om5",
-    "seq": 416,
+    "seq": 419,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "중국",
@@ -4993,7 +5029,7 @@
   },
   {
     "docId": "1PIC8f6IWyv",
-    "seq": 417,
+    "seq": 420,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "독일",
@@ -5005,7 +5041,7 @@
   },
   {
     "docId": "1PIC8f6IM8p",
-    "seq": 418,
+    "seq": 421,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5017,7 +5053,7 @@
   },
   {
     "docId": "1PHRTWC2JuO",
-    "seq": 419,
+    "seq": 422,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -5029,7 +5065,7 @@
   },
   {
     "docId": "1PHRTWC2JpT",
-    "seq": 420,
+    "seq": 423,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "스페인",
@@ -5041,7 +5077,7 @@
   },
   {
     "docId": "1PGfcVm-LZy",
-    "seq": 421,
+    "seq": 424,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -5053,7 +5089,7 @@
   },
   {
     "docId": "1PGRvEEY3AG",
-    "seq": 422,
+    "seq": 425,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -5065,7 +5101,7 @@
   },
   {
     "docId": "1PGRvEEY0n9",
-    "seq": 423,
+    "seq": 426,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -5077,7 +5113,7 @@
   },
   {
     "docId": "1PGRvEEY05S",
-    "seq": 424,
+    "seq": 427,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5089,7 +5125,7 @@
   },
   {
     "docId": "1PGRUNJ_-Qp",
-    "seq": 425,
+    "seq": 428,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "오스트리아",
@@ -5101,7 +5137,7 @@
   },
   {
     "docId": "1PGRUNJ_-6i",
-    "seq": 426,
+    "seq": 429,
     "prePost": "사전",
     "type": "해당없음",
     "country": "중국",
@@ -5113,7 +5149,7 @@
   },
   {
     "docId": "1PGRUNJ__ji",
-    "seq": 427,
+    "seq": 430,
     "prePost": "사전",
     "type": "해당없음",
     "country": "중국",
@@ -5125,7 +5161,7 @@
   },
   {
     "docId": "1PGRUNJ_zor",
-    "seq": 428,
+    "seq": 431,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5137,7 +5173,7 @@
   },
   {
     "docId": "1PGRUNJ_z21",
-    "seq": 429,
+    "seq": 432,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -5149,7 +5185,7 @@
   },
   {
     "docId": "1PGRUNJ_ye1",
-    "seq": 430,
+    "seq": 433,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5161,7 +5197,7 @@
   },
   {
     "docId": "1PGRUNJ_yFj",
-    "seq": 431,
+    "seq": 434,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -5173,7 +5209,7 @@
   },
   {
     "docId": "1PGRUNJ_xiG",
-    "seq": 432,
+    "seq": 435,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "캐나다",
@@ -5185,7 +5221,7 @@
   },
   {
     "docId": "1PGRUNJ_wvZ",
-    "seq": 433,
+    "seq": 436,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5197,7 +5233,7 @@
   },
   {
     "docId": "1PGRUNJ_vAd",
-    "seq": 434,
+    "seq": 437,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "베트남",
@@ -5209,7 +5245,7 @@
   },
   {
     "docId": "1PGRUNJ_u2m",
-    "seq": 435,
+    "seq": 438,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5221,7 +5257,7 @@
   },
   {
     "docId": "1PGRUNJ_tWT",
-    "seq": 436,
+    "seq": 439,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5233,7 +5269,7 @@
   },
   {
     "docId": "1PGRUNJ_t2p",
-    "seq": 437,
+    "seq": 440,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -5245,7 +5281,7 @@
   },
   {
     "docId": "1PGR8fQkHKS",
-    "seq": 438,
+    "seq": 441,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -5257,7 +5293,7 @@
   },
   {
     "docId": "1PGR8fQkGh9",
-    "seq": 439,
+    "seq": 442,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5269,7 +5305,7 @@
   },
   {
     "docId": "1PGR8fQkGJ1",
-    "seq": 440,
+    "seq": 443,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -5281,7 +5317,7 @@
   },
   {
     "docId": "1PGR8fQkFUf",
-    "seq": 441,
+    "seq": 444,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "벨라루스",
@@ -5293,7 +5329,7 @@
   },
   {
     "docId": "1PGR8fQkF9u",
-    "seq": 442,
+    "seq": 445,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "이탈리아",
@@ -5305,7 +5341,7 @@
   },
   {
     "docId": "1PGR8fQkCG1",
-    "seq": 443,
+    "seq": 446,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "일본",
@@ -5317,7 +5353,7 @@
   },
   {
     "docId": "1PGR8fQk7Ed",
-    "seq": 444,
+    "seq": 447,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -5329,7 +5365,7 @@
   },
   {
     "docId": "1PFBK8czYYa",
-    "seq": 445,
+    "seq": 448,
     "prePost": "사후",
     "type": "해당없음",
     "country": "인도",
@@ -5341,7 +5377,7 @@
   },
   {
     "docId": "1PFCoyOW4nN",
-    "seq": 446,
+    "seq": 449,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5353,7 +5389,7 @@
   },
   {
     "docId": "1PFCoyOW4Ec",
-    "seq": 447,
+    "seq": 450,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -5365,7 +5401,7 @@
   },
   {
     "docId": "1PFCoyOW3Zx",
-    "seq": 448,
+    "seq": 451,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5377,7 +5413,7 @@
   },
   {
     "docId": "1PFCoyOW331",
-    "seq": 449,
+    "seq": 452,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5389,7 +5425,7 @@
   },
   {
     "docId": "1PFC9VqyjKB",
-    "seq": 450,
+    "seq": 453,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5401,7 +5437,7 @@
   },
   {
     "docId": "1PEp6jLLBe6",
-    "seq": 451,
+    "seq": 454,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5413,7 +5449,7 @@
   },
   {
     "docId": "1PEp6jLL9ih",
-    "seq": 452,
+    "seq": 455,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -5425,7 +5461,7 @@
   },
   {
     "docId": "1PEfmBhHGCZ",
-    "seq": 453,
+    "seq": 456,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5437,7 +5473,7 @@
   },
   {
     "docId": "1PENb1hWwzJ",
-    "seq": 454,
+    "seq": 457,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5449,7 +5485,7 @@
   },
   {
     "docId": "1PENb1hWvv_",
-    "seq": 455,
+    "seq": 458,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "노르웨이",
@@ -5461,7 +5497,7 @@
   },
   {
     "docId": "1PENb1hWtWX",
-    "seq": 456,
+    "seq": 459,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5473,7 +5509,7 @@
   },
   {
     "docId": "1PENb1hWsfM",
-    "seq": 457,
+    "seq": 460,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "이탈리아",
@@ -5485,7 +5521,7 @@
   },
   {
     "docId": "1PEFzUr7rNv",
-    "seq": 458,
+    "seq": 461,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5497,7 +5533,7 @@
   },
   {
     "docId": "1PEFzUr7qnn",
-    "seq": 459,
+    "seq": 462,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5509,7 +5545,7 @@
   },
   {
     "docId": "1PEFzUr7qOO",
-    "seq": 460,
+    "seq": 463,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -5521,7 +5557,7 @@
   },
   {
     "docId": "1PEFzUr7phC",
-    "seq": 461,
+    "seq": 464,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도네시아",
@@ -5533,7 +5569,7 @@
   },
   {
     "docId": "1PEFzUr7o0Q",
-    "seq": 462,
+    "seq": 465,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -5545,7 +5581,7 @@
   },
   {
     "docId": "1PEFzUr7n6A",
-    "seq": 463,
+    "seq": 466,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -5557,7 +5593,7 @@
   },
   {
     "docId": "1PEFzUr7WkD",
-    "seq": 464,
+    "seq": 467,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "벨기에",
@@ -5569,7 +5605,7 @@
   },
   {
     "docId": "1PEFzUr7V-p",
-    "seq": 465,
+    "seq": 468,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "일본",
@@ -5581,7 +5617,7 @@
   },
   {
     "docId": "1PDrTYgnSOz",
-    "seq": 466,
+    "seq": 469,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5593,7 +5629,7 @@
   },
   {
     "docId": "1PDrTYgnSOM",
-    "seq": 467,
+    "seq": 470,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5605,7 +5641,7 @@
   },
   {
     "docId": "1PDrTYgnSML",
-    "seq": 468,
+    "seq": 471,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5617,7 +5653,7 @@
   },
   {
     "docId": "1PDrTYgnSLV",
-    "seq": 469,
+    "seq": 472,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5629,7 +5665,7 @@
   },
   {
     "docId": "1PDrTYgnSEx",
-    "seq": 470,
+    "seq": 473,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -5641,7 +5677,7 @@
   },
   {
     "docId": "1PBQkSg5cTw",
-    "seq": 471,
+    "seq": 474,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5653,7 +5689,7 @@
   },
   {
     "docId": "1PAzM_7avu2",
-    "seq": 472,
+    "seq": 475,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -5665,7 +5701,7 @@
   },
   {
     "docId": "1PAsjrtI17G",
-    "seq": 473,
+    "seq": 476,
     "prePost": "",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5677,7 +5713,7 @@
   },
   {
     "docId": "1PAk4p4KXEZ",
-    "seq": 474,
+    "seq": 477,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5689,7 +5725,7 @@
   },
   {
     "docId": "1PAbJvVXmU6",
-    "seq": 475,
+    "seq": 478,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5701,7 +5737,7 @@
   },
   {
     "docId": "1PAbJvVXIKt",
-    "seq": 476,
+    "seq": 479,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5713,7 +5749,7 @@
   },
   {
     "docId": "1PAbJvVXIKY",
-    "seq": 477,
+    "seq": 480,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5725,7 +5761,7 @@
   },
   {
     "docId": "1PAbJvVXIKD",
-    "seq": 478,
+    "seq": 481,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5737,7 +5773,7 @@
   },
   {
     "docId": "1P9sMKKKqAx",
-    "seq": 479,
+    "seq": 482,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5749,7 +5785,7 @@
   },
   {
     "docId": "1P9sMKKKhKe",
-    "seq": 480,
+    "seq": 483,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5761,7 +5797,7 @@
   },
   {
     "docId": "1P9q7sJ51cB",
-    "seq": 481,
+    "seq": 484,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5773,7 +5809,7 @@
   },
   {
     "docId": "1P9CSnreUyD",
-    "seq": 482,
+    "seq": 485,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -5785,7 +5821,7 @@
   },
   {
     "docId": "1P9CSnreUx2",
-    "seq": 483,
+    "seq": 486,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -5797,7 +5833,7 @@
   },
   {
     "docId": "1P9CSnreUw9",
-    "seq": 484,
+    "seq": 487,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -5809,7 +5845,7 @@
   },
   {
     "docId": "1P9CSnreUtX",
-    "seq": 485,
+    "seq": 488,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -5821,7 +5857,7 @@
   },
   {
     "docId": "1P9CSnreUmC",
-    "seq": 486,
+    "seq": 489,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "인도",
@@ -5833,7 +5869,7 @@
   },
   {
     "docId": "1P9CSnreUiD",
-    "seq": 487,
+    "seq": 490,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -5845,7 +5881,7 @@
   },
   {
     "docId": "1P9CSnreUd6",
-    "seq": 488,
+    "seq": 491,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -5857,7 +5893,7 @@
   },
   {
     "docId": "1P9CSnreUZP",
-    "seq": 489,
+    "seq": 492,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -5869,7 +5905,7 @@
   },
   {
     "docId": "1P8B4CKolXJ",
-    "seq": 490,
+    "seq": 493,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5881,7 +5917,7 @@
   },
   {
     "docId": "1P8B4CKolSj",
-    "seq": 491,
+    "seq": 494,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5893,7 +5929,7 @@
   },
   {
     "docId": "1P8B4CKolKl",
-    "seq": 492,
+    "seq": 495,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5905,7 +5941,7 @@
   },
   {
     "docId": "1P8B4CKolDv",
-    "seq": 493,
+    "seq": 496,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5917,7 +5953,7 @@
   },
   {
     "docId": "1P761xgBEaX",
-    "seq": 494,
+    "seq": 497,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -5929,7 +5965,7 @@
   },
   {
     "docId": "1P761xgBD0s",
-    "seq": 495,
+    "seq": 498,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5941,7 +5977,7 @@
   },
   {
     "docId": "1P761xgBAUc",
-    "seq": 496,
+    "seq": 499,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5953,7 +5989,7 @@
   },
   {
     "docId": "1P761xgB8rs",
-    "seq": 497,
+    "seq": 500,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -5965,7 +6001,7 @@
   },
   {
     "docId": "1P41wm3_fct",
-    "seq": 498,
+    "seq": 501,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -5977,7 +6013,7 @@
   },
   {
     "docId": "1P41wm3_ePP",
-    "seq": 499,
+    "seq": 502,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -5989,7 +6025,7 @@
   },
   {
     "docId": "1P41wm3_dX2",
-    "seq": 500,
+    "seq": 503,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -6001,7 +6037,7 @@
   },
   {
     "docId": "1P41wm3_cU5",
-    "seq": 501,
+    "seq": 504,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "핀란드",
@@ -6013,7 +6049,7 @@
   },
   {
     "docId": "1P41wm3_bah",
-    "seq": 502,
+    "seq": 505,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -6025,7 +6061,7 @@
   },
   {
     "docId": "1P41wm3_aHg",
-    "seq": 503,
+    "seq": 506,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -6037,7 +6073,7 @@
   },
   {
     "docId": "1P3YT4PZ8AL",
-    "seq": 504,
+    "seq": 507,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6049,7 +6085,7 @@
   },
   {
     "docId": "1P3TwIppa-g",
-    "seq": 505,
+    "seq": 508,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스웨덴",
@@ -6061,7 +6097,7 @@
   },
   {
     "docId": "1P2hKsqMr6T",
-    "seq": 506,
+    "seq": 509,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -6073,7 +6109,7 @@
   },
   {
     "docId": "1P2V3qgMQEi",
-    "seq": 507,
+    "seq": 510,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -6085,7 +6121,7 @@
   },
   {
     "docId": "1P2V3qgMPAO",
-    "seq": 508,
+    "seq": 511,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6097,7 +6133,7 @@
   },
   {
     "docId": "1P2V3qgMNJ4",
-    "seq": 509,
+    "seq": 512,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -6109,7 +6145,7 @@
   },
   {
     "docId": "1P2V3qgMLQt",
-    "seq": 510,
+    "seq": 513,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6121,7 +6157,7 @@
   },
   {
     "docId": "1P2UhIKFV3l",
-    "seq": 511,
+    "seq": 514,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6133,7 +6169,7 @@
   },
   {
     "docId": "1P2UhIKFUeg",
-    "seq": 512,
+    "seq": 515,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6145,7 +6181,7 @@
   },
   {
     "docId": "1P2UhIKFTkO",
-    "seq": 513,
+    "seq": 516,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6157,7 +6193,7 @@
   },
   {
     "docId": "1P2UhIKFTI6",
-    "seq": 514,
+    "seq": 517,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6169,7 +6205,7 @@
   },
   {
     "docId": "1P2UhIKFRbG",
-    "seq": 515,
+    "seq": 518,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6181,7 +6217,7 @@
   },
   {
     "docId": "1P2UhIKFR7h",
-    "seq": 516,
+    "seq": 519,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6193,7 +6229,7 @@
   },
   {
     "docId": "1P2UhIKFQcG",
-    "seq": 517,
+    "seq": 520,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6205,7 +6241,7 @@
   },
   {
     "docId": "1P2UhIKFPxu",
-    "seq": 518,
+    "seq": 521,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6217,7 +6253,7 @@
   },
   {
     "docId": "1P1oYPFWrh0",
-    "seq": 519,
+    "seq": 522,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "프랑스",
@@ -6228,20 +6264,8 @@
     "regDate": "2024-07-02"
   },
   {
-    "docId": "1P1j3miv_2P",
-    "seq": 520,
-    "prePost": "사전",
-    "type": "원료(단일)",
-    "country": "대한민국",
-    "site": "한국원자력연구원",
-    "address": "대전광역시 유성구 대덕대로989번길 111",
-    "inspStart": "2023-10-16",
-    "inspEnd": "2023-10-20",
-    "regDate": "2024-07-01"
-  },
-  {
     "docId": "1P19k0H5g_Z",
-    "seq": 521,
+    "seq": 523,
     "prePost": "사후",
     "type": "해당없음",
     "country": "일본",
@@ -6253,7 +6277,7 @@
   },
   {
     "docId": "1P19k0H5ehL",
-    "seq": 522,
+    "seq": 524,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "이스라엘",
@@ -6265,7 +6289,7 @@
   },
   {
     "docId": "1P19k0H5di3",
-    "seq": 523,
+    "seq": 525,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "이탈리아",
@@ -6277,7 +6301,7 @@
   },
   {
     "docId": "1P19k0H5dFG",
-    "seq": 524,
+    "seq": 526,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6289,7 +6313,7 @@
   },
   {
     "docId": "1P19k0H5chE",
-    "seq": 525,
+    "seq": 527,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -6301,7 +6325,7 @@
   },
   {
     "docId": "1P19k0H5c0h",
-    "seq": 526,
+    "seq": 528,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "벨기에",
@@ -6313,7 +6337,7 @@
   },
   {
     "docId": "1P19k0H5bUm",
-    "seq": 527,
+    "seq": 529,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6325,7 +6349,7 @@
   },
   {
     "docId": "1P19k0H5abX",
-    "seq": 528,
+    "seq": 530,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -6337,7 +6361,7 @@
   },
   {
     "docId": "1P19k0H5a8W",
-    "seq": 529,
+    "seq": 531,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6349,7 +6373,7 @@
   },
   {
     "docId": "1P19k0H5ZZW",
-    "seq": 530,
+    "seq": 532,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -6361,7 +6385,7 @@
   },
   {
     "docId": "1P0r6voXjQL",
-    "seq": 531,
+    "seq": 533,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6373,7 +6397,7 @@
   },
   {
     "docId": "1P0r6voXjOK",
-    "seq": 532,
+    "seq": 534,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6385,7 +6409,7 @@
   },
   {
     "docId": "1P0r6voXjL2",
-    "seq": 533,
+    "seq": 535,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6397,7 +6421,7 @@
   },
   {
     "docId": "1P0r6voXjK9",
-    "seq": 534,
+    "seq": 536,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6409,7 +6433,7 @@
   },
   {
     "docId": "1P0r6voXjJG",
-    "seq": 535,
+    "seq": 537,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6421,7 +6445,7 @@
   },
   {
     "docId": "1P0r6voXjI5",
-    "seq": 536,
+    "seq": 538,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6433,7 +6457,7 @@
   },
   {
     "docId": "1P0r6voXjFi",
-    "seq": 537,
+    "seq": 539,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6445,7 +6469,7 @@
   },
   {
     "docId": "1OyuoHKrLHf",
-    "seq": 538,
+    "seq": 540,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6457,7 +6481,7 @@
   },
   {
     "docId": "1OyuoHKrLHK",
-    "seq": 539,
+    "seq": 541,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6469,7 +6493,7 @@
   },
   {
     "docId": "1OyuoHKrLGR",
-    "seq": 540,
+    "seq": 542,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6481,7 +6505,7 @@
   },
   {
     "docId": "1OyuoHKrLF_",
-    "seq": 541,
+    "seq": 543,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6493,7 +6517,7 @@
   },
   {
     "docId": "1OyuoHKrLE_",
-    "seq": 542,
+    "seq": 544,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "대한민국",
@@ -6505,7 +6529,7 @@
   },
   {
     "docId": "1OyuoHKrL9t",
-    "seq": 543,
+    "seq": 545,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6517,7 +6541,7 @@
   },
   {
     "docId": "1OyuoHKrL9G",
-    "seq": 544,
+    "seq": 546,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6529,7 +6553,7 @@
   },
   {
     "docId": "1OyuoHKrL8i",
-    "seq": 545,
+    "seq": 547,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6541,7 +6565,7 @@
   },
   {
     "docId": "1OyiGZ6FzjJ",
-    "seq": 546,
+    "seq": 548,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6553,7 +6577,7 @@
   },
   {
     "docId": "1OyiGZ6Fs3-",
-    "seq": 547,
+    "seq": 549,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6565,7 +6589,7 @@
   },
   {
     "docId": "1OyiGZ6Fr4f",
-    "seq": 548,
+    "seq": 550,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -6577,7 +6601,7 @@
   },
   {
     "docId": "1OyiGZ6Fpy9",
-    "seq": 549,
+    "seq": 551,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -6589,7 +6613,7 @@
   },
   {
     "docId": "1OyiGZ6FoW5",
-    "seq": 550,
+    "seq": 552,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -6601,7 +6625,7 @@
   },
   {
     "docId": "1OyiGZ6FnR0",
-    "seq": 551,
+    "seq": 553,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -6613,7 +6637,7 @@
   },
   {
     "docId": "1OyiGZ6Fe2N",
-    "seq": 552,
+    "seq": 554,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "중국",
@@ -6625,7 +6649,7 @@
   },
   {
     "docId": "1OwUAfH9aJN",
-    "seq": 553,
+    "seq": 555,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -6637,7 +6661,7 @@
   },
   {
     "docId": "1OwUAfH9a2m",
-    "seq": 554,
+    "seq": 556,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -6649,7 +6673,7 @@
   },
   {
     "docId": "1OvxT5W4mTn",
-    "seq": 555,
+    "seq": 557,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6661,7 +6685,7 @@
   },
   {
     "docId": "1OvvP7RbIJX",
-    "seq": 556,
+    "seq": 558,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6673,7 +6697,7 @@
   },
   {
     "docId": "1OvvP7RbHPB",
-    "seq": 557,
+    "seq": 559,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6685,7 +6709,7 @@
   },
   {
     "docId": "1OvvP7RbGD_",
-    "seq": 558,
+    "seq": 560,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "대한민국",
@@ -6697,7 +6721,7 @@
   },
   {
     "docId": "1OvvP7RbDcq",
-    "seq": 559,
+    "seq": 561,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6709,7 +6733,7 @@
   },
   {
     "docId": "1OtAeDkgPxM",
-    "seq": 560,
+    "seq": 562,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -6721,7 +6745,7 @@
   },
   {
     "docId": "1Os1QfRkNkd",
-    "seq": 561,
+    "seq": 563,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -6733,7 +6757,7 @@
   },
   {
     "docId": "1Os1QfRkNgM",
-    "seq": 562,
+    "seq": 564,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "중국",
@@ -6745,7 +6769,7 @@
   },
   {
     "docId": "1Os1QfRkNcd",
-    "seq": 563,
+    "seq": 565,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "푸에르토리코",
@@ -6757,7 +6781,7 @@
   },
   {
     "docId": "1Os1QfRkNSu",
-    "seq": 564,
+    "seq": 566,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -6769,7 +6793,7 @@
   },
   {
     "docId": "1Orz9gcU3zh",
-    "seq": 565,
+    "seq": 567,
     "prePost": "사후",
     "type": "해당없음",
     "country": "중국",
@@ -6781,7 +6805,7 @@
   },
   {
     "docId": "1Orz9gcU3vB",
-    "seq": 566,
+    "seq": 568,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6793,7 +6817,7 @@
   },
   {
     "docId": "1Orz9gcU3uI",
-    "seq": 567,
+    "seq": 569,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -6805,7 +6829,7 @@
   },
   {
     "docId": "1Orz9gcU3pE",
-    "seq": 568,
+    "seq": 570,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6817,7 +6841,7 @@
   },
   {
     "docId": "1Orz9gcU3i9",
-    "seq": 569,
+    "seq": 571,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6829,7 +6853,7 @@
   },
   {
     "docId": "1Orz9gcU3fs",
-    "seq": 570,
+    "seq": 572,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6841,7 +6865,7 @@
   },
   {
     "docId": "1Orz9gcU3dH",
-    "seq": 571,
+    "seq": 573,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -6853,7 +6877,7 @@
   },
   {
     "docId": "1OpiYHzC0DD",
-    "seq": 572,
+    "seq": 574,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6865,7 +6889,7 @@
   },
   {
     "docId": "1OpiJDMezkF",
-    "seq": 573,
+    "seq": 575,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6877,7 +6901,7 @@
   },
   {
     "docId": "1OpiJDMexUd",
-    "seq": 574,
+    "seq": 576,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6889,7 +6913,7 @@
   },
   {
     "docId": "1OpiJDMewtQ",
-    "seq": 575,
+    "seq": 577,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -6901,7 +6925,7 @@
   },
   {
     "docId": "1OoAc19n94V",
-    "seq": 576,
+    "seq": 578,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -6913,7 +6937,7 @@
   },
   {
     "docId": "1Oo6LYA-jnH",
-    "seq": 577,
+    "seq": 579,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이스라엘",
@@ -6925,7 +6949,7 @@
   },
   {
     "docId": "1Oo1IQuC-xo",
-    "seq": 578,
+    "seq": 580,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -6937,7 +6961,7 @@
   },
   {
     "docId": "1Oo1IQuCrB_",
-    "seq": 579,
+    "seq": 581,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "일본",
@@ -6949,7 +6973,7 @@
   },
   {
     "docId": "1Oo1IQuCr7_",
-    "seq": 580,
+    "seq": 582,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "중국",
@@ -6961,7 +6985,7 @@
   },
   {
     "docId": "1Oo1IQuCqtx",
-    "seq": 581,
+    "seq": 583,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -6973,7 +6997,7 @@
   },
   {
     "docId": "1Oo1IQuCqQb",
-    "seq": 582,
+    "seq": 584,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -6985,7 +7009,7 @@
   },
   {
     "docId": "1Oo1IQuCqNS",
-    "seq": 583,
+    "seq": 585,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -6997,7 +7021,7 @@
   },
   {
     "docId": "1Oo1IQuCqCj",
-    "seq": 584,
+    "seq": 586,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "네덜란드",
@@ -7009,7 +7033,7 @@
   },
   {
     "docId": "1OmyYmOOkIs",
-    "seq": 585,
+    "seq": 587,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -7021,7 +7045,7 @@
   },
   {
     "docId": "1OhsJNgvcxu",
-    "seq": 586,
+    "seq": 588,
     "prePost": "사후",
     "type": "해당없음",
     "country": "중국",
@@ -7033,7 +7057,7 @@
   },
   {
     "docId": "1OhKRKb0i-n",
-    "seq": 587,
+    "seq": 589,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -7045,7 +7069,7 @@
   },
   {
     "docId": "1OhF57vNnQ6",
-    "seq": 588,
+    "seq": 590,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -7057,7 +7081,7 @@
   },
   {
     "docId": "1OhF57vNnIu",
-    "seq": 589,
+    "seq": 591,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -7069,7 +7093,7 @@
   },
   {
     "docId": "1OhF57vNm_X",
-    "seq": 590,
+    "seq": 592,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "캐나다",
@@ -7081,7 +7105,7 @@
   },
   {
     "docId": "1OhF57vNmqZ",
-    "seq": 591,
+    "seq": 593,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -7093,7 +7117,7 @@
   },
   {
     "docId": "1OhF57vNkQm",
-    "seq": 592,
+    "seq": 594,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "중국",
@@ -7105,7 +7129,7 @@
   },
   {
     "docId": "1OfilpYPYVb",
-    "seq": 593,
+    "seq": 595,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7117,7 +7141,7 @@
   },
   {
     "docId": "1OfUcpQ6HK4",
-    "seq": 594,
+    "seq": 596,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7129,7 +7153,7 @@
   },
   {
     "docId": "1OfUcpQ67gI",
-    "seq": 595,
+    "seq": 597,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7141,7 +7165,7 @@
   },
   {
     "docId": "1OfUcpQ677N",
-    "seq": 596,
+    "seq": 598,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7153,7 +7177,7 @@
   },
   {
     "docId": "1OehHUIE4Ih",
-    "seq": 597,
+    "seq": 599,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "대한민국",
@@ -7165,7 +7189,7 @@
   },
   {
     "docId": "1OeRELoVnSO",
-    "seq": 598,
+    "seq": 600,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -7177,7 +7201,7 @@
   },
   {
     "docId": "1OeRELoVe73",
-    "seq": 599,
+    "seq": 601,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -7189,7 +7213,7 @@
   },
   {
     "docId": "1OeRELoVdDb",
-    "seq": 600,
+    "seq": 602,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -7201,7 +7225,7 @@
   },
   {
     "docId": "1OeRELoVcMA",
-    "seq": 601,
+    "seq": 603,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7213,7 +7237,7 @@
   },
   {
     "docId": "1OeRELoVbQ0",
-    "seq": 602,
+    "seq": 604,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "이탈리아",
@@ -7225,7 +7249,7 @@
   },
   {
     "docId": "1OeRELoVYV1",
-    "seq": 603,
+    "seq": 605,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "미국",
@@ -7237,7 +7261,7 @@
   },
   {
     "docId": "1OeRELoVXM9",
-    "seq": 604,
+    "seq": 606,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "푸에르토리코",
@@ -7249,7 +7273,7 @@
   },
   {
     "docId": "1OeRELoVUuD",
-    "seq": 605,
+    "seq": 607,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -7261,7 +7285,7 @@
   },
   {
     "docId": "1OeQ-A3TiOG",
-    "seq": 606,
+    "seq": 608,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7273,7 +7297,7 @@
   },
   {
     "docId": "1Oe79QK5tRa",
-    "seq": 607,
+    "seq": 609,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "그리스",
@@ -7285,7 +7309,7 @@
   },
   {
     "docId": "1OdylyCymBk",
-    "seq": 608,
+    "seq": 610,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -7297,7 +7321,7 @@
   },
   {
     "docId": "1OdylyCyiqO",
-    "seq": 609,
+    "seq": 611,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7309,7 +7333,7 @@
   },
   {
     "docId": "1OdSbg17pMH",
-    "seq": 610,
+    "seq": 612,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7321,7 +7345,7 @@
   },
   {
     "docId": "1OdOKTMzLbS",
-    "seq": 611,
+    "seq": 613,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7333,7 +7357,7 @@
   },
   {
     "docId": "1Oa0PkES4Nt",
-    "seq": 612,
+    "seq": 614,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대만",
@@ -7345,7 +7369,7 @@
   },
   {
     "docId": "1Oa0PkES3cm",
-    "seq": 613,
+    "seq": 615,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7357,7 +7381,7 @@
   },
   {
     "docId": "1OZ-Ie6Rxi2",
-    "seq": 614,
+    "seq": 616,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -7369,7 +7393,7 @@
   },
   {
     "docId": "1OYlGy0XtIx",
-    "seq": 615,
+    "seq": 617,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -7381,7 +7405,7 @@
   },
   {
     "docId": "1OYlGy0Xt3_",
-    "seq": 616,
+    "seq": 618,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7393,7 +7417,7 @@
   },
   {
     "docId": "1OYlGy0XoNr",
-    "seq": 617,
+    "seq": 619,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -7405,7 +7429,7 @@
   },
   {
     "docId": "1OYlGy0Xnsr",
-    "seq": 618,
+    "seq": 620,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -7417,7 +7441,7 @@
   },
   {
     "docId": "1OX11FkRGgq",
-    "seq": 619,
+    "seq": 621,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7429,7 +7453,7 @@
   },
   {
     "docId": "1OWEpCP2oPb",
-    "seq": 620,
+    "seq": 622,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7441,7 +7465,7 @@
   },
   {
     "docId": "1OWEpCP2AB-",
-    "seq": 621,
+    "seq": 623,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -7453,7 +7477,7 @@
   },
   {
     "docId": "1OWEpCP2A47",
-    "seq": 622,
+    "seq": 624,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7465,7 +7489,7 @@
   },
   {
     "docId": "1OWEpCP2A0i",
-    "seq": 623,
+    "seq": 625,
     "prePost": "사후",
     "type": "해당없음",
     "country": "일본",
@@ -7477,7 +7501,7 @@
   },
   {
     "docId": "1OWEpCP2A05",
-    "seq": 624,
+    "seq": 626,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -7489,7 +7513,7 @@
   },
   {
     "docId": "1OWEpCP29zW",
-    "seq": 625,
+    "seq": 627,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7501,7 +7525,7 @@
   },
   {
     "docId": "1OSntC_QwSP",
-    "seq": 626,
+    "seq": 628,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -7513,7 +7537,7 @@
   },
   {
     "docId": "1OSntC_QwCO",
-    "seq": 627,
+    "seq": 629,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7525,7 +7549,7 @@
   },
   {
     "docId": "1OSntC_QtyR",
-    "seq": 628,
+    "seq": 630,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -7537,7 +7561,7 @@
   },
   {
     "docId": "1OS2oStCukL",
-    "seq": 629,
+    "seq": 631,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "이탈리아",
@@ -7549,7 +7573,7 @@
   },
   {
     "docId": "1OS1FLU0jCo",
-    "seq": 630,
+    "seq": 632,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7561,7 +7585,7 @@
   },
   {
     "docId": "1ORvh9dW4gu",
-    "seq": 631,
+    "seq": 633,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7573,7 +7597,7 @@
   },
   {
     "docId": "1ORvh9dW41f",
-    "seq": 632,
+    "seq": 634,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7585,7 +7609,7 @@
   },
   {
     "docId": "1ORvh9dW37K",
-    "seq": 633,
+    "seq": 635,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7597,7 +7621,7 @@
   },
   {
     "docId": "1ORfAVWv7Qr",
-    "seq": 634,
+    "seq": 636,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7609,7 +7633,7 @@
   },
   {
     "docId": "1ORektF52ZE",
-    "seq": 635,
+    "seq": 637,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7621,7 +7645,7 @@
   },
   {
     "docId": "1OReJis_vqm",
-    "seq": 636,
+    "seq": 638,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7633,7 +7657,7 @@
   },
   {
     "docId": "1OReJis_bPk",
-    "seq": 637,
+    "seq": 639,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7645,7 +7669,7 @@
   },
   {
     "docId": "1ORdxzFh5W7",
-    "seq": 638,
+    "seq": 640,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "일본",
@@ -7657,7 +7681,7 @@
   },
   {
     "docId": "1ORb67MC902",
-    "seq": 639,
+    "seq": 641,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "미국",
@@ -7669,7 +7693,7 @@
   },
   {
     "docId": "1ORb67MC75Z",
-    "seq": 640,
+    "seq": 642,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7681,7 +7705,7 @@
   },
   {
     "docId": "1ORb67MC3MB",
-    "seq": 641,
+    "seq": 643,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7693,7 +7717,7 @@
   },
   {
     "docId": "1ORb67MC100",
-    "seq": 642,
+    "seq": 644,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "이탈리아",
@@ -7705,7 +7729,7 @@
   },
   {
     "docId": "1ORaRNM6x_R",
-    "seq": 643,
+    "seq": 645,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -7717,7 +7741,7 @@
   },
   {
     "docId": "1ORaCOY0CYl",
-    "seq": 644,
+    "seq": 646,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "인도",
@@ -7729,7 +7753,7 @@
   },
   {
     "docId": "1ORaCOY09GH",
-    "seq": 645,
+    "seq": 647,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7741,7 +7765,7 @@
   },
   {
     "docId": "1ORURS9GwgI",
-    "seq": 646,
+    "seq": 648,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7753,7 +7777,7 @@
   },
   {
     "docId": "1OR61byp2pw",
-    "seq": 647,
+    "seq": 649,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "프랑스",
@@ -7765,7 +7789,7 @@
   },
   {
     "docId": "1OR61byp2m2",
-    "seq": 648,
+    "seq": 650,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -7777,7 +7801,7 @@
   },
   {
     "docId": "1OR61byp2gx",
-    "seq": 649,
+    "seq": 651,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7789,7 +7813,7 @@
   },
   {
     "docId": "1OR61byp2Wz",
-    "seq": 650,
+    "seq": 652,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -7801,7 +7825,7 @@
   },
   {
     "docId": "1OR61byp2OX",
-    "seq": 651,
+    "seq": 653,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7813,7 +7837,7 @@
   },
   {
     "docId": "1OPtbB4FGS-",
-    "seq": 652,
+    "seq": 654,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "일본",
@@ -7825,7 +7849,7 @@
   },
   {
     "docId": "1OOmFiNzrOg",
-    "seq": 653,
+    "seq": 655,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -7837,7 +7861,7 @@
   },
   {
     "docId": "1OOmFiNzr1z",
-    "seq": 654,
+    "seq": 656,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "중국",
@@ -7849,7 +7873,7 @@
   },
   {
     "docId": "1OOmFiNzqfw",
-    "seq": 655,
+    "seq": 657,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "독일",
@@ -7861,7 +7885,7 @@
   },
   {
     "docId": "1OO6g7WHMic",
-    "seq": 656,
+    "seq": 658,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -7873,7 +7897,7 @@
   },
   {
     "docId": "1OO6g7WHMae",
-    "seq": 657,
+    "seq": 659,
     "prePost": "사후",
     "type": "원료(단일)",
     "country": "인도",
@@ -7885,7 +7909,7 @@
   },
   {
     "docId": "1OMLha-_xC9",
-    "seq": 658,
+    "seq": 660,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7897,7 +7921,7 @@
   },
   {
     "docId": "1OMBOuNTu3I",
-    "seq": 659,
+    "seq": 661,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "독일",
@@ -7909,7 +7933,7 @@
   },
   {
     "docId": "1OMBOuNTr32",
-    "seq": 660,
+    "seq": 662,
     "prePost": "사전",
     "type": "원료(단일)",
     "country": "중국",
@@ -7921,7 +7945,7 @@
   },
   {
     "docId": "1OMBOuNTpDF",
-    "seq": 661,
+    "seq": 663,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "벨기에",
@@ -7933,7 +7957,7 @@
   },
   {
     "docId": "1OLXQ4p939J",
-    "seq": 662,
+    "seq": 664,
     "prePost": "사전",
     "type": "완제(단일)",
     "country": "일본",
@@ -7945,7 +7969,7 @@
   },
   {
     "docId": "1OL3GadwmaH",
-    "seq": 663,
+    "seq": 665,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "네덜란드",
@@ -7957,7 +7981,7 @@
   },
   {
     "docId": "1OKpU3II0O1",
-    "seq": 664,
+    "seq": 666,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -7969,7 +7993,7 @@
   },
   {
     "docId": "1OKpU3II00n",
-    "seq": 665,
+    "seq": 667,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -7981,7 +8005,7 @@
   },
   {
     "docId": "1OKmP66JvEX",
-    "seq": 666,
+    "seq": 668,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -7993,7 +8017,7 @@
   },
   {
     "docId": "1OKmP66Jv26",
-    "seq": 667,
+    "seq": 669,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "푸에르토리코",
@@ -8005,7 +8029,7 @@
   },
   {
     "docId": "1OJ2hqQvU-X",
-    "seq": 668,
+    "seq": 670,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -8017,7 +8041,7 @@
   },
   {
     "docId": "1OJ2hqQvU_w",
-    "seq": 669,
+    "seq": 671,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -8029,7 +8053,7 @@
   },
   {
     "docId": "1OHpKvYmuXS",
-    "seq": 670,
+    "seq": 672,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스웨덴",
@@ -8041,7 +8065,7 @@
   },
   {
     "docId": "1OHpKvYmrbQ",
-    "seq": 671,
+    "seq": 673,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -8053,7 +8077,7 @@
   },
   {
     "docId": "1OGnMFiPlgO",
-    "seq": 672,
+    "seq": 674,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "벨기에",
@@ -8065,7 +8089,7 @@
   },
   {
     "docId": "1OGnMFiPjL9",
-    "seq": 673,
+    "seq": 675,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "영국",
@@ -8077,7 +8101,7 @@
   },
   {
     "docId": "1OGmfTF1KKd",
-    "seq": 674,
+    "seq": 676,
     "prePost": "사후",
     "type": "완제+원료(겸업)",
     "country": "이탈리아",
@@ -8089,7 +8113,7 @@
   },
   {
     "docId": "1OGmQL0ZwIO",
-    "seq": 675,
+    "seq": 677,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -8101,7 +8125,7 @@
   },
   {
     "docId": "1OGiiutK3Yu",
-    "seq": 676,
+    "seq": 678,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "아일랜드",
@@ -8113,7 +8137,7 @@
   },
   {
     "docId": "1OGiYmAfrnA",
-    "seq": 677,
+    "seq": 679,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "이탈리아",
@@ -8125,7 +8149,7 @@
   },
   {
     "docId": "1OGTO3wIGf-",
-    "seq": 678,
+    "seq": 680,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "영국",
@@ -8137,7 +8161,7 @@
   },
   {
     "docId": "1OGTO3wI0_Q",
-    "seq": 679,
+    "seq": 681,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "스페인",
@@ -8149,7 +8173,7 @@
   },
   {
     "docId": "1OGSwu6Oz5V",
-    "seq": 680,
+    "seq": 682,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "미국",
@@ -8161,7 +8185,7 @@
   },
   {
     "docId": "1OGSwu6OoP0",
-    "seq": 681,
+    "seq": 683,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "벨기에",
