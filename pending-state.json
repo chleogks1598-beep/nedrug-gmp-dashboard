@@ -1,16 +1,5 @@
 {
-  "docs": {
-    "1Q1fmUkaMTw": {
-      "firstSeen": "2026-09-04T03:54:43.655Z",
-      "site": "대덕가스(주)",
-      "regDate": "2026-09-04"
-    },
-    "1Q1fmUkaKmS": {
-      "firstSeen": "2026-09-04T03:54:43.655Z",
-      "site": "동성제약(주)",
-      "regDate": "2026-09-04"
-    }
-  },
+  "docs": {},
   "lastWarnAt": "2026-09-06T08:33:55.697Z",
-  "lastFetchOkAt": "2026-09-06T20:13:27.597Z"
+  "lastFetchOkAt": "2026-09-06T23:39:06.159Z"
 }
