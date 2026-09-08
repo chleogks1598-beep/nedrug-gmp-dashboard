@@ -1,5 +1,17 @@
 [
   {
+    "key": "20250260/4",
+    "infoNo": "20250260",
+    "infoClassCode": "4",
+    "title": "리신염산염, 아르기닌염산염 성분제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2026-09-08",
+    "stage": "변경명령",
+    "regDate": "2026-09-08",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20250260&infoClassCode=4"
+  },
+  {
     "key": "20260176/3",
     "infoNo": "20260176",
     "infoClassCode": "3",
@@ -22,6 +34,18 @@
     "stage": "변경명령",
     "regDate": "2026-09-04",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260127&infoClassCode=4"
+  },
+  {
+    "key": "20260193/2",
+    "infoNo": "20260193",
+    "infoClassCode": "2",
+    "title": "에스시탈로프람 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-09-03",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260193&infoClassCode=2"
   },
   {
     "key": "20260155/4",
@@ -70,18 +94,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-09-03",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260140&infoClassCode=2"
-  },
-  {
-    "key": "20260193/2",
-    "infoNo": "20260193",
-    "infoClassCode": "2",
-    "title": "에스시탈로프람 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-09-03",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260193&infoClassCode=2"
   },
   {
     "key": "20260165/4",
@@ -696,18 +708,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260050&infoClassCode=4"
   },
   {
-    "key": "20260055/4",
-    "infoNo": "20260055",
-    "infoClassCode": "4",
-    "title": "디메틸푸마르산염 성분 제제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-09-09",
-    "stage": "변경명령",
-    "regDate": "2026-06-09",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260055&infoClassCode=4"
-  },
-  {
     "key": "20260045/4",
     "infoNo": "20260045",
     "infoClassCode": "4",
@@ -732,6 +732,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260092&infoClassCode=4"
   },
   {
+    "key": "20260055/4",
+    "infoNo": "20260055",
+    "infoClassCode": "4",
+    "title": "디메틸푸마르산염 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-09-09",
+    "stage": "변경명령",
+    "regDate": "2026-06-09",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260055&infoClassCode=4"
+  },
+  {
     "key": "20260084/4",
     "infoNo": "20260084",
     "infoClassCode": "4",
@@ -742,18 +754,6 @@
     "stage": "변경명령",
     "regDate": "2026-06-09",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260084&infoClassCode=4"
-  },
-  {
-    "key": "20250260/4",
-    "infoNo": "20250260",
-    "infoClassCode": "4",
-    "title": "리신염산염, 아르기닌염산염 성분제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "2026-09-08",
-    "stage": "변경명령",
-    "regDate": "2026-06-08",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20250260&infoClassCode=4"
   },
   {
     "key": "20260103/4",
