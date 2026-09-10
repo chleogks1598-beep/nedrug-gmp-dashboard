@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Task version="1.3" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+  <RegistrationInfo>
+    <Author>GREENCROSS\han1598</Author>
+    <Description>MFDS change orders (CCBAR01F012) watch. Hourly + at logon. Collects on the office network (MFDS blocks cloud IPs); mail is sent by GitHub workflow change-orders-notify.yml on the pushed snapshot. Runs hidden via run-hidden.vbs.</Description>
+    <URI>\NedrugChangeOrders</URI>
+  </RegistrationInfo>
+  <Principals>
+    <Principal id="Author">
+      <UserId>S-1-5-21-2052111302-1275210071-682003330-60261</UserId>
+      <LogonType>InteractiveToken</LogonType>
+    </Principal>
+  </Principals>
+  <Settings>
+    <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+    <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+    <MultipleInstancesPolicy>IgnoreNew</MultipleInstancesPolicy>
+    <StartWhenAvailable>true</StartWhenAvailable>
+    <ExecutionTimeLimit>PT30M</ExecutionTimeLimit>
+    <IdleSettings>
+      <Duration>PT10M</Duration>
+      <WaitTimeout>PT1H</WaitTimeout>
+      <StopOnIdleEnd>true</StopOnIdleEnd>
+      <RestartOnIdle>false</RestartOnIdle>
+    </IdleSettings>
+    <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+  </Settings>
+  <Triggers>
+    <TimeTrigger>
+      <StartBoundary>2026-09-10T09:30:00</StartBoundary>
+      <Repetition>
+        <Interval>PT1H</Interval>
+        <StopAtDurationEnd>false</StopAtDurationEnd>
+      </Repetition>
+    </TimeTrigger>
+    <LogonTrigger>
+      <Delay>PT2M</Delay>
+      <UserId>GREENCROSS\han1598</UserId>
+    </LogonTrigger>
+  </Triggers>
+  <Actions Context="Author">
+    <Exec>
+      <Command>C:\Windows\System32\wscript.exe</Command>
+      <Arguments>//nologo "C:\Users\han1598\projects\nedrug-gmp\run-hidden.vbs" run-change-orders.cmd</Arguments>
+      <WorkingDirectory>C:\Users\han1598\projects\nedrug-gmp</WorkingDirectory>
+    </Exec>
+  </Actions>
+</Task>

@@ -5,9 +5,9 @@ REM the extraction step takes several minutes and a visible window invites
 REM someone to close it, which kills the run mid-way (see run-hidden.vbs).
 REM 1) GMP inspection results: extract deficiencies from new MFDS reports, update dashboard.
 REM 2) Safety info: recall/disposal (CCBAI01) and administrative actions (CCBAO01).
-REM 3) Change orders (CCBAR01F012): moved here from GitHub Actions on 2026-09-10 because
-REM    MFDS intermittently blocks cloud IPs (UND_ERR_CONNECT_TIMEOUT killed 1 run in 3).
-REM All three run every time and are independent - a failure in one must not skip the others.
+REM Both run every time and are independent - a failure in one must not skip the other.
+REM Change orders (CCBAR01F012) are NOT here: they run hourly in their own task
+REM (NedrugChangeOrders -> run-change-orders.cmd) because this one runs every 2 hours.
 REM ASCII only on purpose: cmd.exe reads .cmd in the OEM codepage (CP949 here),
 REM so non-ASCII comment lines get mis-parsed and executed as commands.
 REM That is why the Korean failure text lives in scripts\log-fail.mjs instead.
@@ -21,10 +21,6 @@ if not "%E%"=="0" call :fail gmp %E%
 node scripts\run-safety-update.mjs
 set E=%ERRORLEVEL%
 if not "%E%"=="0" call :fail safety %E%
-
-node scripts\run-change-orders-update.mjs
-set E=%ERRORLEVEL%
-if not "%E%"=="0" call :fail change-orders %E%
 
 exit /b %RC%
 
