@@ -1,8 +1,14 @@
 name: Monitor 변경명령 (CCBAR01F012)
 
+# PC 가 꺼져 있을 때를 위한 안전망. 평소 감시는 로컬 스케줄러가 한다
+# (scripts/run-change-orders-update.mjs → change-orders-notify.yml).
+# 식약처가 클라우드 IP 를 간헐 차단해 여기서는 3회 중 1회씩 UND_ERR_CONNECT_TIMEOUT 으로
+# 실패했다(2026-09-10 확인) — 그래서 매시간에서 하루 1회로 줄였다. 실패해도 기준선을
+# 전진시키지 않으므로 알림이 유실되지는 않는다.
+
 on:
   schedule:
-    - cron: '0 * * * *'   # 매시간 정각 (UTC) — 사실상 매시간
+    - cron: '30 20 * * *'   # 매일 05:30 KST (20:30 UTC) — PC 가 꺼져 있던 밤 사이 보정
   workflow_dispatch:
     inputs:
       sample:

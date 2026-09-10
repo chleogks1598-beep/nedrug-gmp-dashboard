@@ -1,0 +1,68 @@
+name: Notify 변경명령 (푸시된 스냅샷 diff)
+
+# change-orders.json 이 바뀐 푸시마다 직전 커밋과 비교해 신규·변경 건만 뽑아 메일로 보낸다.
+# 감시(수집)는 로컬 스케줄러가 하고(scripts/run-change-orders-update.mjs) 여기서는
+# 식약처에 접속하지 않는다 — 식약처가 클라우드 IP 를 간헐 차단하기 때문이다.
+# 수신자: recipients-change-orders.json
+#
+# ★ Actions(change-orders.yml 안전망)가 GITHUB_TOKEN 으로 만든 커밋은 push 이벤트를
+#   발화시키지 못한다(GitHub 사양). 그래서 그 안전망은 자기 워크플로우 안에서 직접 메일을
+#   보낸다 — 이중 발송이 되지 않는다.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'change-orders.json'
+  workflow_dispatch:
+    inputs:
+      prev_ref:
+        description: '보정 발송: 이 커밋 이후의 변화를 한 번에 알림 (비우면 HEAD~1)'
+        required: false
+        default: ''
+      sample:
+        description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 diff)'
+        required: false
+        default: '0'
+
+concurrency:
+  group: change-orders-notify
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # 옛 커밋과 비교하는 보정 발송일 때만 전체 이력이 필요하다.
+          fetch-depth: ${{ github.event.inputs.prev_ref && '0' || '2' }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 직전 스냅샷 확보
+        env:
+          PREV: ${{ github.event.inputs.prev_ref || 'HEAD~1' }}
+        run: |
+          echo "비교 기준: $PREV"
+          git show "$PREV:change-orders.json" > prev-change-orders.json 2>/dev/null || echo "null" > prev-change-orders.json
+      - name: 메일 본문 생성 (직전 대비 diff)
+        id: build
+        env:
+          SAMPLE: ${{ github.event.inputs.sample }}
+        run: node scripts/change-orders.mjs prev-change-orders.json
+      - name: Send email via Gmail SMTP
+        if: steps.build.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: 변경명령 알림 <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.build.outputs.to }}
+          subject: ${{ steps.build.outputs.subject }}
+          html_body: file://co-email-body.html
+      - name: No email needed
+        if: steps.build.outputs.send != 'true'
+        run: echo "신규·변경 없음 — 메일 발송 생략."

@@ -11,7 +11,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOG = path.join(ROOT, "local-update.log");
 const stamp = () => new Date().toISOString().replace("T", " ").slice(0, 19); // 이 로그는 UTC 기준
 
-const STAGE = { gmp: "GMP 실사결과", safety: "회수·폐기/행정처분" };
+const STAGE = { gmp: "GMP 실사결과", safety: "회수·폐기/행정처분", "change-orders": "변경명령" };
 const stage = STAGE[process.argv[2]] ?? process.argv[2] ?? "알 수 없는";
 const code = process.argv[3] ?? "?";
 

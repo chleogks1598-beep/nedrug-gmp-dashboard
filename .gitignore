@@ -14,6 +14,7 @@ safety-email-body.html
 prev-data.json
 prev-recall.json
 prev-admin.json
+prev-change-orders.json
 # pending/ 자체는 의도적으로 커밋한다 (수집 단계 → 추출 단계 인수인계용).
 # 추출 중간산출물만 제외.
 pending/extracted.json
