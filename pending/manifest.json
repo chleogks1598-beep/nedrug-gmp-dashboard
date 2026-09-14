@@ -1,7 +1,109 @@
 [
   {
+    "docId": "1Q2TqD05zTo",
+    "seq": 1,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "안국약품(주)",
+    "address": "경기도 화성시 만세구 향남읍 제약공단1길 40",
+    "inspStart": "2026-06-15",
+    "inspEnd": "2026-06-18",
+    "regDate": "2026-09-14",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1Q2TqD05zTo",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제-내용고형제(정제, 캡슐제, 산제)",
+      "비무균-일반제제-내용액제(시럽제(액상))"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1Q2TqD05yGj",
+    "seq": 2,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "동국생명과학(주)",
+    "address": "경기도 안성시 미양면 제2공단1길 92",
+    "inspStart": "2026-05-26",
+    "inspEnd": "2026-05-29",
+    "regDate": "2026-09-14",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1Q2TqD05yGj",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "무균-일반제제-주사제(주사제)"
+    ],
+    "sterile": "무균"
+  },
+  {
+    "docId": "1Q2TqD05w-H",
+    "seq": 3,
+    "prePost": "사후",
+    "type": "원료(단일)",
+    "country": "대한민국",
+    "site": "엠에프씨주식회사",
+    "address": "경기도 화성시 만세구 마도면 청원산단7길 35",
+    "inspStart": "2026-05-11",
+    "inspEnd": "2026-05-13",
+    "regDate": "2026-09-14",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1Q2TqD05w-H",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제-합성(합성)"
+    ],
+    "sterile": "비무균"
+  },
+  {
+    "docId": "1Q2TqD05rgw",
+    "seq": 4,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "보란파마",
+    "address": "경기도 평택시 청북읍 고렴산단로 121",
+    "inspStart": "2026-03-30",
+    "inspEnd": "2026-04-02",
+    "regDate": "2026-09-14",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1Q2TqD05rgw",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "무균-일반제제-주사제(주사제)",
+      "생물-항독소-주사제(동결건조주사제)"
+    ],
+    "sterile": "무균"
+  },
+  {
+    "docId": "1Q2TqD05pzy",
+    "seq": 5,
+    "prePost": "사후",
+    "type": "완제(단일)",
+    "country": "대한민국",
+    "site": "삼덕가스공업(주)",
+    "address": "경기도 김포시 조리미로 14-1",
+    "inspStart": "2026-07-01",
+    "inspEnd": "2026-07-01",
+    "regDate": "2026-09-14",
+    "file": null,
+    "downUrl": "https://nedrug.mfds.go.kr/cmn/edms/down/1Q2TqD05pzy",
+    "ext": "pdf",
+    "hasText": true,
+    "forms": [
+      "비무균-일반제제(의료용고압가스)-가스제(의료용 고압가스)"
+    ],
+    "sterile": "비무균"
+  },
+  {
     "docId": "1Q1X48wtmJ0",
-    "seq": 11,
+    "seq": 16,
     "prePost": "사후",
     "type": "완제(단일)",
     "country": "대한민국",
