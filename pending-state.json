@@ -24,8 +24,48 @@
       "firstSeen": "2026-09-14T12:18:42.795Z",
       "site": "삼덕가스공업(주)",
       "regDate": "2026-09-14"
+    },
+    "1Q2aMMjWSti": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "FAREVA Amboise",
+      "regDate": "2026-09-15"
+    },
+    "1Q2aMMjWRl3": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "Abbott Biologicals B.V.",
+      "regDate": "2026-09-15"
+    },
+    "1Q2aMMjWPTs": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "McNeil Consumer Healthcare",
+      "regDate": "2026-09-15"
+    },
+    "1Q2a5UEfm7A": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "Liaoning Daewoong Pharmaceutical Co., Ltd.",
+      "regDate": "2026-09-15"
+    },
+    "1Q2a5UEfksV": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "Encube Ethicals Private Limited",
+      "regDate": "2026-09-15"
+    },
+    "1Q2a5UEfjK2": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "Otsuka Pharmaceutical Co., Ltd. Tokushima Wajiki Factory",
+      "regDate": "2026-09-15"
+    },
+    "1Q2a5UEfhl1": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "Janssen-Ortho LLC",
+      "regDate": "2026-09-15"
+    },
+    "1Q2aMMjWO2f": {
+      "firstSeen": "2026-09-15T11:26:35.465Z",
+      "site": "Siegfried El Masnou, S.A.",
+      "regDate": "2026-09-15"
     }
   },
   "lastWarnAt": "2026-09-06T08:33:55.697Z",
-  "lastFetchOkAt": "2026-09-14T19:07:59.663Z"
+  "lastFetchOkAt": "2026-09-15T11:26:35.465Z"
 }
