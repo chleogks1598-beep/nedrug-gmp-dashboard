@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260177/2",
+    "infoNo": "20260177",
+    "infoClassCode": "2",
+    "title": "리팜피신 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-09-15",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260177&infoClassCode=2"
+  },
+  {
     "key": "20260193/2",
     "infoNo": "20260193",
     "infoClassCode": "2",
@@ -10,18 +22,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-09-14",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260193&infoClassCode=2"
-  },
-  {
-    "key": "20260177/2",
-    "infoNo": "20260177",
-    "infoClassCode": "2",
-    "title": "리팜피신 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-09-14",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260177&infoClassCode=2"
   },
   {
     "key": "20260168/2",
