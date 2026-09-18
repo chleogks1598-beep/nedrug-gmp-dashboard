@@ -26734,7 +26734,8 @@
    "office": "부산청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-09-18"
  },
  {
   "key": "202302181",
@@ -26761,7 +26762,8 @@
    "office": "대구청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-09-18"
  },
  {
   "key": "202302180",
