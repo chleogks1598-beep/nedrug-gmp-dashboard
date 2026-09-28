@@ -15,18 +15,22 @@ cd /d "%~dp0"
 set RC=0
 
 node scripts\run-local-update.mjs
-set E=%ERRORLEVEL%
-if not "%E%"=="0" call :fail gmp %E%
+call :result gmp %ERRORLEVEL%
 
 node scripts\run-safety-update.mjs
-set E=%ERRORLEVEL%
-if not "%E%"=="0" call :fail safety %E%
+call :result safety %ERRORLEVEL%
 
 exit /b %RC%
 
-:fail
+:result
 REM Leave a marker in local-update.log. Without this a crashed or killed stage
 REM leaves no trace at all -- the log just stops, with no "=== end ===" line.
-set RC=1
-node scripts\log-fail.mjs %1 %2
+REM log-fail.mjs also counts consecutive failures and pops a Windows toast at 3
+REM (git conflict kept every run failing for 11 days in 2026-09, unnoticed).
+if "%2"=="0" (
+  node scripts\log-fail.mjs ok %1
+) else (
+  set RC=1
+  node scripts\log-fail.mjs %1 %2
+)
 goto :eof

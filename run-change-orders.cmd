@@ -18,9 +18,13 @@ cd /d "%~dp0"
 
 node scripts\run-change-orders-update.mjs
 set E=%ERRORLEVEL%
-if "%E%"=="0" exit /b 0
+if "%E%"=="0" (
+  node scripts\log-fail.mjs ok change-orders
+  exit /b 0
+)
 
 REM Leave a marker in local-update.log. Without this a crashed or killed run
 REM leaves no trace at all -- the log just stops, with no result line.
+REM log-fail.mjs also counts consecutive failures and pops a Windows toast at 3.
 node scripts\log-fail.mjs change-orders %E%
 exit /b 1

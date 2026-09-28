@@ -31,3 +31,5 @@ archive-failed.json
 .conflict/
 # 두 스케줄 작업이 겹쳐 돌지 않게 하는 실행 잠금 파일 (run-hidden.vbs)
 .run-lock
+# 단계별 연속 실패 횟수 — 3회면 Windows 알림 (scripts/log-fail.mjs)
+.fail-streak.json

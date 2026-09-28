@@ -96,7 +96,8 @@ const warnBox = msg => `<div style="background:#fdece2;border-left:4px solid #c2
 const blocks = [];
 if (stale.length > 0 && warnDue) blocks.push(warnBox(
   `<b>${stale.length}건이 ${STALE_HOURS}시간 넘게 대시보드에 반영되지 않았습니다.</b><br>`
-  + `매일 08시 지적사항 추출·반영 단계가 동작하지 않고 있을 가능성이 높습니다.`));
+  + `지적사항 추출은 로컬 PC 작업스케줄러(NedrugGmpUpdate, 2시간마다)가 합니다. `
+  + `PC가 꺼져 있었거나 그 작업이 실패하고 있을 가능성이 높습니다 — local-update.log 의 "!!" 줄과 git status 를 확인하세요.`));
 if (fetchStale && warnDue) blocks.push(warnBox(
   `<b>${Math.floor(hoursSince(state.lastFetchOkAt))}시간째 식약처 목록 조회에 성공하지 못했습니다.</b><br>`
   + `식약처가 클라우드 IP를 차단하고 있을 수 있습니다. 신규 공개 건을 놓치고 있을 수 있으니 확인이 필요합니다.`));
