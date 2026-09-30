@@ -1,17 +1,5 @@
 [
   {
-    "key": "20260188/3",
-    "infoNo": "20260188",
-    "infoClassCode": "3",
-    "title": "아자티오프린 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-09-30",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260188&infoClassCode=3"
-  },
-  {
     "key": "20260180/3",
     "infoNo": "20260180",
     "infoClassCode": "3",
@@ -22,6 +10,30 @@
     "stage": "사전예고",
     "regDate": "2026-09-30",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260180&infoClassCode=3"
+  },
+  {
+    "key": "20250260/4",
+    "infoNo": "20250260",
+    "infoClassCode": "4",
+    "title": "리신염산염, 아르기닌염산염 성분제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2026-09-08",
+    "stage": "변경명령",
+    "regDate": "2026-09-30",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20250260&infoClassCode=4"
+  },
+  {
+    "key": "20260188/3",
+    "infoNo": "20260188",
+    "infoClassCode": "3",
+    "title": "아자티오프린 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-09-30",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260188&infoClassCode=3"
   },
   {
     "key": "20260198/3",
@@ -84,6 +96,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260160&infoClassCode=4"
   },
   {
+    "key": "20260210/2",
+    "infoNo": "20260210",
+    "infoClassCode": "2",
+    "title": "클로자핀 성분 제제",
+    "type": "",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-09-23",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260210&infoClassCode=2"
+  },
+  {
     "key": "20260176/4",
     "infoNo": "20260176",
     "infoClassCode": "4",
@@ -106,18 +130,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-09-23",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260209&infoClassCode=2"
-  },
-  {
-    "key": "20260210/2",
-    "infoNo": "20260210",
-    "infoClassCode": "2",
-    "title": "클로자핀 성분 제제",
-    "type": "",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-09-23",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260210&infoClassCode=2"
   },
   {
     "key": "20260153/2",
@@ -262,18 +274,6 @@
     "stage": "변경명령",
     "regDate": "2026-09-10",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260158&infoClassCode=4"
-  },
-  {
-    "key": "20250260/4",
-    "infoNo": "20250260",
-    "infoClassCode": "4",
-    "title": "리신염산염, 아르기닌염산염 성분제제",
-    "type": "신약 등의 재심사",
-    "status": "종결",
-    "reflectDate": "2026-09-08",
-    "stage": "변경명령",
-    "regDate": "2026-09-08",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20250260&infoClassCode=4"
   },
   {
     "key": "20260154/2",
