@@ -3462,5 +3462,59 @@
  "1Q3cb-o8XTo": {
   "forms": [],
   "sterile": "무균"
+ },
+ "1Q3s5BFxnaP": {
+  "forms": [
+   "무균-세팔로스포린제제-합성"
+  ],
+  "sterile": "무균"
+ },
+ "1Q3s5BFxlWC": {
+  "forms": [
+   "비무균-일반제제-내용고형제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Q3s5BFxiYQ": {
+  "forms": [
+   "무균-일반제제-주사제"
+  ],
+  "sterile": "무균"
+ },
+ "1Q3s5BFxgUQ": {
+  "forms": [
+   "무균-일반제제-주사제"
+  ],
+  "sterile": "무균"
+ },
+ "1Q3s5BFxWCT": {
+  "forms": [
+   "비무균-일반제제-발효"
+  ],
+  "sterile": "비무균"
+ },
+ "1Q3s5BFxQPY": {
+  "forms": [
+   "비무균-일반제제-그 밖의 액제"
+  ],
+  "sterile": "비무균"
+ },
+ "1Q3s5BFxL03": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1Q3s5BFxIyg": {
+  "forms": [
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균"
+ },
+ "1Q3s5BFxGX3": {
+  "forms": [
+   "무균-일반제제-주사제"
+  ],
+  "sterile": "무균"
  }
 }
