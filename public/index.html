@@ -312,6 +312,8 @@ const TAXONOMY=[
   {label:"컴퓨터시스템",kw:["컴퓨터","전산","시스템"]},
   {label:"위생·복장",kw:["위생","복장","가운","갱의","손소독","마스크"]},
 ];
+// 지적 건수: 원문에 「분류: 중요 N건, 기타 N건」이 있으면 그 공식 건수, 없으면(신양식) 추출 항목 수
+const defN=x=>x.officialCount!=null?x.officialCount:(x.defCount||0);
 const normLaw=s=>(s||"").replace(/의약품\s*등의\s*안전에\s*관한\s*규칙/g,"").replace(/[가-힣]목/g,"").replace(/\s|제|호|[\[\]]/g,"");
 function lawDisplay(s){
   s=s||"";
@@ -476,7 +478,8 @@ function apply(){
   });
   view.sort((a,b)=>{
     let av=a[sortKey], bv=b[sortKey];
-    if(sortKey==="seq"||sortKey==="defCount"){av=+av;bv=+bv; return (av-bv)*sortDir;}
+    if(sortKey==="defCount"){return (defN(a)-defN(b))*sortDir;}
+    if(sortKey==="seq"){av=+av;bv=+bv; return (av-bv)*sortDir;}
     av=(av==null?"":String(av)); bv=(bv==null?"":String(bv));
     return av.localeCompare(bv,"ko")*sortDir;
   });
@@ -495,7 +498,7 @@ function renderTable(){
   const q=curQ.toLowerCase();
   tb.innerHTML=rows.map(x=>{
     const badge=(x.unresolved?`<span class="badge review" title="원문이 자동 판독되지 않아 지적(보완)사항을 아직 확인하지 못했습니다. 적합 판정이 아닙니다.">확인중</span>`
-        :x.defCount>0?`<span class="badge warn">지적 ${x.defCount}</span>`:`<span class="badge ok">적합</span>`)
+        :x.defCount>0?`<span class="badge warn">지적 ${defN(x)}</span>`:`<span class="badge ok">적합</span>`)
       + (x.delisted?` <span class="badge gone" title="식약처 목록에서 내려갔지만 이 대시보드에 보존된 자료입니다${x.delistedAt?" (감지 "+esc(x.delistedAt)+")":""}">공개종료</span>`:"");
     // 검색어가 지적사항 본문에 걸린 행은 펼친 채로 보여준다 — 어디에 걸렸는지 바로 보이도록
     const hits=q?(x.deficiencies||[]).filter(d=>defHay(d).includes(q)).length:0;
@@ -510,7 +513,7 @@ function renderTable(){
       <td>${hl(x.country)}</td>
       <td class="site">${hl(x.site)}${chip}<div class="addr">${hl(x.address)}</div>${forms}</td>
       <td>${badge}</td>
-      <td class="num">${x.defCount||0}</td>
+      <td class="num">${defN(x)}${x.officialCount!=null&&x.officialCount!==x.defCount?`<div class="addr" title="원문 공식 건수와 아래 세부 항목 수가 다릅니다">항목 ${x.defCount}</div>`:""}</td>
     </tr>
     <tr class="detail" data-for="${esc(x.docId)}" style="display:${open?"table-row":"none"}"><td colspan="6"><div class="inner">${detailHtml(x)}</div></td></tr>`;
   }).join("");
@@ -532,6 +535,10 @@ function detailHtml(x){
     h+=`<div class="metaline"><b>제형</b> — ${x.forms.map(f=>`<span class="fchip">${hl(f)}</span>`).join(" ")}</div>`;
   } else {
     h+=`<div class="metaline"><b>제형</b> — <span class="fchip na">원본에 제형 표 없음${x.sterile?" ("+esc(x.sterile)+" 표기)":""}</span></div>`;
+  }
+  if(x.officialClass){
+    const gap=x.officialCount!==x.defCount;
+    h+=`<div class="metaline"><b>원문 분류</b> — ${esc(x.officialClass)} (공식 ${x.officialCount}건)${gap?`<span style="color:var(--ink-3)"> · 아래 목록은 ${x.defCount}개 항목 — 원문 표가 한 칸에 여러 '-' 항목을 묶었거나 일부가 가림 처리돼 건수가 다릅니다</span>`:""}</div>`;
   }
   if((x.deficiencies||[]).length){
     h+=`<table class="deftable"><thead><tr><th>분야</th><th>구분</th><th>근거법령</th><th>지적(보완)사항 요약</th><th>비고</th></tr></thead><tbody>`;

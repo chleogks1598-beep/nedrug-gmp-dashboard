@@ -1424,7 +1424,9 @@
  },
  "1PgKV4kaA7F": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1Pf-Zs-6Ot-": {
   "forms": [],
@@ -1440,11 +1442,15 @@
  },
  "1Pf-Zs-6Lvu": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1Pf-Zs-6LAw": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1PfxOD7pkJ8": {
   "forms": [],
@@ -1456,7 +1462,9 @@
  },
  "1PfsZcD03ye": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PfsPXZr_r9": {
   "forms": [],
@@ -1521,25 +1529,35 @@
    "합성-비무균-카바페넴제제-합성",
    "그밖의방법-무균-카바페넴제제-혼합"
   ],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PW-FqEJJ2V": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 9건",
+  "clsCount": 9
  },
  "1PW-FqEJFH-": {
   "forms": [
    "완제의약품-비무균-일반제제-내용고형제(정제, 캡슐제)"
   ],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PW-FqEJEdC": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PW-FqEJCzX": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1PW-FqEJBcH": {
   "forms": [],
@@ -1549,11 +1567,15 @@
   "forms": [
    "완제의약품-비무균-일반제제-내용고형제(정제, 캡슐제, 과립제, 시럽제)"
   ],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 8건",
+  "clsCount": 8
  },
  "1PW-FqEJ9Wr": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PWNLMrQRnc": {
   "forms": [],
@@ -1597,7 +1619,9 @@
  },
  "1PTx7jl8l0f": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1PSKCQsShPp": {
   "forms": [],
@@ -1613,11 +1637,15 @@
  },
  "1PSB7mIrDuh": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PSB7mIrCm3": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PSB7mIrBvm": {
   "forms": [],
@@ -1625,15 +1653,21 @@
  },
  "1PSAEWUIHF8": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1PSAEWUIGG8": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 3건, 기타 15건",
+  "clsCount": 18
  },
  "1PSA_cBv3h5": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1PSA_cBv2Wx": {
   "forms": [],
@@ -1641,27 +1675,39 @@
  },
  "1PSA_cBv12c": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1PSA_cBv0De": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 14건",
+  "clsCount": 14
  },
  "1PSAqeFt_tH": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1PSAqeFtzYl": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1PRDQanj9m_": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PRDQanj8F2": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PQeOvGre9G": {
   "forms": [],
@@ -1697,27 +1743,39 @@
  },
  "1PKvbm_wh5J": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 11건",
+  "clsCount": 11
  },
  "1PKsyyZ23XK": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "중요 1건, 기타 10건",
+  "clsCount": 11
  },
  "1PKsyyZ22ll": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PKsqEVbahj": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1PKsqEVbZtL": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1PKsqEVbYoh": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 1건, 기타 7건",
+  "clsCount": 8
  },
  "1PKXWh0scdq": {
   "forms": [],
@@ -1741,7 +1799,9 @@
  },
  "1PKHYOW0WAq": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1PKHYOW0Qjx": {
   "forms": [],
@@ -1757,7 +1817,9 @@
  },
  "1PJjU_9GcLk": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1PJjU_9GcKZ": {
   "forms": [],
@@ -1777,7 +1839,9 @@
  },
  "1PJjU_9GcIS": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1PJjU_9GcI7": {
   "forms": [],
@@ -1785,7 +1849,9 @@
  },
  "1PJjU_9GcHr": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1PJjU_9GcDO": {
   "forms": [],
@@ -1821,7 +1887,9 @@
  },
  "1PJjU_9GEGT": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1PJjU_9GE53": {
   "forms": [],
@@ -2061,7 +2129,9 @@
  },
  "1PHRTWC2JuO": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1PHRTWC2JpT": {
   "forms": [],
@@ -2161,7 +2231,9 @@
  },
  "1PGR8fQk7Ed": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1PFBK8czYYa": {
   "forms": [],
@@ -2181,7 +2253,9 @@
  },
  "1PFCoyOW331": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PFC9VqyjKB": {
   "forms": [],
@@ -2201,11 +2275,15 @@
  },
  "1PENb1hWwzJ": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1PENb1hWvv_": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1PENb1hWtWX": {
   "forms": [],
@@ -2213,7 +2291,9 @@
  },
  "1PENb1hWsfM": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PEFzUr7rNv": {
   "forms": [],
@@ -2233,7 +2313,9 @@
  },
  "1PEFzUr7o0Q": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 9건",
+  "clsCount": 9
  },
  "1PEFzUr7n6A": {
   "forms": [],
@@ -2241,7 +2323,9 @@
  },
  "1PEFzUr7WkD": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1PEFzUr7V-p": {
   "forms": [],
@@ -2249,23 +2333,33 @@
  },
  "1PDrTYgnSOz": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1PDrTYgnSOM": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1PDrTYgnSML": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 11건",
+  "clsCount": 11
  },
  "1PDrTYgnSLV": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 1건, 기타 7건",
+  "clsCount": 8
  },
  "1PDrTYgnSEx": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 3건, 기타 20건",
+  "clsCount": 23
  },
  "1PBQkSg5cTw": {
   "forms": [],
@@ -2295,7 +2389,9 @@
  },
  "1PAbJvVXIKt": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1PAbJvVXIKY": {
   "forms": [],
@@ -2303,7 +2399,9 @@
  },
  "1PAbJvVXIKD": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 11건",
+  "clsCount": 11
  },
  "1P9sMKKKqAx": {
   "forms": [
@@ -2331,7 +2429,9 @@
  },
  "1P9CSnreUw9": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1P9CSnreUtX": {
   "forms": [],
@@ -2339,7 +2439,9 @@
  },
  "1P9CSnreUmC": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 1건",
+  "clsCount": 1
  },
  "1P9CSnreUiD": {
   "forms": [],
@@ -2355,11 +2457,15 @@
  },
  "1P8B4CKolXJ": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 13건",
+  "clsCount": 13
  },
  "1P8B4CKolSj": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "중요 4건, 기타 12건",
+  "clsCount": 16
  },
  "1P8B4CKolKl": {
   "forms": [],
@@ -2367,23 +2473,33 @@
  },
  "1P8B4CKolDv": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 8건",
+  "clsCount": 8
  },
  "1P761xgBEaX": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1P761xgBD0s": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1P761xgBAUc": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1P761xgB8rs": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1P41wm3_fct": {
   "forms": [],
@@ -2391,7 +2507,9 @@
  },
  "1P41wm3_ePP": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1P41wm3_dX2": {
   "forms": [],
@@ -2403,7 +2521,9 @@
  },
  "1P41wm3_bah": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "중요 1건, 기타 4건",
+  "clsCount": 5
  },
  "1P41wm3_aHg": {
   "forms": [],
@@ -2419,7 +2539,9 @@
  },
  "1P2hKsqMr6T": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1P2V3qgMQEi": {
   "forms": [],
@@ -2439,19 +2561,27 @@
  },
  "1P2UhIKFV3l": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 8건",
+  "clsCount": 8
  },
  "1P2UhIKFUeg": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1P2UhIKFTkO": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 10건",
+  "clsCount": 10
  },
  "1P2UhIKFTI6": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1P2UhIKFRbG": {
   "forms": [],
@@ -2459,19 +2589,27 @@
  },
  "1P2UhIKFR7h": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1P2UhIKFQcG": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 9건",
+  "clsCount": 9
  },
  "1P2UhIKFPxu": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1P1oYPFWrh0": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1P1j3miv_2P": {
   "forms": [],
@@ -2483,7 +2621,9 @@
  },
  "1P19k0H5g_Z": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1P19k0H5ehL": {
   "forms": [],
@@ -2491,7 +2631,9 @@
  },
  "1P19k0H5di3": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1P19k0H5dFG": {
   "forms": [],
@@ -2523,35 +2665,51 @@
  },
  "1P0r6voXjQL": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 1건, 기타 9건",
+  "clsCount": 10
  },
  "1P0r6voXjOK": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1P0r6voXjL2": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 4건, 기타 5건",
+  "clsCount": 9
  },
  "1P0r6voXjK9": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 1건, 기타 13건",
+  "clsCount": 14
  },
  "1P0r6voXjJG": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1P0r6voXjI5": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 11건",
+  "clsCount": 11
  },
  "1P0r6voXjFi": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 6건",
+  "clsCount": 6
  },
  "1OyuoHKrLHf": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 2건, 기타 7건",
+  "clsCount": 9
  },
  "1OyuoHKrLHK": {
   "forms": [],
@@ -2559,19 +2717,27 @@
  },
  "1OyuoHKrLGR": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 5건",
+  "clsCount": 5
  },
  "1OyuoHKrLF_": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1OyuoHKrLE_": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 1건, 기타 19건",
+  "clsCount": 20
  },
  "1OyuoHKrL9t": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 8건",
+  "clsCount": 8
  },
  "1OyuoHKrL9G": {
   "forms": [],
@@ -2579,7 +2745,9 @@
  },
  "1OyuoHKrL8i": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1OyiGZ6FzjJ": {
   "forms": [],
@@ -2591,15 +2759,21 @@
  },
  "1OyiGZ6Fr4f": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 9건",
+  "clsCount": 9
  },
  "1OyiGZ6Fpy9": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 4건",
+  "clsCount": 4
  },
  "1OyiGZ6FoW5": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "중요 1건, 기타 2건",
+  "clsCount": 3
  },
  "1OyiGZ6FnR0": {
   "forms": [],
@@ -2607,7 +2781,9 @@
  },
  "1OyiGZ6Fe2N": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "중요 2건, 기타 6건",
+  "clsCount": 8
  },
  "1OwUAfH9aJN": {
   "forms": [],
@@ -2619,15 +2795,21 @@
  },
  "1OvxT5W4mTn": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "중요 2건, 기타 10건",
+  "clsCount": 12
  },
  "1OvvP7RbIJX": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 8건",
+  "clsCount": 8
  },
  "1OvvP7RbHPB": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1OvvP7RbGD_": {
   "forms": [],
@@ -2635,7 +2817,9 @@
  },
  "1OvvP7RbDcq": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 12건",
+  "clsCount": 12
  },
  "1OtAeDkgPxM": {
   "forms": [],
@@ -2687,7 +2871,9 @@
  },
  "1OpiYHzC0DD": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1OpiJDMezkF": {
   "forms": [],
@@ -2695,7 +2881,9 @@
  },
  "1OpiJDMexUd": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1OpiJDMewtQ": {
   "forms": [],
@@ -2739,7 +2927,9 @@
  },
  "1OmyYmOOkIs": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 7건",
+  "clsCount": 7
  },
  "1OhsJNgvcxu": {
   "forms": [],
@@ -2811,7 +3001,9 @@
  },
  "1OeRELoVYV1": {
   "forms": [],
-  "sterile": ""
+  "sterile": "",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1OeRELoVXM9": {
   "forms": [],
@@ -2835,7 +3027,9 @@
  },
  "1OdylyCyiqO": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1OdSbg17pMH": {
   "forms": [],
@@ -2847,11 +3041,15 @@
  },
  "1Oa0PkES4Nt": {
   "forms": [],
-  "sterile": "무균"
+  "sterile": "무균",
+  "cls": "기타 2건",
+  "clsCount": 2
  },
  "1Oa0PkES3cm": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1OZ-Ie6Rxi2": {
   "forms": [],
@@ -2887,7 +3085,9 @@
  },
  "1OWEpCP2A47": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 3건",
+  "clsCount": 3
  },
  "1OWEpCP2A0i": {
   "forms": [],
@@ -2903,7 +3103,9 @@
  },
  "1OSntC_QwSP": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1OSntC_QwCO": {
   "forms": [],
@@ -3059,7 +3261,9 @@
  },
  "1OKpU3II00n": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1OKmP66JvEX": {
   "forms": [],
@@ -3071,7 +3275,9 @@
  },
  "1OJ2hqQvU-X": {
   "forms": [],
-  "sterile": "비무균"
+  "sterile": "비무균",
+  "cls": "기타 1건",
+  "clsCount": 1
  },
  "1OJ2hqQvU_w": {
   "forms": [],

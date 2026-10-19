@@ -47,6 +47,8 @@ function main() {
       .map((f) => [f.replace(/\.(pdf|hwpx)$/i, ""), f]),
   );
   const prevForms = new Map(prev.map(r => [r.docId, { forms: r.forms || [], sterile: r.sterile || "" }]));
+  // 원문 공식 지적 건수("중요 1건, 기타 19건"): forms.json(cls) 우선, 없으면 직전 data.json 값 유지
+  const prevCls = new Map(prev.map(r => [r.docId, { cls: r.officialClass || "", count: r.officialCount ?? null }]));
 
   // ★ 추출 없는 신규 건은 절대 통과시키지 않는다.
   //   목록에 있는데 extracted 에도 직전 data.json 에도 없으면 아래에서 defs=[] 가 되어
@@ -83,6 +85,10 @@ function main() {
       inspStart: r.inspStart, inspEnd: r.inspEnd, regDate: r.regDate,
       forms: fi.forms || [], sterile: fi.sterile || "",
       archiveFile: archived.get(r.docId) || null,
+      ...(() => {
+        const c = formsMap[r.docId]?.cls ? { cls: formsMap[r.docId].cls, count: formsMap[r.docId].clsCount } : prevCls.get(r.docId);
+        return c?.cls ? { officialClass: c.cls, officialCount: c.count } : {};
+      })(),
       result: hold ? "확인중" : (defs.length > 0 ? "지적사항 있음" : "적합"),
       defCount: defs.length, deficiencies: defs,
       // 확인중 건에만 붙는다. 이 표식이 있으면 다음 실행의 prevDef 에서 제외돼

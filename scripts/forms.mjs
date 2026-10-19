@@ -157,7 +157,9 @@ export function extractFormInfo(text) {
     const m = (text || "").match(/(비무균|무균)\s*[\/·]\s*[가-힣A-Za-z]/);
     if (m) sterile = m[1];
   }
-  return { forms, sterile };
+  // 원문 공식 지적 건수도 같은 본문에서 함께 뽑아 forms.json 에 실어 보낸다(merge 가 레코드로 옮김)
+  const { cls, count } = extractOfficialClass(text);
+  return { forms, sterile, cls, clsCount: count };
 }
 
 // 제형 문자열에서 필터용 축(무균여부 / 제제유형 / 제형)을 뽑는다
@@ -177,4 +179,18 @@ export function formFacets(forms) {
     }
   }
   return { sterile: [...sterile], kind: [...kind], shape: [...shape] };
+}
+
+// 원문의 공식 지적 건수: "지적(보완)사항 분류 : 중요 3건, 기타 20건"
+// 대시보드 항목 수(defCount)는 표의 '-' 하위 항목을 쪼개거나 가림 처리된 행을 묶어 세므로
+// 원문 건수와 다를 수 있다 — 공식 건수는 이 줄을 그대로 따로 보관한다.
+// 분류 줄이 없거나 가림 처리(*****)면 { cls: "" , count: null }.
+export function extractOfficialClass(text) {
+  const t = (text || "").replace(/\s+/g, " ");
+  // "기타(Other) 6건" 처럼 영문을 병기한 양식도 있다
+  const G = String.raw`(중대|중요|기타)\s*(?:\([A-Za-z]+\))?\s*(\d+)\s*건`;
+  const m = t.match(new RegExp(String.raw`사항\s*분류\s*:\s*((?:${G}\s*,?\s*)+)`));
+  if (!m) return { cls: "", count: null };
+  const parts = [...m[1].matchAll(new RegExp(G, "g"))].map((x) => [x[1], +x[2]]);
+  return { cls: parts.map(([k, n]) => `${k} ${n}건`).join(", "), count: parts.reduce((a, [, n]) => a + n, 0) };
 }
