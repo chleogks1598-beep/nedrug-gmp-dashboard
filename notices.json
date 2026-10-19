@@ -1,6 +1,28 @@
 {
  "items": [
   {
+   "key": "m_74/45242",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45242",
+   "title": "검사명령 대상 수입식품등 재지정 알림",
+   "date": "2026-10-19",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45242",
+   "kw": [],
+   "firstSeen": "2026-10-19T08:30:15.314Z"
+  },
+  {
+   "key": "m_74/45241",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45241",
+   "title": "백신안전기술지원센터 제3차 기간제 직원 채용 공고",
+   "date": "2026-10-19",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45241",
+   "kw": [],
+   "firstSeen": "2026-10-19T08:30:16.585Z"
+  },
+  {
    "key": "m_74/45240",
    "board": "m_74",
    "boardName": "식약처 공지사항",
