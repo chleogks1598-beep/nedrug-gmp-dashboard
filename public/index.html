@@ -312,7 +312,7 @@ const TAXONOMY=[
   {label:"컴퓨터시스템",kw:["컴퓨터","전산","시스템"]},
   {label:"위생·복장",kw:["위생","복장","가운","갱의","손소독","마스크"]},
 ];
-const normLaw=s=>(s||"").replace(/[가-힣]목/g,"").replace(/\s|제|호|[\[\]]/g,"");
+const normLaw=s=>(s||"").replace(/의약품\s*등의\s*안전에\s*관한\s*규칙/g,"").replace(/[가-힣]목/g,"").replace(/\s|제|호|[\[\]]/g,"");
 function lawDisplay(s){
   s=s||"";
   const b=s.match(/별표\s*([0-9의]+)/), c=s.match(/([0-9]+(?:\.[0-9]+)+)\s*호?/) || s.match(/제\s*([0-9]+)\s*호/);

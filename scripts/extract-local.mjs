@@ -122,7 +122,15 @@ async function main() {
     const txt = path.join(PENDING, `${rec.docId}.txt`);
     try {
       if (!fs.existsSync(txt)) throw new Error(`본문 파일 없음: ${WORK_DIR}/${rec.docId}.txt`);
-      const defs = parseArray(await runClaude(fs.readFileSync(txt, "utf8")));
+      const body = fs.readFileSync(txt, "utf8");
+      const defs = parseArray(await runClaude(body));
+      // 본문이 '지적사항 있음' 이라고 하는데 표를 못 읽어 [] 가 나오면 '적합'으로 뒤바뀐다
+      // (2026-10-19 Remedica 등 48건 사고). 그런 건은 성공으로 치지 않는다.
+      // 구 양식은 "평가결과 : 보완 / 지적사항 분류 : 기타 9건" 처럼 '있음' 대신 건수만 적는다.
+      if (!defs.length && (/지적\s*(\(\s*보완\s*\)\s*)?사항\s*있음/.test(body) ||
+          /사항\s*분류\s*:\s*(중대|중요|기타)\s*[1-9]/.test(body))) {
+        throw new Error("본문은 '지적사항 있음'인데 추출 결과가 0건 — 표 본문을 못 읽은 것으로 보임(사람 확인 필요)");
+      }
       out.push({ docId: rec.docId, deficiencies: defs });
       console.log(`  ${rec.docId} ${rec.site} → 지적 ${defs.length}건`);
     } catch (e) {

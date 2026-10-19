@@ -8,6 +8,9 @@
 // 형태로 2026-08-10 신규 1건(중부산업가스)에서 파이프라인이 멈췄다.
 // PATH 에 없으면 알려진 설치 위치를 직접 찾아본다.
 import fs from "fs";
+import os from "os";
+import path from "path";
+import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
 
 // 우선순위: 환경변수 > PATH > 알려진 설치 위치
@@ -41,9 +44,51 @@ export function resolvePdftotext() {
   return (resolved = null);
 }
 
+// ★ pdftotext 는 일부 PDF(글꼴 매핑이 없는 한글)에서 한글만 통째로 빠뜨리고 **오류 없이**
+//   숫자·라틴 글자만 돌려준다. 그러면 LLM 이 빈 지적사항 표를 보고 [] 를 내서 '적합'으로
+//   공개된다 — 2026-10-19 Remedica Ltd(실제 기타 6건) 신고로 드러났고, 전수 대조 결과
+//   48건이 이렇게 '적합'으로 잘못 나가 있었다.
+//   그래서 한글이 거의 없으면 pypdf 로 다시 읽고, 그래도 없으면 null(=사람 확인)로 돌린다.
+const MIN_HANGUL = 30; // 결과서는 정상이면 한글이 수백 자 이상이다
+const countHangul = (t) => (t.match(/[가-힣]/g) || []).length;
+const PY_CANDIDATES = [
+  process.env.PYTHON,
+  path.join(os.homedir(), ".local", "python312", "python.exe"),
+  "python3",
+  "python",
+].filter(Boolean);
+
+function pypdfText(file) {
+  const script = path.join(path.dirname(fileURLToPath(import.meta.url)), "pypdf-text.py");
+  for (const py of PY_CANDIDATES) {
+    try {
+      return execFileSync(py, ["-I", script, file], {
+        encoding: "utf8",
+        maxBuffer: 64 * 1024 * 1024,
+        stdio: ["ignore", "pipe", "ignore"],
+      });
+    } catch (e) {
+      // 이 파이썬이 없거나 pypdf 가 없음 → 다음 후보
+    }
+  }
+  return null;
+}
+
 // 성공하면 텍스트, 실패하면 null.
 // 호출부는 null 을 "본문 없음(hasText:false)" 으로 다루고 사람 확인을 요구한다.
 export function pdfToText(file) {
+  const t = pdftotextRaw(file);
+  if (t != null && countHangul(t) >= MIN_HANGUL) return t;
+  const alt = pypdfText(file);
+  if (alt != null && countHangul(alt) >= MIN_HANGUL) {
+    console.error(`PDFTEXT_FALLBACK: pdftotext 한글 누락 → pypdf 로 대체: ${file}`);
+    return alt;
+  }
+  console.error(`PDFTEXT_NO_HANGUL: 한글을 읽지 못함(사람 확인 필요): ${file}`);
+  return null;
+}
+
+function pdftotextRaw(file) {
   const exe = resolvePdftotext();
   if (!exe) {
     console.error(
