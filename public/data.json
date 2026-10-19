@@ -14955,6 +14955,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PgKV4kaA7F.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -14972,9 +14974,7 @@
         "summary": "최신의 국내 변경허가사항을 반영하여 표기작업을 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 300,
@@ -15059,6 +15059,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1Pf-Zs-6Lvu.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -15104,9 +15106,7 @@
         "summary": "반제품 보관 관리를 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 304,
@@ -15122,6 +15122,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1Pf-Zs-6LAw.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -15132,9 +15134,7 @@
         "summary": "완제의약품의 pH 시험 적합 기준을 해외제조소와 일치시킬 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 305,
@@ -15186,6 +15186,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PfsZcD03ye.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -15210,9 +15212,7 @@
         "summary": "시험기록 관련 데이터 완전성 위험 평가를 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 308,
@@ -15501,14 +15501,14 @@
         "field": "**",
         "gubun": "**",
         "law": "*********** ***************",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "**",
         "gubun": "**",
         "law": "*********** ***************",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
     ]
@@ -15640,6 +15640,8 @@
     ],
     "sterile": "",
     "archiveFile": "1PW-FqEJKfs.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -15647,47 +15649,45 @@
         "field": "품질부서",
         "gubun": "기타",
         "law": "[별표 1의2] 2.2호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "건물 및 시설",
         "gubun": "기타",
         "law": "[별표 1의2] 제4호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "문서관리",
         "gubun": "기타",
         "law": "[별표 1의2] 제6.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조공정관리",
         "gubun": "기타",
         "law": "[별표 1의2] 제8.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험관리",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "밸리데이션",
         "gubun": "기타",
         "law": "[별표 1의2]",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 324,
@@ -15703,6 +15703,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PW-FqEJJ2V.pdf",
+    "officialClass": "기타 9건",
+    "officialCount": 9,
     "result": "지적사항 있음",
     "defCount": 13,
     "deficiencies": [
@@ -15797,9 +15799,7 @@
         "summary": "원료의 잔량 표기 및 절차를 개선할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 9건",
-    "officialCount": 9
+    ]
   },
   {
     "seq": 325,
@@ -15817,6 +15817,8 @@
     ],
     "sterile": "",
     "archiveFile": "1PW-FqEJFH-.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -15831,7 +15833,7 @@
         "field": "일탈관리",
         "gubun": "기타",
         "law": "[별표 1] 제3.3호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -15841,9 +15843,7 @@
         "summary": "검체 채취 및 참조검체 채취방법에 대한 대표성 검증 근거 또는 타당한 관리방안을 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 326,
@@ -15859,6 +15859,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PW-FqEJEdC.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -15883,9 +15885,7 @@
         "summary": "중간체 및 원료의약품을 일관되게 제조할 수 있도록 제조 공정 변수를 타당하게 설정하여 기준서에 반영하고 그 결과를 제출할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 327,
@@ -15901,6 +15901,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1PW-FqEJCzX.pdf",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -15925,9 +15927,7 @@
         "summary": "포장 지시 및 기록서를 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 328,
@@ -15963,6 +15963,8 @@
     ],
     "sterile": "",
     "archiveFile": "1PW-FqEJAGG.pdf",
+    "officialClass": "기타 8건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 8,
     "deficiencies": [
@@ -16022,9 +16024,7 @@
         "summary": "조제하여 사용하는 표준원액의 사용기간에 대한 타당한 근거자료를 마련할 것. 조제액 이송 시 사용되는 여과필터의 관리방안(세척 및 교체 주기 등)을 마련할 것. 컷라벨과 기타 인쇄된 표시자재의 보관 및 운반 시 혼동을 피하기 위한 관리방안을 마련할 것. 완제품 부적합 보관 구역에 대해 타당한 관리방안을 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 8건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 330,
@@ -16040,6 +16040,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PW-FqEJ9Wr.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 7,
     "deficiencies": [
@@ -16092,9 +16094,7 @@
         "summary": "반제품 보관기간 설정에 대한 근거자료를 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 331,
@@ -16371,6 +16371,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PTx7jl8l0f.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -16388,9 +16390,7 @@
         "summary": "주성분의 용기별 확인시험 생략 시 타당한 근거자료를 갖출 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 342,
@@ -16475,6 +16475,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSB7mIrDuh.hwpx",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -16499,9 +16501,7 @@
         "summary": "제품품질평가에 안정성시험 결과에 대한 검토, 시정 조치의 적절성에 대한 검토 등의 내용을 포함하여 작성할 수 있도록 개선할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 346,
@@ -16517,6 +16517,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PSB7mIrCm3.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -16531,14 +16533,14 @@
         "field": "제조공정 관리",
         "gubun": "기타",
         "law": "[별표 1의2] 8.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "공정 밸리데이션",
         "gubun": "기타",
         "law": "[별표 1의2] 제12.2호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -16559,12 +16561,10 @@
         "field": "재가공",
         "gubun": "기타",
         "law": "[별표 1의2] 제14.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 347,
@@ -16627,6 +16627,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSAEWUIHF8.pdf",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 9,
     "deficiencies": [
@@ -16693,9 +16695,7 @@
         "summary": "시험결과의 재구성이 어려운 시험항목을 적절히 관리할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 349,
@@ -16711,6 +16711,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSAEWUIGG8.pdf",
+    "officialClass": "중요 3건, 기타 15건",
+    "officialCount": 18,
     "result": "지적사항 있음",
     "defCount": 16,
     "deficiencies": [
@@ -16826,9 +16828,7 @@
         "summary": "원료의 보관조건과 기준서의 보관조건이 상이함.",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 3건, 기타 15건",
-    "officialCount": 18
+    ]
   },
   {
     "seq": 350,
@@ -16844,6 +16844,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSA_cBv3h5.hwpx",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -16889,9 +16891,7 @@
         "summary": "시액 조제기록을 확인할 수 있는 관리방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 351,
@@ -16940,6 +16940,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSA_cBv12c.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -16971,9 +16973,7 @@
         "summary": "날짜와 시간이 변경되는 시험 장비에 대해 관리 절차를 보완할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 353,
@@ -16989,6 +16989,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PSA_cBv0De.pdf",
+    "officialClass": "기타 14건",
+    "officialCount": 14,
     "result": "지적사항 있음",
     "defCount": 18,
     "deficiencies": [
@@ -17118,9 +17120,7 @@
         "summary": "완제품 보관 시, 제조단위별로 구분될 수 있도록 보관관리 방법을 개선할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 14건",
-    "officialCount": 14
+    ]
   },
   {
     "seq": 354,
@@ -17136,6 +17136,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSAqeFt_tH.pdf",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 7,
     "deficiencies": [
@@ -17188,9 +17190,7 @@
         "summary": "대해 원인을 조사하여 적절한 조치 및 재발방지 대책을 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 355,
@@ -17206,6 +17206,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PSAqeFtzYl.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -17223,9 +17225,7 @@
         "summary": "적절한 관리방안을 마련하여 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 356,
@@ -17241,6 +17241,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PRDQanj9m_.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 8,
     "deficiencies": [
@@ -17300,9 +17302,7 @@
         "summary": "특수작업자(이물선별자)의 미비한 교육결과에 대해 평가 결과를 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 357,
@@ -17318,6 +17318,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PRDQanj8F2.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -17342,9 +17344,7 @@
         "summary": "작업실의 개인 전화기 관리, 촬영장비 관리 방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 358,
@@ -17504,6 +17504,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PKvbm_wh5J.pdf",
+    "officialClass": "기타 11건",
+    "officialCount": 11,
     "result": "지적사항 있음",
     "defCount": 11,
     "deficiencies": [
@@ -17584,9 +17586,7 @@
         "summary": "적합 원료와 재시험기간이 만료된 원료를 구분하여 보관할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 11건",
-    "officialCount": 11
+    ]
   },
   {
     "seq": 367,
@@ -17602,6 +17602,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PKsyyZ23XK.pdf",
+    "officialClass": "중요 1건, 기타 10건",
+    "officialCount": 11,
     "result": "지적사항 있음",
     "defCount": 23,
     "deficiencies": [
@@ -17766,9 +17768,7 @@
         "summary": "기준서 제·개정 시, 관련 내용이 적용되는 직원에 대한 교육실시 및 기록을 확인할 수 있도록 관리 방안을 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 10건",
-    "officialCount": 11
+    ]
   },
   {
     "seq": 368,
@@ -17784,6 +17784,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PKsyyZ22ll.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -17829,9 +17831,7 @@
         "summary": "중요 시약에 대해 보관조건에 적절한 온도 및 습도가 유지되는지 정기적으로 점검할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 369,
@@ -17847,6 +17847,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PKsqEVbahj.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -17864,9 +17866,7 @@
         "summary": "발효 및 정제 공정 제조지시 및 기록서를 상세 기재할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 370,
@@ -17882,6 +17882,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PKsqEVbZtL.pdf",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -17920,9 +17922,7 @@
         "summary": "기준서 제정 및 개정 시, 시행 전 교육 이수 확인 절차를 마련할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 371,
@@ -17938,6 +17938,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PKsqEVbYoh.pdf",
+    "officialClass": "중요 1건, 기타 7건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 8,
     "deficiencies": [
@@ -17997,9 +17999,7 @@
         "summary": "기록의 훼손 및 소실에 대비하여 데이터 관리가 필요한 시험장비의 관리방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 7건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 372,
@@ -18113,6 +18113,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PKHYOW0WAq.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -18123,9 +18125,7 @@
         "summary": "완제품 확인시험을 해외제조소 관리사항과 허가사항을 일치시켜 관리할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 378,
@@ -18195,6 +18195,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PJjU_9GcLk.pdf",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 7,
     "deficiencies": [
@@ -18247,9 +18249,7 @@
         "summary": "제조지시서 및 제조기록서를 구체적으로 작성할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 382,
@@ -18337,6 +18337,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1PJjU_9GcIS.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -18354,9 +18356,7 @@
         "summary": "일부 부원료(수산화나트륨액)에 대해 해외제조소 관리사항과 허가사항을 일치시켜 관리할 것 * 수산화나트륨 펠렛에 대한 해외제조소 시험 규격에 국내 허가 규격에 따른 순도시험 항목은 모두 포함하고 있었음.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 387,
@@ -18390,6 +18390,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PJjU_9GcHr.pdf",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -18428,9 +18430,7 @@
         "summary": "반제품 보관기간 등을 검증할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 389,
@@ -18633,6 +18633,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PJjU_9GEGT.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -18650,9 +18652,7 @@
         "summary": "완제품 질량·용량시험을 허가사항에 따라 해외제조소 관리사항을 현행화할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 398,
@@ -19712,6 +19712,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PHRTWC2JuO.pdf",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -19750,9 +19752,7 @@
         "summary": "검체채취도구의 세척기록을 문서화하고, 세척 상태를 확인할 수 있도록 관리할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 457,
@@ -20081,7 +20081,7 @@
         "field": "",
         "gubun": "",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": "판독 불가: 원문에 '지적(보완)사항 있음'으로 기재되어 있으나 지적사항 표의 분류·근거법령·요약이 모두 '*'로 가려져 있어 내용을 추출할 수 없음"
       }
     ]
@@ -20143,7 +20143,7 @@
         "field": "",
         "gubun": "",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": "원문 마스킹(*) 처리로 판독 불가 — 평가결과는 '지적(보완)사항 있음'"
       }
     ]
@@ -20198,6 +20198,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PGR8fQk7Ed.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -20229,9 +20231,7 @@
         "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 481,
@@ -20272,28 +20272,28 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "원자재",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시설장비",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
     ]
@@ -20319,35 +20319,35 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시설장비",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "원자재",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
     ]
@@ -20373,7 +20373,7 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1의2] 제2.1호, 제2.4호, 제12.4호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
     ]
@@ -20392,6 +20392,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PFCoyOW331.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -20430,9 +20432,7 @@
         "summary": "시약의 개봉 후 사용기한에 대하여 적절한 관리방안을 마련하여 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 486,
@@ -20520,6 +20520,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PENb1hWwzJ.hwpx",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -20551,9 +20553,7 @@
         "summary": "표시재료를 필요량에 따라 정확하게 관리할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 491,
@@ -20569,6 +20569,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PENb1hWvv_.hwpx",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -20576,19 +20578,17 @@
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.2호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.3호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 492,
@@ -20622,6 +20622,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PENb1hWsfM.hwpx",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -20646,9 +20648,7 @@
         "summary": "제조기록서 서식 상의 원료 명칭을 실제 사용하는 용어로 반영 필요",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 494,
@@ -20751,6 +20751,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PEFzUr7o0Q.pdf",
+    "officialClass": "기타 9건",
+    "officialCount": 9,
     "result": "지적사항 있음",
     "defCount": 9,
     "deficiencies": [
@@ -20817,9 +20819,7 @@
         "summary": "변경관리를 적절하게 수행할 수 있도록 관련 절차를 개선할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 9건",
-    "officialCount": 9
+    ]
   },
   {
     "seq": 499,
@@ -20853,6 +20853,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1PEFzUr7WkD.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -20877,9 +20879,7 @@
         "summary": "주성분 입고시험을 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 501,
@@ -20949,6 +20949,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PDrTYgnSOz.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 7,
     "deficiencies": [
@@ -21001,9 +21003,7 @@
         "summary": "제조공정 등 주요변경사항에 따른 안정성 시험 배치수를 타당하게 재설정할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 503,
@@ -21019,6 +21019,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1PDrTYgnSOM.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -21064,9 +21066,7 @@
         "summary": "공정별 작업내용과 수율 등을 산출하는 절차를 반영하여 보완할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 504,
@@ -21082,6 +21082,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PDrTYgnSML.pdf",
+    "officialClass": "기타 11건",
+    "officialCount": 11,
     "result": "지적사항 있음",
     "defCount": 18,
     "deficiencies": [
@@ -21211,9 +21213,7 @@
         "summary": "주사제에 사용하는 출발물질에 대한 용기별 확인시험 절차를 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 11건",
-    "officialCount": 11
+    ]
   },
   {
     "seq": 505,
@@ -21229,6 +21229,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PDrTYgnSLV.pdf",
+    "officialClass": "중요 1건, 기타 7건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -21236,47 +21238,45 @@
         "field": "시험실",
         "gubun": "중요",
         "law": "[별표 1의2] 11.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1의2] 제2.2호, 제3.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시설장비",
         "gubun": "기타",
         "law": "[별표 1의2] 제5호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1의2] 제12.2호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "원자재",
         "gubun": "기타",
         "law": "[별표 1의2] 제10.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 7건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 506,
@@ -21292,6 +21292,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PDrTYgnSEx.pdf",
+    "officialClass": "중요 3건, 기타 20건",
+    "officialCount": 23,
     "result": "지적사항 있음",
     "defCount": 7,
     "deficiencies": [
@@ -21299,54 +21301,52 @@
         "field": "품질경영",
         "gubun": "중요",
         "law": "[별표 1] 제3.2호 및 제3.3호, [별표 1의2] 제2.2호 및 제2.3호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "중요",
         "law": "[별표 1] 제7.1호, [별표 1의2] 제11.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1] 제1의2호, 제3.3호, 제5.1호, 제14호, [별표 1의2] 제2.1호, 제2.2호, 제6.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시설장비",
         "gubun": "기타",
         "law": "[별표 1] 제2.1호, [별표 1의2] 제5호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1] 제6.2호, 제8.1호, [별표 1의2] 제8.1호, 제12.2호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1] 제7.1호, 제7.2호, [별표 1의2] 제11.1호, 제11.2호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "원자재",
         "gubun": "기타",
         "law": "[별표 1] 제10.2호, [별표 1의2] 제10.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 3건, 기타 20건",
-    "officialCount": 23
+    ]
   },
   {
     "seq": 507,
@@ -21458,6 +21458,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1PAbJvVXIKt.pdf",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 7,
     "deficiencies": [
@@ -21510,9 +21512,7 @@
         "summary": "제품품질에 영향을 미칠 수 있는 작업원을 모두 포함하여 데이터 완전성 교육을 실시할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 513,
@@ -21535,35 +21535,35 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1의2] 제2호 및 제2.2호, 제2.3호, 제2.4호, 제3.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시설장비",
         "gubun": "기타",
         "law": "[별표 1의2] 제5호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1의2] 제8.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.1호 및 제11.2호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "원자재",
         "gubun": "기타",
         "law": "[별표 1의2] 제10.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
     ]
@@ -21582,6 +21582,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1PAbJvVXIKD.pdf",
+    "officialClass": "기타 11건",
+    "officialCount": 11,
     "result": "지적사항 있음",
     "defCount": 15,
     "deficiencies": [
@@ -21690,9 +21692,7 @@
         "summary": "시험일지를 개정할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 11건",
-    "officialCount": 11
+    ]
   },
   {
     "seq": 515,
@@ -21802,6 +21802,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1P9CSnreUw9.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -21812,9 +21814,7 @@
         "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 521,
@@ -21848,6 +21848,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P9CSnreUmC.pdf",
+    "officialClass": "중요 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -21858,9 +21860,7 @@
         "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 523,
@@ -21930,6 +21930,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P8B4CKolXJ.pdf",
+    "officialClass": "기타 13건",
+    "officialCount": 13,
     "result": "지적사항 있음",
     "defCount": 13,
     "deficiencies": [
@@ -22024,9 +22026,7 @@
         "summary": "위탁제조 품목의 보관 및 검체 채취 절차를 상세화할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 13건",
-    "officialCount": 13
+    ]
   },
   {
     "seq": 527,
@@ -22042,6 +22042,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1P8B4CKolSj.pdf",
+    "officialClass": "중요 4건, 기타 12건",
+    "officialCount": 16,
     "result": "지적사항 있음",
     "defCount": 15,
     "deficiencies": [
@@ -22150,9 +22152,7 @@
         "summary": "제조소에서 사용하는 소독액에 대하여 조제 기록, 소분 기록 등을 확인할 수 있도록 절차할 것.",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 4건, 기타 12건",
-    "officialCount": 16
+    ]
   },
   {
     "seq": 528,
@@ -22186,6 +22186,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P8B4CKolDv.pdf",
+    "officialClass": "기타 8건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 25,
     "deficiencies": [
@@ -22364,9 +22366,7 @@
         "summary": "반품 접수 및 반품처리현황서를 적절히 관리할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 8건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 530,
@@ -22382,6 +22382,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P761xgBEaX.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -22406,9 +22408,7 @@
         "summary": "고압가스 제조설비 적격성평가를 실시하고 그 결과를 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 531,
@@ -22424,6 +22424,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P761xgBD0s.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -22455,9 +22457,7 @@
         "summary": "검액 및 조제액의 사용기한 설정근거를 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 532,
@@ -22473,6 +22473,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P761xgBAUc.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 10,
     "deficiencies": [
@@ -22546,9 +22548,7 @@
         "summary": "확인시험(IR)의 표준 스펙트럼을 측정하는 관리 절차를 보완할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 533,
@@ -22564,6 +22564,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P761xgB8rs.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -22602,9 +22604,7 @@
         "summary": "표준품, 시액에 대하여 설정한 사용기한을 검증하고, 그 결과를 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 534,
@@ -22638,6 +22638,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P41wm3_ePP.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -22645,12 +22647,10 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 536,
@@ -22702,6 +22702,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1P41wm3_bah.pdf",
+    "officialClass": "중요 1건, 기타 4건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -22740,9 +22742,7 @@
         "summary": "*** 입고시험을 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 4건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 539,
@@ -22827,6 +22827,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1P2hKsqMr6T.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -22858,9 +22860,7 @@
         "summary": "***에 대한 품질시험을 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 543,
@@ -22948,6 +22948,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFV3l.pdf",
+    "officialClass": "기타 8건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -22993,9 +22995,7 @@
         "summary": "표준품 보관 냉동고의 온도 관리를 타당하게 실시할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 8건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 548,
@@ -23011,6 +23011,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFUeg.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -23018,26 +23020,24 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1] 제1의2호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시설장비",
         "gubun": "기타",
         "law": "[별표 1] 제2.3호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1] 제6.2호, 제8.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 549,
@@ -23053,6 +23053,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFTkO.pdf",
+    "officialClass": "기타 10건",
+    "officialCount": 10,
     "result": "지적사항 있음",
     "defCount": 22,
     "deficiencies": [
@@ -23210,9 +23212,7 @@
         "summary": "원료창고의 온·습도 모니터링 대표 지점을 입증하는 자료를 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 10건",
-    "officialCount": 10
+    ]
   },
   {
     "seq": 550,
@@ -23228,6 +23228,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFTI6.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -23266,9 +23268,7 @@
         "summary": "실험실정보관리시스템(LIMS)에서 마스터 정보 입력 시 이를 확인하고 승인하는 절차를 보완할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 551,
@@ -23302,6 +23302,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFR7h.pdf",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -23309,26 +23311,24 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1의2] 제2.2호, 제3.1호, 제6.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1의2] 제8.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 553,
@@ -23344,6 +23344,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFQcG.pdf",
+    "officialClass": "기타 9건",
+    "officialCount": 9,
     "result": "지적사항 있음",
     "defCount": 9,
     "deficiencies": [
@@ -23410,9 +23412,7 @@
         "summary": "제조 및 시험의 수탁자와 주요 원자재 제조업자에 대한 평가 절차를 상세화할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 9건",
-    "officialCount": 9
+    ]
   },
   {
     "seq": 554,
@@ -23428,6 +23428,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P2UhIKFPxu.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -23435,7 +23437,7 @@
         "field": "시설장비",
         "gubun": "기타",
         "law": "[별표 1] 제2.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -23459,9 +23461,7 @@
         "summary": "기초자료가 없는 일부 시험항목에 대하여 중간검토자(확인자)가 시험의 실제 수행 및 적합 여부를 판단할 수 있는 관리방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 555,
@@ -23477,6 +23477,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P1oYPFWrh0.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -23484,12 +23486,10 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 556,
@@ -23505,6 +23505,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1P19k0H5g_Z.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -23512,19 +23514,17 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 557,
@@ -23558,6 +23558,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P19k0H5di3.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -23565,26 +23567,24 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 559,
@@ -23726,6 +23726,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjQL.pdf",
+    "officialClass": "중요 1건, 기타 9건",
+    "officialCount": 10,
     "result": "지적사항 있음",
     "defCount": 10,
     "deficiencies": [
@@ -23799,9 +23801,7 @@
         "summary": "시험일지에 시험방법 및 시액의 조제방법을 명시하고, 이동상 및 시액 등의 사용기록을 추적할 수 있도록 관리방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 9건",
-    "officialCount": 10
+    ]
   },
   {
     "seq": 567,
@@ -23817,6 +23817,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjOK.pdf",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -23855,9 +23857,7 @@
         "summary": "제조지시 및 기록서에 지시된 내용을 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 568,
@@ -23873,6 +23873,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjL2.pdf",
+    "officialClass": "중요 4건, 기타 5건",
+    "officialCount": 9,
     "result": "지적사항 있음",
     "defCount": 14,
     "deficiencies": [
@@ -23974,9 +23976,7 @@
         "summary": "안정성 시험 검체 수량에 대한 반입, 반출 등의 이력관리 방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 4건, 기타 5건",
-    "officialCount": 9
+    ]
   },
   {
     "seq": 569,
@@ -23992,6 +23992,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjK9.pdf",
+    "officialClass": "중요 1건, 기타 13건",
+    "officialCount": 14,
     "result": "지적사항 있음",
     "defCount": 23,
     "deficiencies": [
@@ -24156,9 +24158,7 @@
         "summary": "시판 후 안정성 시험에 대하여 장기보존시험 절차로 진행될 수 있도록 보완할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 13건",
-    "officialCount": 14
+    ]
   },
   {
     "seq": 570,
@@ -24174,6 +24174,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjJG.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -24198,9 +24200,7 @@
         "summary": "검지관에 대한 관리 방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 571,
@@ -24216,6 +24216,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjI5.pdf",
+    "officialClass": "기타 11건",
+    "officialCount": 11,
     "result": "지적사항 있음",
     "defCount": 25,
     "deficiencies": [
@@ -24394,9 +24396,7 @@
         "summary": "원료 유형별 공급업체 평가방법을 타당하게 설정할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 11건",
-    "officialCount": 11
+    ]
   },
   {
     "seq": 572,
@@ -24412,6 +24412,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1P0r6voXjFi.pdf",
+    "officialClass": "기타 6건",
+    "officialCount": 6,
     "result": "지적사항 있음",
     "defCount": 6,
     "deficiencies": [
@@ -24457,9 +24459,7 @@
         "summary": "포장(재포장) 절차서를 개정하여 준수할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 6건",
-    "officialCount": 6
+    ]
   },
   {
     "seq": 573,
@@ -24475,6 +24475,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyuoHKrLHf.pdf",
+    "officialClass": "중요 2건, 기타 7건",
+    "officialCount": 9,
     "result": "지적사항 있음",
     "defCount": 11,
     "deficiencies": [
@@ -24555,9 +24557,7 @@
         "summary": "- 개봉 후 유효기간이 공급자의 지정된 유효기간을 초과하여 관리하고 있던 사항에 대해 관리방안을 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 2건, 기타 7건",
-    "officialCount": 9
+    ]
   },
   {
     "seq": 574,
@@ -24591,6 +24591,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyuoHKrLGR.pdf",
+    "officialClass": "기타 5건",
+    "officialCount": 5,
     "result": "지적사항 있음",
     "defCount": 5,
     "deficiencies": [
@@ -24629,9 +24631,7 @@
         "summary": "시험용 검체 용기에 시험중임을 표시할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 5건",
-    "officialCount": 5
+    ]
   },
   {
     "seq": 576,
@@ -24647,6 +24647,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyuoHKrLF_.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -24661,7 +24663,7 @@
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1의2] 제11.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -24671,9 +24673,7 @@
         "summary": "- 적재 상태에서의 온도분포 평가를 실시할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 577,
@@ -24689,6 +24689,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyuoHKrLE_.pdf",
+    "officialClass": "중요 1건, 기타 19건",
+    "officialCount": 20,
     "result": "지적사항 있음",
     "defCount": 36,
     "deficiencies": [
@@ -24696,7 +24698,7 @@
         "field": "시설장비",
         "gubun": "중요",
         "law": "[별표 1] 제2.3호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -24944,9 +24946,7 @@
         "summary": "재포장 시 제조번호 등의 표시방법을 현행화할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 19건",
-    "officialCount": 20
+    ]
   },
   {
     "seq": 578,
@@ -24962,6 +24962,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyuoHKrL9t.pdf",
+    "officialClass": "기타 8건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 9,
     "deficiencies": [
@@ -25028,9 +25030,7 @@
         "summary": "부적합품 관리 절차를 개선할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 8건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 579,
@@ -25114,6 +25114,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1OyuoHKrL8i.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -25145,9 +25147,7 @@
         "summary": "조제시약(FDG K22표준액)의 사용기한을 평가한 자료를 제출할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 581,
@@ -25199,6 +25199,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyiGZ6Fr4f.pdf",
+    "officialClass": "기타 9건",
+    "officialCount": 9,
     "result": "지적사항 있음",
     "defCount": 9,
     "deficiencies": [
@@ -25265,9 +25267,7 @@
         "summary": "자율점검 항목에 데이터 완전성 관련 사항을 포함할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 9건",
-    "officialCount": 9
+    ]
   },
   {
     "seq": 584,
@@ -25283,6 +25283,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OyiGZ6Fpy9.pdf",
+    "officialClass": "기타 4건",
+    "officialCount": 4,
     "result": "지적사항 있음",
     "defCount": 4,
     "deficiencies": [
@@ -25314,9 +25316,7 @@
         "summary": "제조장비의 세척 검증을 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 4건",
-    "officialCount": 4
+    ]
   },
   {
     "seq": 585,
@@ -25332,6 +25332,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1OyiGZ6FoW5.pdf",
+    "officialClass": "중요 1건, 기타 2건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -25356,9 +25358,7 @@
         "summary": "제조일자를 타당하게 설정할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 1건, 기타 2건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 586,
@@ -25392,6 +25392,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1OyiGZ6Fe2N.pdf",
+    "officialClass": "중요 2건, 기타 6건",
+    "officialCount": 8,
     "result": "지적사항 있음",
     "defCount": 8,
     "deficiencies": [
@@ -25451,9 +25453,7 @@
         "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 2건, 기타 6건",
-    "officialCount": 8
+    ]
   },
   {
     "seq": 588,
@@ -25505,6 +25505,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OvxT5W4mTn.pdf",
+    "officialClass": "중요 2건, 기타 10건",
+    "officialCount": 12,
     "result": "지적사항 있음",
     "defCount": 16,
     "deficiencies": [
@@ -25512,7 +25514,7 @@
         "field": "품질경영",
         "gubun": "중요",
         "law": "[별표 1] 제1의2호, 제3.3호, 제5.1호, 제8.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -25547,7 +25549,7 @@
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1] 제3.3호, 제4.1호, 제6.3호, 제6.4호, 제14호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -25610,7 +25612,7 @@
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1] 제7.1호",
-        "summary": "-",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
@@ -25620,9 +25622,7 @@
         "summary": "보관업무에 종사하지 않는 사람의 보관소의 출입을 제한할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "중요 2건, 기타 10건",
-    "officialCount": 12
+    ]
   },
   {
     "seq": 591,
@@ -25872,6 +25872,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OpiJDMexUd.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -25882,9 +25884,7 @@
         "summary": "의료기관으로 납품되는 액체산소의 품질관리 절차를 마련할 것 - 의료기관 탱크의 품질관리 절차를 마련할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 605,
@@ -26080,6 +26080,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OmyYmOOkIs.pdf",
+    "officialClass": "기타 7건",
+    "officialCount": 7,
     "result": "지적사항 있음",
     "defCount": 8,
     "deficiencies": [
@@ -26139,9 +26141,7 @@
         "summary": "보관관리 규정에 따라 보관장소를 구분‧보관할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 7건",
-    "officialCount": 7
+    ]
   },
   {
     "seq": 616,
@@ -26463,6 +26463,8 @@
     "forms": [],
     "sterile": "",
     "archiveFile": "1OeRELoVYV1.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -26470,12 +26472,10 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 634,
@@ -26581,6 +26581,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1OdylyCyiqO.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -26591,9 +26593,7 @@
         "summary": "세척 밸리데이션을 적절하게 실시할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 640,
@@ -26645,6 +26645,8 @@
     "forms": [],
     "sterile": "무균",
     "archiveFile": "1Oa0PkES4Nt.pdf",
+    "officialClass": "기타 2건",
+    "officialCount": 2,
     "result": "지적사항 있음",
     "defCount": 2,
     "deficiencies": [
@@ -26662,9 +26664,7 @@
         "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 2건",
-    "officialCount": 2
+    ]
   },
   {
     "seq": 643,
@@ -26680,6 +26680,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1Oa0PkES3cm.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -26687,26 +26689,24 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 644,
@@ -26866,6 +26866,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OWEpCP2A47.pdf",
+    "officialClass": "기타 3건",
+    "officialCount": 3,
     "result": "지적사항 있음",
     "defCount": 3,
     "deficiencies": [
@@ -26890,9 +26892,7 @@
         "summary": "기준일탈관리를 적절하게 수행할 것",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 3건",
-    "officialCount": 3
+    ]
   },
   {
     "seq": 653,
@@ -26962,6 +26962,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OSntC_QwSP.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -26972,9 +26974,7 @@
         "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 657,
@@ -27656,6 +27656,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OKpU3II00n.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -27663,12 +27665,10 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 695,
@@ -27720,6 +27720,8 @@
     "forms": [],
     "sterile": "비무균",
     "archiveFile": "1OJ2hqQvU-X.pdf",
+    "officialClass": "기타 1건",
+    "officialCount": 1,
     "result": "지적사항 있음",
     "defCount": 1,
     "deficiencies": [
@@ -27727,12 +27729,10 @@
         "field": "",
         "gubun": "기타",
         "law": "",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
-    ],
-    "officialClass": "기타 1건",
-    "officialCount": 1
+    ]
   },
   {
     "seq": 698,
@@ -28469,49 +28469,49 @@
         "field": "시험실",
         "gubun": "중요",
         "law": "[별표 1] 제7.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "중요",
         "law": "[별표 1] 제7.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "품질경영",
         "gubun": "기타",
         "law": "[별표 1] 제1의 2호 및 제6.1호 및 제6.4호 및 제7.3호 및 제11호 및 제12호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1] 제6.2호 및 제6.4호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "제조",
         "gubun": "기타",
         "law": "[별표 1의2] 제12.2호 및 제19.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "시험실",
         "gubun": "기타",
         "law": "[별표 1] 제7.1호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       },
       {
         "field": "원자재",
         "gubun": "기타",
         "law": "[별표 1] 제10.1호 및 제10.2호",
-        "summary": "",
+        "summary": "(원문 가림 처리 — 내용 비공개)",
         "remark": ""
       }
     ],

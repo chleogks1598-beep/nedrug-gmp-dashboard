@@ -22,9 +22,13 @@ const EXTRACTED = process.env.EXTRACTED_PATH || path.join(ROOT, "newdocs", "extr
 const FORMS = path.join(ROOT, "forms.json"); // docId → {forms:[...], sterile:"…"}
 const ARCHIVE = path.join(ROOT, "public", "archive"); // 원본 PDF 영구 보관함
 
+// 요약 칸이 비었거나 '-' 만 남은 항목은 원문이 검게 가림 처리된 칸이다(추출 누락 아님 — 렌더링으로 확인).
+// 빈 칸으로 두면 누락처럼 보이므로 안내 문구로 채운다.
+const MASKED = "(원문 가림 처리 — 내용 비공개)";
+const fillMasked = (s) => (/^[\s\-*]*$/.test(s || "") ? MASKED : s);
 const norm = d => ({
   field: (d.field || "").trim(), gubun: (d.gubun || "").trim(),
-  law: (d.law || "").trim(), summary: (d.summary || "").trim(), remark: (d.remark || "").trim(),
+  law: (d.law || "").trim(), summary: fillMasked((d.summary || "").trim()), remark: (d.remark || "").trim(),
 });
 
 function main() {
@@ -76,7 +80,7 @@ function main() {
     let defs, hold = null;
     if (newDef.has(r.docId)) { defs = newDef.get(r.docId); added++; }
     else if (quarantined.has(r.docId)) { defs = []; hold = quarantined.get(r.docId); review++; }
-    else if (prevDef.has(r.docId)) { defs = prevDef.get(r.docId); carried++; }
+    else if (prevDef.has(r.docId)) { defs = prevDef.get(r.docId).map(norm); carried++; }
     else { defs = []; } // known in list but no deficiency info anywhere → treat as 적합
     const fi = formsMap[r.docId] || prevForms.get(r.docId) || { forms: [], sterile: "" };
     return {
@@ -107,7 +111,7 @@ function main() {
   const delisted = [];
   for (const r of prev) {
     if (listIds.has(r.docId)) continue;
-    delisted.push({ ...r, archiveFile: archived.get(r.docId) || null, delisted: true, delistedAt: r.delistedAt || today });
+    delisted.push({ ...r, deficiencies: (r.deficiencies || []).map(norm), archiveFile: archived.get(r.docId) || null, delisted: true, delistedAt: r.delistedAt || today });
   }
   delisted.sort((a, b) => String(b.regDate).localeCompare(String(a.regDate)));
   out.push(...delisted);
