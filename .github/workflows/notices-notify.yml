@@ -1,0 +1,63 @@
+name: Notify 식약처·대전청 공지 (푸시된 스냅샷 diff)
+
+# notices.json 이 바뀐 푸시마다 직전 커밋과 비교해, 새로 들어온 글 중 위·수탁/의약품 설명회
+# 관련 글만 메일로 보낸다. 수집은 로컬 스케줄러(NedrugChangeOrders → run-change-orders-update.mjs
+# → notice-watch.mjs)가 하고 여기서는 식약처에 접속하지 않는다.
+# 수신자: recipients-notices.json
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'notices.json'
+  workflow_dispatch:
+    inputs:
+      prev_ref:
+        description: '보정 발송: 이 커밋 이후의 변화를 한 번에 알림 (비우면 HEAD~1)'
+        required: false
+        default: ''
+      sample:
+        description: '테스트 발송: 최근 N건으로 샘플 메일 (0=실제 diff)'
+        required: false
+        default: '0'
+
+concurrency:
+  group: notices-notify
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: ${{ github.event.inputs.prev_ref && '0' || '2' }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 직전 스냅샷 확보
+        env:
+          PREV: ${{ github.event.inputs.prev_ref || 'HEAD~1' }}
+        run: |
+          echo "비교 기준: $PREV"
+          git show "$PREV:notices.json" > prev-notices.json 2>/dev/null || echo "null" > prev-notices.json
+      - name: 메일 본문 생성 (직전 대비 diff)
+        id: build
+        env:
+          SAMPLE: ${{ github.event.inputs.sample }}
+        run: node scripts/notice-watch.mjs prev-notices.json
+      - name: Send email via Gmail SMTP
+        if: steps.build.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: 식약처 공지 알림 <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.build.outputs.to }}
+          subject: ${{ steps.build.outputs.subject }}
+          html_body: file://notice-email-body.html
+      - name: No email needed
+        if: steps.build.outputs.send != 'true'
+        run: echo "관련 신규 글 없음 — 메일 발송 생략."

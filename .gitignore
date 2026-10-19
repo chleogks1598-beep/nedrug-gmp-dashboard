@@ -33,3 +33,7 @@ archive-failed.json
 .run-lock
 # 단계별 연속 실패 횟수 — 3회면 Windows 알림 (scripts/log-fail.mjs)
 .fail-streak.json
+# 식약처·대전청 공지 감시 작업파일 (scripts/notice-watch.mjs)
+notices.current.json
+notice-email-body.html
+prev-notices.json

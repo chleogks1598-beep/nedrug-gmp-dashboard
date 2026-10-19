@@ -1,0 +1,683 @@
+{
+ "items": [
+  {
+   "key": "m_74/45240",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45240",
+   "title": "(알림) 식품안심업소 지정 현황(2026.10.16. 기준)",
+   "date": "2026-10-16",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45240",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:04.490Z"
+  },
+  {
+   "key": "m_74/45239",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45239",
+   "title": "축산물 위생교육기관 지정현황",
+   "date": "2026-10-14",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45239",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:05.657Z"
+  },
+  {
+   "key": "m_74/45238",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45238",
+   "title": "2028년도 의약품 동등성 재평가 대상 품목 사전 알림",
+   "date": "2026-10-06",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45238",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:06.838Z"
+  },
+  {
+   "key": "m_74/45237",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45237",
+   "title": "(알림) 식품안심업소 지정 현황(2026.10.2. 기준)",
+   "date": "2026-10-02",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45237",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:08.121Z"
+  },
+  {
+   "key": "m_74/45231",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45231",
+   "title": "국세외수입 체납자 실태확인을 위한 개인정보 처리 업무 위탁 알림",
+   "date": "2026-09-18",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45231",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:09.231Z"
+  },
+  {
+   "key": "m_891/45451",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45451",
+   "title": "화장품제조업, 화장품책임판매업, 맞춤형화장품판매업 폐업/휴업/재개업 안내",
+   "date": "2024-10-28",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45451",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:12.690Z"
+  },
+  {
+   "key": "m_891/46047",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46047",
+   "title": "의료제품 GMP 소식지-GMP 우체통 2026년 9월호 발간 배포",
+   "date": "2026-10-12",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46047",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:13.401Z"
+  },
+  {
+   "key": "m_891/46034",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46034",
+   "title": "의료제품 GMP 소식지-GMP 우체통 2026년 8월호 발간 배포",
+   "date": "2026-09-08",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46034",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:14.226Z"
+  },
+  {
+   "key": "m_891/46033",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46033",
+   "title": "2026년 하반기 '해썹(HACCP) 우체통' 제공 알림",
+   "date": "2026-09-08",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46033",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:14.981Z"
+  },
+  {
+   "key": "m_891/46013",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46013",
+   "title": "(정정)건강기능식품 이상사례 관련 영업자 간담회 개최 안내(식품안전정보원)",
+   "date": "2026-08-13",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46013",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:35:15.787Z"
+  },
+  {
+   "key": "m_891/45850",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45850",
+   "title": "정책설명회 자료",
+   "date": "2026-03-18",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45850",
+   "kw": [
+    "의약품 설명회"
+   ],
+   "firstSeen": "2026-10-19T02:35:17.004Z"
+  },
+  {
+   "key": "m_891/45842",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45842",
+   "title": "2026년 대전식약청 의료제품 사전사후관리 정책설명회 개최",
+   "date": "2026-03-11",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45842",
+   "kw": [
+    "의약품 설명회"
+   ],
+   "firstSeen": "2026-10-19T02:35:17.796Z"
+  },
+  {
+   "key": "m_891/45736",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45736",
+   "title": "대전청 관내 의약품 제조업체 GMP 간담회 개최 및 참석 요청",
+   "date": "2025-10-10",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45736",
+   "kw": [
+    "의약품 설명회"
+   ],
+   "firstSeen": "2026-10-19T02:35:19.152Z"
+  },
+  {
+   "key": "m_891/45732",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45732",
+   "title": "'25년 산·학·관 합동 의약품 규제과학 정책설명회 자료 게시",
+   "date": "2025-09-29",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45732",
+   "kw": [
+    "의약품 설명회"
+   ],
+   "firstSeen": "2026-10-19T02:35:19.946Z"
+  },
+  {
+   "key": "m_74/45236",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45236",
+   "title": "「어린이 의약정보 시청소감 이벤트」 당첨자 발표",
+   "date": "2026-09-30",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45236",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:05.015Z"
+  },
+  {
+   "key": "m_74/45235",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45235",
+   "title": "(알림) 식품안심업소 지정 현황(2026.9.23. 기준)",
+   "date": "2026-09-23",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45235",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:05.015Z"
+  },
+  {
+   "key": "m_74/45234",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45234",
+   "title": "검사명령 대상 수입식품등 해제 알림",
+   "date": "2026-09-22",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45234",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:05.015Z"
+  },
+  {
+   "key": "m_74/45233",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45233",
+   "title": "(알림) 식품안심업소 지정 현황(2026.9.18. 기준)",
+   "date": "2026-09-18",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45233",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:05.015Z"
+  },
+  {
+   "key": "m_74/45232",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45232",
+   "title": "유전자변형 미생물 유래 식품첨가물 α-아밀라아제 안전성 심사 결과 보고서(안)에 관한 공개의견수렴",
+   "date": "2026-09-18",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45232",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:05.015Z"
+  },
+  {
+   "key": "m_74/45230",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45230",
+   "title": "(알림) 식품안심업소 지정 현황(2026.9.11. 기준)",
+   "date": "2026-09-11",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45230",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45229",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45229",
+   "title": "2026년 의약품 동등성 재평가 결과 공시(2차)",
+   "date": "2026-09-10",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45229",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45228",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45228",
+   "title": "2026년 의약품 동등성 재평가 결과 공시(1차)",
+   "date": "2026-09-10",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45228",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45227",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45227",
+   "title": "2024년 의약품 동등성 재평가 결과 공시(5차)",
+   "date": "2026-09-10",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45227",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45226",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45226",
+   "title": "제2차 「안전한 어린이 의약정보 영상 콘텐츠 공모전」 개최 및 영상소감 이벤트 알림",
+   "date": "2026-09-10",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45226",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45225",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45225",
+   "title": "(알림) 식품안심업소 지정 현황(2026.9.7. 기준)",
+   "date": "2026-09-07",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45225",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45224",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45224",
+   "title": "식품의약품안전처 자율기구 운영성과(식품부당행위긴급대응단)",
+   "date": "2026-09-04",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45224",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45223",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45223",
+   "title": "식품의약품안전처 자율기구 운영성과(규제과학정책추진단) 및 향후계획(규제서비스혁신추진단)",
+   "date": "2026-09-04",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45223",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45222",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45222",
+   "title": "어린이 기호식품 품질인증 현황('26.8.31.기준)",
+   "date": "2026-09-01",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45222",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45221",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45221",
+   "title": "(알림) 식품안심업소 지정 현황(2026.8.31. 기준)",
+   "date": "2026-08-31",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45221",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:06.118Z"
+  },
+  {
+   "key": "m_74/45220",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45220",
+   "title": "백신안전기술지원센터 제2차 기간제 직원 채용 공고",
+   "date": "2026-08-24",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45220",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45219",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45219",
+   "title": "(알림) 식품안심업소 지정 현황(2026.8.24. 기준)",
+   "date": "2026-08-24",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45219",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45218",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45218",
+   "title": "「어린이 의약정보 퀴즈 이벤트」 당첨자 발표(8월)",
+   "date": "2026-08-21",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45218",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45217",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45217",
+   "title": "2025년 8월 대조약 선정 및 변경을 위한 의견조회",
+   "date": "2026-08-20",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45217",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45216",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45216",
+   "title": "유전자변형 미생물 유래 식품첨가물 키모신(ChyMax) 등 2건 안전성 심사 결과 보고서(안)에 관한 공개의견수렴",
+   "date": "2026-08-18",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45216",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45215",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45215",
+   "title": "(알림) 식품안심업소 지정 현황(2026.8.14. 기준)",
+   "date": "2026-08-14",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45215",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45214",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45214",
+   "title": "2026년 하반기 의약품 허가특허연계제도 교육 실시(9.2.~9.3.)",
+   "date": "2026-08-10",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45214",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45213",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45213",
+   "title": "(알림) 식품안심업소 지정 현황(2026.8.7. 기준)",
+   "date": "2026-08-07",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45213",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45211",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45211",
+   "title": "「어린이 의약정보 퀴즈 이벤트」 개최 안내(8월)",
+   "date": "2026-08-03",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45211",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_74/45210",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45210",
+   "title": "(알림) 식품안심업소 지정 현황(2026.7.31. 기준)",
+   "date": "2026-07-31",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45210",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.324Z"
+  },
+  {
+   "key": "m_891/46014",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46014",
+   "title": "의료제품 GMP 소식지-GMP 우체통 2026년 7월호 발간 배포",
+   "date": "2026-08-14",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46014",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.907Z"
+  },
+  {
+   "key": "m_891/46011",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46011",
+   "title": "2026년 제2차 대전지방식품의약품안전청 청년인턴 채용 공고",
+   "date": "2026-08-12",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46011",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.907Z"
+  },
+  {
+   "key": "m_891/45973",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45973",
+   "title": "2026년 6월 호 GMP 우체통 발간 배포",
+   "date": "2026-07-15",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45973",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.907Z"
+  },
+  {
+   "key": "m_891/45952",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45952",
+   "title": "2026년 의약외품 정기감시 서면평가 자료 제출 요청 및 현장 점검 계획 알림",
+   "date": "2026-06-18",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45952",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.907Z"
+  },
+  {
+   "key": "m_891/45949",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45949",
+   "title": "2026년 상반기 '해썹(HACCP) 우체통' 제공 알림",
+   "date": "2026-06-15",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45949",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.907Z"
+  },
+  {
+   "key": "m_891/45947",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45947",
+   "title": "2026년 4·5월 GMP 우체통 발간 배포",
+   "date": "2026-06-15",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45947",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:07.907Z"
+  },
+  {
+   "key": "m_891/45932",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45932",
+   "title": "국민주권정부 국정과제 성과",
+   "date": "2026-05-26",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45932",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45896",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45896",
+   "title": "'식품의약품안전처' 사칭 위조 공문서 주의",
+   "date": "2026-04-22",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45896",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45890",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45890",
+   "title": "2026년 관내 마약류취급자 및 원료물질취급자에 정기감시 실시 알림",
+   "date": "2026-04-13",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45890",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45889",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45889",
+   "title": "2026년 1분기 GMP 우체통 발간 배포",
+   "date": "2026-04-13",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45889",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45875",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45875",
+   "title": "2026년도 의약외품 정기감시 대상 제조업체 위험도 평가 기초자료 제출 관련 알림",
+   "date": "2026-04-01",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45875",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45857",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45857",
+   "title": "2026년 화장품 정기감시(자율점검제) 대상업체 자료 제출 요청(양식 포함)",
+   "date": "2026-03-24",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45857",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45841",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45841",
+   "title": "2026년도 식품 및 축산물 HACCP 인증업체 자체평가 실시 및 제출 안내",
+   "date": "2026-03-10",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45841",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45822",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45822",
+   "title": "에토미데이트 마약류 지정에 따른 관리방안(시행일: '26. 2. 13.)",
+   "date": "2026-02-13",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45822",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:08.735Z"
+  },
+  {
+   "key": "m_891/45816",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45816",
+   "title": "2026년 제1차 대전지방식품의약품안전청 청년인턴 채용 공고(안내)",
+   "date": "2026-02-11",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45816",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45814",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45814",
+   "title": "수입식품 안전관리 협조요청(업데이트)",
+   "date": "2026-02-11",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45814",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45812",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45812",
+   "title": "2026년 우수건강기능식품(GMP)조사평가 대상 업소 명단 알림",
+   "date": "2026-02-10",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45812",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45806",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45806",
+   "title": "수입식품 안전관리 협조 요청(업데이트)",
+   "date": "2026-02-03",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45806",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45800",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45800",
+   "title": "2025년 4분기 GMP 우체통 발간 배포",
+   "date": "2026-01-26",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45800",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45785",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45785",
+   "title": "대전지방식품의약품안전청 공용차량 정수 및 운영현황",
+   "date": "2026-01-14",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45785",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45781",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45781",
+   "title": "2026년도 수입식품등 영업자 교육기관 운영계획 알림",
+   "date": "2026-01-06",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45781",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  },
+  {
+   "key": "m_891/45727",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "45727",
+   "title": "2025년 3분기 GMP 우체통 발간 배포",
+   "date": "2025-09-26",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=45727",
+   "kw": [],
+   "firstSeen": "2026-10-19T02:34:09.283Z"
+  }
+ ]
+}

@@ -1,6 +1,8 @@
 // 로컬 스케줄러용 변경명령(CCBAR01F012) 감시 진입점.
 // 흐름: pull → 수집(change-orders.mjs LOCAL) → 기준선 갱신 → 변경 있으면 commit → push
 // push 하면 change-orders-notify.yml 이 직전 커밋과 비교해 알림메일을 보낸다.
+// 2026-10-19 부터 같은 회차에 식약처·대전청 공지사항 감시(notice-watch.mjs → notices.json,
+// 메일은 notices-notify.yml)도 돈다. 두 감시는 서로 실패를 격리한다.
 //
 // 왜 로컬로 옮겼나: 같은 감시를 GitHub Actions 에서 매시간 돌렸는데 식약처가 클라우드 IP 를
 // 간헐 차단해 UND_ERR_CONNECT_TIMEOUT 으로 3회 중 1회씩 실패했다(2026-09-10 확인).
@@ -22,6 +24,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LOG = path.join(ROOT, "local-update.log");
 const SNAP = path.join(ROOT, "change-orders.json");
 const CURFILE = path.join(ROOT, "change-orders.current.json");
+// 식약처·대전청 공지사항 감시(scripts/notice-watch.mjs) — 같은 매시간 작업에 얹었다
+const NOTICE_SNAP = path.join(ROOT, "notices.json");
+const NOTICE_CUR = path.join(ROOT, "notices.current.json");
 
 const stamp = () => new Date().toISOString().replace("T", " ").slice(0, 19);
 function log(msg) {
@@ -35,28 +40,41 @@ function main() {
   log("시작");
   syncPull(git, log, ROOT);
 
-  const out = execFileSync(process.execPath, [path.join(ROOT, "scripts", "change-orders.mjs")], {
-    cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, LOCAL: "1" },
-  });
-  out.split("\n").filter(Boolean).forEach(l => log(l.trim()));
+  // 두 감시(변경명령 / 공지사항)는 서로 독립이다 — 한쪽 접속이 실패해도 다른 쪽은 커밋·푸시한다.
+  // 실패한 쪽은 기준선을 전진시키지 않으므로 다음 회차에 그대로 재시도된다.
+  const failed = [];
+  const step = (name, script, cur, snap) => {
+    try {
+      const out = execFileSync(process.execPath, [path.join(ROOT, "scripts", script)], {
+        cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, LOCAL: "1" },
+      });
+      out.split("\n").filter(Boolean).forEach(l => log(`${name}: ${l.trim()}`));
+      // 스크립트는 실패하면 0 이 아닌 종료코드로 죽으므로(execFileSync 가 throw)
+      // 여기 오면 cur 는 방금 받은 온전한 목록이다.
+      if (!fs.existsSync(cur)) throw new Error(`수집 결과가 없습니다: ${cur}`);
+      if (process.env.DRY_RUN) return;
+      fs.copyFileSync(cur, snap);
+      git(["add", path.basename(snap)]);
+    } catch (e) {
+      const detail = (e.stderr || "").toString().trim() || e.message;
+      log(`ERROR ${name}: ${detail.split("\n").slice(-3).join(" / ")}`);
+      failed.push(name);
+    }
+  };
+  step("변경명령", "change-orders.mjs", CURFILE, SNAP);
+  step("공지", "notice-watch.mjs", NOTICE_CUR, NOTICE_SNAP);
 
-  // 수집이 성공했을 때만 기준선을 전진시킨다. change-orders.mjs 는 실패하면 0 이 아닌
-  // 종료코드로 죽으므로(execFileSync 가 throw) 여기 오면 CURFILE 은 방금 받은 온전한 목록이다.
-  if (!fs.existsSync(CURFILE)) throw new Error(`수집 결과가 없습니다: ${CURFILE}`);
-  if (process.env.DRY_RUN) { log("DRY_RUN — 기준선 갱신·커밋·푸시 생략하고 종료."); return; }
-  fs.copyFileSync(CURFILE, SNAP);
-
-  git(["add", "change-orders.json"]);
-  if (!git(["diff", "--cached", "--name-only"])) { log("변화 없음 — 커밋 생략."); return; }
+  if (process.env.DRY_RUN) { log("DRY_RUN — 기준선 갱신·커밋·푸시 생략하고 종료."); return failed; }
+  if (!git(["diff", "--cached", "--name-only"])) { log("변화 없음 — 커밋 생략."); return failed; }
 
   git(["-c", "user.name=nedrug-bot", "-c", "user.email=bot@users.noreply.github.com",
-       "commit", "-q", "-m", "monitor: 변경명령 스냅샷 갱신"]);
+       "commit", "-q", "-m", "monitor: 변경명령·공지 스냅샷 갱신"]);
   for (let i = 1; i <= 5; i++) {
     try {
       syncPull(git, log, ROOT);
       git(["push", "-q", "origin", "HEAD:main"]);
-      log(`push 성공 — ${git(["log", "-1", "--oneline"])} (메일은 change-orders-notify.yml 가 발송)`);
-      return;
+      log(`push 성공 — ${git(["log", "-1", "--oneline"])} (메일은 change-orders-notify.yml / notices-notify.yml 가 발송)`);
+      return failed;
     } catch (e) {
       log(`push 재시도 ${i}/5: ${String(e.message).split("\n")[0]}`);
     }
@@ -65,7 +83,8 @@ function main() {
 }
 
 try {
-  main();
+  const failed = main();
+  if (failed.length) throw new Error(`실패 단계: ${failed.join(", ")}`);
 } catch (e) {
   // execFileSync 는 자식의 stderr 를 e.stderr 에 담아 온다 — 원인을 로그에 남긴다.
   const detail = (e.stderr || "").toString().trim() || e.message;
