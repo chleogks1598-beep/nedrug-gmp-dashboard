@@ -1,15 +1,15 @@
 [
   {
-    "key": "20260177/3",
-    "infoNo": "20260177",
-    "infoClassCode": "3",
-    "title": "리팜피신 성분 제제",
-    "type": "안전성 정보",
+    "key": "20260235/2",
+    "infoNo": "20260235",
+    "infoClassCode": "2",
+    "title": "이사부코나조늄황산염 성분 제제",
+    "type": "신약 등의 재심사",
     "status": "진행중",
     "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-10-16",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260177&infoClassCode=3"
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-10-19",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260235&infoClassCode=2"
   },
   {
     "key": "20260212/3",
@@ -22,6 +22,18 @@
     "stage": "사전예고",
     "regDate": "2026-10-16",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260212&infoClassCode=3"
+  },
+  {
+    "key": "20260177/3",
+    "infoNo": "20260177",
+    "infoClassCode": "3",
+    "title": "리팜피신 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-10-16",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260177&infoClassCode=3"
   },
   {
     "key": "20260202/3",
@@ -144,16 +156,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260146&infoClassCode=4"
   },
   {
-    "key": "20260180/3",
-    "infoNo": "20260180",
-    "infoClassCode": "3",
-    "title": "돔페리돈 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
+    "key": "20250260/4",
+    "infoNo": "20250260",
+    "infoClassCode": "4",
+    "title": "리신염산염, 아르기닌염산염 성분제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2026-09-08",
+    "stage": "변경명령",
     "regDate": "2026-09-30",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260180&infoClassCode=3"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20250260&infoClassCode=4"
   },
   {
     "key": "20260198/3",
@@ -168,16 +180,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260198&infoClassCode=3"
   },
   {
-    "key": "20250260/4",
-    "infoNo": "20250260",
-    "infoClassCode": "4",
-    "title": "리신염산염, 아르기닌염산염 성분제제",
-    "type": "신약 등의 재심사",
-    "status": "종결",
-    "reflectDate": "2026-09-08",
-    "stage": "변경명령",
+    "key": "20260180/3",
+    "infoNo": "20260180",
+    "infoClassCode": "3",
+    "title": "돔페리돈 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
     "regDate": "2026-09-30",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20250260&infoClassCode=4"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260180&infoClassCode=3"
   },
   {
     "key": "20260188/3",
@@ -204,18 +216,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260213&infoClassCode=2"
   },
   {
-    "key": "20260160/4",
-    "infoNo": "20260160",
-    "infoClassCode": "4",
-    "title": "디클로페낙 주사제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-12-28",
-    "stage": "변경명령",
-    "regDate": "2026-09-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260160&infoClassCode=4"
-  },
-  {
     "key": "20260159/4",
     "infoNo": "20260159",
     "infoClassCode": "4",
@@ -228,16 +228,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260159&infoClassCode=4"
   },
   {
-    "key": "20260210/2",
-    "infoNo": "20260210",
-    "infoClassCode": "2",
-    "title": "클로자핀 성분 제제",
-    "type": "",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-09-23",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260210&infoClassCode=2"
+    "key": "20260160/4",
+    "infoNo": "20260160",
+    "infoClassCode": "4",
+    "title": "디클로페낙 주사제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-12-28",
+    "stage": "변경명령",
+    "regDate": "2026-09-28",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260160&infoClassCode=4"
   },
   {
     "key": "20260176/4",
@@ -250,6 +250,18 @@
     "stage": "변경명령",
     "regDate": "2026-09-23",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260176&infoClassCode=4"
+  },
+  {
+    "key": "20260210/2",
+    "infoNo": "20260210",
+    "infoClassCode": "2",
+    "title": "클로자핀 성분 제제",
+    "type": "",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-09-23",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260210&infoClassCode=2"
   },
   {
     "key": "20260175/2",
@@ -300,18 +312,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260193&infoClassCode=2"
   },
   {
-    "key": "20260161/4",
-    "infoNo": "20260161",
-    "infoClassCode": "4",
-    "title": "발록사비르마르복실 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "종결",
-    "reflectDate": "2026-12-10",
-    "stage": "변경명령",
-    "regDate": "2026-09-10",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260161&infoClassCode=4"
-  },
-  {
     "key": "20260158/4",
     "infoNo": "20260158",
     "infoClassCode": "4",
@@ -322,6 +322,18 @@
     "stage": "변경명령",
     "regDate": "2026-09-10",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260158&infoClassCode=4"
+  },
+  {
+    "key": "20260161/4",
+    "infoNo": "20260161",
+    "infoClassCode": "4",
+    "title": "발록사비르마르복실 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2026-12-10",
+    "stage": "변경명령",
+    "regDate": "2026-09-10",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260161&infoClassCode=4"
   },
   {
     "key": "20260142/4",
@@ -396,6 +408,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260165&infoClassCode=4"
   },
   {
+    "key": "20260192/2",
+    "infoNo": "20260192",
+    "infoClassCode": "2",
+    "title": "클로자핀 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-09-01",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260192&infoClassCode=2"
+  },
+  {
     "key": "20260173/2",
     "infoNo": "20260173",
     "infoClassCode": "2",
@@ -418,18 +442,6 @@
     "stage": "변경명령",
     "regDate": "2026-09-01",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260135&infoClassCode=4"
-  },
-  {
-    "key": "20260192/2",
-    "infoNo": "20260192",
-    "infoClassCode": "2",
-    "title": "클로자핀 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-09-01",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260192&infoClassCode=2"
   },
   {
     "key": "20260187/2",
@@ -492,6 +504,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260134&infoClassCode=4"
   },
   {
+    "key": "20260143/4",
+    "infoNo": "20260143",
+    "infoClassCode": "4",
+    "title": "유플라이마펜주40mg_0.4mL(아달리무맙,유전자재조합) 외4건, (주)셀트리온",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "2026-11-13",
+    "stage": "변경명령",
+    "regDate": "2026-08-13",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260143&infoClassCode=4"
+  },
+  {
     "key": "20260107/4",
     "infoNo": "20260107",
     "infoClassCode": "4",
@@ -514,18 +538,6 @@
     "stage": "변경명령",
     "regDate": "2026-08-13",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260109&infoClassCode=4"
-  },
-  {
-    "key": "20260143/4",
-    "infoNo": "20260143",
-    "infoClassCode": "4",
-    "title": "유플라이마펜주40mg_0.4mL(아달리무맙,유전자재조합) 외4건, (주)셀트리온",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "2026-11-13",
-    "stage": "변경명령",
-    "regDate": "2026-08-13",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260143&infoClassCode=4"
   },
   {
     "key": "20260112/4",
@@ -564,18 +576,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260102&infoClassCode=4"
   },
   {
-    "key": "20260111/4",
-    "infoNo": "20260111",
-    "infoClassCode": "4",
-    "title": "트라메티닙 성분 제제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-11-04",
-    "stage": "변경명령",
-    "regDate": "2026-08-04",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260111&infoClassCode=4"
-  },
-  {
     "key": "20260126/4",
     "infoNo": "20260126",
     "infoClassCode": "4",
@@ -588,16 +588,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260126&infoClassCode=4"
   },
   {
-    "key": "20260087/4",
-    "infoNo": "20260087",
+    "key": "20260111/4",
+    "infoNo": "20260111",
     "infoClassCode": "4",
-    "title": "알벤다졸 성분 제제",
+    "title": "트라메티닙 성분 제제",
     "type": "안전성 정보",
     "status": "종결",
     "reflectDate": "2026-11-04",
     "stage": "변경명령",
     "regDate": "2026-08-04",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260087&infoClassCode=4"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260111&infoClassCode=4"
   },
   {
     "key": "20260125/4",
@@ -612,16 +612,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260125&infoClassCode=4"
   },
   {
-    "key": "20260115/4",
-    "infoNo": "20260115",
+    "key": "20260087/4",
+    "infoNo": "20260087",
     "infoClassCode": "4",
-    "title": "페라미비르 성분 제제",
-    "type": "신약 등의 재심사",
+    "title": "알벤다졸 성분 제제",
+    "type": "안전성 정보",
     "status": "종결",
-    "reflectDate": "2026-10-23",
+    "reflectDate": "2026-11-04",
     "stage": "변경명령",
-    "regDate": "2026-07-30",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260115&infoClassCode=4"
+    "regDate": "2026-08-04",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260087&infoClassCode=4"
   },
   {
     "key": "20260114/4",
@@ -634,6 +634,18 @@
     "stage": "변경명령",
     "regDate": "2026-07-30",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260114&infoClassCode=4"
+  },
+  {
+    "key": "20260115/4",
+    "infoNo": "20260115",
+    "infoClassCode": "4",
+    "title": "페라미비르 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2026-10-23",
+    "stage": "변경명령",
+    "regDate": "2026-07-30",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260115&infoClassCode=4"
   },
   {
     "key": "20260116/4",
@@ -660,18 +672,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260124&infoClassCode=4"
   },
   {
-    "key": "20260110/4",
-    "infoNo": "20260110",
-    "infoClassCode": "4",
-    "title": "암피실린·설박탐 복합제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-08-18",
-    "stage": "변경명령",
-    "regDate": "2026-07-16",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260110&infoClassCode=4"
-  },
-  {
     "key": "20260119/4",
     "infoNo": "20260119",
     "infoClassCode": "4",
@@ -682,6 +682,18 @@
     "stage": "변경명령",
     "regDate": "2026-07-16",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260119&infoClassCode=4"
+  },
+  {
+    "key": "20260110/4",
+    "infoNo": "20260110",
+    "infoClassCode": "4",
+    "title": "암피실린·설박탐 복합제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-08-18",
+    "stage": "변경명령",
+    "regDate": "2026-07-16",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260110&infoClassCode=4"
   },
   {
     "key": "20260080/4",
@@ -696,18 +708,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260080&infoClassCode=4"
   },
   {
-    "key": "20260117/4",
-    "infoNo": "20260117",
-    "infoClassCode": "4",
-    "title": "노보노디스크제약(주), 줄토피플렉스터치주",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "2026-10-02",
-    "stage": "변경명령",
-    "regDate": "2026-07-02",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260117&infoClassCode=4"
-  },
-  {
     "key": "20260091/4",
     "infoNo": "20260091",
     "infoClassCode": "4",
@@ -718,6 +718,18 @@
     "stage": "변경명령",
     "regDate": "2026-07-02",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260091&infoClassCode=4"
+  },
+  {
+    "key": "20260117/4",
+    "infoNo": "20260117",
+    "infoClassCode": "4",
+    "title": "노보노디스크제약(주), 줄토피플렉스터치주",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "2026-10-02",
+    "stage": "변경명령",
+    "regDate": "2026-07-02",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260117&infoClassCode=4"
   },
   {
     "key": "20260101/4",
