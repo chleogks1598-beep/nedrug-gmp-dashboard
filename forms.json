@@ -3763,5 +3763,22 @@
  "1OvvP7RbBXg": {
   "forms": [],
   "sterile": "비무균"
+ },
+ "1Q5Nv9G4oko": {
+  "forms": [
+   "비무균-세팔로스포린제제-합성",
+   "비무균-일반제제-합성"
+  ],
+  "sterile": "비무균",
+  "cls": "",
+  "clsCount": null
+ },
+ "1Q5NxQxCVnP": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균",
+  "cls": "",
+  "clsCount": null
  }
 }
