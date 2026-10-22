@@ -58,20 +58,27 @@ const PY_CANDIDATES = [
   "python",
 ].filter(Boolean);
 
-function pypdfText(file) {
-  const script = path.join(path.dirname(fileURLToPath(import.meta.url)), "pypdf-text.py");
+// scripts/ 의 파이썬 스크립트를 실행해 stdout 을 돌려준다. 실패하면 null.
+// 이 파이썬이 없거나 필요한 패키지(pypdf·pdfplumber)가 없으면 다음 후보로 넘어간다.
+export function runPython(scriptName, args, input) {
+  const script = path.join(path.dirname(fileURLToPath(import.meta.url)), scriptName);
   for (const py of PY_CANDIDATES) {
     try {
-      return execFileSync(py, ["-I", script, file], {
+      return execFileSync(py, ["-I", script, ...args], {
         encoding: "utf8",
         maxBuffer: 64 * 1024 * 1024,
-        stdio: ["ignore", "pipe", "ignore"],
+        input,
+        stdio: [input == null ? "ignore" : "pipe", "pipe", "ignore"],
       });
     } catch (e) {
-      // 이 파이썬이 없거나 pypdf 가 없음 → 다음 후보
+      // 다음 후보
     }
   }
   return null;
+}
+
+function pypdfText(file) {
+  return runPython("pypdf-text.py", [file]);
 }
 
 // 성공하면 텍스트, 실패하면 null.

@@ -20,6 +20,7 @@ import path from "path";
 import { spawn } from "child_process";
 import { fileURLToPath } from "url";
 import { loadQuarantine } from "./quarantine.mjs";
+import { tableFix } from "./tablefix.mjs";
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dir, "..");
@@ -131,8 +132,10 @@ async function main() {
           /사항\s*분류\s*:\s*(중대|중요|기타)\s*[1-9]/.test(body))) {
         throw new Error("본문은 '지적사항 있음'인데 추출 결과가 0건 — 표 본문을 못 읽은 것으로 보임(사람 확인 필요)");
       }
-      out.push({ docId: rec.docId, deficiencies: defs });
-      console.log(`  ${rec.docId} ${rec.site} → 지적 ${defs.length}건`);
+      // LLM 은 표의 행 경계를 짐작하므로 분야·구분·근거법령을 원본 표 칸 구조로 바로잡는다.
+      const fixed = tableFix(ROOT, rec.docId, defs, PENDING);
+      out.push({ docId: rec.docId, deficiencies: fixed.defs });
+      console.log(`  ${rec.docId} ${rec.site} → 지적 ${fixed.defs.length}건 (${fixed.note})`);
     } catch (e) {
       failed.push(`${rec.docId} ${rec.site}: ${e.message}`);
       console.error(`  ${rec.docId} ${rec.site} → 실패: ${e.message}`);
