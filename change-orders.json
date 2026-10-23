@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260213/3",
+    "infoNo": "20260213",
+    "infoClassCode": "3",
+    "title": "오미데네팍이소프로필 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-10-23",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260213&infoClassCode=3"
+  },
+  {
     "key": "20260238/2",
     "infoNo": "20260238",
     "infoClassCode": "2",
@@ -10,18 +22,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-10-22",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260238&infoClassCode=2"
-  },
-  {
-    "key": "20260213/3",
-    "infoNo": "20260213",
-    "infoClassCode": "3",
-    "title": "오미데네팍이소프로필 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-10-22",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260213&infoClassCode=3"
   },
   {
     "key": "20260236/2",
