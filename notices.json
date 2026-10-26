@@ -1,6 +1,17 @@
 {
  "items": [
   {
+   "key": "m_74/45247",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45247",
+   "title": "건강기능식품 기능성 원료 기술문서(모노그래프) 공개(스피루리나)",
+   "date": "2026-10-26",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45247",
+   "kw": [],
+   "firstSeen": "2026-10-26T08:30:42.597Z"
+  },
+  {
    "key": "m_74/45246",
    "board": "m_74",
    "boardName": "식약처 공지사항",
