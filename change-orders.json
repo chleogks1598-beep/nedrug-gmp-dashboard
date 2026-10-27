@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260224/3",
+    "infoNo": "20260224",
+    "infoClassCode": "3",
+    "title": "텔미사르탄·암로디핀·클로르탈리돈 복합제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-10-27",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260224&infoClassCode=3"
+  },
+  {
     "key": "20260213/3",
     "infoNo": "20260213",
     "infoClassCode": "3",
@@ -202,18 +214,6 @@
     "stage": "변경명령",
     "regDate": "2026-10-06",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260164&infoClassCode=4"
-  },
-  {
-    "key": "20260224/2",
-    "infoNo": "20260224",
-    "infoClassCode": "2",
-    "title": "텔미사르탄·암로디핀·클로르탈리돈 복합제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-10-02",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260224&infoClassCode=2"
   },
   {
     "key": "20260146/4",
