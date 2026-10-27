@@ -1,6 +1,19 @@
 {
  "items": [
   {
+   "key": "m_891/46056",
+   "board": "m_891",
+   "boardName": "대전청 공지사항",
+   "seq": "46056",
+   "title": "'26년 의약품 제조업체 GMP 간담회 개최 안내",
+   "date": "2026-10-27",
+   "url": "https://www.mfds.go.kr/brd/m_891/view.do?seq=46056",
+   "kw": [
+    "의약품 설명회"
+   ],
+   "firstSeen": "2026-10-27T06:30:38.153Z"
+  },
+  {
    "key": "m_74/45247",
    "board": "m_74",
    "boardName": "식약처 공지사항",
