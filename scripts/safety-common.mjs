@@ -89,8 +89,10 @@ export const SOURCES = {
   },
 };
 
-export const listUrl = (src, limit = 3000) =>
-  `https://nedrug.mfds.go.kr/pbp/${src.code}/getList?page=1&limit=${limit}&searchYn=true`;
+// typeCode = 목록의 「품목구분」 필터: "A"=의약품등, "C"=화장품(두 목록은 서로 겹치지 않음).
+export const listUrl = (src, limit = 3000, typeCode = "") =>
+  `https://nedrug.mfds.go.kr/pbp/${src.code}/getList?page=1&limit=${limit}&searchYn=true` +
+  (typeCode ? `&searchTypeCode=${typeCode}` : "");
 
 // 상세는 목록 파라미터가 같이 없으면 302 로 튕긴다(세션 아님, 파라미터 검증).
 export const itemUrl = (src, key) =>

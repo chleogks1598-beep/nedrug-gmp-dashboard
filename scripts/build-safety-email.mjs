@@ -29,10 +29,14 @@ const readJson = p => {
 const SAMPLE = parseInt(process.env.SAMPLE || "0", 10);
 const prevPaths = { recall: process.argv[2], admin: process.argv[3] };
 
+// 화장품 건은 알리지 않는다(대시보드에는 그대로 남는다).
+// cosmetic = 수집 때 식약처 「품목구분=화장품」 목록에 있던 건. 행정처분은 업종으로도 한 번 더 거른다.
+const isCosmetic = r => r.cosmetic === true || /화장품/.test(r.detail?.bizType || "");
+
 const diff = {};
 for (const id of ["recall", "admin"]) {
   const src = SOURCES[id];
-  const cur = readJson(path.join(ROOT, "public", src.dataFile));
+  const cur = readJson(path.join(ROOT, "public", src.dataFile)).filter(r => !isCosmetic(r));
   const prev = readJson(prevPaths[id]);
   const prevByKey = new Map(prev.map(r => [r.key, r]));
   if (SAMPLE > 0) {

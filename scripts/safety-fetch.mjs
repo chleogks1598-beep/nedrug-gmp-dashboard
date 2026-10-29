@@ -98,11 +98,22 @@ async function run(src) {
     return STRUCT;
   }
 
+  // 화장품 건 표시 — 식약처 「품목구분=화장품」 목록에 있는 키. 알림 메일에서 제외하는 데 쓴다.
+  // 회수·폐기는 목록·상세 어디에도 품목구분 칸이 없어서 이 목록이 유일한 근거다.
+  const cosHtml = await fetchRetry(listUrl(src, 3000, "C"));
+  const cosList = parseList(cosHtml, src);
+  const cosTotal = parseTotal(cosHtml);
+  if (cosTotal != null && cosTotal !== cosList.length) {
+    console.error(`${src.id}: COSMETIC_LIST_INCOMPLETE 총 ${cosTotal}건인데 ${cosList.length}행만 파싱됨`);
+    return STRUCT;
+  }
+  const cosKeys = new Set(cosList.map(r => r.key));
+
   const need = list.filter(r => {
     const p = prevByKey.get(r.key);
     return !p || !p.detail || p.detail.unavailable || p.listSig !== listSig(src, r);
   });
-  console.log(`${src.id}: TOTAL=${list.length} KNOWN=${prev.length} FETCH_DETAIL=${need.length}`);
+  console.log(`${src.id}: TOTAL=${list.length} KNOWN=${prev.length} FETCH_DETAIL=${need.length} COSMETIC=${cosKeys.size}`);
 
   const { failed } = await pool(need, async r => { r.detail = await getDetail(src, r.key); });
   if (failed) {
@@ -121,6 +132,7 @@ async function run(src) {
     const rec = {
       ...r,
       listSig: listSig(src, r),
+      cosmetic: cosKeys.has(r.key),
       detail: r.detail || p?.detail,
       firstSeen: p?.firstSeen || stamp,
       delisted: false,
