@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260202/4",
+    "infoNo": "20260202",
+    "infoClassCode": "4",
+    "title": "미로가발린베실산염 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "종결",
+    "reflectDate": "2027-01-29",
+    "stage": "변경명령",
+    "regDate": "2026-10-29",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260202&infoClassCode=4"
+  },
+  {
     "key": "20260169/2",
     "infoNo": "20260169",
     "infoClassCode": "2",
@@ -72,18 +84,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260213&infoClassCode=3"
   },
   {
-    "key": "20260238/2",
-    "infoNo": "20260238",
-    "infoClassCode": "2",
-    "title": "알보젠코리아(주), 아림시스주(베바시주맙)",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-10-22",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260238&infoClassCode=2"
-  },
-  {
     "key": "20260236/2",
     "infoNo": "20260236",
     "infoClassCode": "2",
@@ -94,6 +94,18 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-10-22",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260236&infoClassCode=2"
+  },
+  {
+    "key": "20260238/2",
+    "infoNo": "20260238",
+    "infoClassCode": "2",
+    "title": "알보젠코리아(주), 아림시스주(베바시주맙)",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-10-22",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260238&infoClassCode=2"
   },
   {
     "key": "20260209/4",
@@ -190,18 +202,6 @@
     "stage": "사전예고",
     "regDate": "2026-10-15",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260204&infoClassCode=3"
-  },
-  {
-    "key": "20260202/3",
-    "infoNo": "20260202",
-    "infoClassCode": "3",
-    "title": "미로가발린베실산염 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-10-15",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260202&infoClassCode=3"
   },
   {
     "key": "20260154/3",
