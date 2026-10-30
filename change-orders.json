@@ -1,5 +1,17 @@
 [
   {
+    "key": "20260154/4",
+    "infoNo": "20260154",
+    "infoClassCode": "4",
+    "title": "보노프라잔 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2027-02-01",
+    "stage": "변경명령",
+    "regDate": "2026-10-30",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260154&infoClassCode=4"
+  },
+  {
     "key": "20260202/4",
     "infoNo": "20260202",
     "infoClassCode": "4",
@@ -10,18 +22,6 @@
     "stage": "변경명령",
     "regDate": "2026-10-29",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260202&infoClassCode=4"
-  },
-  {
-    "key": "20260169/2",
-    "infoNo": "20260169",
-    "infoClassCode": "2",
-    "title": "비타민 E 함유 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-10-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260169&infoClassCode=2"
   },
   {
     "key": "20260241/2",
@@ -48,16 +48,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260243&infoClassCode=2"
   },
   {
-    "key": "20260179/4",
-    "infoNo": "20260179",
-    "infoClassCode": "4",
-    "title": "카스포펀진 성분 제제",
+    "key": "20260169/2",
+    "infoNo": "20260169",
+    "infoClassCode": "2",
+    "title": "비타민 E 함유 제제",
     "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2027-01-27",
-    "stage": "변경명령",
-    "regDate": "2026-10-27",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260179&infoClassCode=4"
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-10-28",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260169&infoClassCode=2"
   },
   {
     "key": "20260224/3",
@@ -72,6 +72,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260224&infoClassCode=3"
   },
   {
+    "key": "20260179/4",
+    "infoNo": "20260179",
+    "infoClassCode": "4",
+    "title": "카스포펀진 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2027-01-27",
+    "stage": "변경명령",
+    "regDate": "2026-10-27",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260179&infoClassCode=4"
+  },
+  {
     "key": "20260213/3",
     "infoNo": "20260213",
     "infoClassCode": "3",
@@ -84,18 +96,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260213&infoClassCode=3"
   },
   {
-    "key": "20260236/2",
-    "infoNo": "20260236",
-    "infoClassCode": "2",
-    "title": "다코미티닙수화물 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-10-22",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260236&infoClassCode=2"
-  },
-  {
     "key": "20260238/2",
     "infoNo": "20260238",
     "infoClassCode": "2",
@@ -106,6 +106,18 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-10-22",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260238&infoClassCode=2"
+  },
+  {
+    "key": "20260236/2",
+    "infoNo": "20260236",
+    "infoClassCode": "2",
+    "title": "다코미티닙수화물 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-10-22",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260236&infoClassCode=2"
   },
   {
     "key": "20260209/4",
@@ -168,18 +180,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260235&infoClassCode=2"
   },
   {
-    "key": "20260212/3",
-    "infoNo": "20260212",
-    "infoClassCode": "3",
-    "title": "엠파글리플로진 성분 제제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-10-16",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260212&infoClassCode=3"
-  },
-  {
     "key": "20260177/3",
     "infoNo": "20260177",
     "infoClassCode": "3",
@@ -192,6 +192,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260177&infoClassCode=3"
   },
   {
+    "key": "20260212/3",
+    "infoNo": "20260212",
+    "infoClassCode": "3",
+    "title": "엠파글리플로진 성분 제제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-10-16",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260212&infoClassCode=3"
+  },
+  {
     "key": "20260204/3",
     "infoNo": "20260204",
     "infoClassCode": "3",
@@ -202,18 +214,6 @@
     "stage": "사전예고",
     "regDate": "2026-10-15",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260204&infoClassCode=3"
-  },
-  {
-    "key": "20260154/3",
-    "infoNo": "20260154",
-    "infoClassCode": "3",
-    "title": "보노프라잔 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-10-14",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260154&infoClassCode=3"
   },
   {
     "key": "20260140/2",
