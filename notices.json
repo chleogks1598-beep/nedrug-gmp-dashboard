@@ -1,6 +1,17 @@
 {
  "items": [
   {
+   "key": "m_74/45249",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45249",
+   "title": "어린이 기호식품 품질인증 현황('26.10.31.기준)",
+   "date": "2026-11-02",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45249",
+   "kw": [],
+   "firstSeen": "2026-11-02T01:30:37.541Z"
+  },
+  {
    "key": "m_74/45248",
    "board": "m_74",
    "boardName": "식약처 공지사항",
