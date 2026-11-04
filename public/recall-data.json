@@ -28480,7 +28480,8 @@
    "office": "광주청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302222",
@@ -28508,7 +28509,8 @@
    "office": "광주청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302221",
@@ -28536,7 +28538,8 @@
    "office": "광주청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302220",
@@ -28564,7 +28567,8 @@
    "office": "광주청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302219",
@@ -28592,7 +28596,8 @@
    "office": "광주청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302218",
@@ -28620,7 +28625,8 @@
    "office": "광주청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302217",
@@ -28648,7 +28654,8 @@
    "office": "경인청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false
+  "delisted": true,
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302216",
@@ -28676,8 +28683,9 @@
    "office": "경인청 의료제품안전과"
   },
   "firstSeen": "2026-08-13",
-  "delisted": false,
-  "updatedAt": "2026-08-20"
+  "delisted": true,
+  "updatedAt": "2026-08-20",
+  "delistedAt": "2026-11-04"
  },
  {
   "key": "202302215",
