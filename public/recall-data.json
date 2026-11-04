@@ -9,6 +9,8 @@
   "makeNo": "KR-BSB-110226[2029-02-25]",
   "recallDate": "2026-11-04",
   "openEndDate": "2029-11-02",
+  "listSig": "계림제약|성상 부적합|KR-BSB-110226[2029-02-25]|2026-11-04|2029-11-02",
+  "cosmetic": false,
   "detail": {
    "entpName": "계림제약",
    "entpAddr": "경상북도 경주시 유림로5번길 166",
@@ -22,8 +24,6 @@
    "manager": "대구청 의료제품안전과 : 설*환, ***-***-****",
    "office": "대구청 의료제품안전과"
   },
-  "listSig": "계림제약|성상 부적합|KR-BSB-110226[2029-02-25]|2026-11-04|2029-11-02",
-  "cosmetic": false,
   "firstSeen": "2026-11-04",
   "delisted": false
  },
