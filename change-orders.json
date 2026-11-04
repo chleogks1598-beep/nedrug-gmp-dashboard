@@ -12,6 +12,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260244&infoClassCode=2"
   },
   {
+    "key": "20260154/4",
+    "infoNo": "20260154",
+    "infoClassCode": "4",
+    "title": "보노프라잔 성분 제제",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2027-02-01",
+    "stage": "변경명령",
+    "regDate": "2026-11-04",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260154&infoClassCode=4"
+  },
+  {
     "key": "20260177/4",
     "infoNo": "20260177",
     "infoClassCode": "4",
@@ -82,18 +94,6 @@
     "stage": "변경명령",
     "regDate": "2026-11-02",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260204&infoClassCode=4"
-  },
-  {
-    "key": "20260154/4",
-    "infoNo": "20260154",
-    "infoClassCode": "4",
-    "title": "보노프라잔 성분 제제",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2027-02-01",
-    "stage": "변경명령",
-    "regDate": "2026-10-30",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260154&infoClassCode=4"
   },
   {
     "key": "20260202/4",
