@@ -1,6 +1,17 @@
 {
  "items": [
   {
+   "key": "m_74/45250",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45250",
+   "title": "2027년 제1차 용역연구개발과제 주관연구기관 공모 공고",
+   "date": "2026-11-05",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45250",
+   "kw": [],
+   "firstSeen": "2026-11-05T23:08:14.254Z"
+  },
+  {
    "key": "m_891/46058",
    "board": "m_891",
    "boardName": "대전청 공지사항",
