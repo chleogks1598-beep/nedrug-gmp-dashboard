@@ -1,6 +1,17 @@
 {
  "items": [
   {
+   "key": "m_74/45251",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45251",
+   "title": "2026년도 고객(민원)만족도 조사 관련 개인정보 목적 외 이용 알림",
+   "date": "2026-11-06",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45251",
+   "kw": [],
+   "firstSeen": "2026-11-06T02:30:56.569Z"
+  },
+  {
    "key": "m_74/45250",
    "board": "m_74",
    "boardName": "식약처 공지사항",
