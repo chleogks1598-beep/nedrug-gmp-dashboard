@@ -1,6 +1,17 @@
 {
  "items": [
   {
+   "key": "m_74/45252",
+   "board": "m_74",
+   "boardName": "식약처 공지사항",
+   "seq": "45252",
+   "title": "(알림) 식품안심업소 지정 현황(2026.11.6. 기준)",
+   "date": "2026-11-10",
+   "url": "https://www.mfds.go.kr/brd/m_74/view.do?seq=45252",
+   "kw": [],
+   "firstSeen": "2026-11-10T01:30:36.866Z"
+  },
+  {
    "key": "m_74/45251",
    "board": "m_74",
    "boardName": "식약처 공지사항",
