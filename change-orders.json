@@ -36,6 +36,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260224&infoClassCode=4"
   },
   {
+    "key": "20260243/3",
+    "infoNo": "20260243",
+    "infoClassCode": "3",
+    "title": "스카이리치프리필드시린지주(리산키주맙,유전자재조합) 외2품목, 한국애브비(주)",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-11-11",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260243&infoClassCode=3"
+  },
+  {
     "key": "20260245/2",
     "infoNo": "20260245",
     "infoClassCode": "2",
@@ -204,16 +216,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260202&infoClassCode=4"
   },
   {
-    "key": "20260243/2",
-    "infoNo": "20260243",
+    "key": "20260241/2",
+    "infoNo": "20260241",
     "infoClassCode": "2",
-    "title": "스카이리치프리필드시린지주(리산키주맙,유전자재조합) 외2품목, 한국애브비(주)",
-    "type": "신약 등의 재심사",
+    "title": "오시머티닙 성분 제제",
+    "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-10-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260243&infoClassCode=2"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260241&infoClassCode=2"
   },
   {
     "key": "20260169/2",
@@ -226,18 +238,6 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-10-28",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260169&infoClassCode=2"
-  },
-  {
-    "key": "20260241/2",
-    "infoNo": "20260241",
-    "infoClassCode": "2",
-    "title": "오시머티닙 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-10-28",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260241&infoClassCode=2"
   },
   {
     "key": "20260179/4",
