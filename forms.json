@@ -3857,5 +3857,23 @@
   "sterile": "무균",
   "cls": "",
   "clsCount": null
+ },
+ "1Q7XhpAwhFA": {
+  "forms": [
+   "비무균-일반제제-내용고형제(정제, 캡슐제)"
+  ],
+  "sterile": "비무균",
+  "cls": "",
+  "clsCount": null
+ },
+ "1Q7XhpAwI0q": {
+  "forms": [
+   "비무균-일반제제-합성",
+   "비무균-일반제제-내용고형제(정제, 캡슐제)",
+   "무균-일반제제-주사제(주사제)"
+  ],
+  "sterile": "무균+비무균",
+  "cls": "",
+  "clsCount": null
  }
 }
