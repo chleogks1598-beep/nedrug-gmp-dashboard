@@ -1,0 +1,94 @@
+name: FDA 알림 대리 발송 (fda-warning-letters)
+
+# fda-warning-letters 저장소의 메일을 **이 저장소의 Gmail 시크릿으로 대신 보낸다.**
+#
+# 왜 여기 있나: FDA 저장소엔 MAIL_USERNAME/MAIL_PASSWORD 가 처음부터 없었고(2026-09-11~11-17
+# 알림 64회 전부 530 Authentication Required 로 실패), 같은 Gmail 계정의 앱 비밀번호를
+# 새로 만들 수 없었다(본인 인증 불가, 2026-11-17). 시크릿 값은 저장소 간 복사가 안 되므로
+# 이미 작동하는 이 저장소에서 발송만 맡는다. 메일 본문 생성 로직은 FDA 저장소의 것을 그대로 쓴다.
+#
+# 호출: FDA 로컬 스케줄러(run-local-update.mjs)가 데이터 push 직후
+#   gh workflow run fda-notify-relay.yml -R chleogks1598-beep/nedrug-gmp-dashboard -f ref=<sha>
+# 보정 발송: prev_ref 에 기준 커밋을 주면 그 이후 변화를 한 통으로 보낸다.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'FDA 저장소 커밋 sha (비우면 main 최신)'
+        required: false
+        default: ''
+      prev_ref:
+        description: '비교 기준 커밋 (비우면 ref 의 직전 커밋)'
+        required: false
+        default: ''
+      kind:
+        description: 'wl=warning letter / estab=등록 제조소 / both'
+        required: false
+        default: 'both'
+
+concurrency:
+  group: fda-notify-relay
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: chleogks1598-beep/fda-warning-letters
+          ref: ${{ inputs.ref || 'main' }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 직전 스냅샷 확보
+        env:
+          PREV: ${{ inputs.prev_ref || 'HEAD~1' }}
+        run: |
+          echo "대상: $(git log -1 --oneline)"
+          echo "비교 기준: $PREV ($(git log -1 --oneline "$PREV" 2>/dev/null || echo 없음))"
+          git show "$PREV:public/data.json" > prev-data.json 2>/dev/null || echo '{"records":[]}' > prev-data.json
+          git show "$PREV:public/establishments.json" > prev-establishments.json 2>/dev/null || echo '{"records":[]}' > prev-establishments.json
+
+      # ── warning letter ──
+      - name: WL 메일 본문 생성
+        id: wl
+        if: inputs.kind != 'estab'
+        env:
+          SAMPLE: '0'
+        run: node scripts/build-email.mjs prev-data.json
+      - name: WL 메일 발송
+        if: steps.wl.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: FDA Warning Letter <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.wl.outputs.to }}
+          subject: ${{ steps.wl.outputs.subject }}
+          html_body: file://email-body.html
+
+      # ── 등록 제조소(대한민국 신규) ──
+      - name: 등록 제조소 메일 본문 생성
+        id: estab
+        if: inputs.kind != 'wl'
+        env:
+          SAMPLE: '0'
+        run: node scripts/build-estab-email.mjs prev-establishments.json
+      - name: 등록 제조소 메일 발송
+        if: steps.estab.outputs.send == 'true'
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: FDA 등록 제조소 <${{ secrets.MAIL_USERNAME }}>
+          to: ${{ steps.estab.outputs.to }}
+          subject: ${{ steps.estab.outputs.subject }}
+          html_body: file://estab-email-body.html
