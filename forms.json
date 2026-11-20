@@ -3875,5 +3875,21 @@
   "sterile": "무균+비무균",
   "cls": "",
   "clsCount": null
+ },
+ "1Q7txc0kUrl": {
+  "forms": [
+   "비무균-일반제제-정제(추출에 한함)"
+  ],
+  "sterile": "비무균",
+  "cls": "",
+  "clsCount": null
+ },
+ "1Q7txc0kHQ0": {
+  "forms": [
+   "무균-일반제제(방사성의약품)-주사제(주사제)"
+  ],
+  "sterile": "무균",
+  "cls": "",
+  "clsCount": null
  }
 }
