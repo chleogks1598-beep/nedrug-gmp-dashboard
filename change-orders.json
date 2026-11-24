@@ -1,15 +1,27 @@
 [
   {
-    "key": "20260259/2",
-    "infoNo": "20260259",
+    "key": "20260260/2",
+    "infoNo": "20260260",
     "infoClassCode": "2",
-    "title": "네비보롤·로수바스타틴 복합제",
+    "title": "메트포르민 함유 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-11-24",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260260&infoClassCode=2"
+  },
+  {
+    "key": "20260245/2",
+    "infoNo": "20260245",
+    "infoClassCode": "2",
+    "title": "라미부딘·돌루테그라비르나트륨 복합제",
     "type": "신약 등의 재심사",
     "status": "진행중",
     "reflectDate": "",
     "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-11-23",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260259&infoClassCode=2"
+    "regDate": "2026-11-24",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260245&infoClassCode=2"
   },
   {
     "key": "20260235/4",
@@ -24,6 +36,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260235&infoClassCode=4"
   },
   {
+    "key": "20260259/2",
+    "infoNo": "20260259",
+    "infoClassCode": "2",
+    "title": "네비보롤·로수바스타틴 복합제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-11-23",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260259&infoClassCode=2"
+  },
+  {
     "key": "20260244/3",
     "infoNo": "20260244",
     "infoClassCode": "3",
@@ -36,16 +60,28 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260244&infoClassCode=3"
   },
   {
-    "key": "20260258/3",
-    "infoNo": "20260258",
+    "key": "20260257/3",
+    "infoNo": "20260257",
     "infoClassCode": "3",
-    "title": "메토트렉세이트 성분 제제",
+    "title": "덱사메타손 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-11-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260258&infoClassCode=3"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260257&infoClassCode=3"
+  },
+  {
+    "key": "20260175/4",
+    "infoNo": "20260175",
+    "infoClassCode": "4",
+    "title": "테르비나핀 성분 제제(전신 작용 제형)",
+    "type": "안전성 정보",
+    "status": "종결",
+    "reflectDate": "2026-12-18",
+    "stage": "변경명령",
+    "regDate": "2026-11-18",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260175&infoClassCode=4"
   },
   {
     "key": "20260140/4",
@@ -84,28 +120,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260187&infoClassCode=4"
   },
   {
-    "key": "20260257/3",
-    "infoNo": "20260257",
+    "key": "20260258/3",
+    "infoNo": "20260258",
     "infoClassCode": "3",
-    "title": "덱사메타손 성분 제제",
+    "title": "메토트렉세이트 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-11-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260257&infoClassCode=3"
-  },
-  {
-    "key": "20260175/4",
-    "infoNo": "20260175",
-    "infoClassCode": "4",
-    "title": "테르비나핀 성분 제제(전신 작용 제형)",
-    "type": "안전성 정보",
-    "status": "종결",
-    "reflectDate": "2026-12-18",
-    "stage": "변경명령",
-    "regDate": "2026-11-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260175&infoClassCode=4"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260258&infoClassCode=3"
   },
   {
     "key": "20260252/2",
@@ -192,18 +216,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260208&infoClassCode=2"
   },
   {
-    "key": "20260245/2",
-    "infoNo": "20260245",
-    "infoClassCode": "2",
-    "title": "라미부딘·돌루테그라비르나트륨 복합제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-11-10",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260245&infoClassCode=2"
-  },
-  {
     "key": "20260213/4",
     "infoNo": "20260213",
     "infoClassCode": "4",
@@ -216,18 +228,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260213&infoClassCode=4"
   },
   {
-    "key": "20260238/3",
-    "infoNo": "20260238",
-    "infoClassCode": "3",
-    "title": "알보젠코리아(주), 아림시스주(베바시주맙)",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-11-06",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260238&infoClassCode=3"
-  },
-  {
     "key": "20260236/2",
     "infoNo": "20260236",
     "infoClassCode": "2",
@@ -238,6 +238,18 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-11-06",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260236&infoClassCode=2"
+  },
+  {
+    "key": "20260238/3",
+    "infoNo": "20260238",
+    "infoClassCode": "3",
+    "title": "알보젠코리아(주), 아림시스주(베바시주맙)",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "사전예고",
+    "regDate": "2026-11-06",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260238&infoClassCode=3"
   },
   {
     "key": "20260154/4",
