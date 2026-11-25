@@ -1,15 +1,15 @@
 [
   {
-    "key": "20260261/2",
-    "infoNo": "20260261",
-    "infoClassCode": "2",
-    "title": "미라베그론(서방성필름코팅정_25밀리그램_50밀리그램) 허가사항 변경명령(통일조정)을 위한 의견조회",
-    "type": "통일조정(안전성·유효성 심사)",
+    "key": "20260243/4",
+    "infoNo": "20260243",
+    "infoClassCode": "4",
+    "title": "스카이리치프리필드시린지주(리산키주맙,유전자재조합) 외2품목, 한국애브비(주)",
+    "type": "신약 등의 재심사",
     "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-11-24",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260261&infoClassCode=2"
+    "reflectDate": "2027-02-25",
+    "stage": "변경명령",
+    "regDate": "2026-11-25",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260243&infoClassCode=4"
   },
   {
     "key": "20260241/3",
@@ -24,28 +24,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260241&infoClassCode=3"
   },
   {
-    "key": "20260245/2",
-    "infoNo": "20260245",
+    "key": "20260261/2",
+    "infoNo": "20260261",
     "infoClassCode": "2",
-    "title": "라미부딘·돌루테그라비르나트륨 복합제",
-    "type": "신약 등의 재심사",
+    "title": "미라베그론(서방성필름코팅정_25밀리그램_50밀리그램) 허가사항 변경명령(통일조정)을 위한 의견조회",
+    "type": "통일조정(안전성·유효성 심사)",
     "status": "진행중",
     "reflectDate": "",
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-11-24",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260245&infoClassCode=2"
-  },
-  {
-    "key": "20260226/2",
-    "infoNo": "20260226",
-    "infoClassCode": "2",
-    "title": "다로루타마이드 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-11-24",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260226&infoClassCode=2"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260261&infoClassCode=2"
   },
   {
     "key": "20260197/2",
@@ -60,6 +48,18 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260197&infoClassCode=2"
   },
   {
+    "key": "20260245/2",
+    "infoNo": "20260245",
+    "infoClassCode": "2",
+    "title": "라미부딘·돌루테그라비르나트륨 복합제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-11-24",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260245&infoClassCode=2"
+  },
+  {
     "key": "20260169/3",
     "infoNo": "20260169",
     "infoClassCode": "3",
@@ -70,6 +70,18 @@
     "stage": "사전예고",
     "regDate": "2026-11-24",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260169&infoClassCode=3"
+  },
+  {
+    "key": "20260226/2",
+    "infoNo": "20260226",
+    "infoClassCode": "2",
+    "title": "다로루타마이드 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-11-24",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260226&infoClassCode=2"
   },
   {
     "key": "20260260/2",
@@ -84,18 +96,6 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260260&infoClassCode=2"
   },
   {
-    "key": "20260259/2",
-    "infoNo": "20260259",
-    "infoClassCode": "2",
-    "title": "네비보롤·로수바스타틴 복합제",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-11-23",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260259&infoClassCode=2"
-  },
-  {
     "key": "20260235/4",
     "infoNo": "20260235",
     "infoClassCode": "4",
@@ -106,6 +106,18 @@
     "stage": "변경명령",
     "regDate": "2026-11-23",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260235&infoClassCode=4"
+  },
+  {
+    "key": "20260259/2",
+    "infoNo": "20260259",
+    "infoClassCode": "2",
+    "title": "네비보롤·로수바스타틴 복합제",
+    "type": "신약 등의 재심사",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-11-23",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260259&infoClassCode=2"
   },
   {
     "key": "20260244/3",
@@ -144,16 +156,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260175&infoClassCode=4"
   },
   {
-    "key": "20260256/3",
-    "infoNo": "20260256",
+    "key": "20260258/3",
+    "infoNo": "20260258",
     "infoClassCode": "3",
-    "title": "트리플루리딘·티피라실염산염 성분 제제",
+    "title": "메토트렉세이트 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-11-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260256&infoClassCode=3"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260258&infoClassCode=3"
   },
   {
     "key": "20260187/4",
@@ -180,28 +192,16 @@
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260257&infoClassCode=3"
   },
   {
-    "key": "20260258/3",
-    "infoNo": "20260258",
+    "key": "20260256/3",
+    "infoNo": "20260256",
     "infoClassCode": "3",
-    "title": "메토트렉세이트 성분 제제",
+    "title": "트리플루리딘·티피라실염산염 성분 제제",
     "type": "안전성 정보",
     "status": "진행중",
     "reflectDate": "",
     "stage": "사전예고",
     "regDate": "2026-11-18",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260258&infoClassCode=3"
-  },
-  {
-    "key": "20260252/2",
-    "infoNo": "20260252",
-    "infoClassCode": "2",
-    "title": "카보잔티닙 성분 제제",
-    "type": "안전성 정보",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "변경명령(안) 의견조회",
-    "regDate": "2026-11-17",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260252&infoClassCode=2"
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260256&infoClassCode=3"
   },
   {
     "key": "20260254/2",
@@ -214,6 +214,18 @@
     "stage": "변경명령(안) 의견조회",
     "regDate": "2026-11-17",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260254&infoClassCode=2"
+  },
+  {
+    "key": "20260252/2",
+    "infoNo": "20260252",
+    "infoClassCode": "2",
+    "title": "카보잔티닙 성분 제제",
+    "type": "안전성 정보",
+    "status": "진행중",
+    "reflectDate": "",
+    "stage": "변경명령(안) 의견조회",
+    "regDate": "2026-11-17",
+    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260252&infoClassCode=2"
   },
   {
     "key": "20260253/2",
@@ -238,18 +250,6 @@
     "stage": "변경명령",
     "regDate": "2026-11-11",
     "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260224&infoClassCode=4"
-  },
-  {
-    "key": "20260243/3",
-    "infoNo": "20260243",
-    "infoClassCode": "3",
-    "title": "스카이리치프리필드시린지주(리산키주맙,유전자재조합) 외2품목, 한국애브비(주)",
-    "type": "신약 등의 재심사",
-    "status": "진행중",
-    "reflectDate": "",
-    "stage": "사전예고",
-    "regDate": "2026-11-11",
-    "url": "https://nedrug.mfds.go.kr/CCBAR01F012/getList/getItem?infoNo=20260243&infoClassCode=3"
   },
   {
     "key": "20260214/2",
